@@ -1,0 +1,211 @@
+[
+ {
+  "id": "clavis-secretorum-coelis-et-terrae",
+  "nombre": "Clavis Secretorum Coelis et Terrae",
+  "nota": "Clavis Secretorum Coelis et Terrae",
+  "autor": "Anónimo",
+  "idioma": "Latín",
+  "ensenar": 25,
+  "estudio_maximo": 70,
+  "dominios": [
+   "Mente",
+   "Espíritu"
+  ],
+  "resumen": "Recoge las enseñanzas atribuidas a Simón el Mago, el hechicero que, según los Hechos de los Apóstoles, quiso comprar a san Pedro el poder del Espíritu Santo y acabó destruido por él."
+ },
+ {
+  "id": "de-feits-lo-diable",
+  "nombre": "De Feits lo Diable",
+  "nota": "De Feits lo Diable",
+  "autor": "Absalón Leví",
+  "idioma": "Catalán",
+  "ensenar": 45,
+  "estudio_maximo": 85,
+  "dominios": [
+   "Cuerpo",
+   "Espíritu"
+  ],
+  "resumen": "Traducción al catalán de un texto latino anónimo del siglo III. Su traductor, judío, lo explicó con un cuidado admirable."
+ },
+ {
+  "id": "de-magia-nigra-et-profunda",
+  "nombre": "De Magia Nigra et Profunda",
+  "nota": "De Magia Nigra et Profunda",
+  "autor": "Bernat Desmons",
+  "idioma": "Latín vulgar",
+  "ensenar": 40,
+  "estudio_maximo": 45,
+  "dominios": [
+   "Espíritu",
+   "Cuerpo"
+  ],
+  "resumen": "Un libro de teoría más que de práctica: explica qué es la goecia y cómo actúa, sin enseñar ninguna fórmula concreta."
+ },
+ {
+  "id": "el-dragon-rojo-y-la-cabra-infernal",
+  "nombre": "El Dragón Rojo y la Cabra Infernal",
+  "nota": "El Dragón Rojo y la Cabra Infernal",
+  "autor": "Anónimo",
+  "idioma": "Latín",
+  "ensenar": 25,
+  "estudio_maximo": 85,
+  "dominios": [
+   "Espíritu",
+   "Poder"
+  ],
+  "resumen": "Una pésima traducción latina de un viejo tratado de magia caldea. Lo usan los cónclaves de brujas para sus aquelarres."
+ },
+ {
+  "id": "el-gran-grimorio",
+  "nombre": "El Gran Grimorio",
+  "nota": "El Gran Grimorio",
+  "autor": "Anónimo",
+  "idioma": "Hebreo",
+  "ensenar": 45,
+  "estudio_maximo": 60,
+  "dominios": [
+   "Espíritu",
+   "Poder"
+  ],
+  "resumen": "Un manual de conjuradores: enseña a trazar círculos, a preparar la vara y el cuchillo y a llamar a ánimas, elementales y demonios."
+ },
+ {
+  "id": "el-libro-de-san-cipriano",
+  "nombre": "El Libro de San Cipriano",
+  "nota": "El Libro de San Cipriano",
+  "autor": "Giona Sufurino",
+  "idioma": "Hebreo",
+  "ensenar": 25,
+  "estudio_maximo": 75,
+  "dominios": [
+   "Espíritu",
+   "Poder"
+  ],
+  "resumen": "Se dice que el Diablo lo entrega a sus favoritos. Lleva el nombre de Cipriano de Antioquía, el mago que, según la leyenda, se convirtió y murió mártir, y la tradición gallega y portuguesa lo asocia a tesoros enterrados y mouras encantadas."
+ },
+ {
+  "id": "el-libro-de-las-mentiras",
+  "nombre": "El Libro de las Mentiras",
+  "nota": "El Libro de las Mentiras",
+  "autor": "Beherito, según se rumorea",
+  "idioma": "Especial",
+  "ensenar": 10,
+  "estudio_maximo": 70,
+  "dominios": [
+   "Mente",
+   "Espíritu"
+  ],
+  "resumen": "Se dice que lo escribió el demonio Beherito, señor de las mentiras. Se lee siempre en la mejor lengua que conozca el lector."
+ },
+ {
+  "id": "gulandis-acolyti",
+  "nombre": "Gulandis Acolyti",
+  "nota": "Gulandis Acolyti",
+  "autor": "I.P.F. (y copistas anónimos)",
+  "idioma": "Latín",
+  "ensenar": 30,
+  "estudio_maximo": 60,
+  "dominios": [
+   "Cuerpo",
+   "Espíritu"
+  ],
+  "resumen": "Según los eruditos, el Gulandis Acolyti original lo escribió en el siglo IV un gnóstico de Corduba que firmaba «I.P.F.», y es el único libro que clasifica las fórmulas mágicas en siete vis."
+ },
+ {
+  "id": "libro-de-taurus",
+  "nombre": "Libro de Taurus",
+  "nota": "Libro de Taurus",
+  "autor": "Anónimo",
+  "idioma": "Árabe",
+  "ensenar": 40,
+  "estudio_maximo": 55,
+  "dominios": [
+   "Fuego",
+   "Mente"
+  ],
+  "resumen": "Un compendio de magia guerrera y de engaño, copiado en algún taller de al-Ándalus."
+ },
+ {
+  "id": "libro-de-la-potencia",
+  "nombre": "Libro de la Potencia",
+  "nota": "Libro de la Potencia",
+  "autor": "Aptolcater",
+  "idioma": "Griego",
+  "ensenar": 30,
+  "estudio_maximo": 50,
+  "dominios": [
+   "Mente",
+   "Poder"
+  ],
+  "resumen": "Un tratado sobre el dominio de las voluntades: enamorar, enemistar, someter. Su autor sólo se conoce por este nombre."
+ },
+ {
+  "id": "libro-de-la-sabiduria",
+  "nombre": "Libro de la Sabiduría",
+  "nota": "Libro de la Sabiduría",
+  "autor": "Anónimo",
+  "idioma": "Hebreo",
+  "ensenar": 0,
+  "estudio_maximo": 100,
+  "dominios": [
+   "Todos"
+  ],
+  "resumen": "La leyenda dice que se le entregó a Adán tras la caída y que pasó de generación en generación hasta el rey Salomón, que con él levantó el Templo y sometió a los demonios. Contiene todos los secretos del universo, incluso los que sólo conoce Dios. Su paradero se perdió a la muerte de Salomón."
+ },
+ {
+  "id": "libro-de-las-postrimerias",
+  "nombre": "Libro de las Postrimerías",
+  "nota": "Libro de las Postrimerías",
+  "autor": "Rham al Llois",
+  "idioma": "Árabe",
+  "ensenar": 30,
+  "estudio_maximo": 55,
+  "dominios": [
+   "Poder",
+   "Tierra"
+  ],
+  "resumen": "Un tratado sobre la guerra y el fin de los tiempos, escrito por un sabio de nombre a medias árabe y a medias catalán."
+ },
+ {
+  "id": "llave-de-salomon",
+  "nombre": "Llave de Salomón",
+  "nota": "Llave de Salomón",
+  "autor": "¿Salomón?",
+  "idioma": "Hebreo (en clave)",
+  "ensenar": 10,
+  "estudio_maximo": 95,
+  "dominios": [
+   "Espíritu",
+   "Poder"
+  ],
+  "resumen": "Se atribuye al rey Salomón. Está escrito en clave: para descifrarlo hay que cotejarlo con el Cantar de los Cantares en su versión hebrea original, y casi nadie lo sabe."
+ },
+ {
+  "id": "magice-rerum-daemonii-est",
+  "nombre": "Magice Rerum Daemonii Est",
+  "nota": "Magice Rerum Daemonii Est",
+  "autor": "Jaume de Fabregat",
+  "idioma": "Latín vulgar",
+  "ensenar": 25,
+  "estudio_maximo": 70,
+  "dominios": [
+   "Espíritu",
+   "Cuerpo"
+  ],
+  "resumen": "Su autor, un mallorquín, aplicó el método combinatorio de Ramon Llull a la goecia, justo lo contrario de lo que Llull pretendía."
+ },
+ {
+  "id": "picatrix",
+  "nombre": "Picatrix",
+  "nota": "Picatrix",
+  "autor": "Anónimo (atribuido a al-Majriti)",
+  "idioma": "Latín",
+  "ensenar": 30,
+  "estudio_maximo": 65,
+  "dominios": [
+   "Espíritu",
+   "Mente"
+  ],
+  "resumen": "Es una versión latina, bastante torpe, de un tratado árabe de magia astral conocido como Ghayat al-Hakim («La meta del sabio»), que se atribuía al astrónomo cordobés al-Majriti. En tiempos de Alfonso X se tradujo al castellano y después al latín; las copias que circulan por los reinos están plagadas de errores."
+ }
+]

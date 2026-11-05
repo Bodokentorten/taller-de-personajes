@@ -402,32 +402,38 @@
  },
  "formulas_iniciales": [
   {
-   "clave": "30–40%",
+   "min": 30,
+   "max": 40,
    "valor": "1",
    "azar": "1D3"
   },
   {
-   "clave": "41–50%",
+   "min": 41,
+   "max": 50,
    "valor": "2",
    "azar": "1D4"
   },
   {
-   "clave": "51–60%",
+   "min": 51,
+   "max": 60,
    "valor": "3",
    "azar": "1D6"
   },
   {
-   "clave": "61–70%",
+   "min": 61,
+   "max": 70,
    "valor": "4",
    "azar": "1D6+1"
   },
   {
-   "clave": "71–80%",
+   "min": 71,
+   "max": 80,
    "valor": "5",
    "azar": "1D6+2"
   },
   {
-   "clave": "81% o más",
+   "min": 81,
+   "max": null,
    "valor": "6",
    "azar": "1D10+1"
   }

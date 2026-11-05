@@ -285,9 +285,9 @@
     "Ghazi",
     "Ulema"
    ],
-   "avisos": [
-    "Sacerdote: solo como rabino o jazán de su credo (mejor la carrera Rabino)."
-   ]
+   "avisos_carrera": {
+    "Sacerdote": "Un judío solo es sacerdote como rabino o jazán de su credo (mejor la carrera Rabino)."
+   }
   },
   "estilos_habituales": [
    "Guardia de Aljama",
@@ -400,10 +400,11 @@
     "Muccadim",
     "Rabino"
    ],
-   "avisos": [
-    "Sacerdote: solo como alfaquí o imán de su credo (mejor la carrera Ulema).",
-    "No pueden ser alguaciles (Oficial) ni guerreros de la hueste real (sí de la de su señor)."
-   ]
+   "avisos_carrera": {
+    "Sacerdote": "Un mudéjar solo es sacerdote como alfaquí o imán de su credo (mejor la carrera Ulema).",
+    "Oficial": "Un mudéjar no puede ser alguacil (sí escribano, recaudador o almojarife).",
+    "Guerrero": "Un mudéjar no puede servir en la hueste real (sí en la de su señor)."
+   }
   },
   "estilos_habituales": [
    "Milicia de Concejo",
@@ -601,9 +602,9 @@
   "costumbres": "granadinas (el +40% cultural)",
   "restricciones": "Ninguna.",
   "requisitos": {
-   "avisos": [
-    "Sacerdote: solo como alfaquí o imán (mejor la carrera Ulema)."
-   ],
+   "avisos_carrera": {
+    "Sacerdote": "En Granada, el sacerdote es un alfaquí o un imán (mejor la carrera Ulema)."
+   },
    "carreras_prohibidas": [
     "Caballero de orden militar",
     "Goliardo",
