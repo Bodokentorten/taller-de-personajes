@@ -32,6 +32,8 @@ export interface EstadoFe {
   teologia: number;
   /** Ordo más alto que conoce al crear el personaje (0 = ninguno). */
   ordoMaximo: number;
+  /** Ordo que permitirían ahora sus PF y su Teología (puede ser mayor que el aprendido). */
+  ordoAlcanzable: number;
   rituales: Ritual[];
 }
 
@@ -46,18 +48,21 @@ export function estadoFe(
   const pf = pfMaximos(fe);
   const teologia = valorEspecialidad(hoja, 'conocimiento', 'Teología');
   const puedeObrar = Boolean(carrera?.fe) && fe >= FE_MINIMA_RITUALES && !conoceGoecia;
-  let ordoMaximo = 0;
+  let ordoAlcanzable = 0;
   if (puedeObrar) {
     for (const o of ORDINES) {
       if ('santidad' in o) break;
-      if (pf >= o.pf && teologia >= o.teologia) ordoMaximo = o.ordo;
+      if (pf >= o.pf && teologia >= o.teologia) ordoAlcanzable = o.ordo;
       else break; // se aprenden en orden
     }
   }
+  // Al crear el personaje conoce todo lo que alcanza; en juego, los ordos nuevos hay que estudiarlos.
+  const aprendido = p.experiencia?.ordo;
+  const ordoMaximo = aprendido === undefined ? ordoAlcanzable : Math.min(aprendido, ordoAlcanzable);
   const rituales = cat.rituales.filter(
     (r) => r.ordo <= ordoMaximo && r.credos.includes(p.origen.credo),
   );
-  return { fe, pf, puedeObrar, teologia, ordoMaximo, rituales };
+  return { fe, pf, puedeObrar, teologia, ordoMaximo, ordoAlcanzable, rituales };
 }
 
 export function validarFe(

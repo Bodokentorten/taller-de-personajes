@@ -97,7 +97,10 @@
       <tbody>
         {#each filas as f (f.p.id)}
           <tr>
-            <td><a href={enlacePaso(f.p.id, 'concepto')}>{f.p.nombre || 'Sin nombre'}</a></td>
+            <td>
+              <a href={enlacePaso(f.p.id, 'concepto')}>{f.p.nombre || 'Sin nombre'}</a>
+              <a class="jugar" href={enlacePaso(f.p.id, 'juego')} title="Vista de juego">⚔ Jugar</a>
+            </td>
             <td>{f.pueblo}</td>
             <td>{f.carrera}</td>
             <td>
@@ -161,6 +164,10 @@
   }
   .ok {
     color: var(--tinta-suave);
+  }
+  .jugar {
+    margin-left: 0.6rem;
+    font-size: 0.85em;
   }
   .pendiente {
     color: var(--rubrica);

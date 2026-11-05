@@ -46,7 +46,7 @@ export function estadoMagia(
       valor: valorDe(hoja, f.clave),
     };
   });
-  const formulas = p.magia.formulas
+  const formulas = [...p.magia.formulas, ...(p.magia.formulasAprendidas ?? [])]
     .map((id) => cat.formulas.find((x) => x.id === id))
     .filter((x): x is Formula => Boolean(x));
   return {

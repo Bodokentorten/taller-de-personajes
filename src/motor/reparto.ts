@@ -320,7 +320,8 @@ export function validarPiramide(p: Personaje, cat: Catalogo): Problema[] {
   const hoja = calcularHabilidades(p, cat);
   for (const a of asign) {
     const h = hoja.find((x) => x.clave === a.clave);
-    if (h && h.total > reglas.tope) {
+    // El tope se aplica a la creación: lo ganado con experiencia no cuenta.
+    if (h && h.total - (h.desglose.experiencia ?? 0) > reglas.tope) {
       res.push(
         error(
           'habilidades',

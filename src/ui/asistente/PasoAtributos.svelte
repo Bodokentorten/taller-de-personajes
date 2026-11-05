@@ -1,11 +1,12 @@
 <script lang="ts">
+  import { caracteristicasActuales } from '../../motor/personaje';
   import { LOCALIZACIONES } from '../../motor/atributos';
   import type { Hoja } from '../../motor/hoja';
   import type { Personaje } from '../../motor/personaje';
 
   let { p, hoja }: { p: Personaje; hoja: Hoja } = $props();
   const a = $derived(hoja.atributos);
-  const v = $derived(p.caracteristicas.valores);
+  const v = $derived(caracteristicasActuales(p));
 </script>
 
 <p>

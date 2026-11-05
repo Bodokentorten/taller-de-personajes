@@ -3,7 +3,13 @@ import type { Catalogo } from '../datos/catalogo';
 import type { Habilidad, ItemHabilidad, Pueblo } from '../datos/tipos';
 import type { Valores } from './caracteristicas';
 import { evaluar } from './formulas';
-import { clave, partirClave, type Fuente, type Personaje } from './personaje';
+import {
+  caracteristicasActuales,
+  clave,
+  partirClave,
+  type Fuente,
+  type Personaje,
+} from './personaje';
 
 export type FuenteTotal = Fuente | 'base' | 'origen';
 
@@ -60,7 +66,7 @@ export function nombreHabilidad(cat: Catalogo, c: string): string {
  * aparecen por especialidad.
  */
 export function calcularHabilidades(p: Personaje, cat: Catalogo): ValorHabilidad[] {
-  const v = p.caracteristicas.valores;
+  const v = caracteristicasActuales(p);
   const pueblo = cat.pueblos.find((x) => x.id === p.origen.pueblo);
   const mapa = new Map<string, ValorHabilidad>();
 

@@ -1,7 +1,7 @@
 // Paso 8: Pasiones (fuente: «Pasiones y Equipo Inicial») y la Pasión Fe («05 - Magia y Fe/Fe»).
 import type { Catalogo } from '../datos/catalogo';
 import { evaluar, FaltaSujeto } from './formulas';
-import type { Pasion, Personaje } from './personaje';
+import { caracteristicasActuales, type Pasion, type Personaje } from './personaje';
 import { aviso, error, type Problema } from './resultado';
 
 /** Bono inicial según el orden de importancia: +40, +30 y +20. */
@@ -12,8 +12,9 @@ export function valorPasion(x: Pasion, p: Personaje, cat: Catalogo): number | un
   const tipo = cat.reglas.pasiones[x.tipo];
   if (!tipo) return undefined;
   try {
-    const base = evaluar(tipo.formula, { ...p.caracteristicas.valores, SUJETO: x.sujeto });
-    return base + BONO_PASION[x.orden] + (x.extra ?? 0);
+    const base = evaluar(tipo.formula, { ...caracteristicasActuales(p), SUJETO: x.sujeto });
+    const bono = x.adquirida ? 0 : BONO_PASION[x.orden];
+    return base + bono + (x.extra ?? 0) + (x.experiencia ?? 0);
   } catch (e) {
     if (e instanceof FaltaSujeto) return undefined;
     throw e;
@@ -36,7 +37,9 @@ export function valorFe(p: Personaje, cat: Catalogo): number {
 
 export function validarPasiones(p: Personaje, cat: Catalogo): Problema[] {
   const res: Problema[] = [];
-  if (p.pasiones.length > MAX_PASIONES) {
+  // Las reglas de la creación solo se aplican a las Pasiones iniciales.
+  const iniciales = p.pasiones.filter((x) => !x.adquirida);
+  if (iniciales.length > MAX_PASIONES) {
     res.push(
       error(
         'pasiones',
@@ -45,7 +48,7 @@ export function validarPasiones(p: Personaje, cat: Catalogo): Problema[] {
       ),
     );
   }
-  const ordenes = p.pasiones.map((x) => x.orden);
+  const ordenes = iniciales.map((x) => x.orden);
   if (new Set(ordenes).size !== ordenes.length) {
     res.push(
       error(

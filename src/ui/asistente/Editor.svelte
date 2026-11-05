@@ -1,6 +1,6 @@
 <script lang="ts">
   import { untrack } from 'svelte';
-  import { biblioteca } from '../../almacen/biblioteca.svelte';
+  import { autoguardar } from '../../almacen/autoguardado.svelte';
   import { catalogo } from '../../datos/catalogo';
   import { calcularHoja } from '../../motor/hoja';
   import type { Personaje } from '../../motor/personaje';
@@ -30,11 +30,7 @@
   let p = $state<Personaje>(structuredClone(untrack(() => $state.snapshot(original)) as Personaje));
 
   // Autoguardado: cualquier cambio en el personaje se guarda al poco tiempo.
-  $effect(() => {
-    JSON.stringify(p); // lee todo el objeto para seguir los cambios en profundidad
-    const t = setTimeout(() => biblioteca.actualizar(p), 300);
-    return () => clearTimeout(t);
-  });
+  autoguardar(() => p);
 
   const hoja = $derived(calcularHoja(p, catalogo));
   const pasos = $derived(pasosVisibles(p, catalogo));
@@ -79,6 +75,10 @@
 <div class="asistente">
   <nav class="pasos" aria-label="Pasos de la creación">
     <a class="volver" href="#/">← Mis personajes</a>
+    <p class="modos">
+      <a href={enlacePaso(p.id, 'juego')}>⚔ Vista de juego</a> ·
+      <a href={enlacePaso(p.id, 'mejora')}>Mejora</a>
+    </p>
     <ol>
       {#each pasos as d, i (d.id)}
         {@const estado = estadoPaso(d, hoja.problemas)}

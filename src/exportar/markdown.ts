@@ -8,7 +8,12 @@ import { armaduraPorLocalizacion } from '../motor/equipo';
 import { normal, type ValorHabilidad } from '../motor/habilidades';
 import { calcularHoja, type Hoja } from '../motor/hoja';
 import { BONO_PASION } from '../motor/pasiones';
-import { CAMPAÑA_POR_DEFECTO, type Campaña, type Personaje } from '../motor/personaje';
+import {
+  CAMPAÑA_POR_DEFECTO,
+  caracteristicasActuales,
+  type Campaña,
+  type Personaje,
+} from '../motor/personaje';
 import { claseSocial } from '../motor/origen';
 
 /** Enlace de Obsidian, con alias si difiere del título. */
@@ -137,7 +142,7 @@ export function exportarMarkdown(
 ): string {
   const hoja = calcularHoja(p, cat, campaña);
   const a = hoja.atributos;
-  const v = p.caracteristicas.valores;
+  const v = caracteristicasActuales(p);
   const cultura = cat.culturas.find((x) => x.id === p.origen.cultura);
   const reino = cat.reinos.find((x) => x.id === p.origen.reino);
   const pueblo = cat.pueblos.find((x) => x.id === p.origen.pueblo);

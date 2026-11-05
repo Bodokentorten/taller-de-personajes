@@ -9,7 +9,12 @@ import { calcularHabilidades, type ValorHabilidad } from './habilidades';
 import { estadoMagia, validarMagia, type EstadoMagia } from './magia';
 import { claseSocial, validarCarrera, validarOrigen } from './origen';
 import { validarPasiones, valorPasion } from './pasiones';
-import { CAMPAÑA_POR_DEFECTO, type Campaña, type Personaje } from './personaje';
+import {
+  CAMPAÑA_POR_DEFECTO,
+  caracteristicasActuales,
+  type Campaña,
+  type Personaje,
+} from './personaje';
 import { validarReparto } from './reparto';
 import { aviso, error, type Problema } from './resultado';
 
@@ -91,12 +96,12 @@ export function calcularHoja(
       aviso(
         'equipo',
         'carga',
-        `Lleva ${equipo.car} de CAR: va ${equipo.estado} (FUE×2 = ${p.caracteristicas.valores.FUE * 2}).`,
+        `Lleva ${equipo.car} de CAR: va ${equipo.estado} (FUE×2 = ${caracteristicasActuales(p).FUE * 2}).`,
       ),
     );
   }
   return {
-    atributos: calcularAtributos(p.caracteristicas.valores, cat.reglas),
+    atributos: calcularAtributos(caracteristicasActuales(p), cat.reglas),
     habilidades,
     pasiones: p.pasiones.map((x) => ({
       nombre: x.nombre,
@@ -107,8 +112,8 @@ export function calcularHoja(
     magia,
     equipo,
     clase: claseSocial(p, cat)?.clase,
-    estres: 0,
-    corrupcion: 0,
+    estres: p.juego?.estres ?? 0,
+    corrupcion: p.juego?.corrupcion ?? 0,
     problemas,
     valido: !problemas.some((x) => x.gravedad === 'error'),
   };

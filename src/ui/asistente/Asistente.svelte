@@ -2,6 +2,8 @@
   // Busca el personaje en la biblioteca y abre el editor (o avisa si no está).
   import { biblioteca } from '../../almacen/biblioteca.svelte';
   import Editor from './Editor.svelte';
+  import Juego from '../juego/Juego.svelte';
+  import Mejora from '../juego/Mejora.svelte';
 
   interface Props {
     id: string;
@@ -12,7 +14,11 @@
 </script>
 
 {#if original}
-  {#key id}<Editor {original} {paso} />{/key}
+  {#key `${id}-${paso === 'juego' || paso === 'mejora' ? paso : 'editor'}`}
+    {#if paso === 'juego'}<Juego {original} />
+    {:else if paso === 'mejora'}<Mejora {original} />
+    {:else}<Editor {original} {paso} />{/if}
+  {/key}
 {:else}
   <article class="folio">
     <h1>Personaje no encontrado</h1>

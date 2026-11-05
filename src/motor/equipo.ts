@@ -1,7 +1,7 @@
 // Equipo comprado: resuelve los ids con prefijo de catálogo y calcula coste y carga.
 import type { Catalogo } from '../datos/catalogo';
 import { cargaTotal, estadoCarga, type EstadoCarga } from './economia';
-import type { Personaje } from './personaje';
+import { caracteristicasActuales, type Personaje } from './personaje';
 
 export type TipoObjeto = 'arma' | 'distancia' | 'escudo' | 'armadura' | 'casco' | 'equipo';
 
@@ -126,7 +126,7 @@ export function resumenEquipo(
     restante: dinero === undefined ? undefined : Math.round((dinero - coste) * 10) / 10,
     car,
     carArmadura,
-    estado: estadoCarga(car, p.caracteristicas.valores.FUE),
+    estado: estadoCarga(car, caracteristicasActuales(p).FUE),
   };
 }
 

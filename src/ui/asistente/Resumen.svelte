@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { caracteristicasActuales } from '../../motor/personaje';
   // Resumen vivo de la ficha, en la columna derecha del asistente.
   import { catalogo } from '../../datos/catalogo';
   import { CARACTERISTICAS } from '../../datos/tipos';
@@ -42,7 +43,7 @@
         >{#each CARACTERISTICAS as c (c)}<th>{c}</th>{/each}</tr
       >
       <tr
-        >{#each CARACTERISTICAS as c (c)}<td>{p.caracteristicas.valores[c]}</td>{/each}</tr
+        >{#each CARACTERISTICAS as c (c)}<td>{caracteristicasActuales(p)[c]}</td>{/each}</tr
       >
     </tbody>
   </table>

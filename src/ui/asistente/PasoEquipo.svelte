@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { caracteristicasActuales } from '../../motor/personaje';
   import { catalogo } from '../../datos/catalogo';
   import { catalogoEquipo } from '../../motor/equipo';
   import type { Hoja } from '../../motor/hoja';
@@ -47,7 +48,7 @@
 <p class="cuentas">
   Dinero: <strong>{mrs(r.dinero)}</strong> · Gastado: {mrs(r.coste)} · Queda:
   <strong class:pendiente={(r.restante ?? 0) < 0}>{mrs(r.restante)}</strong>
-  · Carga: {r.car} (FUE×2 = {p.caracteristicas.valores.FUE * 2}, {r.estado})
+  · Carga: {r.car} (FUE×2 = {caracteristicasActuales(p).FUE * 2}, {r.estado})
 </p>
 <p class="detalle">
   Además de lo que compre, tiene la ropa, las armas y el transporte propios de su estamento (paso

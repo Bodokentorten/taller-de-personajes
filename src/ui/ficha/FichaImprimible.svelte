@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { caracteristicasActuales } from '../../motor/personaje';
   // Ficha propia de la ambientación en tres páginas A4, para imprimir o guardar en PDF desde el navegador.
   import { biblioteca } from '../../almacen/biblioteca.svelte';
   import { catalogo } from '../../datos/catalogo';
@@ -150,7 +151,7 @@
             >{#each CARACTERISTICAS as c (c)}<th>{c}</th>{/each}</tr
           >
           <tr
-            >{#each CARACTERISTICAS as c (c)}<td>{p.caracteristicas.valores[c]}</td>{/each}</tr
+            >{#each CARACTERISTICAS as c (c)}<td>{caracteristicasActuales(p)[c]}</td>{/each}</tr
           >
         </tbody>
       </table>
@@ -384,7 +385,7 @@
             </tbody>
           </table>
           <p>
-            Carga: {hoja.equipo.car} de {p.caracteristicas.valores.FUE * 2} · Dinero: {hoja.equipo
+            Carga: {hoja.equipo.car} de {caracteristicasActuales(p).FUE * 2} · Dinero: {hoja.equipo
               .restante ?? '—'} mrs <span class="caja ancha">&nbsp;</span>
           </p>
         </div>

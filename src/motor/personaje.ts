@@ -29,8 +29,12 @@ export interface Pasion {
   sujeto?: { POD?: number; CAR?: number };
   /** Es la Pasión Fe del credo. */
   fe?: boolean;
-  /** Puntos de la pirámide o de experiencia, aparte del bono inicial. */
+  /** Puntos de la pirámide, aparte del bono inicial. */
   extra?: number;
+  /** Puntos ganados (o perdidos) en juego con tiradas de experiencia. */
+  experiencia?: number;
+  /** Adquirida en juego: empieza en su valor base (sin bono) y no cuenta para las tres de la creación. */
+  adquirida?: boolean;
 }
 
 export interface FuenteMistica {
@@ -56,6 +60,8 @@ export interface Personaje {
     metodo: MetodoCaracteristicas;
     valores: Record<Caracteristica, number>;
     tiradas?: Partial<Record<Caracteristica, Tirada>>;
+    /** Aumentos ganados con experiencia (no cuentan para validar la creación). */
+    mejoras?: Partial<Record<Caracteristica, number>>;
   };
 
   origen: {
@@ -78,7 +84,14 @@ export interface Personaje {
   eleccionesCultura: string[];
   pasiones: Pasion[];
 
-  magia: { fuentes: FuenteMistica[]; formulas: string[]; formulasAlAzar?: boolean };
+  magia: {
+    fuentes: FuenteMistica[];
+    /** Fórmulas iniciales (las que se validan al crear el personaje). */
+    formulas: string[];
+    formulasAlAzar?: boolean;
+    /** Fórmulas aprendidas durante el juego, con maestro o grimorio. */
+    formulasAprendidas?: string[];
+  };
   /** Rituales conocidos: se calculan por ordo, pero se guardan para la ficha. */
   rituales: string[];
 
@@ -91,6 +104,10 @@ export interface Personaje {
   };
   aspecto: string;
   notas: string;
+  /** Estado durante la partida (vista de juego). */
+  juego?: EstadoJuego;
+  /** Tiradas de experiencia, historial de mejoras y entrenamiento. */
+  experiencia?: Experiencia;
   /** Para el frontmatter del vault («Plantilla - Personaje (PJ o PNJ)»). */
   partida?: string;
   jugador?: string;
@@ -165,4 +182,88 @@ export function clave(habilidad: string, especialidad?: string): string {
 export function partirClave(c: string): { habilidad: string; especialidad?: string } {
   const i = c.indexOf(':');
   return i < 0 ? { habilidad: c } : { habilidad: c.slice(0, i), especialidad: c.slice(i + 1) };
+}
+
+export interface EstadoJuego {
+  /** PG actuales por localización (si falta, están al máximo). */
+  pg: Partial<Record<string, number>>;
+  notasHeridas: Partial<Record<string, string>>;
+  pm?: number;
+  pf?: number;
+  suerte?: number;
+  /** Índice del nivel de fatiga (0 = Fresco). */
+  fatiga: number;
+  estres: number;
+  aterrorizado: boolean;
+  corrupcion: number;
+  municion: { nombre: string; cantidad: number }[];
+  notasSesion: string;
+  /** Habilidades marcadas durante la sesión (éxito en tensión) y pifiadas. */
+  marcadas: string[];
+  pifias: string[];
+}
+
+export type TipoCambio =
+  | 'otorgadas'
+  | 'habilidad'
+  | 'pifia'
+  | 'pasion'
+  | 'nueva-pasion'
+  | 'nueva-habilidad'
+  | 'caracteristica'
+  | 'entrenamiento'
+  | 'formula'
+  | 'ordo'
+  | 'ajuste';
+
+export interface Cambio {
+  fecha: string;
+  entrega: number;
+  tipo: TipoCambio;
+  /** Clave de habilidad, índice de pasión o característica. */
+  objeto?: string;
+  detalle: string;
+  /** Variación de la puntuación (o de tiradas, en «otorgadas»). */
+  delta: number;
+  /** Tiradas de experiencia gastadas. */
+  coste: number;
+}
+
+export interface Experiencia {
+  /** Tiradas de experiencia disponibles. */
+  tiradas: number;
+  /** Número de la entrega actual: cada habilidad solo se tira una vez por entrega. */
+  entrega: number;
+  historial: Cambio[];
+  /** Habilidades entrenadas que aún no han subido por experiencia (no se pueden volver a entrenar). */
+  entrenadas: string[];
+  /** Ordo de fe aprendido durante el juego (si falta, el que permitan PF y Teología al crear). */
+  ordo?: number;
+}
+
+export function juegoVacio(): EstadoJuego {
+  return {
+    pg: {},
+    notasHeridas: {},
+    fatiga: 0,
+    estres: 0,
+    aterrorizado: false,
+    corrupcion: 0,
+    municion: [],
+    notasSesion: '',
+    marcadas: [],
+    pifias: [],
+  };
+}
+
+export function experienciaVacia(): Experiencia {
+  return { tiradas: 0, entrega: 0, historial: [], entrenadas: [] };
+}
+
+/** Características actuales: las de creación más las mejoras ganadas en juego. */
+export function caracteristicasActuales(p: Personaje): Record<Caracteristica, number> {
+  const v = { ...p.caracteristicas.valores };
+  for (const [c, n] of Object.entries(p.caracteristicas.mejoras ?? {}))
+    v[c as Caracteristica] += n ?? 0;
+  return v;
 }
