@@ -3,6 +3,7 @@
   import { ES_DJ, cargarModuloDJ } from './edicion';
   import Biblioteca from './ui/Biblioteca.svelte';
   import Asistente from './ui/asistente/Asistente.svelte';
+  import FichaImprimible from './ui/ficha/FichaImprimible.svelte';
   import { ruta } from './ui/ruta.svelte';
 
   type Tema = 'pergamino' | 'vela';
@@ -62,7 +63,9 @@
   </button>
 </header>
 
-{#if vista === 'personaje' && ruta.partes[1]}
+{#if vista === 'personaje' && ruta.partes[1] && ruta.partes[2] === 'imprimir'}
+  <FichaImprimible id={ruta.partes[1]} />
+{:else if vista === 'personaje' && ruta.partes[1]}
   <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
 {:else}
   <main class="pagina">

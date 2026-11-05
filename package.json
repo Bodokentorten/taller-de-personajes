@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "extraer": "python -I ../extractor/extraer.py && python -I ../extractor/validar.py",
+    "validar-md": "python -I ../extractor/validar_md.py src/exportar/__golden__/rodrigo.md src/exportar/__golden__/mose.md src/exportar/__golden__/joan.md --ignorar \"La sombra del Temple\"",
     "dev": "vite --mode jugador",
     "dev:dj": "vite --mode dj",
     "build": "npm run build:jugador",

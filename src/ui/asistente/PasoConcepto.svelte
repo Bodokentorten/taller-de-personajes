@@ -48,6 +48,25 @@
       placeholder="Escudero castellano que busca recuperar la honra de su linaje"
     />
   </label>
+  <label>
+    Partida
+    <input type="text" bind:value={p.partida} placeholder="La sombra del Temple" />
+  </label>
+  <label>
+    Jugador
+    <input type="text" bind:value={p.jugador} />
+  </label>
+  <label>
+    Año de la partida
+    <input
+      type="number"
+      min="1300"
+      max="1400"
+      bind:value={p.año}
+      placeholder="1350"
+      class="corto"
+    />
+  </label>
   <label class="ancho">
     Aspecto y carácter
     <textarea rows="3" bind:value={p.aspecto}></textarea>

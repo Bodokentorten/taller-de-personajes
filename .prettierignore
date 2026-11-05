@@ -3,3 +3,4 @@ dist-dj/
 node_modules/
 package-lock.json
 src/datos/
+src/**/__golden__/

@@ -91,6 +91,10 @@ export interface Personaje {
   };
   aspecto: string;
   notas: string;
+  /** Para el frontmatter del vault («Plantilla - Personaje (PJ o PNJ)»). */
+  partida?: string;
+  jugador?: string;
+  año?: number;
 }
 
 export type TablaTrasfondo =

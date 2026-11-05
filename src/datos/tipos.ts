@@ -224,6 +224,16 @@ export interface Arma {
   grupo?: string;
   aclaracion?: string;
   dano: string;
+  /** Cuerpo a cuerpo y escudos: tamaño y alcance. */
+  tam?: string;
+  alcance?: string;
+  /** A distancia: si suma el Modificador de Daño, potencia y recarga. */
+  suma_md?: boolean;
+  potencia?: string;
+  recarga?: string;
+  efectos: string[];
+  rasgos?: string[];
+  notas?: string;
   car: number;
   pa: number | null;
   pg: number | null;

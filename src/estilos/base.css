@@ -235,3 +235,9 @@ legend {
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* Ficha imprimible: A4 con márgenes propios */
+@page {
+  size: A4;
+  margin: 12mm 14mm;
+}

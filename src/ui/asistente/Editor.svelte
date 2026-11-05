@@ -8,6 +8,7 @@
   import { enlacePaso, ruta } from '../ruta.svelte';
   import { estadoPaso, pasosVisibles } from './pasos';
   import Resumen from './Resumen.svelte';
+  import Exportar from './Exportar.svelte';
   import PasoConcepto from './PasoConcepto.svelte';
   import PasoCaracteristicas from './PasoCaracteristicas.svelte';
   import PasoAtributos from './PasoAtributos.svelte';
@@ -102,6 +103,7 @@
       {/each}
     </ol>
     <p class="atajo">Ctrl + ← / → para cambiar de paso</p>
+    <Exportar {p} {hoja} />
   </nav>
 
   <main class="formulario">
