@@ -1,0 +1,1735 @@
+[
+ {
+  "id": "atletismo",
+  "nombre": "Atletismo",
+  "nota": "Atletismo",
+  "tipo": "estandar",
+  "nombre_en": "Athletics",
+  "formula": "FUE+DES",
+  "caracteristicas": [
+   "FUE",
+   "DES"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "animador",
+   "caballero-de-orden-militar",
+   "cazador",
+   "derviche",
+   "explorador",
+   "ghazi",
+   "goliardo",
+   "granjero",
+   "guerrero",
+   "infanzon",
+   "jugador",
+   "ladron",
+   "malsin",
+   "marinero",
+   "minero",
+   "mistico",
+   "pardo",
+   "pescador"
+  ],
+  "resumen": "Atletismo abarca una amplia gama de actividades físicas vigorosas y de coordinación corporal, incluyendo correr, lanzar objetos, saltar y trepar. También se emplea para mantener el equilibrio cuando el personaje no posee la habilidad profesional Acrobacias."
+ },
+ {
+  "id": "cantar",
+  "nombre": "Cantar",
+  "nota": "Cantar",
+  "tipo": "estandar",
+  "nombre_en": "Sing",
+  "formula": "POD+CAR",
+  "caracteristicas": [
+   "POD",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador",
+   "cortesana",
+   "goliardo",
+   "medico",
+   "minero",
+   "qaina"
+  ],
+  "resumen": "Entonar una melodía está cubierto por Cantar, desde cánticos monótonos hasta arias complejas. El canto es una parte inherente de la mayoría de las culturas, una fuente principal de entretenimiento y quizás utilizada en sus rituales."
+ },
+ {
+  "id": "combate-sin-armas",
+  "nombre": "Combate sin armas",
+  "nota": "Combate sin armas",
+  "tipo": "estandar",
+  "nombre_en": "Unarmed",
+  "formula": "FUE+DES",
+  "caracteristicas": [
+   "FUE",
+   "DES"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "guerrero",
+   "muccadim"
+  ],
+  "resumen": "Combate sin armas es una Habilidad de combate universal común a todos los personajes, que mide la capacidad de defenderse sin la ayuda de armas. La habilidad Combate sin armas cubre las técnicas de pelea y lucha libre conocidas por esa cultura."
+ },
+ {
+  "id": "conducir",
+  "nombre": "Conducir",
+  "nota": "Conducir",
+  "tipo": "estandar",
+  "nombre_en": "Drive",
+  "formula": "DES+POD",
+  "caracteristicas": [
+   "DES",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado",
+   "nomada"
+  ],
+  "carreras": [
+   "artesano",
+   "contrabandista",
+   "cuidador-de-bestias",
+   "embaucador",
+   "granjero",
+   "jugador",
+   "mediero",
+   "mercader",
+   "sirviente"
+  ],
+  "resumen": "Conducir cubre el control de vehículos con ruedas o de tracción animal, ya sea por una o más bestias de carga o propulsados por medios más esotéricos, como carros, carretas, carruajes o trineos."
+ },
+ {
+  "id": "costumbres",
+  "nombre": "Costumbres",
+  "nota": "Costumbres",
+  "tipo": "estandar",
+  "nombre_en": "Customs",
+  "formula": "INT x2 +40",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "alquimista",
+   "ama",
+   "brujo",
+   "chaman",
+   "contrabandista",
+   "cortesana",
+   "cortesano",
+   "erudito",
+   "goliardo",
+   "mago",
+   "mediero",
+   "oficial",
+   "politico",
+   "qaina",
+   "rabino",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Costumbres representa el conocimiento del personaje sobre su propia comunidad: sus códigos sociales, ritos, rituales, tabúes, etc. La habilidad se utiliza cuando es esencial interpretar o realizar con precisión cualquier costumbre socialmente importante o comportarse de una manera particular."
+ },
+ {
+  "id": "danza",
+  "nombre": "Danza",
+  "nota": "Danza",
+  "tipo": "estandar",
+  "nombre_en": "Dance",
+  "formula": "DES+CAR",
+  "caracteristicas": [
+   "DES",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador",
+   "chaman",
+   "cortesana",
+   "cortesano",
+   "derviche",
+   "medico",
+   "qaina",
+   "sacerdote"
+  ],
+  "resumen": "Casi todas las culturas utilizan la danza de alguna manera, ya sea como recreación o como parte de rituales importantes. Puede ser un baile de corte, un baile de guerra o un conjunto simple de movimientos que acompañan una oración o un canto ceremonial."
+ },
+ {
+  "id": "engano",
+  "nombre": "Engaño",
+  "nota": "Engaño",
+  "tipo": "estandar",
+  "nombre_en": "Deceit",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "animador",
+   "brujo",
+   "chaman",
+   "contrabandista",
+   "cortesana",
+   "cortesano",
+   "embaucador",
+   "goliardo",
+   "ladron",
+   "mago",
+   "malsin",
+   "mediero",
+   "mendigo",
+   "mercader",
+   "oficial",
+   "politico",
+   "qaina",
+   "sacerdote",
+   "sirviente"
+  ],
+  "resumen": "Engaño cubre todos los casos en los que un personaje intenta enmascarar la verdad y ofrecer un engaño de algún tipo: mentir descaradamente, engañar a un guardia o incluso ir de farol (o hacer trampas) durante un juego de cartas."
+ },
+ {
+  "id": "entorno",
+  "nombre": "Entorno",
+  "nota": "Entorno",
+  "tipo": "estandar",
+  "nombre_en": "Locale",
+  "formula": "INT x2",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "civilizado",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "artesano",
+   "brujo",
+   "cazador",
+   "chaman",
+   "contrabandista",
+   "cortesano",
+   "cuidador-de-bestias",
+   "embaucador",
+   "erudito",
+   "granjero",
+   "jugador",
+   "mago",
+   "malsin",
+   "marinero",
+   "medico",
+   "mediero",
+   "mendigo",
+   "mercader",
+   "minero",
+   "oficial",
+   "pastor",
+   "pescador",
+   "politico",
+   "rabino",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Entorno mide el conocimiento de un personaje sobre la flora, fauna, terreno y clima locales en el área donde ha pasado gran parte de su vida, generalmente dentro de su comunidad."
+ },
+ {
+  "id": "esquivar",
+  "nombre": "Esquivar",
+  "nota": "Esquivar",
+  "tipo": "estandar",
+  "nombre_en": "Evade",
+  "formula": "DES x2",
+  "caracteristicas": [
+   "DES",
+   "DES"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "caballero-de-orden-militar",
+   "derviche",
+   "embaucador",
+   "ghazi",
+   "goliardo",
+   "guerrero",
+   "infanzon",
+   "ladron",
+   "mistico",
+   "muccadim",
+   "pardo"
+  ],
+  "resumen": "Esquivar se utiliza para escapar de un peligro inminente observado y puede usarse contra Armas a distancia (lanzándose a cubierto, por ejemplo), evitar trampas, cambiar la distancia de enfrentamiento en combate y, en general, apartarse de un posible peligro físico."
+ },
+ {
+  "id": "estilo-de-combate",
+  "nombre": "Estilo de combate",
+  "nota": "Estilo de combate",
+  "tipo": "estandar",
+  "nombre_en": "Combat Style",
+  "formula": "FUE+DES",
+  "caracteristicas": [
+   "FUE",
+   "DES"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "almogavar",
+   "caballero-de-orden-militar",
+   "cazador",
+   "explorador",
+   "ghazi",
+   "guerrero",
+   "infanzon",
+   "ladron",
+   "marinero",
+   "mistico",
+   "muccadim",
+   "pardo",
+   "pastor"
+  ],
+  "resumen": "Cada Estilo de combate es la habilidad para utilizar las armas que se esperan de una profesión o cultura en la ambientación. La mayoría de las tradiciones de lucha incluyen entrenamiento en múltiples armas, junto con las técnicas necesarias para usarlas todas eficazmente, ya sea individualmente o en combinación.…"
+ },
+ {
+  "id": "fuerza-de-voluntad",
+  "nombre": "Fuerza de voluntad",
+  "nota": "Fuerza de voluntad",
+  "tipo": "estandar",
+  "nombre_en": "Willpower",
+  "formula": "POD x2",
+  "caracteristicas": [
+   "POD",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "alquimista",
+   "ama",
+   "artesano",
+   "brujo",
+   "caballero-de-orden-militar",
+   "chaman",
+   "cuidador-de-bestias",
+   "derviche",
+   "erudito",
+   "ghazi",
+   "jugador",
+   "mago",
+   "medico",
+   "minero",
+   "mistico",
+   "oficial",
+   "rabino",
+   "sacerdote",
+   "ulema"
+  ],
+  "resumen": "Fuerza de voluntad es una medida de la capacidad de un personaje para concentrarse, canalizar su fuerza de voluntad en una dirección particular o endurecer su psique ante un posible impacto mental. También es una medida de la resolución personal."
+ },
+ {
+  "id": "influencia",
+  "nombre": "Influencia",
+  "nota": "Influencia",
+  "tipo": "estandar",
+  "nombre_en": "Influence",
+  "formula": "CAR x2",
+  "caracteristicas": [
+   "CAR",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "ama",
+   "animador",
+   "artesano",
+   "brujo",
+   "chaman",
+   "contrabandista",
+   "cortesana",
+   "cortesano",
+   "cuidador-de-bestias",
+   "embaucador",
+   "erudito",
+   "goliardo",
+   "mago",
+   "malsin",
+   "medico",
+   "mediero",
+   "mendigo",
+   "mercader",
+   "muccadim",
+   "oficial",
+   "politico",
+   "qaina",
+   "rabino",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Es una medida de la capacidad de un personaje para persuadir a otros, a través del carisma personal, hacia una forma de comportamiento deseada. Se utiliza en una amplia variedad de situaciones; desde cambiar la opinión de alguien hasta sobornar a un funcionario o guardia."
+ },
+ {
+  "id": "lengua-materna",
+  "nombre": "Lengua materna",
+  "nota": "Lengua materna",
+  "tipo": "estandar",
+  "nombre_en": "Native Tongue",
+  "formula": "INT+CAR +40",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "erudito",
+   "politico",
+   "rabino",
+   "ulema"
+  ],
+  "resumen": "Lengua materna es la capacidad de hablar el idioma propio aprendido durante la crianza en la cultura natal del personaje. Mide la articulación, la elocuencia y la riqueza de vocabulario del hablante."
+ },
+ {
+  "id": "montar",
+  "nombre": "Montar",
+  "nota": "Montar",
+  "tipo": "estandar",
+  "nombre_en": "Ride",
+  "formula": "DES+POD",
+  "caracteristicas": [
+   "DES",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada"
+  ],
+  "carreras": [
+   "caballero-de-orden-militar",
+   "cazador",
+   "cuidador-de-bestias",
+   "ghazi",
+   "granjero",
+   "infanzon",
+   "jugador",
+   "mercader",
+   "pardo",
+   "pastor"
+  ],
+  "resumen": "Montar cubre la capacidad de controlar y permanecer montado sobre aquellas criaturas que están entrenadas para ser montadas. La habilidad se puede aplicar a una amplia gama de bestias, desde mulas hasta elefantes; incluso criaturas voladoras o nadadoras como águilas gigantes o delfines."
+ },
+ {
+  "id": "musculatura",
+  "nombre": "Musculatura",
+  "nota": "Musculatura",
+  "tipo": "estandar",
+  "nombre_en": "Brawn",
+  "formula": "FUE+TAM",
+  "caracteristicas": [
+   "FUE",
+   "TAM"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "primitivo"
+  ],
+  "carreras": [
+   "animador",
+   "artesano",
+   "caballero-de-orden-militar",
+   "granjero",
+   "guerrero",
+   "infanzon",
+   "jugador",
+   "marinero",
+   "minero",
+   "muccadim"
+  ],
+  "resumen": "Musculatura es la aplicación eficiente de la técnica al utilizar la fuerza física bruta. La habilidad cubre actos de fuerza aplicada, incluyendo levantar pesos, derribar puertas y concursos de fuerza."
+ },
+ {
+  "id": "nadar",
+  "nombre": "Nadar",
+  "nota": "Nadar",
+  "tipo": "estandar",
+  "nombre_en": "Swim",
+  "formula": "FUE+CON",
+  "caracteristicas": [
+   "FUE",
+   "CON"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "explorador",
+   "marinero",
+   "pescador"
+  ],
+  "resumen": "Sin desarrollo, la capacidad de nadar se limita a ser capaz de chapotear y mantener la cabeza fuera del agua durante un corto periodo de tiempo. Los porcentajes más altos en Nadar indican la capacidad de desenvolverse en aguas más profundas y fuertes, con menor riesgo de ahogarse."
+ },
+ {
+  "id": "navegacion-fluvial",
+  "nombre": "Navegación fluvial",
+  "nota": "Navegación fluvial",
+  "tipo": "estandar",
+  "nombre_en": "Boating",
+  "formula": "FUE+CON",
+  "caracteristicas": [
+   "FUE",
+   "CON"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "marinero",
+   "mercader",
+   "pescador"
+  ],
+  "resumen": "La habilidad de Navegación fluvial cubre el manejo de pequeñas embarcaciones en ríos, lagos y cerca de la costa. Las embarcaciones apropiadas son generalmente botes, canoas o balsas que recorren distancias cortas y no son aptas para los rigores de alta mar."
+ },
+ {
+  "id": "ocultar",
+  "nombre": "Ocultar",
+  "nota": "Ocultar",
+  "tipo": "estandar",
+  "nombre_en": "Conceal",
+  "formula": "DES+POD",
+  "caracteristicas": [
+   "DES",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "contrabandista",
+   "embaucador",
+   "mendigo"
+  ],
+  "resumen": "Ocultar es el contrapunto de Sigilo, siendo la ocultación de objetos grandes en lugar del propio personaje. Por ejemplo, Ocultar podría usarse para esconder un carro detrás de unas rocas, o barrer las rodadas que dejó para que no se pueda seguir su rastro."
+ },
+ {
+  "id": "percepcion",
+  "nombre": "Percepción",
+  "nota": "Percepción",
+  "tipo": "estandar",
+  "nombre_en": "Perception",
+  "formula": "INT+POD",
+  "caracteristicas": [
+   "INT",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "ama",
+   "artesano",
+   "cazador",
+   "cortesana",
+   "cortesano",
+   "derviche",
+   "erudito",
+   "explorador",
+   "ghazi",
+   "granjero",
+   "jugador",
+   "ladron",
+   "mago",
+   "malsin",
+   "mediero",
+   "minero",
+   "mistico",
+   "muccadim",
+   "oficial",
+   "pardo",
+   "pastor",
+   "pescador",
+   "politico",
+   "qaina",
+   "rabino",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Percepción se utiliza tanto para la observación pasiva como para la detección enfocada; ya sea buscando algo específico, un escaneo general de un área o la simple conciencia de lo que les rodea."
+ },
+ {
+  "id": "perspicacia",
+  "nombre": "Perspicacia",
+  "nota": "Perspicacia",
+  "tipo": "estandar",
+  "nombre_en": "Insight",
+  "formula": "INT+POD",
+  "caracteristicas": [
+   "INT",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "alquimista",
+   "ama",
+   "animador",
+   "artesano",
+   "brujo",
+   "chaman",
+   "contrabandista",
+   "cortesana",
+   "cortesano",
+   "derviche",
+   "embaucador",
+   "erudito",
+   "goliardo",
+   "ladron",
+   "mago",
+   "malsin",
+   "medico",
+   "mediero",
+   "mendigo",
+   "mercader",
+   "mistico",
+   "muccadim",
+   "oficial",
+   "pastor",
+   "politico",
+   "qaina",
+   "rabino",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Perspicacia es la capacidad de leer o definir intuitivamente el comportamiento verbal y no verbal de otro (como el lenguaje corporal o el modo de hablar) para establecer sus motivos y estado mental."
+ },
+ {
+  "id": "primeros-auxilios",
+  "nombre": "Primeros auxilios",
+  "nota": "Primeros auxilios",
+  "tipo": "estandar",
+  "nombre_en": "First Aid",
+  "formula": "DES+INT",
+  "caracteristicas": [
+   "DES",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada"
+  ],
+  "carreras": [
+   "alquimista",
+   "ama",
+   "brujo",
+   "cuidador-de-bestias",
+   "explorador",
+   "medico",
+   "pastor"
+  ],
+  "resumen": "La habilidad de Primeros auxilios mide la capacidad de un personaje para tratar lesiones menores y estabilizar otras más graves. Los Primeros auxilios solo pueden aplicarse una vez por lesión específica y curan 1d3 puntos de daño."
+ },
+ {
+  "id": "resistencia",
+  "nombre": "Resistencia",
+  "nota": "Resistencia",
+  "tipo": "estandar",
+  "nombre_en": "Endurance",
+  "formula": "CON x2",
+  "caracteristicas": [
+   "CON",
+   "CON"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "caballero-de-orden-militar",
+   "cazador",
+   "cuidador-de-bestias",
+   "derviche",
+   "explorador",
+   "ghazi",
+   "granjero",
+   "guerrero",
+   "infanzon",
+   "jugador",
+   "marinero",
+   "mendigo",
+   "minero",
+   "mistico",
+   "pardo",
+   "pastor",
+   "pescador"
+  ],
+  "resumen": "Resistencia es la capacidad de un personaje para soportar estrés físico, dolor y fatiga. Mide la capacidad del cuerpo para lidiar con condiciones potencialmente dañinas o debilitantes y es un indicador general de resiliencia, vigor y metabolismo."
+ },
+ {
+  "id": "sigilo",
+  "nombre": "Sigilo",
+  "nota": "Sigilo",
+  "tipo": "estandar",
+  "nombre_en": "Stealth",
+  "formula": "DES+INT",
+  "caracteristicas": [
+   "DES",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "ama",
+   "cazador",
+   "explorador",
+   "ladron",
+   "malsin",
+   "mendigo",
+   "pardo",
+   "pescador"
+  ],
+  "resumen": "Esconderse a plena vista o moverse con el mínimo ruido están cubiertos por la habilidad Sigilo. La cobertura y las condiciones, como la oscuridad o el ruido de fondo fuerte, mejoran el grado de la habilidad según las especificaciones del entorno."
+ },
+ {
+  "id": "acrobacias",
+  "nombre": "Acrobacias",
+  "nota": "Acrobacias",
+  "tipo": "profesional",
+  "nombre_en": "Acrobatics",
+  "formula": "FUE+DES",
+  "caracteristicas": [
+   "FUE",
+   "DES"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador"
+  ],
+  "resumen": "Acrobacias cubre actos de equilibrio, gimnasia, malabarismo y volteretas. La habilidad puede usarse para impresionar a una audiencia, pero también para ayudar a mitigar el daño de las caídas."
+ },
+ {
+  "id": "actuacion",
+  "nombre": "Actuación",
+  "nota": "Actuación",
+  "tipo": "profesional",
+  "nombre_en": "Acting",
+  "formula": "CAR x2",
+  "caracteristicas": [
+   "CAR",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador",
+   "embaucador",
+   "jugador",
+   "ladron",
+   "mendigo",
+   "qaina"
+  ],
+  "resumen": "Actuación rige el arte de ser capaz de personificar y transmitir un personaje completamente diferente, ya sea en una representación teatral o en una situación social. El actor retrata una personalidad y unos modales diferentes a los suyos de una manera convincente."
+ },
+ {
+  "id": "alfabetizacion",
+  "nombre": "Alfabetización",
+  "nota": "Alfabetización",
+  "tipo": "profesional",
+  "nombre_en": "Literacy (Specific Language)",
+  "formula": "INT x2",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Latina",
+   "Árabe",
+   "Hebrea"
+  ],
+  "culturas": [],
+  "carreras": [
+   "alquimista",
+   "ama",
+   "caballero-de-orden-militar",
+   "derviche",
+   "erudito",
+   "ghazi",
+   "goliardo",
+   "infanzon",
+   "mago",
+   "medico",
+   "mediero",
+   "mistico",
+   "muccadim",
+   "oficial",
+   "rabino",
+   "sacerdote",
+   "ulema"
+  ],
+  "resumen": "Hablar un idioma con fluidez no significa que uno pueda leerlo y escribirlo. Alfabetización es una habilidad específica y las diferentes sociedades muestran diferentes niveles y enfoques hacia ella. En algunas, la alfabetización está reservada para la nobleza o las clases burocráticas o religiosas."
+ },
+ {
+  "id": "arte",
+  "nombre": "Arte",
+  "nota": "Arte",
+  "tipo": "profesional",
+  "nombre_en": "Art",
+  "formula": "POD+CAR",
+  "caracteristicas": [
+   "POD",
+   "CAR"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Poesía",
+   "Pintura",
+   "Iluminación",
+   "Caligrafía",
+   "Escultura"
+  ],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "artesano",
+   "cortesana",
+   "cortesano",
+   "goliardo",
+   "mistico",
+   "qaina"
+  ],
+  "resumen": "Existen muchas formas de arte específicas. Desde la pintura a la poesía; de la literatura a la escultura. Un personaje elige una especialización de Arte al adquirir esta habilidad. Las formas de arte posteriores se avanzan por separado."
+ },
+ {
+  "id": "artesania",
+  "nombre": "Artesanía",
+  "nota": "Artesanía",
+  "tipo": "profesional",
+  "nombre_en": "Craft",
+  "formula": "DES+INT",
+  "caracteristicas": [
+   "DES",
+   "INT"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Alquimia",
+   "Armería",
+   "Herrería",
+   "Carpintería",
+   "Alfarería",
+   "Tejido",
+   "Platería",
+   "Cantería",
+   "Curtido"
+  ],
+  "culturas": [
+   "barbaro",
+   "civilizado",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "ama",
+   "artesano",
+   "brujo",
+   "cazador",
+   "cuidador-de-bestias",
+   "embaucador",
+   "granjero",
+   "guerrero",
+   "marinero",
+   "medico",
+   "mendigo",
+   "minero",
+   "pastor",
+   "pescador",
+   "sirviente"
+  ],
+  "resumen": "Cada Artesanía es una forma especializada, y hay tantas artesanías como profesiones dedicadas a ellas. Al igual que Arte, Artesanía se utiliza para crear el objeto en cuestión."
+ },
+ {
+  "id": "burocracia",
+  "nombre": "Burocracia",
+  "nota": "Burocracia",
+  "tipo": "profesional",
+  "nombre_en": "Bureaucracy",
+  "formula": "INT x2",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "contrabandista",
+   "cortesano",
+   "jugador",
+   "malsin",
+   "mediero",
+   "muccadim",
+   "oficial",
+   "politico",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "La comprensión de los procedimientos administrativos, los registros y las convenciones tácitas están cubiertos por la habilidad Burocracia. Se utiliza para interactuar con funcionarios o descubrir información cívica pertinente."
+ },
+ {
+  "id": "comercio",
+  "nombre": "Comercio",
+  "nota": "Comercio",
+  "tipo": "profesional",
+  "nombre_en": "Commerce",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "alquimista",
+   "artesano",
+   "cazador",
+   "contrabandista",
+   "cuidador-de-bestias",
+   "embaucador",
+   "granjero",
+   "jugador",
+   "ladron",
+   "malsin",
+   "medico",
+   "mediero",
+   "mercader",
+   "minero",
+   "oficial",
+   "pardo",
+   "pastor",
+   "pescador"
+  ],
+  "resumen": "Comercio se utiliza para evaluar el valor de los bienes y mercancías y comerciar con ellos al mejor precio posible. También se utiliza para comprender las complejidades de las transacciones comerciales, además de asegurar un beneficio."
+ },
+ {
+  "id": "conocimiento",
+  "nombre": "Conocimiento",
+  "nota": "Conocimiento",
+  "tipo": "profesional",
+  "nombre_en": "Lore",
+  "formula": "INT x2",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Teología",
+   "Derecho",
+   "Ocultismo",
+   "Astrología",
+   "Heráldica",
+   "Historia",
+   "Plantas",
+   "Leyendas",
+   "Historia militar",
+   "Estrategia y táctica",
+   "Medicina"
+  ],
+  "culturas": [
+   "barbaro",
+   "civilizado",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "ama",
+   "brujo",
+   "caballero-de-orden-militar",
+   "cazador",
+   "chaman",
+   "cortesano",
+   "cuidador-de-bestias",
+   "derviche",
+   "embaucador",
+   "erudito",
+   "explorador",
+   "ghazi",
+   "goliardo",
+   "granjero",
+   "guerrero",
+   "infanzon",
+   "mago",
+   "marinero",
+   "medico",
+   "minero",
+   "mistico",
+   "muccadim",
+   "oficial",
+   "pardo",
+   "pescador",
+   "politico",
+   "qaina",
+   "rabino",
+   "sacerdote",
+   "ulema"
+  ],
+  "resumen": "Conocimiento cubre un cuerpo de saber específico que debe elegirse cuando se aprende la habilidad por primera vez. Alquimia, Astrología, Astronomía, Geografía, Heráldica, Historia, Obstetricia, Mineralogía, Monstruos, Política, Religión, Estrategia y Tácticas: estos son todos ejemplos típicos de habilidades de…"
+ },
+ {
+  "id": "conocimiento-callejero",
+  "nombre": "Conocimiento callejero",
+  "nota": "Conocimiento callejero",
+  "tipo": "profesional",
+  "nombre_en": "Streetwise",
+  "formula": "POD+CAR",
+  "caracteristicas": [
+   "POD",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "animador",
+   "artesano",
+   "contrabandista",
+   "embaucador",
+   "jugador",
+   "ladron",
+   "malsin",
+   "medico",
+   "mediero",
+   "mendigo",
+   "mercader",
+   "sirviente"
+  ],
+  "resumen": "Conocimiento callejero representa el conocimiento de lugares y contactos sociales dentro de un asentamiento. Abarca desde identificar barrios potencialmente peligrosos hasta encontrar servicios locales, legales o ilegales."
+ },
+ {
+  "id": "cortesia",
+  "nombre": "Cortesía",
+  "nota": "Cortesía",
+  "tipo": "profesional",
+  "nombre_en": "Courtesy",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "civilizado"
+  ],
+  "carreras": [
+   "ama",
+   "caballero-de-orden-militar",
+   "cortesana",
+   "cortesano",
+   "infanzon",
+   "jugador",
+   "mercader",
+   "oficial",
+   "politico",
+   "qaina",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Esta habilidad abarca el conocimiento sobre cómo actuar de forma adecuada en situaciones sociales o formales: formas de dirigirse a otros, rituales, convenciones de comportamiento, etc."
+ },
+ {
+  "id": "cultura",
+  "nombre": "Cultura",
+  "nota": "Cultura",
+  "tipo": "profesional",
+  "nombre_en": "Culture",
+  "formula": "INT x2",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Castilla",
+   "Corona de Aragón",
+   "Granada",
+   "Portugal",
+   "Navarra",
+   "la judería",
+   "la morería",
+   "Francia"
+  ],
+  "culturas": [
+   "nomada"
+  ],
+  "carreras": [
+   "alquimista",
+   "contrabandista",
+   "cortesana",
+   "cortesano",
+   "erudito",
+   "explorador",
+   "mago",
+   "marinero",
+   "mercader",
+   "politico",
+   "sirviente"
+  ],
+  "resumen": "Cultura es la forma más específica de la habilidad estándar Costumbres, relacionada en este caso con sociedades ajenas a la del personaje. Cada habilidad de Cultura debe asignarse a una nación o sociedad particular a la que se aplique. Mecánicamente funciona de la misma forma que la habilidad Costumbres."
+ },
+ {
+  "id": "disfraz",
+  "nombre": "Disfraz",
+  "nota": "Disfraz",
+  "tipo": "profesional",
+  "nombre_en": "Disguise",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "embaucador",
+   "ladron",
+   "malsin",
+   "mediero"
+  ],
+  "resumen": "La habilidad Disfraz cubre la creación de un disfraz convincente utilizando los materiales apropiados (vestuario, cosméticos, pelucas o postizos). Crear el disfraz requiere tiempo y atención al detalle, así como acceso a los materiales correctos para que sea creíble."
+ },
+ {
+  "id": "ensenar",
+  "nombre": "Enseñar",
+  "nota": "Enseñar",
+  "tipo": "profesional",
+  "nombre_en": "Teach",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "ama",
+   "cuidador-de-bestias",
+   "derviche",
+   "erudito",
+   "rabino",
+   "ulema"
+  ],
+  "resumen": "Enseñar permite al usuario transmitir sus conocimientos y técnicas de una manera fácil de entender y constructiva. Sin esta habilidad, incluso los maestros más capaces tendrán problemas para instruir a otros."
+ },
+ {
+  "id": "falsificacion",
+  "nombre": "Falsificación",
+  "nota": "Falsificación",
+  "tipo": "profesional",
+  "nombre_en": "Forgery",
+  "formula": "DES+INT",
+  "caracteristicas": [
+   "DES",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [],
+  "resumen": "La habilidad Falsificación permite la creación o falsificación de documentación oficial."
+ },
+ {
+  "id": "fuente-mistica",
+  "nombre": "Fuente Mística",
+  "nota": "Informe - Guía de Magia Caótica",
+  "ancla": "2. El Proceso de Estudio y Aprendizaje",
+  "tipo": "profesional",
+  "nombre_en": null,
+  "formula": "0",
+  "caracteristicas": [],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "un grimorio",
+   "un pacto",
+   "un maestro",
+   "un santo",
+   "un espíritu"
+  ],
+  "culturas": [],
+  "carreras": [
+   "brujo",
+   "chaman",
+   "mago",
+   "mistico"
+  ],
+  "resumen": "Cada Fuente Mística (un grimorio, un pacto, un artefacto) es una habilidad propia que empieza en 0% y mide el estudio de esa fuente: es el % con que se lanzan sus fórmulas, que deben pertenecer a sus dominios y no pasar de su Rango. Se aprende con Conocimiento (Ocultismo).",
+  "magia_caotica": true
+ },
+ {
+  "id": "ganzua",
+  "nombre": "Ganzúa",
+  "nota": "Ganzúa",
+  "tipo": "profesional",
+  "nombre_en": "Lockpicking",
+  "formula": "DES x2",
+  "caracteristicas": [
+   "DES",
+   "DES"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "ladron",
+   "malsin"
+  ],
+  "resumen": "Ganzúa es la habilidad para abrir un sistema de cierre mecánico sin la ayuda de una llave u otro dispositivo hecho específicamente para la cerradura. Incluye las técnicas de forzar la apertura de puertas y ventanas cerradas con cerrojos o barras sin causar daños."
+ },
+ {
+  "id": "idioma",
+  "nombre": "Idioma",
+  "nota": "Idioma",
+  "tipo": "profesional",
+  "nombre_en": "Language",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Castellano",
+   "Catalán",
+   "Aragonés",
+   "Gallego-portugués",
+   "Navarro",
+   "Euskera",
+   "Árabe andalusí",
+   "Árabe clásico",
+   "Hebreo (litúrgico)",
+   "Latín",
+   "Francés",
+   "Occitano",
+   "Italiano"
+  ],
+  "culturas": [
+   "civilizado",
+   "nomada"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "ama",
+   "caballero-de-orden-militar",
+   "contrabandista",
+   "cortesana",
+   "cortesano",
+   "embaucador",
+   "erudito",
+   "explorador",
+   "goliardo",
+   "malsin",
+   "marinero",
+   "medico",
+   "mediero",
+   "mendigo",
+   "mercader",
+   "muccadim",
+   "oficial",
+   "pardo",
+   "politico",
+   "qaina",
+   "rabino",
+   "sacerdote",
+   "sirviente",
+   "ulema"
+  ],
+  "resumen": "Esta habilidad permite la comprensión y el habla de un idioma distinto a la Lengua materna del personaje. Cada habilidad de Idioma es específica para un lenguaje o dialecto concreto, que debe elegirse al adquirirla."
+ },
+ {
+  "id": "ingenieria",
+  "nombre": "Ingeniería",
+  "nota": "Ingeniería",
+  "tipo": "profesional",
+  "nombre_en": "Engineering",
+  "formula": "INT x2",
+  "caracteristicas": [
+   "INT",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "artesano",
+   "guerrero",
+   "minero"
+  ],
+  "resumen": "El diseño y la construcción de estructuras a gran escala, desde casas hasta puentes, puertas o máquinas de asedio, entran dentro del ámbito de la habilidad Ingeniería."
+ },
+ {
+  "id": "interpretacion-musical",
+  "nombre": "Interpretación musical",
+  "nota": "Interpretación musical",
+  "tipo": "profesional",
+  "nombre_en": "Musicianship",
+  "formula": "DES+CAR",
+  "caracteristicas": [
+   "DES",
+   "CAR"
+  ],
+  "especialidades": true,
+  "ejemplos_especialidad": [
+   "Laúd",
+   "Vihuela",
+   "Rabel",
+   "Flauta",
+   "Gaita",
+   "Tambor"
+  ],
+  "culturas": [
+   "barbaro",
+   "civilizado",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "animador",
+   "cortesana",
+   "goliardo",
+   "mendigo",
+   "mistico",
+   "pastor",
+   "qaina"
+  ],
+  "resumen": "Interpretación musical cubre la ejecución de instrumentos musicales; desde una simple flauta de caña hasta un complejo instrumento de cuerda como un arpa, y cada iteración de Interpretación musical se aplica a un grupo de instrumentos similares."
+ },
+ {
+  "id": "investigacion",
+  "nombre": "Investigación",
+  "nota": "Investigación",
+  "tipo": "profesional",
+  "nombre_en": "Research",
+  "formula": "INT+POD",
+  "caracteristicas": [
+   "INT",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "jugador",
+   "malsin"
+  ],
+  "resumen": "Investigación utiliza diversos recursos (como una biblioteca, un archivo de periódicos, una red informática, etc.) para descubrir piezas de información deseadas."
+ },
+ {
+  "id": "juego",
+  "nombre": "Juego",
+  "nota": "Juego",
+  "tipo": "profesional",
+  "nombre_en": "Gambling",
+  "formula": "INT+POD",
+  "caracteristicas": [
+   "INT",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "cortesana",
+   "goliardo",
+   "guerrero",
+   "infanzon",
+   "jugador",
+   "mendigo"
+  ],
+  "resumen": "La habilidad Juego mide la competencia de un personaje en los juegos de azar, especialmente cuando hay dinero en juego. Se utiliza para evaluar las probabilidades de éxito o fracaso, o para detectar cuándo alguien está haciendo trampas."
+ },
+ {
+  "id": "juego-de-manos",
+  "nombre": "Juego de manos",
+  "nota": "Juego de manos",
+  "tipo": "profesional",
+  "nombre_en": "Sleight",
+  "formula": "DES+CAR",
+  "caracteristicas": [
+   "DES",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador",
+   "chaman",
+   "embaucador",
+   "goliardo",
+   "jugador",
+   "ladron",
+   "mago",
+   "mediero",
+   "mendigo"
+  ],
+  "resumen": "Juego de manos cubre los intentos de ocultar o esconder objetos pequeños (prestidigitación y trucos) e incluye intentos de robar carteras, cortar bolsas o causar una distracción visual. Naturalmente, es una habilidad esencial para los ladrones."
+ },
+ {
+  "id": "marineria",
+  "nombre": "Marinería",
+  "nota": "Marinería",
+  "tipo": "profesional",
+  "nombre_en": "Seamanship",
+  "formula": "INT+CON",
+  "caracteristicas": [
+   "INT",
+   "CON"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro"
+  ],
+  "carreras": [
+   "contrabandista",
+   "marinero",
+   "mercader",
+   "pescador"
+  ],
+  "resumen": "Esta habilidad se utiliza de la misma forma que Navegación fluvial, pero se aplica a grandes embarcaciones impulsadas por velas o bancos de remos. También cubre el mantenimiento y conservación de un barco: evaluar cuándo se necesitan reparaciones, dónde es seguro fondear, los peligros del clima violento, etc."
+ },
+ {
+  "id": "mecanismos",
+  "nombre": "Mecanismos",
+  "nota": "Mecanismos",
+  "tipo": "profesional",
+  "nombre_en": "Mechanisms",
+  "formula": "DES+INT",
+  "caracteristicas": [
+   "DES",
+   "INT"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "artesano",
+   "cazador",
+   "ladron",
+   "minero"
+  ],
+  "resumen": "Mecanismos representa el conocimiento y la habilidad para montar y desmontar dispositivos mecánicos, como trampas. La habilidad de Mecanismos generalmente implica la creación de artilugios delicados con pequeñas piezas móviles, a diferencia de Ingeniería, que trata con construcciones masivas."
+ },
+ {
+  "id": "navegacion",
+  "nombre": "Navegación",
+  "nota": "Navegación",
+  "tipo": "profesional",
+  "nombre_en": "Navigation",
+  "formula": "INT+POD",
+  "caracteristicas": [
+   "INT",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "cazador",
+   "contrabandista",
+   "explorador",
+   "granjero",
+   "marinero",
+   "mercader",
+   "minero",
+   "pastor",
+   "pescador"
+  ],
+  "resumen": "Ya sea utilizando puntos de referencia prominentes, las estrellas o el sabor cambiante del agua de mar, la habilidad para dirigir viajes con precisión está cubierta por la habilidad Navegación. Cada habilidad de Navegación cubre una región o entorno específico, como Mar abierto o Subterráneo, por ejemplo."
+ },
+ {
+  "id": "oratoria",
+  "nombre": "Oratoria",
+  "nota": "Oratoria",
+  "tipo": "profesional",
+  "nombre_en": "Oratory",
+  "formula": "POD+CAR",
+  "caracteristicas": [
+   "POD",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador",
+   "caballero-de-orden-militar",
+   "chaman",
+   "cortesano",
+   "derviche",
+   "erudito",
+   "ghazi",
+   "guerrero",
+   "infanzon",
+   "mago",
+   "muccadim",
+   "oficial",
+   "pardo",
+   "politico",
+   "rabino",
+   "sacerdote",
+   "ulema"
+  ],
+  "resumen": "Oratoria es el arte de pronunciar un discurso ante un grupo grande de personas con el objetivo de transmitir o influir en un punto de vista. Es una habilidad utilizada frecuentemente por políticos para recalcar una política, pero también es utilizada por comandantes para inspirar a las tropas e imponer disciplina en…"
+ },
+ {
+  "id": "politica",
+  "nombre": "Política",
+  "nota": "Política",
+  "tipo": "profesional",
+  "nombre_en": "Politics",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "infanzon",
+   "politico",
+   "sacerdote",
+   "sirviente"
+  ],
+  "resumen": "Los personajes que poseen la habilidad Política comprenden cómo navegar y negociar los pasillos del gobierno a nivel local y nacional."
+ },
+ {
+  "id": "rastrear",
+  "nombre": "Rastrear",
+  "nota": "Rastrear",
+  "tipo": "profesional",
+  "nombre_en": "Track",
+  "formula": "INT+CON",
+  "caracteristicas": [
+   "INT",
+   "CON"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "cazador",
+   "cuidador-de-bestias",
+   "explorador",
+   "ghazi",
+   "granjero",
+   "muccadim",
+   "pardo",
+   "pastor"
+  ],
+  "resumen": "La habilidad Rastrear se utiliza para seguir el rastro de cualquier forma de presa o cantera. Utiliza signos tanto obvios como ambiguos de paso para permanecer en el rastro, incluyendo huellas, hojas magulladas, polen esparcido, rocas desplazadas, etc.; pequeños signos reveladores que son invisibles para el no…"
+ },
+ {
+  "id": "sanacion",
+  "nombre": "Sanación",
+  "nota": "Sanación",
+  "tipo": "profesional",
+  "nombre_en": "Healing",
+  "formula": "INT+POD",
+  "caracteristicas": [
+   "INT",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "alquimista",
+   "ama",
+   "brujo",
+   "caballero-de-orden-militar",
+   "chaman",
+   "cuidador-de-bestias",
+   "derviche",
+   "explorador",
+   "ghazi",
+   "medico",
+   "muccadim",
+   "pardo",
+   "pastor"
+  ],
+  "resumen": "Sanación es el conocimiento profundo de los procedimientos médicos, basado en prácticas culturales, y se utiliza para tratar lesiones más graves (típicamente aquellas en las que los Puntos de Vida están a cero o menos)."
+ },
+ {
+  "id": "seduccion",
+  "nombre": "Seducción",
+  "nota": "Seducción",
+  "tipo": "profesional",
+  "nombre_en": "Seduction",
+  "formula": "INT+CAR",
+  "caracteristicas": [
+   "INT",
+   "CAR"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [],
+  "carreras": [
+   "animador",
+   "cortesana",
+   "goliardo",
+   "qaina"
+  ],
+  "resumen": "Seducción es la persuasión romántica o sexual de otra persona, una habilidad muy diferente a Influencia. Utiliza señales explícitas (verbales y no verbales) para provocar una respuesta sexual positiva."
+ },
+ {
+  "id": "supervivencia",
+  "nombre": "Supervivencia",
+  "nota": "Supervivencia",
+  "tipo": "profesional",
+  "nombre_en": "Survival",
+  "formula": "CON+POD",
+  "caracteristicas": [
+   "CON",
+   "POD"
+  ],
+  "especialidades": false,
+  "ejemplos_especialidad": [],
+  "culturas": [
+   "barbaro",
+   "nomada",
+   "primitivo"
+  ],
+  "carreras": [
+   "almogavar",
+   "cazador",
+   "cuidador-de-bestias",
+   "explorador",
+   "ghazi",
+   "granjero",
+   "guerrero",
+   "marinero",
+   "minero",
+   "pardo",
+   "pastor",
+   "pescador"
+  ],
+  "resumen": "Esta habilidad cubre sobrevivir en un entorno rural o salvaje donde los beneficios de la civilización están ausentes: buscar alimento, encender un fuego, encontrar refugio o un lugar seguro para dormir."
+ }
+]

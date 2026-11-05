@@ -1,0 +1,87 @@
+[
+ {
+  "id": "cristiano",
+  "nombre": "Credo cristiano",
+  "nota": "Credo cristiano",
+  "resumen": "Los cristianos son la mayoría y el poder en cuatro de los cinco reinos. La sociedad se divide, en teoría, en tres órdenes: los que rezan, los que luchan y los que trabajan. Un cristiano está bautizado, oye misa los domingos y fiestas de guardar, confiesa y comulga por Pascua, paga el diezmo y guarda la Cuaresma. Su vida está marcada por el calendario de la Iglesia, las cofradías y los santos patronos.",
+  "pasion_fe": "Fe (cristiana)",
+  "clases_propias": false,
+  "titulos_nobleza": [
+   {
+    "min": 1,
+    "max": 1,
+    "alta_nobleza": "Duque (rarísimo en el siglo XIV)",
+    "baja_nobleza": "Señor de vasallos"
+   },
+   {
+    "min": 2,
+    "max": 2,
+    "alta_nobleza": "Marqués",
+    "baja_nobleza": "Señor de vasallos"
+   },
+   {
+    "min": 3,
+    "max": 4,
+    "alta_nobleza": "Conde",
+    "baja_nobleza": "Caballero"
+   },
+   {
+    "min": 5,
+    "max": 7,
+    "alta_nobleza": "Vizconde",
+    "baja_nobleza": "Caballero"
+   },
+   {
+    "min": 8,
+    "max": 10,
+    "alta_nobleza": "Barón (sobre todo en la Corona de Aragón) o rico hombre",
+    "baja_nobleza": "Hidalgo, infanzón o donzell"
+   }
+  ],
+  "clases_condicion": null,
+  "notas": [
+   "Pasión: Fe (cristiana), casi obligatoria (véase Fe).",
+   "Campesinos: en el campo hay colonos (dueños de su tierra), vasallos (labran tierra del señor) y, cada vez menos, siervos de la gleba (atados a la tierra; en Cataluña, los payeses de remensa).",
+   "Esclavos: la Iglesia prohíbe esclavizar a un cristiano; un cristiano sólo empieza como esclavo si es cautivo en Granada o en Berbería.",
+   "Carreras: todas las de Mythras, más Almogávar, Ama, Brujo, Caballero de orden militar, Embaucador, Goliardo, Infanzón, Mendigo y Pardo.",
+   "Rituales de fe: los ordenados (véase Fe)."
+  ]
+ },
+ {
+  "id": "judio",
+  "nombre": "Credo judío",
+  "nota": "Credo judío",
+  "resumen": "Los judíos viven en las aljamas de los cinco reinos. Guardan el sábado, comen según la ley (nada de cerdo, carne sacrificada por el shojet), estudian la Torá y el Talmud, se casan dentro de su comunidad y se gobiernan por sus propios jueces y por los muccadim (los adelantados de la aljama). Jurídicamente son cosa del rey: le pagan tributos especiales y él los protege.",
+  "pasion_fe": "Fe (la Ley de Moisés)",
+  "clases_propias": true,
+  "titulos_nobleza": [],
+  "clases_condicion": null,
+  "notas": [
+   "Pasión: Fe (la Ley de Moisés).",
+   "Carreras: todas las que no sean de otra fe, más Rabino, Mediero, Muccadim y Malsín.",
+   "Rituales de fe: los rabinos (véase Rabino).",
+   "Distintivo: las leyes obligan a llevar una señal (una rodela roja o amarilla) y prohíben ciertas ropas; se cumple a medias."
+  ]
+ },
+ {
+  "id": "musulman",
+  "nombre": "Credo musulmán",
+  "nota": "Credo musulmán",
+  "resumen": "Los musulmanes son la sociedad dominante en Granada y una minoría (los mudéjares) en los reinos cristianos. Rezan cinco veces al día mirando a La Meca, ayunan en Ramadán, dan limosna, no comen cerdo ni beben vino (en teoría) y se rigen por la ley islámica, que interpretan los alfaquíes y aplican los cadíes. No hay clero: los sabios de la ley (ulemas) y los místicos (sufíes) guían a los creyentes.",
+  "pasion_fe": "Fe (el islam)",
+  "clases_propias": true,
+  "titulos_nobleza": [],
+  "clases_condicion": {
+   "pueblos": [
+    "arabes-granadinos"
+   ]
+  },
+  "notas": [
+   "Pasión: Fe (el islam).",
+   "Mudéjares: tiran en la tabla de su cultura, pero nunca pueden ser nobles.",
+   "Carreras: todas las que no sean de otra fe, más Derviche, Ghazi, Ulema y Qaina. El Infanzón musulmán es el arif, capitán de tropa.",
+   "Rituales de fe: ulemas (alfaquíes), derviches y ghazis.",
+   "Criaturas: para un clérigo musulmán son malvados los seres marid (rebeldes a Dios), como los ifrits o los dibbuk."
+  ]
+ }
+]

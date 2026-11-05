@@ -1,0 +1,597 @@
+[
+ {
+  "id": "absolucion",
+  "nombre": "Absolución",
+  "nota": "Absolución",
+  "ordo": 1,
+  "ordo_nombre": "primus ordo",
+  "sacramento": true,
+  "estado_gracia": false,
+  "pf_requeridos": 10,
+  "penalizador": 0,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Perdona los pecados de quien se arrepiente de verdad."
+ },
+ {
+  "id": "bautismo",
+  "nombre": "Bautismo",
+  "nota": "Bautismo",
+  "ordo": 1,
+  "ordo_nombre": "primus ordo",
+  "sacramento": true,
+  "estado_gracia": false,
+  "pf_requeridos": 10,
+  "penalizador": 0,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Hace entrar al receptor en la comunidad de la fe del sacerdote."
+ },
+ {
+  "id": "eucaristia",
+  "nombre": "Eucaristía",
+  "nota": "Eucaristía",
+  "ordo": 1,
+  "ordo_nombre": "primus ordo",
+  "sacramento": true,
+  "estado_gracia": false,
+  "pf_requeridos": 10,
+  "penalizador": 0,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Misa u oración comunitaria que une a los fieles con Dios."
+ },
+ {
+  "id": "matrimonio",
+  "nombre": "Matrimonio",
+  "nota": "Matrimonio",
+  "ordo": 1,
+  "ordo_nombre": "primus ordo",
+  "sacramento": true,
+  "estado_gracia": false,
+  "pf_requeridos": 10,
+  "penalizador": 0,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Une en matrimonio a dos contrayentes y protege su unión."
+ },
+ {
+  "id": "ordenacion",
+  "nombre": "Ordenación",
+  "nota": "Ordenación",
+  "ordo": 1,
+  "ordo_nombre": "primus ordo",
+  "sacramento": true,
+  "estado_gracia": false,
+  "pf_requeridos": 10,
+  "penalizador": 0,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Ordena al receptor y le permite usar rituales de fe."
+ },
+ {
+  "id": "requiem",
+  "nombre": "Réquiem",
+  "nota": "Réquiem",
+  "ordo": 1,
+  "ordo_nombre": "primus ordo",
+  "sacramento": true,
+  "estado_gracia": false,
+  "pf_requeridos": 10,
+  "penalizador": 0,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Entierra a un difunto según su fe y protege su cuerpo y su ánima."
+ },
+ {
+  "id": "alivio-de-enfermedades",
+  "nombre": "Alivio de Enfermedades",
+  "nota": "Alivio de Enfermedades",
+  "ordo": 2,
+  "ordo_nombre": "secundus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 13,
+  "penalizador": -10,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Alivia o cura una enfermedad corriente."
+ },
+ {
+  "id": "bendicion",
+  "nombre": "Bendición",
+  "nota": "Bendición",
+  "ordo": 2,
+  "ordo_nombre": "secundus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 13,
+  "penalizador": -10,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Bendice un objeto (un arma, agua, un símbolo) durante una escena."
+ },
+ {
+  "id": "confrontacion",
+  "nombre": "Confrontación",
+  "nota": "Confrontación",
+  "ordo": 2,
+  "ordo_nombre": "secundus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 13,
+  "penalizador": -10,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Enfrenta la fe del sacerdote a una criatura malvada para expulsarla."
+ },
+ {
+  "id": "don-de-sirin",
+  "nombre": "Don de Sirin",
+  "nota": "Don de Sirin",
+  "ordo": 2,
+  "ordo_nombre": "secundus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 13,
+  "penalizador": -10,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Pide a Sirin, ave del Paraíso, el don de la belleza y la dicha."
+ },
+ {
+  "id": "pentecostes",
+  "nombre": "Pentecostés",
+  "nota": "Pentecostés",
+  "ordo": 2,
+  "ordo_nombre": "secundus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 13,
+  "penalizador": -10,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Durante un día, el sacerdote entiende todas las lenguas y todos le entienden."
+ },
+ {
+  "id": "revelacion",
+  "nombre": "Revelación",
+  "nota": "Revelación",
+  "ordo": 2,
+  "ordo_nombre": "secundus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 13,
+  "penalizador": -10,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Un sueño enviado por Dios revela algo sobre un demonio al que se combate."
+ },
+ {
+  "id": "exorcismo",
+  "nombre": "Exorcismo",
+  "nota": "Exorcismo",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Expulsa, o incluso destruye, a la criatura que posee un cuerpo humano."
+ },
+ {
+  "id": "iluminacion",
+  "nombre": "Iluminación",
+  "nota": "Iluminación",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Un Trono infunde al sacerdote el saber que necesita contra el plan de un demonio."
+ },
+ {
+  "id": "maldicion-divina",
+  "nombre": "Maldición Divina",
+  "nota": "Maldición Divina",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Lanza sobre una criatura malvada una maldición del Cielo: todo le sale mal."
+ },
+ {
+  "id": "oracion",
+  "nombre": "Oración",
+  "nota": "Oración",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Recupera la Fe perdida en las últimas horas mediante una oración larga."
+ },
+ {
+  "id": "procesion",
+  "nombre": "Procesión",
+  "nota": "Procesión",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Una procesión de todo un pueblo pide a Dios que lo libre de un mal."
+ },
+ {
+  "id": "purga",
+  "nombre": "Purga",
+  "nota": "Purga",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Limpia una comida o bebida de veneno, podredumbre o enfermedad."
+ },
+ {
+  "id": "purificacion",
+  "nombre": "Purificación",
+  "nota": "Purificación",
+  "ordo": 3,
+  "ordo_nombre": "tertius ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 15,
+  "penalizador": -20,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Limpia un lugar de la mancha del Demonio."
+ },
+ {
+  "id": "bendicion-perpetua",
+  "nombre": "Bendición Perpetua",
+  "nota": "Bendición Perpetua",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Como Bendición, pero para siempre."
+ },
+ {
+  "id": "disipacion",
+  "nombre": "Disipación",
+  "nota": "Disipación",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Anula los efectos de un hechizo en curso."
+ },
+ {
+  "id": "el-brazo-de-dios",
+  "nombre": "El Brazo de Dios",
+  "nota": "El Brazo de Dios",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Pide la ayuda de un arcángel contra un demonio mayor o sus siervos."
+ },
+ {
+  "id": "excomunion",
+  "nombre": "Excomunión",
+  "nota": "Excomunión",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Expulsa a un creyente de su comunidad religiosa."
+ },
+ {
+  "id": "instrumento-divino",
+  "nombre": "Instrumento Divino",
+  "nota": "Instrumento Divino",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Un Principado, ángel protector de ciudades, posee al sacerdote para salvarla."
+ },
+ {
+  "id": "la-armadura-de-dios",
+  "nombre": "La Armadura de Dios",
+  "nota": "La Armadura de Dios",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Mientras reza, el sacerdote es inmune a la goecia."
+ },
+ {
+  "id": "sacralizacion",
+  "nombre": "Sacralización",
+  "nota": "Sacralización",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Convierte temporalmente una estancia en lugar sagrado."
+ },
+ {
+  "id": "angel-de-la-guarda",
+  "nombre": "Ángel de la Guarda",
+  "nota": "Ángel de la Guarda",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Ante la muerte, el ángel de la guarda del sacerdote acude a ayudarle."
+ },
+ {
+  "id": "extasis-divino",
+  "nombre": "Éxtasis Divino",
+  "nota": "Éxtasis Divino",
+  "ordo": 4,
+  "ordo_nombre": "quartus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 18,
+  "penalizador": -30,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Tras un largo ayuno, el sacerdote contempla por un instante el rostro de Dios."
+ },
+ {
+  "id": "ayuda-divina",
+  "nombre": "Ayuda Divina",
+  "nota": "Ayuda Divina",
+  "ordo": 5,
+  "ordo_nombre": "quintus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 20,
+  "penalizador": -40,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Dios en persona socorre al sacerdote frente a los demonios."
+ },
+ {
+  "id": "consagracion",
+  "nombre": "Consagración",
+  "nota": "Consagración",
+  "ordo": 5,
+  "ordo_nombre": "quintus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 20,
+  "penalizador": -40,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Hace descender la bendición de Dios sobre otra persona que lucha contra el Mal."
+ },
+ {
+  "id": "curacion-milagrosa",
+  "nombre": "Curación Milagrosa",
+  "nota": "Curación Milagrosa",
+  "ordo": 5,
+  "ordo_nombre": "quintus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 20,
+  "penalizador": -40,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Cura cualquier dolencia, incluso las incurables."
+ },
+ {
+  "id": "fruto-del-eden",
+  "nombre": "Fruto del Edén",
+  "nota": "Fruto del Edén",
+  "ordo": 5,
+  "ordo_nombre": "quintus ordo",
+  "sacramento": false,
+  "estado_gracia": true,
+  "pf_requeridos": 20,
+  "penalizador": -40,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Mientras alaba a Dios, el sacerdote es inmune al daño físico."
+ },
+ {
+  "id": "sacralizacion-perpetua",
+  "nombre": "Sacralización Perpetua",
+  "nota": "Sacralización Perpetua",
+  "ordo": 5,
+  "ordo_nombre": "quintus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 20,
+  "penalizador": -40,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Convierte un edificio entero en lugar sagrado para siempre."
+ },
+ {
+  "id": "transfiguracion",
+  "nombre": "Transfiguración",
+  "nota": "Transfiguración",
+  "ordo": 5,
+  "ordo_nombre": "quintus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 20,
+  "penalizador": -40,
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "Una luz divina envuelve al sacerdote y aparta a los demonios."
+ },
+ {
+  "id": "milagro",
+  "nombre": "Milagro",
+  "nota": "Milagro",
+  "ordo": 6,
+  "ordo_nombre": "sextus ordo",
+  "sacramento": false,
+  "estado_gracia": false,
+  "pf_requeridos": 20,
+  "penalizador": "null",
+  "credos": [
+   "cristiano",
+   "judio",
+   "musulman"
+  ],
+  "resumen": "El poder de Dios obra un prodigio a través de un santo."
+ }
+]

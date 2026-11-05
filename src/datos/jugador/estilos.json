@@ -1,0 +1,678 @@
+{
+ "estilos": [
+  {
+   "id": "milicia-de-concejo",
+   "nombre": "Milicia de Concejo",
+   "tipo": "cultural",
+   "armas": [
+    "Lanza corta",
+    "ballesta",
+    "escudo de madera o broquel",
+    "bracamante"
+   ],
+   "rasgos": [
+    "Combate en Formación"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Civilizado. Vecinos de las villas obligados a acudir a la hueste o a defender las murallas cuando tañe la campana del concejo.",
+   "culturas_nota": [
+    "Civilizado"
+   ],
+   "culturas": [
+    "civilizado"
+   ]
+  },
+  {
+   "id": "pendenciero-de-taberna",
+   "nombre": "Pendenciero de Taberna",
+   "tipo": "cultural",
+   "armas": [
+    "Cuchillo",
+    "daga",
+    "clava",
+    "Pelea"
+   ],
+   "rasgos": [
+    "Noquear"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Civilizado. Mozos, estudiantes, rufianes y matones de cualquier ciudad.",
+   "culturas_nota": [
+    "Civilizado"
+   ],
+   "culturas": [
+    "civilizado"
+   ]
+  },
+  {
+   "id": "ballestero-de-galera",
+   "nombre": "Ballestero de Galera",
+   "tipo": "cultural",
+   "armas": [
+    "Ballesta",
+    "bracamante",
+    "rodela",
+    "lanza corta"
+   ],
+   "rasgos": [
+    "Juego de Pies Excelente"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Civilizado de las villas marineras (Barcelona, Valencia, Sevilla, las villas cántabras y vizcaínas).",
+   "culturas_nota": [
+    "Civilizado"
+   ],
+   "culturas": [
+    "civilizado"
+   ]
+  },
+  {
+   "id": "peon-de-hueste",
+   "nombre": "Peón de Hueste",
+   "tipo": "cultural",
+   "armas": [
+    "Lanza larga",
+    "hacha",
+    "honda",
+    "escudo de madera"
+   ],
+   "rasgos": [
+    "Combate en Formación"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Bárbaro. Labradores y pastores que el señor lleva a la guerra.",
+   "culturas_nota": [
+    "Bárbaro"
+   ],
+   "culturas": [
+    "barbaro"
+   ]
+  },
+  {
+   "id": "almogavar",
+   "nombre": "Almogávar",
+   "tipo": "cultural",
+   "armas": [
+    "Lanza corta (azconas arrojadizas)",
+    "coltell",
+    "rodela o escudo de madera"
+   ],
+   "rasgos": [
+    "Hostigador"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Bárbaro de la frontera, en especial de la Corona de Aragón. Infantería ligera que vive de la cabalgada en tierra enemiga.",
+   "culturas_nota": [
+    "Bárbaro"
+   ],
+   "culturas": [
+    "barbaro"
+   ]
+  },
+  {
+   "id": "montanes",
+   "nombre": "Montañés",
+   "tipo": "cultural",
+   "armas": [
+    "Honda",
+    "cayado",
+    "hacha",
+    "cuchillo",
+    "tripa"
+   ],
+   "rasgos": [
+    "Hostigador"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Bárbaro de las sierras del norte (asturianos, cántabros, vascos, montañeses de los Pirineos).",
+   "culturas_nota": [
+    "Bárbaro"
+   ],
+   "culturas": [
+    "barbaro"
+   ]
+  },
+  {
+   "id": "jinete-a-la-jineta",
+   "nombre": "Jinete a la Jineta",
+   "tipo": "cultural",
+   "armas": [
+    "Lanza corta",
+    "adarga",
+    "espada (jineta nashrí o espada corta)",
+    "cuchillo"
+   ],
+   "rasgos": [
+    "Combate Montado"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Bárbaro o Nómada de la frontera andaluza y murciana, cristiano o musulmán: estribo corto, caballo ligero, ataque y huida.",
+   "culturas_nota": [
+    "Bárbaro",
+    "Nómada"
+   ],
+   "culturas": [
+    "barbaro",
+    "nomada"
+   ]
+  },
+  {
+   "id": "pastor-trashumante",
+   "nombre": "Pastor Trashumante",
+   "tipo": "cultural",
+   "armas": [
+    "Honda",
+    "cayado",
+    "cuchillo",
+    "perro de guarda"
+   ],
+   "rasgos": [
+    "Bestia Amaestrada"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Nómada. Pastores de la Mesta que bajan cada otoño con los rebaños por las cañadas.",
+   "culturas_nota": [
+    "Nómada"
+   ],
+   "culturas": [
+    "nomada"
+   ]
+  },
+  {
+   "id": "cazador-de-islas",
+   "nombre": "Cazador de Islas",
+   "tipo": "cultural",
+   "armas": [
+    "Lanza (banot endurecida al fuego)",
+    "piedras arrojadizas",
+    "garrote"
+   ],
+   "rasgos": [
+    "Hostigador"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Primitivo. Canarios de las islas Afortunadas.",
+   "culturas_nota": [
+    "Primitivo"
+   ],
+   "culturas": [
+    "primitivo"
+   ]
+  },
+  {
+   "id": "caballero-a-la-brida",
+   "nombre": "Caballero a la Brida",
+   "tipo": "profesional",
+   "armas": [
+    "Lanza de caballería",
+    "espada de mano",
+    "maza de armas",
+    "escudo de metal",
+    "daga"
+   ],
+   "rasgos": [
+    "Lancero Montado",
+    "Combate Montado"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Caballería pesada de Castilla, Aragón, Navarra y Portugal: silla de borrenes, estribo largo y carga en línea.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "hombre-de-armas-a-pie",
+   "nombre": "Hombre de Armas a Pie",
+   "tipo": "profesional",
+   "armas": [
+    "Espada bastarda",
+    "hacha de petos",
+    "maza de armas",
+    "escudo de metal",
+    "daga"
+   ],
+   "rasgos": [
+    "Mentalidad Defensiva",
+    "Aporrear"
+   ],
+   "rasgos_alternativos": true,
+   "contexto": "Escuderos y caballeros que descabalgan para combatir, como hacían los ingleses del Príncipe Negro en Nájera (1367).",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "freire-de-orden-militar",
+   "nombre": "Freire de Orden Militar",
+   "tipo": "profesional",
+   "armas": [
+    "Espada de mano",
+    "maza de armas",
+    "lanza de caballería",
+    "escudo de metal"
+   ],
+   "rasgos": [
+    "Combate Montado",
+    "Combate en Formación"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Caballeros de Santiago, Calatrava, Alcántara, Montesa o del Hospital.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "ballestero-de-asedio",
+   "nombre": "Ballestero de Asedio",
+   "tipo": "profesional",
+   "armas": [
+    "Ballesta",
+    "arbalesta",
+    "pavés",
+    "maza"
+   ],
+   "rasgos": [
+    "Guerra de Asedio"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Ballesteros del rey y de los concejos que defienden o asaltan murallas.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "ballestero-de-monte",
+   "nombre": "Ballestero de Monte",
+   "tipo": "profesional",
+   "armas": [
+    "Ballesta o ballesta ligera",
+    "lanza corta (venablo de jabalí)",
+    "bracamante"
+   ],
+   "rasgos": [
+    "Puntería de Tirador"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Monteros, cazadores y guardas de los bosques del rey o del señor.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "caballero-nazari",
+   "nombre": "Caballero Nazarí",
+   "tipo": "profesional",
+   "armas": [
+    "Saif",
+    "lanza corta",
+    "adarga",
+    "arco recurvado",
+    "telek"
+   ],
+   "rasgos": [
+    "Combate Montado",
+    "Hostigador"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Nobles y soldados del reino de Granada.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "voluntario-de-la-fe",
+   "nombre": "Voluntario de la Fe",
+   "tipo": "profesional",
+   "armas": [
+    "Lanza corta",
+    "adarga",
+    "nimcha o takuba",
+    "telek"
+   ],
+   "rasgos": [
+    "Hostigador",
+    "Grito Intimidante"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Gazis zenetes llegados del Magreb para combatir en la frontera granadina.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "guardia-de-aljama",
+   "nombre": "Guardia de Aljama",
+   "tipo": "profesional",
+   "armas": [
+    "Dabus",
+    "cuchillo",
+    "broquel"
+   ],
+   "rasgos": [
+    "Noquear"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Porteros de casas ricas y muccadim de las juderías y morerías.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "rufian-de-mancebia",
+   "nombre": "Rufián de Mancebía",
+   "tipo": "profesional",
+   "armas": [
+    "Daga",
+    "espada corta",
+    "broquel",
+    "capa"
+   ],
+   "rasgos": [
+    "Matar o Morir"
+   ],
+   "rasgos_alternativos": true,
+   "contexto": "Guardianes de mancebías, jaques, bravos a sueldo y pícaros con oficio.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "sicario",
+   "nombre": "Sicario",
+   "tipo": "profesional",
+   "armas": [
+    "Estilete",
+    "almarada",
+    "gumía",
+    "ballesta ligera"
+   ],
+   "rasgos": [
+    "Asesinato"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Asesinos a sueldo y venganzas de bando. La gumía es famosa por guardar el veneno en su vaina.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "corsario",
+   "nombre": "Corsario",
+   "tipo": "profesional",
+   "armas": [
+    "Bracamante",
+    "ballesta",
+    "rodela",
+    "garfio de abordaje"
+   ],
+   "rasgos": [
+    "Juego de Pies Excelente"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Corsarios y piratas cristianos, berberiscos o genoveses que infestan el Estrecho y las costas del Mediterráneo.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "mercenario-de-las-companias",
+   "nombre": "Mercenario de las Compañías",
+   "tipo": "profesional",
+   "armas": [
+    "Arco largo o ballesta",
+    "espada bastarda",
+    "hacha de petos",
+    "daga"
+   ],
+   "rasgos": [
+    "Puntería de Tirador",
+    "Aporrear"
+   ],
+   "rasgos_alternativos": true,
+   "contexto": "Ingleses, gascones y bretones de las Grandes Compañías que entran en Castilla durante la guerra entre Pedro I y Enrique de Trastámara (1366–1369).",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "caminante",
+   "nombre": "Caminante",
+   "tipo": "profesional",
+   "armas": [
+    "Bordón",
+    "cuchillo",
+    "honda"
+   ],
+   "rasgos": [
+    "Mentalidad Defensiva"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Peregrinos a Santiago, buhoneros y viajeros que no pueden llevar armas de guerra.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "baston-de-combate",
+   "nombre": "Bastón de Combate",
+   "tipo": "raro",
+   "armas": [
+    "Bastón de combate",
+    "bordón"
+   ],
+   "rasgos": [
+    "Armas Ocultas"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Arte francés (canne de combat) que sólo se ve en los valles pirenaicos de Navarra y Aragón.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "guerrero-tuareg",
+   "nombre": "Guerrero Tuareg",
+   "tipo": "raro",
+   "armas": [
+    "Takuba",
+    "telek",
+    "lanza corta",
+    "escudo de cuero (adarga)"
+   ],
+   "rasgos": [
+    "Combate Montado"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Viajeros, esclavos o mercenarios llegados con las caravanas del Sáhara.",
+   "culturas_nota": [],
+   "culturas": []
+  },
+  {
+   "id": "lansquenete-de-mangual",
+   "nombre": "Lansquenete de Mangual",
+   "tipo": "raro",
+   "armas": [
+    "Mangual",
+    "mayal de armas",
+    "espada corta"
+   ],
+   "rasgos": [
+    "Aporrear"
+   ],
+   "rasgos_alternativos": false,
+   "contexto": "Mercenarios centroeuropeos; el mangual es rarísimo en la Península.",
+   "culturas_nota": [],
+   "culturas": []
+  }
+ ],
+ "rasgos": [
+  {
+   "id": "aporrear",
+   "nombre": "Aporrear",
+   "nombre_en": "Batter",
+   "efecto": "Si el Modificador de Daño del guerrero es dos o más pasos/categorías mayor que el de su oponente, su arma se considera una categoría de Tamaño mayor a efectos de superar paradas.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "apresador",
+   "nombre": "Apresador",
+   "nombre_en": "Grappler",
+   "efecto": "Otorga ventaja al enredar, agarrar o inmovilizar oponentes: las tiradas enfrentadas del enemigo para evadir o liberarse aumentan su dificultad en un Grado.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "armas-ocultas",
+   "nombre": "Armas Ocultas",
+   "nombre_en": "Hidden Weapons",
+   "efecto": "Permite usar como armas letales objetos aparentemente inofensivos incluidos en el estilo (bastones, bordones, instrumentos musicales, herramientas de oficio), sin posibilidad de rotura accidental pese a su aparente fragilidad.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "arrojar-armas-lanzar-armas",
+   "nombre": "Arrojar Armas (Lanzar Armas)",
+   "nombre_en": "Throw Weapons",
+   "efecto": "Cualquier arma cuerpo a cuerpo empleada en este estilo puede ser también arrojada sin penalización a la habilidad (alcance típico 3/5/10 m si no tiene otro), aunque al usarla de este modo su tirada de daño del arma se reduce a la mitad.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "asesinato",
+   "nombre": "Asesinato",
+   "nombre_en": "Assassination",
+   "efecto": "Da al usuario acceso al Efecto Especial restringido Muerte silenciosa cuando ataca por sorpresa con armas pequeñas.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "bestia-amaestrada",
+   "nombre": "Bestia Amaestrada",
+   "nombre_en": "Trained Beast",
+   "efecto": "Diseñado para estilos que enfatizan el combate coordinado con un compañero animal (aves de presa, lobos, perros de guerra o alanos de presa). Permite al usuario gastar cualquiera de sus propios Puntos de Acción para defender contra ataques dirigidos a su bestia.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "combate-acuatico",
+   "nombre": "Combate Acuático",
+   "nombre_en": "Water Combat",
+   "efecto": "Permite ignorar el límite a las tiradas de combate impuesto por el porcentaje de la habilidad de Nadar.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "combate-en-cuadriga",
+   "nombre": "Combate en Cuadriga",
+   "nombre_en": "Chariot Fighting",
+   "efecto": "Permite a los pasajeros o combatientes de un carro de guerra (o vehículo ligero abierto en movimiento) ignorar el límite a sus habilidades de combate impuesto por la habilidad de Conducir del conductor.",
+   "epoca": "#epoca/antigua"
+  },
+  {
+   "id": "combate-en-formacion",
+   "nombre": "Combate en Formación\\*",
+   "nombre_en": "Formation Fighting",
+   "efecto": "Permite que un grupo de tres o más guerreros no flanqueados adopte una formación cerrada, dejando en desventaja a los oponentes más abiertos o desorganizados y reduciendo en 1 los Puntos de Acción de cada enemigo que se trabe con ellos.",
+   "epoca": "#epoca/antigua #epoca/medieval #epoca/todas"
+  },
+  {
+   "id": "combate-montado",
+   "nombre": "Combate Montado",
+   "nombre_en": "Mounted Combat",
+   "efecto": "Permite al personaje ignorar el límite de habilidad impuesto a las tiradas de combate por el porcentaje de su habilidad de Montar (Equitación).",
+   "epoca": "#epoca/antigua #epoca/medieval"
+  },
+  {
+   "id": "espadachin",
+   "nombre": "Espadachín",
+   "nombre_en": "Swashbuckling",
+   "efecto": "Permite al usuario iniciar ataques y evasiones mientras salta, hace acrobacias o se columpia para trabarse en combate (o destrabarse), ignorando cualquier límite impuesto por la habilidad de Atletismo.",
+   "epoca": "#epoca/medieval #epoca/todas"
+  },
+  {
+   "id": "grito-intimidante",
+   "nombre": "Grito Intimidante",
+   "nombre_en": "Intimidating Shout",
+   "efecto": "Este estilo anima a proferir gritos de guerra, kiai o alaridos frecuentes en combate para intimidar a los enemigos, haciendo que cualquier tirada de resistencia psicológica (como Voluntad ante Forzar rendición o Disparo de supresión) aumente su dificultad en un Grado.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "guerra-de-asedio",
+   "nombre": "Guerra de Asedio",
+   "nombre_en": "Siege Warfare",
+   "efecto": "Permite ignorar el límite a las habilidades de combate impuesto por la habilidad de Atletismo al escalar muros, luchar en escalas o cuerdas o reptar por túneles estrechos.",
+   "epoca": "#epoca/antigua #epoca/medieval"
+  },
+  {
+   "id": "hostigador-escaramuza",
+   "nombre": "Hostigador (Escaramuza)",
+   "nombre_en": "Skirmishing",
+   "efecto": "Permite efectuar ataques a distancia mientras se camina o se corre (pero no al esprintar).",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "juego-de-pies-excelente",
+   "nombre": "Juego de Pies Excelente",
+   "nombre_en": "Sure-Footed",
+   "efecto": "Al luchar en superficies resbaladizas, cubiertas de barcos, hielo o terreno inestable, el usuario ignora el límite a sus habilidades de combate impuesto por la habilidad de Acrobacias.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "lancero-montado-lancero-a-caballo",
+   "nombre": "Lancero Montado (Lancero a Caballo)",
+   "nombre_en": "Horse Lancer",
+   "efecto": "Realizar una carga de caballería (montada) con este estilo de combate no sufre la penalización habitual de un Grado de Dificultad (Difícil) a la tirada de ataque.",
+   "epoca": "#epoca/antigua #epoca/medieval"
+  },
+  {
+   "id": "lucha-a-ciegas-combate-a-ciegas",
+   "nombre": "Lucha a Ciegas (Combate a Ciegas)",
+   "nombre_en": "Blind Fighting",
+   "efecto": "Permite al usuario ignorar toda penalización circunstancial impuesta por mala iluminación, oscuridad o ceguera temporal (siempre que pueda oír o sentir al oponente).",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "luchador-precavido",
+   "nombre": "Luchador Precavido",
+   "nombre_en": "Cautious Fighter",
+   "efecto": "Puede usar la Acción de Combate Cambiar el Alcance para destrabarse automáticamente del combate sin necesidad de realizar tirada enfrentada.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "maestria-sin-armas-destreza-desarmado",
+   "nombre": "Maestría sin Armas (Destreza Desarmado)",
+   "nombre_en": "Unarmed Prowess",
+   "efecto": "Permite al usuario tratar sus bloqueos y paradas sin armas como si fueran de tamaño «Medio» (en vez de Pequeño), permitiéndole defenderse mucho mejor frente a oponentes armados.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "matar-o-morir",
+   "nombre": "Matar o Morir",
+   "nombre_en": "Do or Die",
+   "efecto": "Permite que las combinaciones de dos armas tengan acceso al Efecto Especial Ráfaga, siempre que se alterne de arma con cada ataque subsiguiente.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "mentalidad-defensiva",
+   "nombre": "Mentalidad Defensiva",
+   "nombre_en": "Defensive Minded",
+   "efecto": "Aumenta el Tamaño efectivo de tu arma en un nivel al parar, siempre que durante ese Asalto de Combate no se haya realizado (ni se realice) ninguna acción ofensiva.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "muro-de-escudos",
+   "nombre": "Muro de Escudos\\*",
+   "nombre_en": "Shield Wall",
+   "efecto": "Permite que un grupo de tres o más usuarios de escudo solapen su protección, añadiendo +1 al número de localizaciones que se pueden proteger con el Bloqueo Pasivo y resistiendo Empujones, Ataques en salto y Golpetazos como si estuvieran usando la acción Afianzarse.",
+   "epoca": "#epoca/antigua #epoca/medieval"
+  },
+  {
+   "id": "noquear-golpe-de-nocaut",
+   "nombre": "Noquear (Golpe de Nocaut)",
+   "nombre_en": "Knockout Blow",
+   "efecto": "Al atacar por sorpresa, la duración del Efecto Especial Aturdir localización se mide en minutos en lugar de turnos.",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "partir-escudos",
+   "nombre": "Partir Escudos",
+   "nombre_en": "Shield Splitter",
+   "efecto": "Permite, al usar clavas, mazas y hachas, tirar dos veces el daño del arma y elegir el mejor resultado cuando se emplea el Efecto Especial Dañar arma contra escudos.",
+   "epoca": "#epoca/antigua #epoca/medieval"
+  },
+  {
+   "id": "punteria-de-tirador-tirador-a-distancia",
+   "nombre": "Puntería de Tirador (Tirador a Distancia)",
+   "nombre_en": "Ranged Marksman",
+   "efecto": "Al usar un arma a distancia, permite desplazar el resultado de una tirada aleatoria de Localización de Impacto a una localización corporal inmediatamente adyacente (incluso sin gastar un Efecto Especial en Tiro apuntado).",
+   "epoca": "#epoca/todas"
+  },
+  {
+   "id": "temerario",
+   "nombre": "Temerario",
+   "nombre_en": "Daredevil",
+   "efecto": "Puede usar la habilidad de Evadir para esquivar golpes en combate cuerpo a cuerpo sin acabar derribado (tumbado en el suelo).",
+   "epoca": "#epoca/todas"
+  }
+ ]
+}

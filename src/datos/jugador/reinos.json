@@ -1,0 +1,27 @@
+[
+ {
+  "id": "corona-de-castilla",
+  "nombre": "Corona de Castilla",
+  "nota": "Corona de Castilla"
+ },
+ {
+  "id": "corona-de-aragon",
+  "nombre": "Corona de Aragón",
+  "nota": "Corona de Aragón"
+ },
+ {
+  "id": "reino-de-portugal",
+  "nombre": "Reino de Portugal",
+  "nota": "Reino de Portugal"
+ },
+ {
+  "id": "reino-de-navarra",
+  "nombre": "Reino de Navarra",
+  "nota": "Reino de Navarra"
+ },
+ {
+  "id": "reino-de-granada",
+  "nombre": "Reino de Granada",
+  "nota": "Reino de Granada"
+ }
+]

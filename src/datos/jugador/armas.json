@@ -1,0 +1,1949 @@
+{
+ "cuerpo_a_cuerpo": [
+  {
+   "id": "cuchillo",
+   "nombre": "Cuchillo",
+   "aclaracion": "de monte, de cocina",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d3",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 0,
+   "pa": 5,
+   "pg": 4,
+   "rasgos": [
+    "Arrojadiza"
+   ],
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 3,
+   "precio_texto": "3 mrs"
+  },
+  {
+   "id": "almarada",
+   "nombre": "Almarada",
+   "aclaracion": "chupasangre",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d4",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Empalar",
+    "Eludir armadura"
+   ],
+   "car": 0,
+   "pa": 6,
+   "pg": 6,
+   "rasgos": [
+    "Ofensiva"
+   ],
+   "condicion": [
+    "Villano",
+    "soldado"
+   ],
+   "precio": 3,
+   "precio_texto": "3 mrs"
+  },
+  {
+   "id": "daga",
+   "nombre": "Daga",
+   "aclaracion": "",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d4+1",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 0,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [
+    "Arrojadiza"
+   ],
+   "condicion": [
+    "Noble",
+    "soldado"
+   ],
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "estilete",
+   "nombre": "Estilete",
+   "aclaracion": "misericordia",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d3+1",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Empalar",
+    "Eludir armadura"
+   ],
+   "car": 0,
+   "pa": 6,
+   "pg": 6,
+   "rasgos": [
+    "Ofensiva",
+    "Sigilo"
+   ],
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "gumia",
+   "nombre": "Gumía",
+   "aclaracion": "marroquí",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d4+1",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado",
+    "Inyectar veneno"
+   ],
+   "car": 0,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [
+    "Sigilo"
+   ],
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "telek",
+   "nombre": "Telek",
+   "aclaracion": "tuareg",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d4",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Empalar",
+    "Sangrado"
+   ],
+   "car": 0,
+   "pa": 5,
+   "pg": 6,
+   "rasgos": [
+    "Sigilo"
+   ],
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 14,
+   "precio_texto": "14 mrs"
+  },
+  {
+   "id": "coltell",
+   "nombre": "Coltell",
+   "aclaracion": "almogávar",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 10,
+   "precio_texto": "10 mrs"
+  },
+  {
+   "id": "terciado",
+   "nombre": "Terciado",
+   "aclaracion": "musulmán",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 18,
+   "precio_texto": "18 mrs"
+  },
+  {
+   "id": "bracamante",
+   "nombre": "Bracamante",
+   "aclaracion": "",
+   "grupo": "Cuchillos y dagas",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Soldado",
+    "villano"
+   ],
+   "precio": 68,
+   "precio_texto": "68 mrs"
+  },
+  {
+   "id": "espada-corta",
+   "nombre": "Espada corta",
+   "aclaracion": "",
+   "grupo": "Espadas",
+   "dano": "1d6",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 51,
+   "precio_texto": "51 mrs"
+  },
+  {
+   "id": "espada-de-mano",
+   "nombre": "Espada de mano",
+   "aclaracion": "de armas",
+   "grupo": "Espadas",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 68,
+   "precio_texto": "68 mrs"
+  },
+  {
+   "id": "jineta-nashri",
+   "nombre": "Jineta nashrí",
+   "aclaracion": "nazarí",
+   "grupo": "Espadas",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [
+    "Lujo"
+   ],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 360,
+   "precio_texto": "360 mrs"
+  },
+  {
+   "id": "saif",
+   "nombre": "Saif",
+   "aclaracion": "cimitarra",
+   "grupo": "Espadas",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Sangrado"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 68,
+   "precio_texto": "68 mrs"
+  },
+  {
+   "id": "nimcha",
+   "nombre": "Nimcha",
+   "aclaracion": "magrebí",
+   "grupo": "Espadas",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Sangrado"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 10,
+   "rasgos": [
+    "Difícil de desarmar¹"
+   ],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 68,
+   "precio_texto": "68 mrs"
+  },
+  {
+   "id": "takuba",
+   "nombre": "Takuba",
+   "aclaracion": "tuareg",
+   "grupo": "Espadas",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 68,
+   "precio_texto": "68 mrs"
+  },
+  {
+   "id": "estoque",
+   "nombre": "Estoque",
+   "aclaracion": "²",
+   "grupo": "Espadas",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "L",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 5,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 51,
+   "precio_texto": "51 mrs"
+  },
+  {
+   "id": "espada-bastarda",
+   "nombre": "Espada bastarda",
+   "aclaracion": "(de mano y media), a 1 mano",
+   "grupo": "Espadones (a dos manos)",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "L",
+   "efectos": [
+    "Sangrado",
+    "Empalar"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 12,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 85,
+   "precio_texto": "85 mrs"
+  },
+  {
+   "id": "espada-bastarda",
+   "nombre": "Espada bastarda",
+   "aclaracion": ", a 2 manos",
+   "grupo": "Espadones (a dos manos)",
+   "dano": "1d10",
+   "tam": "G",
+   "alcance": "L",
+   "efectos": [
+    "Sangrado",
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 12,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": null,
+   "precio_texto": "(la misma)"
+  },
+  {
+   "id": "alfanje",
+   "nombre": "Alfanje",
+   "aclaracion": "montante musulmán",
+   "grupo": "Espadones (a dos manos)",
+   "dano": "1d10+2",
+   "tam": "G",
+   "alcance": "L",
+   "efectos": [
+    "Sangrado",
+    "Dañar arma"
+   ],
+   "car": 3,
+   "pa": 6,
+   "pg": 12,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 108,
+   "precio_texto": "108 mrs"
+  },
+  {
+   "id": "montante",
+   "nombre": "Montante",
+   "aclaracion": "espada larga",
+   "grupo": "Espadones (a dos manos)",
+   "dano": "2d8",
+   "tam": "E",
+   "alcance": "L",
+   "efectos": [
+    "Sangrado",
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 4,
+   "pa": 6,
+   "pg": 12,
+   "rasgos": [],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 108,
+   "precio_texto": "108 mrs"
+  },
+  {
+   "id": "hacha",
+   "nombre": "Hacha",
+   "aclaracion": "de leñador",
+   "grupo": "Hachas",
+   "dano": "1d6",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Sangrado"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 6,
+   "rasgos": [
+    "Arrojadiza"
+   ],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 2,
+   "precio_texto": "2 mrs"
+  },
+  {
+   "id": "hacha-de-armas",
+   "nombre": "Hacha de armas",
+   "aclaracion": "de mano",
+   "grupo": "Hachas",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Sangrado",
+    "Dañar arma"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 6,
+   "precio_texto": "6 mrs"
+  },
+  {
+   "id": "pico-de-cuervo",
+   "nombre": "Pico de cuervo",
+   "aclaracion": "",
+   "grupo": "Hachas",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 72,
+   "precio_texto": "72 mrs"
+  },
+  {
+   "id": "hacha-de-combate",
+   "nombre": "Hacha de combate",
+   "aclaracion": "2M",
+   "grupo": "Hachas",
+   "dano": "2d6+2",
+   "tam": "E",
+   "alcance": "L",
+   "efectos": [
+    "Sangrado",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 27,
+   "precio_texto": "27 mrs"
+  },
+  {
+   "id": "hacha-de-petos",
+   "nombre": "Hacha de petos",
+   "aclaracion": "2M",
+   "grupo": "Hachas",
+   "dano": "1d8+2",
+   "tam": "G",
+   "alcance": "ML",
+   "efectos": [
+    "Enredar",
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 4,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Recibir Carga"
+   ],
+   "condicion": [
+    "Noble",
+    "soldado"
+   ],
+   "precio": 36,
+   "precio_texto": "36 mrs"
+  },
+  {
+   "id": "archa",
+   "nombre": "Archa",
+   "aclaracion": "guadaña de guerra, 2M",
+   "grupo": "Hachas",
+   "dano": "1d10+2",
+   "tam": "G",
+   "alcance": "L",
+   "efectos": [
+    "Sangrado",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 36,
+   "precio_texto": "36 mrs"
+  },
+  {
+   "id": "clava",
+   "nombre": "Clava",
+   "aclaracion": "garrote",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d6",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 4,
+   "rasgos": [],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 2,
+   "precio_texto": "2 mrs"
+  },
+  {
+   "id": "tripa",
+   "nombre": "Tripa",
+   "aclaracion": "saco de arena",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d4+1",
+   "tam": "P",
+   "alcance": "C",
+   "efectos": [
+    "Aturdir ubicación"
+   ],
+   "car": 0,
+   "pa": 1,
+   "pg": 4,
+   "rasgos": [
+    "Flexible",
+    "Ofensiva"
+   ],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 2,
+   "precio_texto": "2 mrs"
+  },
+  {
+   "id": "dabus",
+   "nombre": "Dabus",
+   "aclaracion": "",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 6,
+   "rasgos": [],
+   "condicion": [
+    "Villano",
+    "soldado"
+   ],
+   "precio": 6,
+   "precio_texto": "6 mrs"
+  },
+  {
+   "id": "maza",
+   "nombre": "Maza",
+   "aclaracion": "",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 6,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 7,
+   "precio_texto": "7 mrs"
+  },
+  {
+   "id": "maza-de-armas",
+   "nombre": "Maza de armas",
+   "aclaracion": "barreteada",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d8+1",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Aturdir ubicación",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [],
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 10,
+   "precio_texto": "10 mrs"
+  },
+  {
+   "id": "martillo-de-guerra",
+   "nombre": "Martillo de guerra",
+   "aclaracion": "lucerna",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Aturdir ubicación",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 51,
+   "precio_texto": "51 mrs"
+  },
+  {
+   "id": "mangual",
+   "nombre": "Mangual",
+   "aclaracion": "látigo de armas",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d6+1",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Embestir",
+    "Enredar",
+    "Aturdir ubicación"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 8,
+   "rasgos": [
+    "Flexible"
+   ],
+   "condicion": [
+    "Soldado (raro)"
+   ],
+   "precio": 216,
+   "precio_texto": "216 mrs"
+  },
+  {
+   "id": "mayal-de-armas",
+   "nombre": "Mayal de armas",
+   "aclaracion": "2M",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "1d10",
+   "tam": "G",
+   "alcance": "L",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 3,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Flexible"
+   ],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 72,
+   "precio_texto": "72 mrs"
+  },
+  {
+   "id": "maza-pesada",
+   "nombre": "Maza pesada",
+   "aclaracion": "2M",
+   "grupo": "Mazas y armas contundentes",
+   "dano": "2d6",
+   "tam": "E",
+   "alcance": "L",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 3,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 14,
+   "precio_texto": "14 mrs"
+  },
+  {
+   "id": "lanza-corta",
+   "nombre": "Lanza corta",
+   "aclaracion": "chuzo, venablo, azcona",
+   "grupo": "Lanzas y armas de asta",
+   "dano": "1d8+1",
+   "tam": "M",
+   "alcance": "L",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 5,
+   "rasgos": [
+    "Arrojadiza",
+    "Recibir Carga"
+   ],
+   "condicion": [
+    "Soldado",
+    "villano"
+   ],
+   "precio": 6,
+   "precio_texto": "6 mrs"
+  },
+  {
+   "id": "lanza-de-caballeria",
+   "nombre": "Lanza de caballería",
+   "aclaracion": "",
+   "grupo": "Lanzas y armas de asta",
+   "dano": "1d10+2",
+   "tam": "E",
+   "alcance": "ML",
+   "efectos": [
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 3,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Montada"
+   ],
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 10,
+   "precio_texto": "10 mrs"
+  },
+  {
+   "id": "lanza-larga",
+   "nombre": "Lanza larga",
+   "aclaracion": "(lanzón), 2M",
+   "grupo": "Lanzas y armas de asta",
+   "dano": "1d10+1",
+   "tam": "G",
+   "alcance": "ML",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Recibir Carga"
+   ],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "podadera",
+   "nombre": "Podadera",
+   "aclaracion": "u hocino, 2M",
+   "grupo": "Lanzas y armas de asta",
+   "dano": "1d10",
+   "tam": "G",
+   "alcance": "ML",
+   "efectos": [
+    "Empalar",
+    "Tropezar oponente"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Recibir Carga"
+   ],
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "morosa",
+   "nombre": "Morosa",
+   "aclaracion": "(islámica), 2M",
+   "grupo": "Lanzas y armas de asta",
+   "dano": "1d10+2",
+   "tam": "G",
+   "alcance": "ML",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 3,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Barbada",
+    "Montada"
+   ],
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 18,
+   "precio_texto": "18 mrs"
+  },
+  {
+   "id": "horquilla",
+   "nombre": "Horquilla",
+   "aclaracion": "(tridente), 2M",
+   "grupo": "Lanzas y armas de asta",
+   "dano": "1d8",
+   "tam": "G",
+   "alcance": "L",
+   "efectos": [
+    "Empalar",
+    "Enredar"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 10,
+   "rasgos": [
+    "Recibir Carga"
+   ],
+   "condicion": [
+    "Villano (raro)"
+   ],
+   "precio": 36,
+   "precio_texto": "36 mrs"
+  },
+  {
+   "id": "baston-de-combate",
+   "nombre": "Bastón de combate",
+   "aclaracion": "1M",
+   "grupo": "Palos y bastones",
+   "dano": "1d6",
+   "tam": "M",
+   "alcance": "M",
+   "efectos": [
+    "Aturdir ubicación"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 6,
+   "rasgos": [
+    "Frágil"
+   ],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 2,
+   "precio_texto": "2 mrs"
+  },
+  {
+   "id": "cayado",
+   "nombre": "Cayado",
+   "aclaracion": "de pastor, 2M",
+   "grupo": "Palos y bastones",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "L",
+   "efectos": [
+    "Aturdir ubicación",
+    "Tropezar oponente"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 8,
+   "rasgos": [
+    "Defensiva",
+    "Frágil"
+   ],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 3,
+   "precio_texto": "3 mrs"
+  },
+  {
+   "id": "bordon",
+   "nombre": "Bordón",
+   "aclaracion": "de peregrino, 2M",
+   "grupo": "Palos y bastones",
+   "dano": "1d8",
+   "tam": "M",
+   "alcance": "L",
+   "efectos": [
+    "Aturdir ubicación"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 8,
+   "rasgos": [
+    "Defensiva",
+    "Frágil"
+   ],
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 3,
+   "precio_texto": "3 mrs"
+  },
+  {
+   "id": "sin-armas",
+   "nombre": "Sin armas",
+   "aclaracion": "puño, patada, cabezazo",
+   "grupo": "Palos y bastones",
+   "dano": "1d3",
+   "tam": "P",
+   "alcance": "T",
+   "efectos": [
+    "Embestir",
+    "Agarre (Efecto Especial)",
+    "Aturdir ubicación"
+   ],
+   "car": 0,
+   "pa": 0,
+   "pg": null,
+   "rasgos": [],
+   "condicion": [
+    "Todas"
+   ],
+   "precio": null,
+   "precio_texto": "—"
+  }
+ ],
+ "distancia": [
+  {
+   "id": "honda",
+   "nombre": "Honda",
+   "aclaracion": "",
+   "dano": "1d8",
+   "suma_md": false,
+   "potencia": "G",
+   "alcance": "10 / 150 / 300",
+   "recarga": "3",
+   "efectos": [
+    "Aturdir ubicación"
+   ],
+   "car": 0,
+   "pa": 1,
+   "pg": 2,
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 1,
+   "precio_texto": "1 mrs"
+  },
+  {
+   "id": "arco-corto",
+   "nombre": "Arco corto",
+   "aclaracion": "",
+   "dano": "1d6",
+   "suma_md": true,
+   "potencia": "G",
+   "alcance": "15 / 100 / 200",
+   "recarga": "2",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 4,
+   "condicion": [
+    "Villano",
+    "soldado"
+   ],
+   "precio": 36,
+   "precio_texto": "36 mrs"
+  },
+  {
+   "id": "arco-recurvado",
+   "nombre": "Arco recurvado",
+   "aclaracion": "nazarí",
+   "dano": "1d8",
+   "suma_md": true,
+   "potencia": "E",
+   "alcance": "15 / 125 / 250",
+   "recarga": "2",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 8,
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 72,
+   "precio_texto": "72 mrs"
+  },
+  {
+   "id": "arco-largo",
+   "nombre": "Arco largo",
+   "aclaracion": "inglés, rarísimo",
+   "dano": "1d8",
+   "suma_md": true,
+   "potencia": "E",
+   "alcance": "15 / 125 / 250",
+   "recarga": "2",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 7,
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 108,
+   "precio_texto": "108 mrs"
+  },
+  {
+   "id": "ballesta-ligera",
+   "nombre": "Ballesta ligera",
+   "aclaracion": "de caza, se tensa a mano",
+   "dano": "1d6+1",
+   "suma_md": false,
+   "potencia": "G",
+   "alcance": "15 / 75 / 150",
+   "recarga": "2",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 5,
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 108,
+   "precio_texto": "108 mrs"
+  },
+  {
+   "id": "ballesta",
+   "nombre": "Ballesta",
+   "aclaracion": "de estribo",
+   "dano": "1d10",
+   "suma_md": false,
+   "potencia": "E",
+   "alcance": "20 / 150 / 300",
+   "recarga": "4",
+   "efectos": [
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 8,
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 136,
+   "precio_texto": "136 mrs"
+  },
+  {
+   "id": "arbalesta",
+   "nombre": "Arbalesta",
+   "aclaracion": "de cranequín",
+   "dano": "2d6",
+   "suma_md": false,
+   "potencia": "E",
+   "alcance": "25 / 175 / 350",
+   "recarga": "6",
+   "efectos": [
+    "Empalar",
+    "Dañar arma"
+   ],
+   "car": 3,
+   "pa": 6,
+   "pg": 10,
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 216,
+   "precio_texto": "216 mrs"
+  },
+  {
+   "id": "lanza-corta-azcona",
+   "nombre": "Lanza corta / azcona",
+   "aclaracion": "arrojada",
+   "dano": "1d8",
+   "suma_md": true,
+   "potencia": "G",
+   "alcance": "10 / 15 / 30",
+   "recarga": "—",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 5,
+   "condicion": [
+    "Soldado",
+    "villano"
+   ],
+   "precio": 6,
+   "precio_texto": "6 mrs"
+  },
+  {
+   "id": "daga-o-cuchillo",
+   "nombre": "Daga o cuchillo",
+   "aclaracion": "arrojados",
+   "dano": "1d4 / 1d3",
+   "suma_md": true,
+   "potencia": "P",
+   "alcance": "5 / 10 / 20",
+   "recarga": "—",
+   "efectos": [
+    "Empalar"
+   ],
+   "car": 0,
+   "pa": 6,
+   "pg": 8,
+   "condicion": [
+    "Todas"
+   ],
+   "precio": null,
+   "precio_texto": "—"
+  },
+  {
+   "id": "hacha",
+   "nombre": "Hacha",
+   "aclaracion": "arrojada",
+   "dano": "1d6",
+   "suma_md": true,
+   "potencia": "P",
+   "alcance": "10 / 20 / 30",
+   "recarga": "—",
+   "efectos": [
+    "Sangrado"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 6,
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 2,
+   "precio_texto": "2 mrs"
+  },
+  {
+   "id": "piedra",
+   "nombre": "Piedra",
+   "aclaracion": "",
+   "dano": "1d3",
+   "suma_md": true,
+   "potencia": "P",
+   "alcance": "5 / 10 / 20",
+   "recarga": "—",
+   "efectos": [
+    "Aturdir ubicación"
+   ],
+   "car": 0,
+   "pa": 0,
+   "pg": null,
+   "condicion": [
+    "Todas"
+   ],
+   "precio": null,
+   "precio_texto": "—"
+  },
+  {
+   "id": "trueno-de-mano",
+   "nombre": "Trueno de mano",
+   "aclaracion": "³",
+   "dano": "2d6",
+   "suma_md": false,
+   "potencia": "E",
+   "alcance": "10 / 30 / 60",
+   "recarga": "10",
+   "efectos": [
+    "Empalar",
+    "Aturdir ubicación"
+   ],
+   "car": 3,
+   "pa": 4,
+   "pg": 8,
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 600,
+   "precio_texto": "600 mrs"
+  }
+ ],
+ "escudos": [
+  {
+   "id": "broquel",
+   "nombre": "Broquel",
+   "aclaracion": "madera y cuero",
+   "dano": "1d3",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Embestir"
+   ],
+   "car": 1,
+   "pa": 4,
+   "pg": 6,
+   "bloqueo": 2,
+   "notas": "2 localizaciones. Escudo de milicia, barato.",
+   "condicion": [
+    "Villano",
+    "soldado"
+   ],
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "rodela",
+   "nombre": "Rodela",
+   "aclaracion": "metálica, redonda",
+   "dano": "1d3",
+   "tam": "M",
+   "alcance": "C",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 1,
+   "pa": 6,
+   "pg": 9,
+   "bloqueo": 2,
+   "notas": "2 localizaciones. Infantería a pie.",
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 18,
+   "precio_texto": "18 mrs"
+  },
+  {
+   "id": "adarga",
+   "nombre": "Adarga",
+   "aclaracion": "cuero, ovalada o de corazón",
+   "dano": "1d3",
+   "tam": "G",
+   "alcance": "C",
+   "efectos": [
+    "Embestir"
+   ],
+   "car": 1,
+   "pa": 3,
+   "pg": 9,
+   "bloqueo": 3,
+   "notas": "3 localizaciones. Muy ligera: ideal para la jineta.",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 24,
+   "precio_texto": "24 mrs"
+  },
+  {
+   "id": "escudo-de-madera",
+   "nombre": "Escudo de madera",
+   "aclaracion": "",
+   "dano": "1d4",
+   "tam": "G",
+   "alcance": "C",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 2,
+   "pa": 4,
+   "pg": 12,
+   "bloqueo": 3,
+   "notas": "3 localizaciones.",
+   "condicion": [
+    "Soldado",
+    "villano"
+   ],
+   "precio": 24,
+   "precio_texto": "24 mrs"
+  },
+  {
+   "id": "escudo-de-metal",
+   "nombre": "Escudo de metal",
+   "aclaracion": "de armas, reforzado, de punta",
+   "dano": "1d4",
+   "tam": "G",
+   "alcance": "C",
+   "efectos": [
+    "Embestir",
+    "Aturdir ubicación"
+   ],
+   "car": 2,
+   "pa": 6,
+   "pg": 12,
+   "bloqueo": 3,
+   "notas": "3 localizaciones. El escudo habitual de los caballeros.",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 48,
+   "precio_texto": "48 mrs"
+  },
+  {
+   "id": "paves",
+   "nombre": "Pavés",
+   "aclaracion": "oblongo",
+   "dano": "1d4",
+   "tam": "E",
+   "alcance": "C",
+   "efectos": [
+    "Embestir"
+   ],
+   "car": 3,
+   "pa": 6,
+   "pg": 15,
+   "bloqueo": 4,
+   "notas": "4 localizaciones. Puede plantarse en el suelo para proteger a un ballestero mientras recarga.",
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 72,
+   "precio_texto": "72 mrs"
+  },
+  {
+   "id": "tarja",
+   "nombre": "Tarja",
+   "aclaracion": "gran escudo de vanguardia",
+   "dano": "1d4",
+   "tam": "E",
+   "alcance": "C",
+   "efectos": [
+    "Embestir"
+   ],
+   "car": 4,
+   "pa": 4,
+   "pg": 18,
+   "bloqueo": 5,
+   "notas": "5 localizaciones (cubre todo el cuerpo). No se puede usar a caballo.",
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 102,
+   "precio_texto": "102 mrs"
+  }
+ ],
+ "armaduras": [
+  {
+   "id": "pelliza-de-piel",
+   "nombre": "Pelliza de piel",
+   "aclaracion": "",
+   "tipo": "Blanda",
+   "pa": 1,
+   "localizaciones": "Pecho y abdomen",
+   "cubre": [
+    "pecho",
+    "abdomen"
+   ],
+   "car": 2,
+   "notas": "Prenda de abrigo, no parece armadura.",
+   "condicion": [
+    "Villano"
+   ],
+   "precio": 108,
+   "precio_texto": "108 mrs"
+  },
+  {
+   "id": "ropas-gruesas",
+   "nombre": "Ropas gruesas",
+   "aclaracion": "lana, vellón",
+   "tipo": "Blanda",
+   "pa": 1,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 3,
+   "notas": "Ropa de invierno, no parece armadura.",
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 216,
+   "precio_texto": "216 mrs"
+  },
+  {
+   "id": "velmez",
+   "nombre": "Velmez",
+   "aclaracion": "jubón de cuero",
+   "tipo": "Ligera",
+   "pa": 2,
+   "localizaciones": "Pecho y abdomen",
+   "cubre": [
+    "pecho",
+    "abdomen"
+   ],
+   "car": 2,
+   "notas": "Se lleva debajo de armaduras pesadas.",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 288,
+   "precio_texto": "288 mrs"
+  },
+  {
+   "id": "gambeson",
+   "nombre": "Gambesón",
+   "aclaracion": "tela acolchada o cuero",
+   "tipo": "Ligera",
+   "pa": 2,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 6,
+   "notas": "",
+   "condicion": [
+    "Soldado",
+    "villano"
+   ],
+   "precio": 288,
+   "precio_texto": "288 mrs"
+  },
+  {
+   "id": "gambeson-reforzado",
+   "nombre": "Gambesón reforzado",
+   "aclaracion": "lona, cuero crudo, alguna lámina",
+   "tipo": "Ligera",
+   "pa": 3,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 9,
+   "notas": "Nadar un Grado más difícil.",
+   "condicion": [
+    "Soldado"
+   ],
+   "precio": 432,
+   "precio_texto": "432 mrs"
+  },
+  {
+   "id": "brazales-de-cuero",
+   "nombre": "Brazales de cuero",
+   "aclaracion": "",
+   "tipo": "Ligera",
+   "pa": 2,
+   "localizaciones": "Brazos",
+   "cubre": [
+    "brazo-izq",
+    "brazo-der"
+   ],
+   "car": 2,
+   "notas": "Típicos de arqueros. Se combinan con otras armaduras.",
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 48,
+   "precio_texto": "48 mrs"
+  },
+  {
+   "id": "grebas-de-cuero",
+   "nombre": "Grebas de cuero",
+   "aclaracion": "",
+   "tipo": "Ligera",
+   "pa": 2,
+   "localizaciones": "Piernas",
+   "cubre": [
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 2,
+   "notas": "Se combinan con otras armaduras.",
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 48,
+   "precio_texto": "48 mrs"
+  },
+  {
+   "id": "coracina",
+   "nombre": "Coracina",
+   "aclaracion": "armadura de escamas",
+   "tipo": "Metálica",
+   "pa": 4,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 18,
+   "notas": "",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 432,
+   "precio_texto": "432 mrs"
+  },
+  {
+   "id": "loriga-de-malla",
+   "nombre": "Loriga de malla",
+   "aclaracion": "",
+   "tipo": "Metálica",
+   "pa": 6,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 24,
+   "notas": "La armadura más común de los hombres de armas.",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 900,
+   "precio_texto": "900 mrs"
+  },
+  {
+   "id": "coraza-corta",
+   "nombre": "Coraza corta",
+   "aclaracion": "nazarí, muy ornamentada",
+   "tipo": "Metálica",
+   "pa": 5,
+   "localizaciones": "Pecho y abdomen",
+   "cubre": [
+    "pecho",
+    "abdomen"
+   ],
+   "car": 6,
+   "notas": "Se lleva con casco, nunca con yelmo.",
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 648,
+   "precio_texto": "648 mrs"
+  },
+  {
+   "id": "cota-de-placas",
+   "nombre": "Cota de placas",
+   "aclaracion": "loriga reforzada",
+   "tipo": "Metálica",
+   "pa": 7,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 30,
+   "notas": "Malla con láminas en pecho, brazos y piernas.",
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 1620,
+   "precio_texto": "1.620 mrs"
+  },
+  {
+   "id": "grebas-metalicas",
+   "nombre": "Grebas metálicas",
+   "aclaracion": "",
+   "tipo": "Metálica",
+   "pa": 6,
+   "localizaciones": "Piernas",
+   "cubre": [
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 6,
+   "notas": "Protegen de la rodilla al tobillo.",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 142,
+   "precio_texto": "142 mrs"
+  },
+  {
+   "id": "arnes",
+   "nombre": "Arnés",
+   "aclaracion": "armadura blanca, de placas",
+   "tipo": "Completa",
+   "pa": 8,
+   "localizaciones": "Todo menos cabeza",
+   "cubre": [
+    "pecho",
+    "abdomen",
+    "brazo-izq",
+    "brazo-der",
+    "pierna-izq",
+    "pierna-der"
+   ],
+   "car": 36,
+   "notas": "Hecho a medida. Levantarse del suelo con él exige una tirada de Atletismo. Sólo para los nobles más ricos, y raro antes de 1380.",
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 2700,
+   "precio_texto": "2.700 mrs"
+  }
+ ],
+ "cascos": [
+  {
+   "id": "gorro-de-cuero",
+   "nombre": "Gorro de cuero",
+   "aclaracion": "",
+   "pa": 1,
+   "cubre": [
+    "cabeza"
+   ],
+   "car": 0,
+   "notas": "Prenda normal; sólo con armaduras blandas o ligeras.",
+   "condicion": [
+    "Todas"
+   ],
+   "precio": 18,
+   "precio_texto": "18 mrs"
+  },
+  {
+   "id": "capacete",
+   "nombre": "Capacete",
+   "aclaracion": "cuero duro",
+   "pa": 3,
+   "cubre": [
+    "cabeza"
+   ],
+   "car": 1,
+   "notas": "Mal visto con armaduras metálicas.",
+   "condicion": [
+    "Villano",
+    "soldado"
+   ],
+   "precio": 36,
+   "precio_texto": "36 mrs"
+  },
+  {
+   "id": "bacinete",
+   "nombre": "Bacinete",
+   "aclaracion": "almete, sombrero de hierro si tiene alas",
+   "pa": 5,
+   "cubre": [
+    "cabeza"
+   ],
+   "car": 2,
+   "notas": "El casco más habitual. Sin visera ni gola.",
+   "condicion": [
+    "Soldado",
+    "noble"
+   ],
+   "precio": 108,
+   "precio_texto": "108 mrs"
+  },
+  {
+   "id": "celada",
+   "nombre": "Celada",
+   "aclaracion": "",
+   "pa": 6,
+   "cubre": [
+    "cabeza"
+   ],
+   "car": 3,
+   "notas": "Deja libre boca y barbilla. Las tiradas de Percepción basadas en la vista son un Grado más difíciles. Sólo con coracina, loriga, cota de placas o arnés.",
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 180,
+   "precio_texto": "180 mrs"
+  },
+  {
+   "id": "yelmo",
+   "nombre": "Yelmo",
+   "aclaracion": "cerrado",
+   "pa": 8,
+   "cubre": [
+    "cabeza"
+   ],
+   "car": 4,
+   "notas": "Cubre cráneo, cara y cuello. Las tiradas de Percepción son dos Grados más difíciles (uno si se alza la visera, pero entonces su PA baja a 6). Sólo con armaduras metálicas o completas.",
+   "condicion": [
+    "Noble"
+   ],
+   "precio": 252,
+   "precio_texto": "252 mrs"
+  }
+ ],
+ "monturas": [
+  {
+   "id": "bardas-de-vaqueta",
+   "nombre": "Bardas de vaqueta",
+   "aclaracion": "cuero de ternera",
+   "pa": 3,
+   "localizaciones": "Todo menos patas",
+   "notas": "El caballo pierde 1 m de movimiento. Sólo caballos entrenados para la guerra.",
+   "precio": 810,
+   "precio_texto": "810 mrs"
+  },
+  {
+   "id": "bardas",
+   "nombre": "Bardas",
+   "aclaracion": "metálicas",
+   "pa": 5,
+   "localizaciones": "Todo menos patas",
+   "notas": "El caballo pierde 2 m de movimiento. Sólo caballos de guerra, y ajustadas a cada animal.",
+   "precio": 6840,
+   "precio_texto": "6.840 mrs"
+  }
+ ],
+ "municion": [
+  {
+   "id": "flechas-15",
+   "nombre": "Flechas (15)",
+   "precio": 3,
+   "precio_texto": "3 mrs"
+  },
+  {
+   "id": "virotes-o-saetas-de-ballesta-15",
+   "nombre": "Virotes o saetas de ballesta (15)",
+   "precio": 6,
+   "precio_texto": "6 mrs"
+  },
+  {
+   "id": "aljaba-o-carcaj-sin-flechas",
+   "nombre": "Aljaba o carcaj (sin flechas)",
+   "precio": 12,
+   "precio_texto": "12 mrs"
+  },
+  {
+   "id": "cranequin-para-tensar-la-arbalesta",
+   "nombre": "Cranequín (para tensar la arbalesta)",
+   "precio": 18,
+   "precio_texto": "18 mrs"
+  },
+  {
+   "id": "piedra-de-afilar-esmeril",
+   "nombre": "Piedra de afilar (esmeril)",
+   "precio": 2,
+   "precio_texto": "2 mrs"
+  },
+  {
+   "id": "pretina-cinto-y-vaina-para-espada-para-daga-o-cuchillo",
+   "nombre": "Pretina (cinto y vaina) para espada / para daga o cuchillo",
+   "precio": 15,
+   "precio_texto": "34 / 15 mrs"
+  },
+  {
+   "id": "polvora-y-pelotas-de-plomo-para-trueno-10-cargas",
+   "nombre": "Pólvora y pelotas de plomo para trueno (10 cargas)",
+   "precio": 30,
+   "precio_texto": "30 mrs"
+  }
+ ],
+ "condicion": [
+  {
+   "condicion": "Villano",
+   "armas": "Cuchillo, hacha, honda, cayado, bordón, clava, tripa, mayal de armas, lanza corta, arco corto"
+  },
+  {
+   "condicion": "Soldado",
+   "armas": "Lanzas, hachas de armas, mazas, ballestas, bracamante, coltell, archa, arco"
+  },
+  {
+   "condicion": "Noble",
+   "armas": "Espadas y espadones, daga, lanza de caballería, maza de armas, ballesta ligera (de caza), armaduras metálicas"
+  }
+ ],
+ "rasgos": [
+  {
+   "rasgo": "Arrojadiza",
+   "efecto": "Puede lanzarse además de usarse en cuerpo a cuerpo (ver Armas a distancia)."
+  },
+  {
+   "rasgo": "Barbada",
+   "efecto": "Al retirar el arma empalada, causa su daño completo en lugar de la mitad."
+  },
+  {
+   "rasgo": "Defensiva",
+   "efecto": "Al parar, reduce en un paso el Tamaño del arma atacante (hasta un mínimo de Pequeño)."
+  },
+  {
+   "rasgo": "Flexible",
+   "efecto": "Al atacar contra un escudo, reduce en un paso el Tamaño del escudo defensor."
+  },
+  {
+   "rasgo": "Frágil",
+   "efecto": "Si para un ataque con Éxito Crítico de un arma de Tamaño Medio o mayor, se rompe (salvo que la parada también sea crítica)."
+  },
+  {
+   "rasgo": "Montada",
+   "efecto": "Sólo puede usarse a caballo con una carga, o a pie para Recibir Carga."
+  },
+  {
+   "rasgo": "Ofensiva",
+   "efecto": "No puede usarse para parar."
+  },
+  {
+   "rasgo": "Recibir Carga",
+   "efecto": "Puede prepararse a pie para recibir una carga (ver Cargas)."
+  },
+  {
+   "rasgo": "Sigilo",
+   "efecto": "Está pensada para atacar por sorpresa a un enemigo desprevenido."
+  },
+  {
+   "rasgo": "Lujo",
+   "efecto": "Arma de prestigio: cuenta automáticamente con la mejora Deseable (ver Mejoras de calidad)."
+  }
+ ]
+}

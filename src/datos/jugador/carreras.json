@@ -1,0 +1,3173 @@
+[
+ {
+  "id": "almogavar",
+  "nombre": "Almogávar",
+  "nota": "Almogávar",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Almogávar, adalid de algara, saqueador de frontera",
+  "restriccion": "Corona de Aragón (también mudéjares)",
+  "requisitos": {
+   "reinos": [
+    "Corona de Aragón"
+   ],
+   "pueblos_extra": [
+    "mudejares"
+   ]
+  },
+  "culturas_habituales": [
+   "barbaro"
+  ],
+  "resumen": "Campesinos que viven de la guerra y del saqueo en tierra enemiga. Luchan a pie, con armas ligeras (azconas arrojadizas, el coltell y un escudo), y van a la guerra con sus mujeres e hijos. Temibles en la guerra y poco más que bandidos en la paz, conquistaron para la Corona las islas y, a principios de siglo, Atenas y Neopatria con la Gran Compañía Catalana. Su grito: ¡Desperta ferro!",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Almogávar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "la frontera"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "armas"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "árabe andalusí"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "alquimista",
+  "nombre": "Alquimista",
+  "nota": "Alquimista",
+  "nombre_en": "Alchemist",
+  "origen": "mythras",
+  "arquetipos": "Alquimista, boticario, especiero, herbolario, envenenador",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Practican la alquimia clérigos, físicos judíos y musulmanes y algún noble curioso. La Iglesia la tolera mientras no huela a nigromancia. Los boticarios y especieros venden remedios, especias… y venenos.",
+  "estandar": [
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "especialidad": "Alquimia"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "especialidad alquímica concreta: ácidos, narcóticos, venenos, etc."
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": true,
+  "fe": false,
+  "aviso": "La Iglesia tolera la alquimia mientras no huela a nigromancia."
+ },
+ {
+  "id": "ama",
+  "nombre": "Ama",
+  "nota": "Ama",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Ama, aya, dueña, dama de compañía",
+  "restriccion": "Sólo mujeres de la baja nobleza o la burguesía",
+  "requisitos": {
+   "sexo": "mujer",
+   "estamentos": [
+    "baja-nobleza",
+    "alta-nobleza",
+    "acomodado"
+   ]
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Damas que crían y educan a la hija de un noble o de un rey, sobre todo si la madre ha muerto o está lejos. Velan por su virtud y su seguridad, le enseñan lo que una mujer de alta cuna debe saber y acaban siendo su confidente y su amiga. Una buena ama sabe más secretos de la casa que el mayordomo.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "ensenar"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "labores"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Plantas"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "animador",
+  "nombre": "Animador",
+  "nota": "Animador",
+  "nombre_en": "Entertainer",
+  "origen": "mythras",
+  "arquetipos": "Juglar, trovador, cómico, saltimbanqui, titiritero, bufón, cantadera, zambrero",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "Los juglares recorren villas, ferias y cortes cantando romances y cantares de gesta; los trovadores componen para los señores. La Iglesia mira mal a los cómicos y les niega la sepultura sagrada si mueren sin arrepentirse.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "cantar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "acrobacias"
+   },
+   {
+    "habilidad": "actuacion"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "seduccion"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "artesano",
+  "nombre": "Artesano",
+  "nota": "Artesano",
+  "nombre_en": "Crafter",
+  "origen": "mythras",
+  "arquetipos": "Menestral: herrero, carpintero, tejedor, curtidor, alfarero, platero, armero, cantero, tonelero",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "Los oficios se organizan en cofradías y gremios con sus calles propias (la calle de los Herreros, la de los Plateros…). Muchos artesanos de las ciudades son judíos o mudéjares (alarifes, tejedores, guadamacileros).",
+  "estandar": [
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "arte",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Principal"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Secundaria"
+   },
+   {
+    "habilidad": "ingenieria"
+   },
+   {
+    "habilidad": "mecanismos"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "brujo",
+  "nombre": "Brujo",
+  "nota": "Brujo",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Bruja, brujo de aldea, sorgina, meiga, ensalmadora",
+  "restriccion": "Cualquiera (sobre todo campesinos)",
+  "requisitos": {},
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "resumen": "Hombres y mujeres que viven apartados, en las afueras del pueblo, temidos y respetados por lo que todos creen que saben (y a menudo saben). Los vecinos acuden a ellos a escondidas por filtros de amor, curas de enfermedades y de maleficios (que a veces ellos mismos echaron), objetos perdidos o una maldición para un enemigo.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "fuente-mistica",
+    "aclaracion": "lo que se susurra en los aquelarres, o un pacto"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ocultismo"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Plantas"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Alquimia"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Astrología"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Leyendas"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": true,
+  "fe": false,
+  "aviso": "Muchas fórmulas de bruja son goecia: usarlas condena el alma (Malditos por Dios). Riesgo de Inquisición."
+ },
+ {
+  "id": "caballero-de-orden-militar",
+  "nombre": "Caballero de orden militar",
+  "nota": "Caballero de orden militar",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Freire, comendador, caballero de Santiago, Calatrava, Alcántara, Montesa, Avis o Cristo; freira",
+  "restriccion": "Nobles cristianos (véase cada orden)",
+  "requisitos": {
+   "credos": [
+    "cristiano"
+   ],
+   "estamentos": [
+    "baja-nobleza",
+    "alta-nobleza"
+   ]
+  },
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "Nobles que han profesado en una orden militar: monjes y guerreros a la vez, ascéticos y a menudo fanáticos, aunque en este siglo las órdenes son sobre todo grandes señoríos codiciados por los nobles. Las mujeres también pueden profesar como freiras en los conventos de las órdenes (cambian el estilo de combate por Sanación y Perspicacia).",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Freire de Orden Militar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "latín"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Estrategia y táctica"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "cortesia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": "Solo obra rituales si profesa como religioso."
+ },
+ {
+  "id": "cazador",
+  "nombre": "Cazador",
+  "nota": "Cazador",
+  "nombre_en": "Hunter",
+  "origen": "mythras",
+  "arquetipos": "Montero, ballestero de monte, alimañero, trampero, cazador de osos y lobos",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado",
+   "nomada"
+  ],
+  "resumen": "La caza mayor es privilegio de reyes y señores, que tienen sus monteros y ballesteros de monte. El villano que caza en un coto ajeno es un furtivo y se arriesga a perder la mano.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Caza específica o estilo cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Relacionada con la caza"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Regional o Especie específica"
+   },
+   {
+    "habilidad": "mecanismos"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "chaman",
+  "nombre": "Chamán",
+  "nota": "Chamán",
+  "nombre_en": "Shaman",
+  "origen": "mythras",
+  "arquetipos": "Saludador, ensalmador, curandera, sorgina, adivina, santiguadora",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "barbaro",
+   "nomada",
+   "civilizado"
+  ],
+  "resumen": "En las aldeas, quien sana con ensalmos, saliva y santiguados, o quien trata con las ánimas y los espíritus del monte, ocupa el lugar del chamán. Unos lo tienen por un don de Dios y otros por brujería.",
+  "estandar": [
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "fuente-mistica",
+    "aclaracion": "un santo, un espíritu del monte o un pacto"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ocultismo"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Plantas"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": true,
+  "fe": false,
+  "aviso": "Unos tienen al saludador por un don de Dios; otros, por brujería."
+ },
+ {
+  "id": "contrabandista",
+  "nombre": "Contrabandista",
+  "nota": "Contrabandista",
+  "nombre_en": "Smuggler",
+  "origen": "mythras",
+  "arquetipos": "Pasador de cosas vedadas, matutero, alfaqueque deshonesto, perista",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "Sacar del reino caballos, armas, trigo, oro o plata (las cosas vedadas), sobre todo hacia Granada, Navarra o Portugal, está castigado con la muerte. Y aun así se hace a diario por los puertos secos y las sendas de la frontera.",
+  "estandar": [
+   {
+    "habilidad": "ocultar"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   },
+   {
+    "habilidad": "marineria"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "cortesana",
+  "nombre": "Cortesana",
+  "nota": "Cortesana",
+  "nombre_en": "Courtesan",
+  "origen": "mythras",
+  "arquetipos": "Barragana, mujer del partido, ramera, cortesana de lujo, alcahueta",
+  "restriccion": "",
+  "requisitos": {
+   "sexo": "mujer"
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Las mancebías están reguladas por los concejos (y a veces son propiedad de nobles y obispos). La barraganía, el concubinato estable con un clérigo o un noble, está muy extendida y es casi una institución.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "cantar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "arte",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "juego"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "seduccion"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "cortesano",
+  "nombre": "Cortesano",
+  "nota": "Cortesano",
+  "nombre_en": "Courtier",
+  "origen": "mythras",
+  "arquetipos": "Doncel, paje, dama, privado, maestresala, camarero, embajador",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "La corte castellana es itinerante: va de ciudad en ciudad con el rey. Los privados del rey (y los de la reina) amasan y pierden fortunas en un día.",
+  "estandar": [
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "perspicacia"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "arte",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "cuidador-de-bestias",
+  "nombre": "Cuidador de bestias",
+  "nota": "Cuidador de bestias",
+  "nombre_en": "Beast Handler",
+  "origen": "mythras",
+  "arquetipos": "Mozo de cuadra, caballerizo, halconero, cetrero, arriero, boyero, perrero",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "La cetrería es pasión de reyes y nobles (el Libro de la caza de las aves del canciller Pero López de Ayala). Los arrieros con sus recuas de mulas son la espina dorsal del comercio por tierra.",
+  "estandar": [
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "especialidad": "Ganadería"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "sanacion",
+    "aclaracion": "Especie específica"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Especie específica"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "ensenar",
+    "aclaracion": "Especie específica"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "derviche",
+  "nombre": "Derviche",
+  "nota": "Derviche",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Derviche, sufí, morabito, faqir",
+  "restriccion": "Musulmanes varones",
+  "requisitos": {
+   "credos": [
+    "musulman"
+   ],
+   "sexo": "varon"
+  },
+  "culturas_habituales": [
+   "civilizado",
+   "nomada"
+  ],
+  "resumen": "Hombres que renuncian a sus bienes para dedicarse a la oración y a la búsqueda de Dios, como los ermitaños cristianos. Rezan con danzas, cantos, giros y balanceos, repitiendo el nombre de Allah hasta alcanzar el éxtasis. Muchos viven en comunidades llamadas janqah o en las rábitas de la frontera. Todos son sufíes: buscan la unión con Dios por el ayuno, la meditación y la oración.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "ensenar"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ocultismo"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Leyendas"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": null
+ },
+ {
+  "id": "embaucador",
+  "nombre": "Embaucador",
+  "nota": "Embaucador",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Charlatán, sacamuelas de feria, vendedor de reliquias falsas, buldero",
+  "restriccion": "Cualquiera",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "nomada"
+  ],
+  "resumen": "Uno de tantos truhanes de la época: se hace pasar por alquimista o por físico ante el pueblo llano y recorre ferias y mercados con sus elixires milagrosos, ungüentos y reliquias, que tienen más posibilidades de dar un cólico que de curar nada. Por eso vive en el camino, de pueblo en pueblo, en su carreta.",
+  "estandar": [
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "ocultar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "actuacion"
+   },
+   {
+    "habilidad": "disfraz"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Alquimia"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Plantas"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "erudito",
+  "nombre": "Erudito",
+  "nota": "Erudito",
+  "nombre_en": "Scholar",
+  "origen": "mythras",
+  "arquetipos": "Escolar, bachiller, maestro, clérigo letrado, traductor, astrólogo, rabino sabio, cabalista, alfaquí letrado",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Hay Estudios Generales en Salamanca, Valladolid, Lérida, Lisboa-Coimbra, Huesca y Perpiñán, y escuelas en catedrales, juderías y madrasas (la de Granada). Los saberes de los árabes y los judíos (astronomía, medicina, filosofía, Cábala) son los más avanzados de Europa.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "lengua-materna"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "alfabetizacion",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Principal"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Secundaria"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "ensenar"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "explorador",
+  "nombre": "Explorador",
+  "nota": "Explorador",
+  "nombre_en": "Scout",
+  "origen": "mythras",
+  "arquetipos": "Adalid, almocadén, atalayero, guía, rastreador de frontera, alfaqueque",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "barbaro",
+   "nomada",
+   "civilizado"
+  ],
+  "resumen": "En la frontera de Granada los adalides guían las cabalgadas, los atalayeros vigilan desde las torres y los alfaqueques cruzan de un lado a otro para rescatar cautivos.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "nadar"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Caza específica o estilo cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "ghazi",
+  "nombre": "Ghazi",
+  "nota": "Ghazi",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Ghazi, voluntario de la fe, morabito de frontera, zenete",
+  "restriccion": "Musulmanes",
+  "requisitos": {
+   "credos": [
+    "musulman"
+   ]
+  },
+  "culturas_habituales": [
+   "nomada",
+   "barbaro",
+   "civilizado"
+  ],
+  "resumen": "El ghazi («paladín») es un guerrero musulmán que ha jurado hacer la guerra al infiel para defender y extender el islam, como los freires de las órdenes cristianas. Puede venir de cualquier clase social. Muchos viven en rábitas, mitad castillo y mitad convento, en la frontera; los más famosos son los voluntarios de la fe benimerines que sirven al sultán de Granada. Casi todos son sufíes.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Voluntario de la Fe"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Estrategia y táctica"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": null
+ },
+ {
+  "id": "goliardo",
+  "nombre": "Goliardo",
+  "nota": "Goliardo",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Goliardo, clérigo vagante, estudiante tunante",
+  "restriccion": "Cristianos (las mujeres, disfrazadas de hombre)",
+  "requisitos": {
+   "credos": [
+    "cristiano"
+   ]
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Al principio se llamaba así a los clérigos vagabundos, ociosos y de vida alegre, y después a los estudiantes de las universidades, tan aficionados como ellos al vino, a las mujeres y a la juerga. Son jóvenes pícaros que se escudan en su tonsura para escapar de la justicia seglar y comer y dormir en parroquias y monasterios. Imaginativos, sin un cuarto, enamorados del camino, desprecian el trabajo serio.",
+  "estandar": [
+   {
+    "habilidad": "cantar"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "atletismo"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "latín"
+   },
+   {
+    "habilidad": "seduccion"
+   },
+   {
+    "habilidad": "juego"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología"
+   },
+   {
+    "habilidad": "arte",
+    "especialidad": "Poesía"
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": "Solo puede obrar rituales si está ordenado de órdenes menores y cumple los requisitos (raro)."
+ },
+ {
+  "id": "granjero",
+  "nombre": "Granjero",
+  "nota": "Granjero",
+  "nombre_en": "Farmer",
+  "origen": "mythras",
+  "arquetipos": "Labrador, campesino, hortelano, viñador, payés, collazo",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "resumen": "La inmensa mayoría de la población. Paga pechos al rey, diezmos a la Iglesia y rentas al señor, y sufre las malas cosechas, la peste, la langosta y las compañías de soldados.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "montar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Agricultura"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ganadería"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "guerrero",
+  "nombre": "Guerrero",
+  "nota": "Guerrero",
+  "nombre_en": "Warrior",
+  "origen": "mythras",
+  "arquetipos": "Hombre de armas, escudero, caballero, soldado de soldada, mercenario, almogávar, ballestero, guarda",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "Nobles y caballeros sirven en la hueste del rey o en la mesnada de su señor; los concejos envían sus milicias; los almogávares viven de la frontera, y las compañías de mercenarios se venden al mejor postor.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "combate-sin-armas"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Estilo militar"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Estilo cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "ingenieria"
+   },
+   {
+    "habilidad": "juego"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Historia militar"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Estrategia y táctica"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "supervivencia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "infanzon",
+  "nombre": "Infanzón",
+  "nota": "Infanzón",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Caballero de linaje, infanzón, rico hombre, señor de vasallos, *arif* nazarí",
+  "restriccion": "Nobles",
+  "requisitos": {
+   "estamentos": [
+    "baja-nobleza",
+    "alta-nobleza"
+   ]
+  },
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "El señor que vive por y para la guerra: sirve y protege a su señor, sea otro noble o el rey, y es la piedra angular del orden feudal. Se ha criado en las armas desde niño, como paje y escudero de otro caballero, y tiene sus propias armas, armadura y caballo. En el mundo islámico, su equivalente es el arif, capitán de una tropa.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Caballero a la Brida o Caballero Nazarí"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Heráldica"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Estrategia y táctica"
+   },
+   {
+    "habilidad": "juego"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "politica"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "jugador",
+  "nombre": "Jugador",
+  "nota": "Jugador",
+  "nombre_en": "Gambler",
+  "origen": "mythras",
+  "arquetipos": "Tahúr, fullero, garitero, jugador de dados y naipes",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "El juego de dados está prohibido en muchas villas fuera del tablaje (garito) autorizado por el concejo o el rey, que cobra su parte. Las trampas se pagan con la cárcel o el cuchillo.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "montar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "actuacion"
+   },
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "juego"
+   },
+   {
+    "habilidad": "investigacion"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "ladron",
+  "nombre": "Ladrón",
+  "nota": "Ladrón",
+  "nombre_en": "Thief",
+  "origen": "mythras",
+  "arquetipos": "Ladrón, cortabolsas, salteador de caminos, golfín, ratero, perista",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "Los caminos están infestados de golfines y salteadores; las Hermandades de los concejos los persiguen y los asaetean sin juicio. En las ciudades, el robo se castiga con azotes, mutilación o la horca.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Ladrón específico o estilo cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "actuacion"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "disfraz"
+   },
+   {
+    "habilidad": "ganzua"
+   },
+   {
+    "habilidad": "mecanismos"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "mago",
+  "nombre": "Mago",
+  "nota": "Mago",
+  "nombre_en": "Magician",
+  "origen": "mythras",
+  "arquetipos": "Hechicero, nigromante, brujo letrado, astrólogo judiciario, invocador",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "La magia es real, pero también lo son la Iglesia y la Inquisición. Véase Fórmulas, vis y rangos, fórmulas iniciales y Perfiles de brujos y hechiceros.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "fuente-mistica",
+    "aclaracion": "un grimorio, un maestro o un pacto"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ocultismo"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": true,
+  "fe": false,
+  "aviso": "La magia es real, pero también lo son la Iglesia y la Inquisición."
+ },
+ {
+  "id": "malsin",
+  "nombre": "Malsín",
+  "nota": "Malsín",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Malsín, delator, soplón de la aljama",
+  "restriccion": "Judíos (o conversos)",
+  "requisitos": {
+   "credos": [
+    "judio"
+   ]
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Así llaman los judíos a quien traiciona a los suyos y los entrega a los cristianos, por una recompensa o para comprar barato los bienes del condenado. También se llama malsín al converso que denuncia a quienes siguen judaizando en secreto. Es una carrera que se lleva en secreto: dentro de la aljama, un malsín descubierto es expulsado, apedreado o muerto, y la propia ley judía le condena.",
+  "estandar": [
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "influencia"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "ganzua"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "disfraz"
+   },
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "investigacion"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": "Carrera secreta: nadie en la aljama debe saberlo."
+ },
+ {
+  "id": "marinero",
+  "nombre": "Marinero",
+  "nota": "Marinero",
+  "nombre_en": "Sailor",
+  "origen": "mythras",
+  "arquetipos": "Marinero, grumete, galeote de buena boya, patrón, piloto de altura, corsario",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "Las villas cántabras y vizcaínas navegan al Atlántico; Barcelona, Valencia, Mallorca y Sevilla, al Mediterráneo. En las galeras reman hombres libres a sueldo y cautivos.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "navegacion-fluvial"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "nadar"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Marinero específico o estilo cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "especialidad": "Especialidad a bordo"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "marineria"
+   },
+   {
+    "habilidad": "supervivencia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "mediero",
+  "nombre": "Mediero",
+  "nota": "Mediero",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Mediero, corredor, intermediario, comisionista",
+  "restriccion": "Sobre todo judíos",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Un intermediario: compra barato donde algo abunda y vende caro donde falta, sea lo que sea. Y por un precio módico (o no tanto) consigue también mercancías ilegales o de origen dudoso, porque muchos de sus clientes necesitan cosas que sólo él sabe encontrar.",
+  "estandar": [
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "percepcion"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   },
+   {
+    "habilidad": "disfraz"
+   },
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "burocracia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "mendigo",
+  "nombre": "Mendigo",
+  "nota": "Mendigo",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Mendigo, pordiosero, gallofero, falso tullido, lazarillo",
+  "restriccion": "Cualquiera",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "nomada"
+  ],
+  "resumen": "Quien, por desgracia o por oficio, vive de pedir limosna. Pero sobrevivir exige astucia: muchos cuentan historias en las plazas, hacen malabares, tocan un instrumento tosco, echan una mano a un labrador o un artesano a cambio de un plato o, directamente, roban lo que pueden. Los hay verdaderos y falsos; los concejos expulsan a los segundos y la Iglesia ampara a los primeros.",
+  "estandar": [
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "ocultar"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "juego-de-manos"
+   },
+   {
+    "habilidad": "actuacion"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   },
+   {
+    "habilidad": "juego"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "mercader",
+  "nombre": "Mercader",
+  "nota": "Mercader",
+  "nombre_en": "Merchant",
+  "origen": "mythras",
+  "arquetipos": "Mercader, cambista, especiero, pañero, buhonero, factor de una compañía genovesa",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "Burgos exporta lana a Flandes; Barcelona y Valencia comercian con todo el Mediterráneo; los genoveses dominan Sevilla. Las ferias (Medina del Campo, Alcalá) reúnen a mercaderes de todos los reinos.",
+  "estandar": [
+   {
+    "habilidad": "navegacion-fluvial"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "montar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "marineria"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "minero",
+  "nombre": "Minero",
+  "nota": "Minero",
+  "nombre_en": "Miner",
+  "origen": "mythras",
+  "arquetipos": "Minero, ferrón, salinero, cantero, pocero",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "El hierro de Vizcaya, el azogue de Almadén (de la Orden de Calatrava), la plata y el plomo de Sierra Morena y la sal de las salinas reales dan trabajo a muchos.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "cantar"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Minería"
+   },
+   {
+    "habilidad": "ingenieria"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Minerales"
+   },
+   {
+    "habilidad": "mecanismos"
+   },
+   {
+    "habilidad": "navegacion",
+    "aclaracion": "Subterránea"
+   },
+   {
+    "habilidad": "supervivencia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "muccadim",
+  "nombre": "Muccadim",
+  "nota": "Muccadim",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Muccadim, adelantado de la aljama, guardia de la judería",
+  "restriccion": "Judíos varones",
+  "requisitos": {
+   "credos": [
+    "judio"
+   ],
+   "sexo": "varon"
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Al principio, los muccadim eran los miembros del consejo de ancianos que gobernaba la aljama; en este siglo se llama así también a la milicia judía, una especie de alguaciles que guardan el orden dentro de la judería y sobre todo sus puertas. Conocen la ley, porque pueden castigar un delito allí donde lo ven, y no usan armas de filo.",
+  "estandar": [
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "combate-sin-armas"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Guardia de Aljama"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ley judía"
+   },
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "rastrear"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "hebreo"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "medico",
+  "nombre": "Médico",
+  "nota": "Médico",
+  "nombre_en": "Physician",
+  "origen": "mythras",
+  "arquetipos": "Físico, cirujano, barbero, partera, sangrador, curandero",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "Los físicos más afamados son judíos, aunque la Iglesia prohíba a los cristianos acudir a ellos. Los barberos sacan muelas y sangran; las parteras atienden los partos.",
+  "estandar": [
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "cantar"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Especialidad fisiológica específica"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "alfabetizacion",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "mistico",
+  "nombre": "Místico",
+  "nota": "Místico",
+  "nombre_en": "Mystic",
+  "origen": "mythras",
+  "arquetipos": "Ermitaño, asceta, emparedada, beguina, sufí, cabalista contemplativo",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "Ermitaños y emparedadas viven de la caridad en las afueras de las villas; los sufíes de Granada y los cabalistas de Gerona buscan a Dios por caminos que a otros les parecen peligrosos.",
+  "estandar": [
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "estilo cultural o escuela marcial"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "arte",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología"
+   },
+   {
+    "habilidad": "fuente-mistica",
+    "aclaracion": "la Cábala, el sufismo o una revelación"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Ocultismo"
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": true,
+  "fe": true,
+  "aviso": "Algunos caminos místicos parecen herejía a ojos de la Iglesia."
+ },
+ {
+  "id": "oficial",
+  "nombre": "Oficial",
+  "nota": "Oficial",
+  "nombre_en": "Official",
+  "origen": "mythras",
+  "arquetipos": "Alguacil, merino, sayón, escribano, recaudador, alcaide, almojarife",
+  "restriccion": "",
+  "requisitos": {
+   "sexo": "varon"
+  },
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "La justicia y la hacienda del rey, del señor o del concejo. Los recaudadores y almojarifes (con frecuencia judíos) son tan necesarios como odiados.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "oratoria"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "pardo",
+  "nombre": "Pardo",
+  "nota": "Pardo",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Pardo, caballero villano de frontera, almogávar a caballo, *al-mogauar*",
+  "restriccion": "Castilla y Granada",
+  "requisitos": {
+   "reinos": [
+    "Corona de Castilla",
+    "Reino de Granada"
+   ]
+  },
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "resumen": "Un caballero que no es noble ni soldado de oficio: un labrador rico, un artesano o un pequeño propietario que ha reunido lo bastante para un caballo y unas armas y sale en cabalgadas a saquear la tierra de los moros. No sabe de treguas ni de paces, y muchos no son más que bandidos y asesinos de la frontera de Granada. Al otro lado tienen su reflejo, los al-mogauar que saquean la tierra cristiana.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Jinete a la Jineta"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "rastrear"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "árabe andalusí"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "la frontera"
+   },
+   {
+    "habilidad": "oratoria"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "pastor",
+  "nombre": "Pastor",
+  "nota": "Pastor",
+  "nombre_en": "Herder",
+  "origen": "mythras",
+  "arquetipos": "Pastor, rabadán, mayoral, cabrero, porquero, vaquero",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "nomada",
+   "barbaro"
+  ],
+  "resumen": "Millones de ovejas merinas recorren cada año las cañadas de la Mesta. Los pastores tienen fama de rudos, solitarios y de conocer secretos del monte que mejor no saber.",
+  "estandar": [
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "montar"
+   },
+   {
+    "habilidad": "estilo-de-combate",
+    "especialidad": "Pastoreo específico o estilo cultural"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "Ganadería"
+   },
+   {
+    "habilidad": "sanacion",
+    "aclaracion": "Especie específica"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "pescador",
+  "nombre": "Pescador",
+  "nota": "Pescador",
+  "nombre_en": "Fisher",
+  "origen": "mythras",
+  "arquetipos": "Pescador de bajura, de altura, de río, almadrabero, ballenero vasco",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "resumen": "Los balleneros vascos y cántabros cazan ballenas en el Cantábrico; las almadrabas del Estrecho capturan atunes; los pescadores de río pagan derechos al señor del vado.",
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "navegacion-fluvial"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   },
+   {
+    "habilidad": "nadar"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Captura principal"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Captura secundaria"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "marineria"
+   },
+   {
+    "habilidad": "supervivencia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "politico",
+  "nombre": "Político",
+  "nota": "Político",
+  "nombre_en": "Politician",
+  "origen": "mythras",
+  "arquetipos": "Regidor, jurado, conceller, procurador en Cortes, consejero del rey, jefe de bando",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Los concejos de las villas están en manos de unas pocas familias de caballeros y ciudadanos honrados; las Cortes votan los servicios (impuestos) que pide el rey.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "lengua-materna"
+   },
+   {
+    "habilidad": "percepcion"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "politica"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "qaina",
+  "nombre": "Qaina",
+  "nota": "Qaina",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Qaina, cantora, bailarina, esclava cantora",
+  "restriccion": "Mujeres, sobre todo granadinas",
+  "requisitos": {
+   "sexo": "mujer"
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "Cantoras y bailarinas árabes que unen los servicios musicales a los del lecho. Abundan en las casas de los nobles y los ricos de Granada, que las compran como esclavas a precios exorbitantes. En los raros tiempos de paz, alguna llega a las cortes cristianas, a fiestas privadas.",
+  "estandar": [
+   {
+    "habilidad": "cantar"
+   },
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "percepcion"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "seduccion"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "arte",
+    "especialidad": "Poesía"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Leyendas"
+   },
+   {
+    "habilidad": "actuacion"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "rabino",
+  "nombre": "Rabino",
+  "nota": "Rabino",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Rabino, rab, juez de la aljama, maestro de la Ley",
+  "restriccion": "Judíos varones, casados",
+  "requisitos": {
+   "credos": [
+    "judio"
+   ],
+   "sexo": "varon"
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "El maestro de la Ley judía: un sabio en teología y en derecho hebreo que, para alcanzar su posición, debe demostrar su saber y una vida honrada con su esposa (tiene que estar casado). A diferencia del cura cristiano, no ejerce todo el tiempo: oficia los sábados y las fiestas y el resto de la semana vive de otro oficio honorable (médico, escribano, artesano).",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "lengua-materna"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología y Talmud"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "hebreo"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "ensenar"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "árabe o latín"
+   },
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Astrología"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": null
+ },
+ {
+  "id": "sacerdote",
+  "nombre": "Sacerdote",
+  "nota": "Sacerdote",
+  "nombre_en": "Priest",
+  "origen": "mythras",
+  "arquetipos": "Clérigo, cura de almas, canónigo, fraile, monja, abad, alfaquí, imán, rabino, jazán",
+  "restriccion": "",
+  "requisitos": {
+   "sexo": "varon"
+  },
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "resumen": "El clero cristiano goza de fuero propio. Alfaquíes y rabinos dirigen la vida religiosa y jurídica de aljamas y morerías. Un clérigo ordenado con Pasión Fe del 50% o más puede obrar Rituales de fe (véase Fe y Ordenación).",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "danza"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "litúrgico: latín, árabe clásico o hebreo"
+   },
+   {
+    "habilidad": "alfabetizacion",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "politica"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": "Un clérigo ordenado con Pasión Fe del 50% o más puede obrar rituales."
+ },
+ {
+  "id": "sirviente",
+  "nombre": "Sirviente",
+  "nota": "Sirviente",
+  "nombre_en": "Servant",
+  "origen": "mythras",
+  "arquetipos": "Criado, mozo, ama de cría, dueña, escudero de servicio, paje, esclavo doméstico",
+  "restriccion": "",
+  "requisitos": {},
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "resumen": "Toda casa de cierta posición tiene criados, amas, mozos de espuelas y, en Aragón y Andalucía, algún esclavo.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "burocracia"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "artesania",
+    "especialidad": "servicio"
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "politica"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": false,
+  "aviso": null
+ },
+ {
+  "id": "ulema",
+  "nombre": "Ulema",
+  "nota": "Ulema",
+  "nombre_en": null,
+  "origen": "aquelarre",
+  "arquetipos": "Ulema, alfaquí, cadí, hafiz, imán",
+  "restriccion": "Musulmanes varones",
+  "requisitos": {
+   "credos": [
+    "musulman"
+   ],
+   "sexo": "varon"
+  },
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "resumen": "En el islam no hay sacerdotes, pero el ulema («sabio»), llamado también alfaquí, es lo más parecido: un erudito del Corán y la Sunna y un maestro de la ley islámica, que de ellos procede. Tiene funciones religiosas y también de juez, lo que le hace poderoso en su comunidad. Quien se sabe el Corán de memoria (Teología 75% o más) es un hafiz, maestro entre maestros.",
+  "estandar": [
+   {
+    "habilidad": "costumbres"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   },
+   {
+    "habilidad": "lengua-materna"
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "conocimiento",
+    "especialidad": "Teología y ley islámica"
+   },
+   {
+    "habilidad": "idioma",
+    "especialidad": "árabe clásico"
+   },
+   {
+    "habilidad": "alfabetizacion"
+   },
+   {
+    "habilidad": "oratoria"
+   },
+   {
+    "habilidad": "ensenar"
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "burocracia"
+   }
+  ],
+  "max_profesionales": 3,
+  "puntos": 100,
+  "max_por_habilidad": 15,
+  "magia": false,
+  "fe": true,
+  "aviso": null
+ }
+]

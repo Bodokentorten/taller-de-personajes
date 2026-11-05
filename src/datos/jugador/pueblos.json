@@ -1,0 +1,628 @@
+[
+ {
+  "id": "aragoneses",
+  "nombre": "Aragoneses",
+  "nota": "Aragoneses",
+  "credo": "cristiano",
+  "reinos": [
+   "Corona de Aragón"
+  ],
+  "resumen": "Los cristianos del viejo reino de Aragón, dentro de la Corona: descendientes de los montañeses del Pirineo que repoblaron el valle del Ebro. Hablan aragonés, un romance propio que poco a poco cede ante el castellano. Aragón es tierra de nobles celosos de sus fueros (la Unión se alzó contra el rey en 1347 y fue aplastada en Épila), del Justicia de Aragón, de grandes morerías y de una frontera inquieta con Castilla.",
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "culturas_texto": "Bárbaro en el Pirineo y las tierras de secano; Civilizado en Zaragoza, Huesca, Teruel o Calatayud",
+  "lengua_materna": "Aragonés",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "aragonesas (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Almogávar",
+   "Peón de Hueste",
+   "Montañés"
+  ],
+  "nomina": "aragoneses",
+  "pasiones_sugeridas": [
+   "Lealtad (los Fueros de Aragón)",
+   "Honra (su linaje)",
+   "Odio (los castellanos)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "asturleoneses",
+  "nombre": "Asturleoneses",
+  "nota": "Asturleoneses",
+  "credo": "cristiano",
+  "reinos": [
+   "Corona de Castilla"
+  ],
+  "resumen": "Los habitantes del antiguo reino de León, con Asturias y parte de Cantabria. Se tienen por herederos de los godos y del primer reino cristiano; apenas se distinguen de los castellanos salvo por su romance propio, el leonés (los asturianos de la montaña lo llaman bable). En sus montes viven pastores, osos y lobos, y en la Maragatería, los sospechosos maragatos.",
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "culturas_texto": "Bárbaro en Asturias y las montañas; Civilizado en León, Oviedo, Astorga o Zamora",
+  "lengua_materna": "Leonés",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "leonesas (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Montañés",
+   "Peón de Hueste",
+   "Pastor Trashumante"
+  ],
+  "nomina": "castellanos",
+  "pasiones_sugeridas": [
+   "Honra (su linaje godo)",
+   "Fe (cristiana)",
+   "Lealtad (su concejo o su señor)",
+   "Volver a los orígenes · Culturas · Creación de personajes"
+  ],
+  "raro": false
+ },
+ {
+  "id": "castellanos",
+  "nombre": "Castellanos",
+  "nota": "Castellanos",
+  "credo": "cristiano",
+  "reinos": [
+   "Corona de Castilla"
+  ],
+  "resumen": "Los cristianos de la Corona de Castilla: la Meseta, el valle del Guadalquivir y el antiguo reino de Murcia. Son el pueblo más numeroso de la Península gracias a siglos de repoblación, y su lengua se ha convertido en la lengua común entre los reinos.",
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "culturas_texto": "Civilizado en villas y ciudades; Bárbaro en las aldeas de la Meseta y la frontera; Nómada los pastores de la Mesta",
+  "lengua_materna": "Castellano",
+  "idiomas_gratis": [],
+  "costumbres": "castellanas (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos (la Iglesia prohíbe esclavizar a un cristiano).",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Milicia de Concejo",
+   "Peón de Hueste",
+   "Jinete a la Jineta (frontera de Granada)",
+   "Pastor Trashumante"
+  ],
+  "nomina": "castellanos",
+  "pasiones_sugeridas": [
+   "Lealtad (el rey de Castilla, o su señor)",
+   "Honra (su linaje)",
+   "Odio (los moros de Granada) o (un bando rival)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "catalanes",
+  "nombre": "Catalanes",
+  "nota": "Catalanes",
+  "credo": "cristiano",
+  "reinos": [
+   "Corona de Aragón"
+  ],
+  "resumen": "Los cristianos del Principado de Cataluña, del reino de Valencia y del reino de Mallorca, que comparten una lengua, el catalán (con sus hablas valenciana y balear). Es el pueblo del mar: los mercaderes de Barcelona y Valencia comercian con todo el Mediterráneo, los almogávares conquistaron Atenas y Neopatria, y el Consulado de Mar dicta la ley de los barcos.",
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "culturas_texto": "Civilizado en Barcelona, Valencia, Palma, Perpiñán, Lérida o Tortosa; Bárbaro en el Pirineo y la montaña",
+  "lengua_materna": "Catalán",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "catalanas (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Ballestero de Galera",
+   "Almogávar",
+   "Milicia de Concejo"
+  ],
+  "nomina": "catalanes",
+  "pasiones_sugeridas": [
+   "Lealtad (la Corona de Aragón o su ciudad)",
+   "Codicia o Ambición (el comercio)",
+   "Fe (cristiana)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "gallegos",
+  "nombre": "Gallegos",
+  "nota": "Gallegos",
+  "credo": "cristiano",
+  "reinos": [
+   "Corona de Castilla"
+  ],
+  "resumen": "Los habitantes del viejo reino de Galicia, hoy parte de la Corona de Castilla. Descienden, dicen, de los pueblos de los castros cuyas ruinas aún se ven en los montes, y hablan su propia lengua, la de la lírica cortesana, que comparten con los portugueses.",
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "culturas_texto": "Bárbaro en las aldeas y la montaña; Civilizado en Santiago, A Coruña, Lugo, Ourense o Pontevedra",
+  "lengua_materna": "Gallego-portugués",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "gallegas (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Montañés",
+   "Ballestero de Galera (villas marineras)",
+   "Peón de Hueste"
+  ],
+  "nomina": "gallegos-y-portugueses",
+  "pasiones_sugeridas": [
+   "Fe (cristiana), con devoción a Santiago",
+   "Lealtad (su casa o su parroquia)",
+   "Odio (los señores que la oprimen)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "judios",
+  "nombre": "Judíos",
+  "nota": "Judíos",
+  "credo": "judio",
+  "reinos": [
+   "Corona de Castilla",
+   "Corona de Aragón",
+   "Reino de Granada",
+   "Reino de Navarra",
+   "Reino de Portugal"
+  ],
+  "resumen": "El pueblo judío de Sefarad vive en los cinco reinos, en juderías (calls en la Corona de Aragón) de casi todas las ciudades, con sus sinagogas, su aljama, sus jueces y su ley. Médicos, astrónomos, traductores, recaudadores, cambistas y artesanos, son cosa del rey: le pertenecen y él los protege… mientras le conviene.",
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "culturas_texto": "Civilizado casi siempre (juderías y calls de las ciudades); muy pocos viven en aldeas",
+  "lengua_materna": "El romance de su reino (castellano, catalán, aragonés, navarro, gallego-portugués) o el árabe en Granada",
+  "idiomas_gratis": [
+   {
+    "idioma": "Hebreo (litúrgico)",
+    "bono": 10
+   },
+   {
+    "idioma": "Castellano",
+    "bono": 20,
+    "condicion": "si no es su lengua materna"
+   }
+  ],
+  "costumbres": "judías (el +40% cultural)",
+  "restricciones": "No pueden ser nobles. No pueden empezar en carreras cristianas ni musulmanas. Tienen las suyas: Rabino, Mediero, Muccadim y, en secreto, Malsín.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "baja-nobleza",
+    "alta-nobleza"
+   ],
+   "carreras_prohibidas": [
+    "Caballero de orden militar",
+    "Goliardo",
+    "Derviche",
+    "Ghazi",
+    "Ulema"
+   ],
+   "avisos": [
+    "Sacerdote: solo como rabino o jazán de su credo (mejor la carrera Rabino)."
+   ]
+  },
+  "estilos_habituales": [
+   "Guardia de Aljama",
+   "Pendenciero de Taberna"
+  ],
+  "nomina": "hebreos",
+  "pasiones_sugeridas": [
+   "Fe (la Ley de Moisés)",
+   "Lealtad (su aljama o su familia)",
+   "Temer (las turbas) o Odio (los predicadores)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "mozarabes",
+  "nombre": "Mozárabes",
+  "nota": "Mozárabes",
+  "credo": "cristiano",
+  "reinos": [
+   "Reino de Granada"
+  ],
+  "resumen": "Los cristianos que viven en el reino nazarí (musta'rab, «arabizados»). Pagan tributos especiales y aceptan una condición inferior a cambio de conservar su fe y sus ritos, vigilados de cerca por el sultán. En el siglo XIV quedan muy pocos: casi todos los cristianos de Granada son cautivos, renegados o mercaderes genoveses y catalanes.",
+  "culturas_habituales": [
+   "civilizado"
+  ],
+  "culturas_texto": "Civilizado (barrios cristianos de Granada y Málaga)",
+  "lengua_materna": "Mozárabe (romance andalusí, escrito con letras árabes)",
+  "idiomas_gratis": [
+   {
+    "idioma": "Árabe andalusí",
+    "bono": 20
+   },
+   {
+    "idioma": "Árabe clásico",
+    "bono": 10
+   },
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "mozárabes (el +40% cultural)",
+  "restricciones": "No pueden ser nobles. No pueden ser soldados del sultán, derviches ni ghazis; sí sacerdotes o monjes cristianos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "baja-nobleza",
+    "alta-nobleza"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Pendenciero de Taberna",
+   "Milicia de Concejo"
+  ],
+  "nomina": "castellanos",
+  "pasiones_sugeridas": [
+   "Fe (cristiana)",
+   "Lealtad (su pequeña comunidad)",
+   "Temer (el sultán) o Anhelo (la tierra de los cristianos)"
+  ],
+  "raro": true
+ },
+ {
+  "id": "mudejares",
+  "nombre": "Mudéjares",
+  "nota": "Mudéjares",
+  "credo": "musulman",
+  "reinos": [
+   "Corona de Castilla",
+   "Corona de Aragón",
+   "Reino de Portugal",
+   "Reino de Navarra"
+  ],
+  "resumen": "Los musulmanes que viven bajo reyes cristianos. Hay comunidades en el valle del Ebro, en Valencia (donde son la mayoría del campo), en Murcia, en el Guadalquivir y en el Algarve. Viven en sus aljamas o morerías, con sus alfaquíes, su mezquita, su cadí y su ley, a cambio de tributos especiales.",
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "culturas_texto": "Civilizado en las morerías de las ciudades; Bárbaro los campesinos de los valles de Valencia, Aragón y Murcia",
+  "lengua_materna": "Árabe andalusí (en Valencia y el sur); en Castilla y Aragón muchos sólo hablan el romance de su reino",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   },
+   {
+    "idioma": "Aragonés (si es de Aragón) o Gallego-portugués",
+    "bono": 20,
+    "condicion": "si es de Portugal"
+   }
+  ],
+  "costumbres": "mudéjares (el +40% cultural)",
+  "restricciones": "No pueden ser nobles (la nobleza es cristiana). No pueden empezar en carreras cristianas: Sacerdote cristiano, Goliardo, Caballero de orden militar, alguacil (Oficial) ni Guerrero de la hueste real (sí en la de su señor).",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "baja-nobleza",
+    "alta-nobleza"
+   ],
+   "carreras_prohibidas": [
+    "Caballero de orden militar",
+    "Goliardo",
+    "Malsín",
+    "Muccadim",
+    "Rabino"
+   ],
+   "avisos": [
+    "Sacerdote: solo como alfaquí o imán de su credo (mejor la carrera Ulema).",
+    "No pueden ser alguaciles (Oficial) ni guerreros de la hueste real (sí de la de su señor)."
+   ]
+  },
+  "estilos_habituales": [
+   "Milicia de Concejo",
+   "Peón de Hueste",
+   "Ballestero de Asedio (los reyes los contratan como ballesteros)"
+  ],
+  "nomina": "musulmanes",
+  "pasiones_sugeridas": [
+   "Fe (el islam)",
+   "Lealtad (su aljama)",
+   "Temer (los predicadores cristianos) u Odio (quien los humilla)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "navarros",
+  "nombre": "Navarros",
+  "nota": "Navarros",
+  "credo": "cristiano",
+  "reinos": [
+   "Reino de Navarra"
+  ],
+  "resumen": "Los cristianos de las villas y del sur del reino de Navarra (el norte y la montaña son de los vascos). Descienden de aragoneses, castellanos y francos (gentes del Camino de Santiago asentadas en los burgos) y hablan un romance muy cercano al castellano y al aragonés.",
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro"
+  ],
+  "culturas_texto": "Civilizado en Pamplona, Estella, Tudela o Sangüesa; Bárbaro en la Ribera y la montaña",
+  "lengua_materna": "Navarro",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   },
+   {
+    "idioma": "Aragonés",
+    "bono": 10
+   }
+  ],
+  "costumbres": "navarras (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Milicia de Concejo",
+   "Peón de Hueste",
+   "Montañés"
+  ],
+  "nomina": "castellanos",
+  "pasiones_sugeridas": [
+   "Lealtad (el rey de Navarra o su burgo)",
+   "Odio (el burgo vecino: los de la Navarrería contra los de San Cernín)",
+   "Fe (cristiana)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "portugueses",
+  "nombre": "Portugueses",
+  "nota": "Portugueses",
+  "credo": "cristiano",
+  "reinos": [
+   "Reino de Portugal"
+  ],
+  "resumen": "Los cristianos del reino de Portugal, descendientes de gallegos y leoneses que repoblaron las tierras ganadas a al-Ándalus; hablan la misma lengua que los gallegos, con su propia habla. Portugal mira al mar y a su gran vecino: aliado unas veces, invasor otras. En 1383–1385 la crisis dinástica termina con la batalla de Aljubarrota, la llegada de la casa de Avis y la alianza con Inglaterra.",
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "culturas_texto": "Civilizado en Lisboa, Oporto, Coímbra o Évora; Bárbaro en el campo y la montaña; Nómada los pastores del Alentejo",
+  "lengua_materna": "Gallego-portugués",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "portuguesas (el +40% cultural)",
+  "restricciones": "No pueden empezar como esclavos.",
+  "requisitos": {
+   "estamentos_prohibidos": [
+    "esclavo"
+   ],
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Ballestero de Galera",
+   "Peón de Hueste",
+   "Milicia de Concejo"
+  ],
+  "nomina": "gallegos-y-portugueses",
+  "pasiones_sugeridas": [
+   "Lealtad (el rey de Portugal)",
+   "Odio (los castellanos), sobre todo después de 1384",
+   "Fe (cristiana)"
+  ],
+  "raro": false
+ },
+ {
+  "id": "vascos",
+  "nombre": "Vascos",
+  "nota": "Vascos",
+  "credo": "cristiano",
+  "reinos": [
+   "Corona de Castilla",
+   "Reino de Navarra"
+  ],
+  "resumen": "Los habitantes de las tierras del norte de Castilla (el señorío de Vizcaya, Guipúzcoa, Álava) y del norte de Navarra. Famosos por su ferocidad en la guerra y su habilidad en el mar (balleneros, ferrones, marinos de las naves cantábricas).",
+  "culturas_habituales": [
+   "barbaro",
+   "civilizado"
+  ],
+  "culturas_texto": "Bárbaro (aldeas y caseríos de montaña); Civilizado en villas como Bilbao, San Sebastián o Vitoria",
+  "lengua_materna": "Euskera",
+  "idiomas_gratis": [
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "vascas (el +40% cultural)",
+  "restricciones": "En Aquelarre sólo pueden ser villanos o campesinos. Históricamente, muchos vizcaínos y guipuzcoanos se tenían por hidalgos por el mero hecho de nacer allí (la hidalguía universal): el DJ decide qué regla usa.",
+  "requisitos": {
+   "estamentos_permitidos": [
+    "villano"
+   ],
+   "opcion_campaña": "hidalguia_vasca",
+   "carreras_prohibidas": [
+    "Derviche",
+    "Ghazi",
+    "Malsín",
+    "Muccadim",
+    "Rabino",
+    "Ulema"
+   ]
+  },
+  "estilos_habituales": [
+   "Montañés",
+   "Ballestero de Galera (villas marineras)",
+   "Peón de Hueste"
+  ],
+  "nomina": "vascos",
+  "pasiones_sugeridas": [
+   "Lealtad (su linaje o su bando: oñacinos o gamboínos)",
+   "Honra (su casa solar)",
+   "Fe (cristiana)… o respeto a Mari"
+  ],
+  "raro": false
+ },
+ {
+  "id": "arabes-granadinos",
+  "nombre": "Árabes granadinos",
+  "nota": "Árabes granadinos",
+  "credo": "musulman",
+  "reinos": [
+   "Reino de Granada"
+  ],
+  "resumen": "Por comodidad llamamos así a los musulmanes del reino nazarí. La mayoría son andalusíes, descendientes de los habitantes de al-Ándalus, con bereberes del Magreb (los zenetes, voluntarios de la fe), esclavos turcos y eslavos, africanos del Sahel y algún árabe de Oriente.",
+  "culturas_habituales": [
+   "civilizado",
+   "barbaro",
+   "nomada"
+  ],
+  "culturas_texto": "Civilizado en Granada, Málaga, Almería, Guadix o Ronda; Bárbaro en las Alpujarras y la serranía; Nómada los jinetes bereberes de la frontera",
+  "lengua_materna": "Árabe andalusí",
+  "idiomas_gratis": [
+   {
+    "idioma": "Árabe clásico",
+    "bono": 20
+   },
+   {
+    "idioma": "Castellano",
+    "bono": 20
+   }
+  ],
+  "costumbres": "granadinas (el +40% cultural)",
+  "restricciones": "Ninguna.",
+  "requisitos": {
+   "avisos": [
+    "Sacerdote: solo como alfaquí o imán (mejor la carrera Ulema)."
+   ],
+   "carreras_prohibidas": [
+    "Caballero de orden militar",
+    "Goliardo",
+    "Malsín",
+    "Muccadim",
+    "Rabino"
+   ]
+  },
+  "estilos_habituales": [
+   "Jinete a la Jineta",
+   "Caballero Nazarí",
+   "Voluntario de la Fe"
+  ],
+  "nomina": "musulmanes",
+  "pasiones_sugeridas": [
+   "Fe (el islam)",
+   "Lealtad (el sultán o su linaje)",
+   "Odio (los cristianos de la frontera)"
+  ],
+  "raro": false
+ }
+]

@@ -1,0 +1,2655 @@
+[
+ {
+  "nombre": "Ropa humilde de hombre",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 60,
+  "precio_texto": "60",
+  "descripcion": "Telas de tonos oscuros y pardos.",
+  "id": "ropa-humilde-de-hombre"
+ },
+ {
+  "nombre": "Ropa humilde de mujer",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 108,
+  "precio_texto": "108",
+  "descripcion": "Telas más largas, de los mismos tonos; pañuelos o tocas blancas.",
+  "id": "ropa-humilde-de-mujer"
+ },
+ {
+  "nombre": "Ropa humilde de niño",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Telas sueltas de tonos oscuros.",
+  "id": "ropa-humilde-de-nino"
+ },
+ {
+  "nombre": "Ropa elegante de hombre",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 576,
+  "precio_texto": "576",
+  "descripcion": "Mejores telas, aunque predominan los tonos pardos y apagados.",
+  "id": "ropa-elegante-de-hombre"
+ },
+ {
+  "nombre": "Ropa elegante de mujer",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 1008,
+  "precio_texto": "1.008",
+  "descripcion": "Ropajes más largos; aparecen algunos colores.",
+  "id": "ropa-elegante-de-mujer"
+ },
+ {
+  "nombre": "Ropa elegante de niño",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 360,
+  "precio_texto": "360",
+  "descripcion": "Ropajes sueltos de tonos oscuros.",
+  "id": "ropa-elegante-de-nino"
+ },
+ {
+  "nombre": "Ropa lujosa de hombre",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 1188,
+  "precio_texto": "1.188",
+  "descripcion": "Paños de calidad con colores y tintes caros.",
+  "id": "ropa-lujosa-de-hombre"
+ },
+ {
+  "nombre": "Ropa lujosa de mujer",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 2052,
+  "precio_texto": "2.052",
+  "descripcion": "Paños de calidad, colores luminosos, brocados, encajes.",
+  "id": "ropa-lujosa-de-mujer"
+ },
+ {
+  "nombre": "Ropa lujosa de niño",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 900,
+  "precio_texto": "900",
+  "descripcion": "Ropas sueltas de paños de calidad.",
+  "id": "ropa-lujosa-de-nino"
+ },
+ {
+  "nombre": "Sotana o hábito humilde",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 68,
+  "precio_texto": "68",
+  "descripcion": "Lana gruesa.",
+  "id": "sotana-o-habito-humilde"
+ },
+ {
+  "nombre": "Sotana o hábito elegante",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 384,
+  "precio_texto": "384",
+  "descripcion": "Tela de lino.",
+  "id": "sotana-o-habito-elegante"
+ },
+ {
+  "nombre": "Sotana o hábito lujoso",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 1008,
+  "precio_texto": "1.008",
+  "descripcion": "Con sedas, brocados y armiños.",
+  "id": "sotana-o-habito-lujoso"
+ },
+ {
+  "nombre": "Chilaba hebrea humilde / elegante",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 60,
+  "precio_texto": "60 / 576",
+  "descripcion": "Con capucha. En muchos lugares es obligatoria para los judíos.",
+  "variantes": [
+   {
+    "nombre": "Chilaba hebrea humilde",
+    "precio": 60
+   },
+   {
+    "nombre": "Chilaba hebrea elegante",
+    "precio": 576
+   }
+  ],
+  "id": "chilaba-hebrea-humilde-elegante"
+ },
+ {
+  "nombre": "Caftán humilde / elegante",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 60,
+  "precio_texto": "60 / 576",
+  "descripcion": "Albornoz musulmán de lana barata o de gran calidad en colores claros.",
+  "variantes": [
+   {
+    "nombre": "Caftán humilde",
+    "precio": 60
+   },
+   {
+    "nombre": "Caftán elegante",
+    "precio": 576
+   }
+  ],
+  "id": "caftan-humilde-elegante"
+ },
+ {
+  "nombre": "Caftán lujoso (tiraz)",
+  "aclaracion": "",
+  "categoria": "Ropas completas",
+  "grupo": "Vestimenta",
+  "precio": 1188,
+  "precio_texto": "1.188",
+  "descripcion": "Albornoz de paños de calidad, habitualmente de seda.",
+  "id": "caftan-lujoso-tiraz"
+ },
+ {
+  "nombre": "Alfombra de oración",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 54,
+  "precio_texto": "54",
+  "descripcion": "Alfombra portátil para las oraciones diarias de los musulmanes.",
+  "id": "alfombra-de-oracion"
+ },
+ {
+  "nombre": "Aljuba",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Traje que se viste sobre la saya, de hombre o de mujer.",
+  "id": "aljuba"
+ },
+ {
+  "nombre": "Alpargatas",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "Calzado de lona con suela de cáñamo. Silencioso.",
+  "id": "alpargatas"
+ },
+ {
+  "nombre": "Balandrán",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 120,
+  "precio_texto": "120",
+  "descripcion": "Traje largo y holgado, con mangas y abierto por delante; de nobles, caballeros, doctores y letrados.",
+  "id": "balandran"
+ },
+ {
+  "nombre": "Bolsillo",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "Bolsa pequeña de cuero para el cinto, para las monedas.",
+  "id": "bolsillo"
+ },
+ {
+  "nombre": "Borceguíes con banda",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 35,
+  "precio_texto": "35",
+  "descripcion": "Calzado de piel por encima del tobillo, abierto por delante y sujeto con correas.",
+  "id": "borceguies-con-banda"
+ },
+ {
+  "nombre": "Botas de camino",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 50,
+  "precio_texto": "50",
+  "descripcion": "Calzado de cuero con suela reforzada.",
+  "id": "botas-de-camino"
+ },
+ {
+  "nombre": "Calzas",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 68,
+  "precio_texto": "68",
+  "descripcion": "Prenda ceñida a las piernas hasta la cintura, sujeta al jubón con agujetas.",
+  "id": "calzas"
+ },
+ {
+  "nombre": "Capa de paño pardo",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 60,
+  "precio_texto": "60",
+  "descripcion": "Capa de abrigo.",
+  "id": "capa-de-pano-pardo"
+ },
+ {
+  "nombre": "Capirote de vestir",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "Capuchón rematado en punta, con cola (manga).",
+  "id": "capirote-de-vestir"
+ },
+ {
+  "nombre": "Chapines",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "Calzado femenino de corcho con alta suela de piel, de colores.",
+  "id": "chapines"
+ },
+ {
+  "nombre": "Guantes de carnero",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 21,
+  "precio_texto": "21",
+  "descripcion": "A veces perfumados.",
+  "id": "guantes-de-carnero"
+ },
+ {
+  "nombre": "Guantes de cetrería",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 42,
+  "precio_texto": "42",
+  "descripcion": "Cuero reforzado para posar el ave.",
+  "id": "guantes-de-cetreria"
+ },
+ {
+  "nombre": "Jubón",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 68,
+  "precio_texto": "68",
+  "descripcion": "De fustán (tela gruesa de algodón con pelo por una cara).",
+  "id": "jubon"
+ },
+ {
+  "nombre": "Manta",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Paño grueso de lana.",
+  "id": "manta"
+ },
+ {
+  "nombre": "Morral",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 30,
+  "precio_texto": "30",
+  "descripcion": "Talega que se lleva a la espalda.",
+  "id": "morral"
+ },
+ {
+  "nombre": "Saya",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 20,
+  "precio_texto": "20",
+  "descripcion": "Traje ceñido sobre la ropa interior, de paño fino doblado.",
+  "id": "saya"
+ },
+ {
+  "nombre": "Sobreveste",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 216,
+  "precio_texto": "216",
+  "descripcion": "Túnica ligera sobre la armadura, con las armas del portador.",
+  "id": "sobreveste"
+ },
+ {
+  "nombre": "Talit",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 24,
+  "precio_texto": "24",
+  "descripcion": "Chal con flecos para los oficios religiosos judíos.",
+  "id": "talit"
+ },
+ {
+  "nombre": "Zapatos doblados",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 15,
+  "precio_texto": "15",
+  "descripcion": "Calzado a medida, de cuero trabajado.",
+  "id": "zapatos-doblados"
+ },
+ {
+  "nombre": "Zurrón",
+  "aclaracion": "",
+  "categoria": "Prendas sueltas y complementos",
+  "grupo": "Vestimenta",
+  "precio": 30,
+  "precio_texto": "30",
+  "descripcion": "De lana y cuero.",
+  "id": "zurron"
+ },
+ {
+  "nombre": "Alojamiento trabajado",
+  "aclaracion": "",
+  "categoria": "Alojamiento",
+  "grupo": "Comida y alojamiento",
+  "precio": null,
+  "precio_texto": "Gratis",
+  "descripcion": "Se trabaja durante el día por la cama de la noche. No todas las posadas lo aceptan.",
+  "id": "alojamiento-trabajado"
+ },
+ {
+  "nombre": "Alojamiento medio",
+  "aclaracion": "",
+  "categoria": "Alojamiento",
+  "grupo": "Comida y alojamiento",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "Noche en la sala común.",
+  "id": "alojamiento-medio"
+ },
+ {
+  "nombre": "Alojamiento completo",
+  "aclaracion": "",
+  "categoria": "Alojamiento",
+  "grupo": "Comida y alojamiento",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Noche en la sala común, una comida y fuego si hace frío.",
+  "id": "alojamiento-completo"
+ },
+ {
+  "nombre": "Habitación privada",
+  "aclaracion": "",
+  "categoria": "Alojamiento",
+  "grupo": "Comida y alojamiento",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "Noche en una habitación con puerta.",
+  "id": "habitacion-privada"
+ },
+ {
+  "nombre": "Habitación privada completa",
+  "aclaracion": "",
+  "categoria": "Alojamiento",
+  "grupo": "Comida y alojamiento",
+  "precio": 18,
+  "precio_texto": "18",
+  "descripcion": "Habitación, una comida y fuego si hace frío.",
+  "id": "habitacion-privada-completa"
+ },
+ {
+  "nombre": "Establo",
+  "aclaracion": "",
+  "categoria": "Alojamiento",
+  "grupo": "Comida y alojamiento",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Pienso y techo para un caballo, por noche.",
+  "id": "establo"
+ },
+ {
+  "nombre": "Pan",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.4,
+  "precio_texto": "4 d",
+  "descripcion": "Una hogaza abundante de pan blanco.",
+  "id": "pan"
+ },
+ {
+  "nombre": "Gachas",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.6,
+  "precio_texto": "6 d",
+  "descripcion": "Harina cocida con agua y sal.",
+  "id": "gachas"
+ },
+ {
+  "nombre": "Sopa de ajo y pan",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.5,
+  "precio_texto": "5 d",
+  "descripcion": "Agua caliente con ajos hervidos y pan.",
+  "id": "sopa-de-ajo-y-pan"
+ },
+ {
+  "nombre": "Migas",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.5,
+  "precio_texto": "5 d",
+  "descripcion": "Pan sofrito con manteca de cerdo y ajo.",
+  "id": "migas"
+ },
+ {
+  "nombre": "Torrezno",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.2,
+  "precio_texto": "2 d",
+  "descripcion": "Tocino asado.",
+  "id": "torrezno"
+ },
+ {
+  "nombre": "Huevos pasados por agua",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.8,
+  "precio_texto": "8 d",
+  "descripcion": "Huevos escalfados con pan migado y vino.",
+  "id": "huevos-pasados-por-agua"
+ },
+ {
+  "nombre": "Empanada de menudillos",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.8,
+  "precio_texto": "8 d",
+  "descripcion": "Hojaldre relleno de asaduras de ave.",
+  "id": "empanada-de-menudillos"
+ },
+ {
+  "nombre": "Bocados de manjar blanco",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.8,
+  "precio_texto": "8 d",
+  "descripcion": "Pechuga de pollo con leche y harina, de postre.",
+  "id": "bocados-de-manjar-blanco"
+ },
+ {
+  "nombre": "Potaje",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "Guiso de legumbres y verduras.",
+  "id": "potaje"
+ },
+ {
+  "nombre": "Queso de cabra",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Queso curado.",
+  "id": "queso-de-cabra"
+ },
+ {
+  "nombre": "Mondongos",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Salchichas de carne picada o despojos.",
+  "id": "mondongos"
+ },
+ {
+  "nombre": "Carne hojaldrada",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "Hojaldre relleno de carne picada.",
+  "id": "carne-hojaldrada"
+ },
+ {
+  "nombre": "Pescado en salazón (1 libra)",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "",
+  "id": "pescado-en-salazon-1-libra"
+ },
+ {
+  "nombre": "Cecina (1 libra)",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Carne salada y secada al sol o ahumada.",
+  "id": "cecina-1-libra"
+ },
+ {
+  "nombre": "Manteca (1 libra)",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 1.5,
+  "precio_texto": "15 d",
+  "descripcion": "De leche de vaca.",
+  "id": "manteca-1-libra"
+ },
+ {
+  "nombre": "Asado de carnero",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "Carne asada en leña.",
+  "id": "asado-de-carnero"
+ },
+ {
+  "nombre": "Ave de caza en espetón",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 7,
+  "precio_texto": "7",
+  "descripcion": "",
+  "id": "ave-de-caza-en-espeton"
+ },
+ {
+  "nombre": "Lechón asado",
+  "aclaracion": "",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": 30,
+  "precio_texto": "30",
+  "descripcion": "Cerdo lechal asado en leña.",
+  "id": "lechon-asado"
+ },
+ {
+  "nombre": "Cocina judía:",
+  "aclaracion": "huevos jaminados / pan trenzado / haraveulas / idish / bolsillos de Amán",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": null,
+  "precio_texto": "5 d / 5 d / 2 / 4 / 3",
+  "descripcion": "Huevos cocidos con aceite y cebolla; pan con aceite y amapola; hojaldre de vaca y especias; pescado relleno; pastelillos dulces.",
+  "id": "cocina-judia"
+ },
+ {
+  "nombre": "Cocina musulmana:",
+  "aclaracion": "acemita / alcuzcuz / harisa",
+  "categoria": "Comidas (una ración)",
+  "grupo": "Comida y alojamiento",
+  "precio": null,
+  "precio_texto": "8 d / 15 d / 1",
+  "descripcion": "Sopa de trigo tostado; sémola con carne; guiso de pan y carne picada con manteca.",
+  "id": "cocina-musulmana"
+ },
+ {
+  "nombre": "Raciones de viaje (1 semana)",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 15,
+  "precio_texto": "15",
+  "descripcion": "Cecina, queso, pescado en salazón y pan de higo.",
+  "id": "raciones-de-viaje-1-semana"
+ },
+ {
+  "nombre": "Bizcocho de viaje",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Pan seco que dura 5 semanas y da de comer durante 1 semana.",
+  "id": "bizcocho-de-viaje"
+ },
+ {
+  "nombre": "Avena para caballo (1 ración)",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "",
+  "id": "avena-para-caballo-1-racion"
+ },
+ {
+  "nombre": "Jarra (cuartillo) de leche",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.4,
+  "precio_texto": "4 d",
+  "descripcion": "",
+  "id": "jarra-cuartillo-de-leche"
+ },
+ {
+  "nombre": "Jarra de aguapié / de vino / de sidra",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.2,
+  "precio_texto": "2 d / 3 d / 3 d",
+  "descripcion": "Botella de un azumbre: 8 d / 12 d / 12 d.",
+  "variantes": [
+   {
+    "nombre": "Jarra de aguapié",
+    "precio": 0.2
+   },
+   {
+    "nombre": "de vino",
+    "precio": 0.3
+   },
+   {
+    "nombre": "de sidra",
+    "precio": 0.3
+   }
+  ],
+  "id": "jarra-de-aguapie-de-vino-de-sidra"
+ },
+ {
+  "nombre": "Jarra de hipocrás",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.4,
+  "precio_texto": "4 d",
+  "descripcion": "Vino hervido con miel y especias (azumbre: 16 d).",
+  "id": "jarra-de-hipocras"
+ },
+ {
+  "nombre": "Jarra de aguardiente",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.6,
+  "precio_texto": "6 d",
+  "descripcion": "(Azumbre: 24 d.)",
+  "id": "jarra-de-aguardiente"
+ },
+ {
+  "nombre": "Jarra de agua de ajenjos",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.5,
+  "precio_texto": "5 d",
+  "descripcion": "Licor de ajenjo y otras hierbas. Su abuso puede causar locura y muerte.",
+  "id": "jarra-de-agua-de-ajenjos"
+ },
+ {
+  "nombre": "Jarra de rubb / de jamguri",
+  "aclaracion": "",
+  "categoria": "Viaje y bebida",
+  "grupo": "Comida y alojamiento",
+  "precio": 0.2,
+  "precio_texto": "2 d / 5 d",
+  "descripcion": "Bebidas musulmanas: mosto de fruta; mosto con canela, anís, mostaza y naranja.",
+  "variantes": [
+   {
+    "nombre": "Jarra de rubb",
+    "precio": 0.2
+   },
+   {
+    "nombre": "de jamguri",
+    "precio": 0.5
+   }
+  ],
+  "id": "jarra-de-rubb-de-jamguri"
+ },
+ {
+  "nombre": "Asno",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 180,
+  "precio_texto": "180",
+  "descripcion": "Transporte, montura o tiro. Más terco que una mula.",
+  "id": "asno"
+ },
+ {
+  "nombre": "Jamelgo",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 360,
+  "precio_texto": "360",
+  "descripcion": "Caballo viejo y flaco para distancias cortas.",
+  "id": "jamelgo"
+ },
+ {
+  "nombre": "Mula",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 648,
+  "precio_texto": "648",
+  "descripcion": "Transporte, montura o labranza. La montura del clero y de los letrados.",
+  "id": "mula"
+ },
+ {
+  "nombre": "Caballo de tiro",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 720,
+  "precio_texto": "720",
+  "descripcion": "Grande y fuerte, para el campo o las carretas.",
+  "id": "caballo-de-tiro"
+ },
+ {
+  "nombre": "Potro (4 años o menos)",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 900,
+  "precio_texto": "900",
+  "descripcion": "",
+  "id": "potro-4-anos-o-menos"
+ },
+ {
+  "nombre": "Caballo de monta",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 3000,
+  "precio_texto": "3.000",
+  "descripcion": "Ligero, sólo para montar.",
+  "id": "caballo-de-monta"
+ },
+ {
+  "nombre": "Corcel",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 7200,
+  "precio_texto": "7.200",
+  "descripcion": "Caballo de guerra, entrenado para la batalla y la justa.",
+  "id": "corcel"
+ },
+ {
+  "nombre": "Alquiler de caballo / de mula (por día)",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 6,
+  "precio_texto": "6 / 3",
+  "descripcion": "",
+  "variantes": [
+   {
+    "nombre": "Alquiler de caballo",
+    "precio": 6
+   },
+   {
+    "nombre": "de mula (por día)",
+    "precio": 3
+   }
+  ],
+  "id": "alquiler-de-caballo-de-mula-por-dia"
+ },
+ {
+  "nombre": "Albardas",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Silla y arreos de una bestia de carga.",
+  "id": "albardas"
+ },
+ {
+  "nombre": "Alforjas",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 7,
+  "precio_texto": "7",
+  "descripcion": "De cuero, para la silla.",
+  "id": "alforjas"
+ },
+ {
+  "nombre": "Aparejo básico",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 108,
+  "precio_texto": "108",
+  "descripcion": "Silla de montar, bocado y bridas.",
+  "id": "aparejo-basico"
+ },
+ {
+  "nombre": "Aparejo de lujo",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 720,
+  "precio_texto": "720",
+  "descripcion": "Lo mismo, de calidad, con la silla repujada.",
+  "id": "aparejo-de-lujo"
+ },
+ {
+  "nombre": "Espuelas (par)",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Las espuelas doradas son señal de caballero.",
+  "id": "espuelas-par"
+ },
+ {
+  "nombre": "Gualdrapa",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 72,
+  "precio_texto": "72",
+  "descripcion": "Cobertor de lana para las ancas y el lomo.",
+  "id": "gualdrapa"
+ },
+ {
+  "nombre": "Herraduras (4)",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "",
+  "id": "herraduras-4"
+ },
+ {
+  "nombre": "Bardas / bardas de vaqueta",
+  "aclaracion": "",
+  "categoria": "Monturas y pertrechos",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 6840,
+  "precio_texto": "6.840 / 810",
+  "descripcion": "Ver armaduras para monturas.",
+  "variantes": [
+   {
+    "nombre": "Bardas",
+    "precio": 6840
+   },
+   {
+    "nombre": "bardas de vaqueta",
+    "precio": 810
+   }
+  ],
+  "id": "bardas-bardas-de-vaqueta"
+ },
+ {
+  "nombre": "Carro normal",
+  "aclaracion": "",
+  "categoria": "Carros y carruajes",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 720,
+  "precio_texto": "720",
+  "descripcion": "Necesita uno o dos caballos (o bueyes) de tiro.",
+  "id": "carro-normal"
+ },
+ {
+  "nombre": "Carruaje pequeño",
+  "aclaracion": "",
+  "categoria": "Carros y carruajes",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 2160,
+  "precio_texto": "2.160",
+  "descripcion": "Para 2–4 personas. Uno o dos caballos de tiro.",
+  "id": "carruaje-pequeno"
+ },
+ {
+  "nombre": "Carruaje grande",
+  "aclaracion": "",
+  "categoria": "Carros y carruajes",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 14400,
+  "precio_texto": "14.400",
+  "descripcion": "Para 6–8 personas. Cuatro caballos de tiro.",
+  "id": "carruaje-grande"
+ },
+ {
+  "nombre": "Barca",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 1800,
+  "precio_texto": "1.800",
+  "descripcion": "Pequeña barca de remos para la pesca costera o el paso de ríos.",
+  "id": "barca"
+ },
+ {
+  "nombre": "Fusta",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 5400,
+  "precio_texto": "5.400",
+  "descripcion": "Galera ligera de borda baja, favorita de los corsarios berberiscos.",
+  "id": "fusta"
+ },
+ {
+  "nombre": "Galeota",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 9000,
+  "precio_texto": "9.000",
+  "descripcion": "Como la fusta pero mayor; corsarios o escolta.",
+  "id": "galeota"
+ },
+ {
+  "nombre": "Coca",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 10800,
+  "precio_texto": "10.800",
+  "descripcion": "Velero mercante de alto bordo, en el Atlántico y el Mediterráneo.",
+  "id": "coca"
+ },
+ {
+  "nombre": "Carraca",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 16200,
+  "precio_texto": "16.200",
+  "descripcion": "Como la coca pero mayor.",
+  "id": "carraca"
+ },
+ {
+  "nombre": "Saeta",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 27000,
+  "precio_texto": "27.000",
+  "descripcion": "Para el corso o el transporte de mercancías.",
+  "id": "saeta"
+ },
+ {
+  "nombre": "Galera",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 61200,
+  "precio_texto": "61.200",
+  "descripcion": "Barco de guerra de remo y vela para patrullar las costas.",
+  "id": "galera"
+ },
+ {
+  "nombre": "Galeaza",
+  "aclaracion": "",
+  "categoria": "Embarcaciones",
+  "grupo": "Monturas, carros y barcos",
+  "precio": 86400,
+  "precio_texto": "86.400",
+  "descripcion": "Galera mayor con buena capacidad de carga.",
+  "id": "galeaza"
+ },
+ {
+  "nombre": "Buey",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 432,
+  "precio_texto": "432",
+  "descripcion": "",
+  "id": "buey"
+ },
+ {
+  "nombre": "Gerifalte o halcón neblí (cetrería)",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 300,
+  "precio_texto": "300",
+  "descripcion": "",
+  "id": "gerifalte-o-halcon-nebli-cetreria"
+ },
+ {
+  "nombre": "Vaca",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 445,
+  "precio_texto": "445",
+  "descripcion": "",
+  "id": "vaca"
+ },
+ {
+  "nombre": "Paloma mensajera (18 leguas al día)",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 5,
+  "precio_texto": "5",
+  "descripcion": "",
+  "id": "paloma-mensajera-18-leguas-al-dia"
+ },
+ {
+  "nombre": "Toro (semental)",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 720,
+  "precio_texto": "720",
+  "descripcion": "",
+  "id": "toro-semental"
+ },
+ {
+  "nombre": "Perro doméstico (×10 por raza)",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 5,
+  "precio_texto": "5",
+  "descripcion": "",
+  "id": "perro-domestico-10-por-raza"
+ },
+ {
+  "nombre": "Ternera",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "",
+  "id": "ternera"
+ },
+ {
+  "nombre": "Perro de caza (×10 por raza)",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 27,
+  "precio_texto": "27",
+  "descripcion": "",
+  "id": "perro-de-caza-10-por-raza"
+ },
+ {
+  "nombre": "Carnero",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "",
+  "id": "carnero"
+ },
+ {
+  "nombre": "Gato (×10 por raza)",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "",
+  "id": "gato-10-por-raza"
+ },
+ {
+  "nombre": "Cerdo",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 48,
+  "precio_texto": "48",
+  "descripcion": "",
+  "id": "cerdo"
+ },
+ {
+  "nombre": "Gallo",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 5,
+  "precio_texto": "5",
+  "descripcion": "",
+  "id": "gallo"
+ },
+ {
+  "nombre": "Oveja",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 24,
+  "precio_texto": "24",
+  "descripcion": "",
+  "id": "oveja"
+ },
+ {
+  "nombre": "Gallina",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "",
+  "id": "gallina"
+ },
+ {
+  "nombre": "Cabra",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 24,
+  "precio_texto": "24",
+  "descripcion": "",
+  "id": "cabra"
+ },
+ {
+  "nombre": "Pollo",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "",
+  "id": "pollo"
+ },
+ {
+  "nombre": "Cabrito",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "",
+  "id": "cabrito"
+ },
+ {
+  "nombre": "Capón",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 4,
+  "precio_texto": "4",
+  "descripcion": "",
+  "id": "capon"
+ },
+ {
+  "nombre": "Ganso",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 8,
+  "precio_texto": "8",
+  "descripcion": "",
+  "id": "ganso"
+ },
+ {
+  "nombre": "Conejo",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "",
+  "id": "conejo"
+ },
+ {
+  "nombre": "Perdiz",
+  "aclaracion": "",
+  "categoria": "Ganado y animales",
+  "grupo": "Ganado y mercancías",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "",
+  "id": "perdiz"
+ },
+ {
+  "nombre": "Leña",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 16,
+  "precio_texto": "16",
+  "descripcion": "",
+  "id": "lena"
+ },
+ {
+  "nombre": "Sebo",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 2088,
+  "precio_texto": "2.088",
+  "descripcion": "",
+  "id": "sebo"
+ },
+ {
+  "nombre": "Madera",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 24,
+  "precio_texto": "24",
+  "descripcion": "",
+  "id": "madera"
+ },
+ {
+  "nombre": "Lana merina",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 1980,
+  "precio_texto": "1.980",
+  "descripcion": "",
+  "id": "lana-merina"
+ },
+ {
+  "nombre": "Piedra de construcción",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 24,
+  "precio_texto": "24",
+  "descripcion": "",
+  "id": "piedra-de-construccion"
+ },
+ {
+  "nombre": "Lino hilado",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 6800,
+  "precio_texto": "6.800",
+  "descripcion": "",
+  "id": "lino-hilado"
+ },
+ {
+  "nombre": "Cuero",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 250,
+  "precio_texto": "250",
+  "descripcion": "",
+  "id": "cuero"
+ },
+ {
+  "nombre": "Cera",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 7200,
+  "precio_texto": "7.200",
+  "descripcion": "",
+  "id": "cera"
+ },
+ {
+  "nombre": "Trigo sin moler",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 480,
+  "precio_texto": "480",
+  "descripcion": "",
+  "id": "trigo-sin-moler"
+ },
+ {
+  "nombre": "Algodón hilado",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 9000,
+  "precio_texto": "9.000",
+  "descripcion": "",
+  "id": "algodon-hilado"
+ },
+ {
+  "nombre": "Hierro",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 1080,
+  "precio_texto": "1.080",
+  "descripcion": "",
+  "id": "hierro"
+ },
+ {
+  "nombre": "Especias (canela, pimienta, clavo, azafrán…)",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 36000,
+  "precio_texto": "36.000",
+  "descripcion": "",
+  "id": "especias-canela-pimienta-clavo-azafran"
+ },
+ {
+  "nombre": "Vino (1.000 cuartillos)",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 160,
+  "precio_texto": "160",
+  "descripcion": "",
+  "id": "vino-1-000-cuartillos"
+ },
+ {
+  "nombre": "Seda (de Asia, vía Venecia)",
+  "aclaracion": "",
+  "categoria": "Mercancías al por mayor (por 1.000 libras)",
+  "grupo": "Ganado y mercancías",
+  "precio": 100000,
+  "precio_texto": "100.000",
+  "descripcion": "",
+  "id": "seda-de-asia-via-venecia"
+ },
+ {
+  "nombre": "Lienzo",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 125,
+  "precio_texto": "125",
+  "descripcion": "Lino o cáñamo basto, para camisas, manteles y sábanas.",
+  "id": "lienzo"
+ },
+ {
+  "nombre": "Fustán",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 300,
+  "precio_texto": "300",
+  "descripcion": "Algodón y lino con pelo por una cara; mantos y jubones.",
+  "id": "fustan"
+ },
+ {
+  "nombre": "Pardo",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 425,
+  "precio_texto": "425",
+  "descripcion": "Lana gris oscura de poca calidad; para los más humildes.",
+  "id": "pardo"
+ },
+ {
+  "nombre": "Pardillo",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 525,
+  "precio_texto": "525",
+  "descripcion": "Lana tosca sin teñir.",
+  "id": "pardillo"
+ },
+ {
+  "nombre": "Contray",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 1050,
+  "precio_texto": "1.050",
+  "descripcion": "Lana fina de Courtrai (Flandes).",
+  "id": "contray"
+ },
+ {
+  "nombre": "Sanjuanes",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 1050,
+  "precio_texto": "1.050",
+  "descripcion": "La mejor lana fabricada en la Península.",
+  "id": "sanjuanes"
+ },
+ {
+  "nombre": "Berví",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 1350,
+  "precio_texto": "1.350",
+  "descripcion": "Lana de Wervicq (Flandes).",
+  "id": "bervi"
+ },
+ {
+  "nombre": "Velarte",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 2700,
+  "precio_texto": "2.700",
+  "descripcion": "Lana lustrosa negra para capas y sayos.",
+  "id": "velarte"
+ },
+ {
+  "nombre": "Aceituní",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 3150,
+  "precio_texto": "3.150",
+  "descripcion": "Terciopelo de seda oriental, color aceituna.",
+  "id": "aceituni"
+ },
+ {
+  "nombre": "Damasco",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 4200,
+  "precio_texto": "4.200",
+  "descripcion": "Seda con dibujos en la trama.",
+  "id": "damasco"
+ },
+ {
+  "nombre": "Tercenel",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 5250,
+  "precio_texto": "5.250",
+  "descripcion": "Seda fina para estandartes y banderas.",
+  "id": "tercenel"
+ },
+ {
+  "nombre": "De Londres",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 6750,
+  "precio_texto": "6.750",
+  "descripcion": "Lana inglesa escarlata de gran calidad.",
+  "id": "de-londres"
+ },
+ {
+  "nombre": "Brocado",
+  "aclaracion": "",
+  "categoria": "Paños (por pieza de 25 varas)",
+  "grupo": "Ganado y mercancías",
+  "precio": 23400,
+  "precio_texto": "23.400",
+  "descripcion": "La mejor seda, bordada en relieve con hilo de oro o plata.",
+  "id": "brocado"
+ },
+ {
+  "nombre": "Barquero",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Paso de un río por persona (animales y mercancías aparte).",
+  "id": "barquero"
+ },
+ {
+  "nombre": "Barbero",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "Por trabajo: sacar una muela, afeitar, sangrar.",
+  "id": "barbero"
+ },
+ {
+  "nombre": "Partera",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "En el campo, a menudo cobra la voluntad o la comida.",
+  "id": "partera"
+ },
+ {
+  "nombre": "Peón",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2 / día",
+  "descripcion": "",
+  "unidad": "día",
+  "id": "peon"
+ },
+ {
+  "nombre": "Escriba",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "Por carta o escrito.",
+  "id": "escriba"
+ },
+ {
+  "nombre": "Guía",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 5,
+  "precio_texto": "5 / día",
+  "descripcion": "",
+  "unidad": "día",
+  "id": "guia"
+ },
+ {
+  "nombre": "Mensajero",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 5,
+  "precio_texto": "5 / día de viaje",
+  "descripcion": "Por llevar una carta.",
+  "unidad": "día de viaje",
+  "id": "mensajero"
+ },
+ {
+  "nombre": "Carretero",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "Por arroba y legua.",
+  "id": "carretero"
+ },
+ {
+  "nombre": "Curandero",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "Por cada tirada de Primeros auxilios o Sanación.",
+  "id": "curandero"
+ },
+ {
+  "nombre": "Médico (físico)",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Por cada tirada de Sanación.",
+  "id": "medico-fisico"
+ },
+ {
+  "nombre": "Maestro",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10 / semana",
+  "descripcion": "Enseñanza (ver Mejora del Personaje y Experiencia).",
+  "unidad": "semana",
+  "id": "maestro"
+ },
+ {
+  "nombre": "Armero",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10 / PA",
+  "descripcion": "Por reparar armadura metálica (5 si es de cuero).",
+  "unidad": "PA",
+  "id": "armero"
+ },
+ {
+  "nombre": "Misa",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.5,
+  "precio_texto": "5 d",
+  "descripcion": "Por un difunto o una conmemoración (el doble si es cantada).",
+  "id": "misa"
+ },
+ {
+  "nombre": "Entierro",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 9,
+  "precio_texto": "9",
+  "descripcion": "Ataúd, mortaja, sepultura y el diezmo del sacerdote.",
+  "id": "entierro"
+ },
+ {
+  "nombre": "Criado",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 36,
+  "precio_texto": "36 / mes",
+  "descripcion": "",
+  "unidad": "mes",
+  "id": "criado"
+ },
+ {
+  "nombre": "Bufón",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 8,
+  "precio_texto": "8 / mes",
+  "descripcion": "",
+  "unidad": "mes",
+  "id": "bufon"
+ },
+ {
+  "nombre": "Soldado bisoño / experto",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": null,
+  "precio_texto": "36 / 72 al mes",
+  "descripcion": "",
+  "id": "soldado-bisono-experto"
+ },
+ {
+  "nombre": "Hombre de armas (con caballo)",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 144,
+  "precio_texto": "144 / mes",
+  "descripcion": "",
+  "unidad": "mes",
+  "id": "hombre-de-armas-con-caballo"
+ },
+ {
+  "nombre": "Prostituta de clase baja / alta",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": null,
+  "precio_texto": "1–17 / 50–180",
+  "descripcion": "Por noche o servicio.",
+  "id": "prostituta-de-clase-baja-alta"
+ },
+ {
+  "nombre": "Esclavo",
+  "aclaracion": "",
+  "categoria": "Servicios",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 300,
+  "precio_texto": "300",
+  "descripcion": "Hasta ×10 según su edad y utilidad.",
+  "id": "esclavo"
+ },
+ {
+  "nombre": "Albayalde",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.1,
+  "precio_texto": "1 d",
+  "descripcion": "",
+  "id": "albayalde"
+ },
+ {
+  "nombre": "Adormidera",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "",
+  "id": "adormidera"
+ },
+ {
+  "nombre": "Beleño",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.2,
+  "precio_texto": "2 d",
+  "descripcion": "",
+  "id": "beleno"
+ },
+ {
+  "nombre": "Cantáridas",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 11,
+  "precio_texto": "11",
+  "descripcion": "",
+  "id": "cantaridas"
+ },
+ {
+  "nombre": "Zaragatona",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.5,
+  "precio_texto": "5 d",
+  "descripcion": "",
+  "id": "zaragatona"
+ },
+ {
+  "nombre": "Acónito",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "",
+  "id": "aconito"
+ },
+ {
+  "nombre": "Arsénico",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.6,
+  "precio_texto": "6 d",
+  "descripcion": "",
+  "id": "arsenico"
+ },
+ {
+  "nombre": "Mandrágora",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "",
+  "id": "mandragora"
+ },
+ {
+  "nombre": "Cicuta",
+  "aclaracion": "",
+  "categoria": "Venenos y sustancias",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.6,
+  "precio_texto": "6 d",
+  "descripcion": "",
+  "id": "cicuta"
+ },
+ {
+  "nombre": "Aceite de candil (1 cuartillo)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Dura 24 horas.",
+  "car": 0,
+  "id": "aceite-de-candil-1-cuartillo"
+ },
+ {
+  "nombre": "Agujas de coser (20)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "",
+  "car": 0,
+  "id": "agujas-de-coser-20"
+ },
+ {
+  "nombre": "Anteojos",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 20,
+  "precio_texto": "20",
+  "descripcion": "Invento reciente, hechos a medida por un cristalero.",
+  "car": 0,
+  "id": "anteojos"
+ },
+ {
+  "nombre": "Antorchas (3)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "Duran 2 horas cada una.",
+  "car": 1,
+  "id": "antorchas-3"
+ },
+ {
+  "nombre": "Arcón",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 75,
+  "precio_texto": "75",
+  "descripcion": "Arca de madera con herrajes.",
+  "car": 5,
+  "id": "arcon"
+ },
+ {
+  "nombre": "Bacía",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "Para jabonar la barba.",
+  "car": 1,
+  "id": "bacia"
+ },
+ {
+  "nombre": "Baraja de naipes",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "De pergamino.",
+  "car": 0,
+  "id": "baraja-de-naipes"
+ },
+ {
+  "nombre": "Bota de vino",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Hasta un azumbre.",
+  "car": 1,
+  "id": "bota-de-vino"
+ },
+ {
+  "nombre": "Caja con llave",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "Cofrecillo de madera.",
+  "car": 1,
+  "id": "caja-con-llave"
+ },
+ {
+  "nombre": "Cálamo",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 0.2,
+  "precio_texto": "2 d",
+  "descripcion": "Caña para escribir.",
+  "car": 0,
+  "id": "calamo"
+ },
+ {
+  "nombre": "Cáliz con patena",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 18,
+  "precio_texto": "18",
+  "descripcion": "",
+  "car": 0,
+  "id": "caliz-con-patena"
+ },
+ {
+  "nombre": "Candado",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "",
+  "car": 0,
+  "id": "candado"
+ },
+ {
+  "nombre": "Candil",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "Lámpara de aceite.",
+  "car": 1,
+  "id": "candil"
+ },
+ {
+  "nombre": "Cazo de azófar (latón)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Un cuartillo.",
+  "car": 1,
+  "id": "cazo-de-azofar-laton"
+ },
+ {
+  "nombre": "Cirio",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "Dura casi 24 horas, pero ilumina poco.",
+  "car": 0,
+  "id": "cirio"
+ },
+ {
+  "nombre": "Clavos largos (50)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 5,
+  "precio_texto": "5",
+  "descripcion": "",
+  "car": 1,
+  "id": "clavos-largos-50"
+ },
+ {
+  "nombre": "Componentes químicos",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "Azufre, cuarzo, cal viva, hollín, salitre, plomo…",
+  "car": 0,
+  "id": "componentes-quimicos"
+ },
+ {
+  "nombre": "Crucifijo de madera",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "De ébano 20, de azabache 17, de plata 60, de oro 180.",
+  "car": 0,
+  "id": "crucifijo-de-madera"
+ },
+ {
+  "nombre": "Cruz de altar",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 252,
+  "precio_texto": "252",
+  "descripcion": "Dorada y pintada.",
+  "car": 2,
+  "id": "cruz-de-altar"
+ },
+ {
+  "nombre": "Cuchillo de cabo de ciervo",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "",
+  "car": 0,
+  "id": "cuchillo-de-cabo-de-ciervo"
+ },
+ {
+  "nombre": "Cuerda de cáñamo (10 varas)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 20,
+  "precio_texto": "20",
+  "descripcion": "Muy voluminosa.",
+  "car": 2,
+  "id": "cuerda-de-canamo-10-varas"
+ },
+ {
+  "nombre": "Devociones",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "Estampas de santos.",
+  "car": 0,
+  "id": "devociones"
+ },
+ {
+  "nombre": "Escalera (5 varas)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 20,
+  "precio_texto": "20",
+  "descripcion": "",
+  "car": 4,
+  "id": "escalera-5-varas"
+ },
+ {
+  "nombre": "Escribanía",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 5,
+  "precio_texto": "5",
+  "descripcion": "Caja con plumas y tintero.",
+  "car": 0,
+  "id": "escribania"
+ },
+ {
+  "nombre": "Espejo de mano",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 13,
+  "precio_texto": "13",
+  "descripcion": "Metal bruñido o vidrio azogado. Objeto de lujo.",
+  "car": 0,
+  "id": "espejo-de-mano"
+ },
+ {
+  "nombre": "Estera de esparto",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 24,
+  "precio_texto": "24",
+  "descripcion": "Para el suelo o para dormir.",
+  "car": 1,
+  "id": "estera-de-esparto"
+ },
+ {
+  "nombre": "Flauta",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "",
+  "car": 0,
+  "id": "flauta"
+ },
+ {
+  "nombre": "Ganzúas",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Difíciles de encontrar (para Ganzúa).",
+  "car": 0,
+  "id": "ganzuas"
+ },
+ {
+  "nombre": "Garfio",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "",
+  "car": 1,
+  "id": "garfio"
+ },
+ {
+  "nombre": "Hacha de leña",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 2,
+  "precio_texto": "2",
+  "descripcion": "",
+  "car": 1,
+  "id": "hacha-de-lena"
+ },
+ {
+  "nombre": "Hisopo",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 9,
+  "precio_texto": "9",
+  "descripcion": "Para el agua bendita.",
+  "car": 0,
+  "id": "hisopo"
+ },
+ {
+  "nombre": "Incensario",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 18,
+  "precio_texto": "18",
+  "descripcion": "",
+  "car": 1,
+  "id": "incensario"
+ },
+ {
+  "nombre": "Instrumental de alquimista",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 360,
+  "precio_texto": "360",
+  "descripcion": "Alquitara, atanor, matraces, redomas, retortas…",
+  "car": 4,
+  "id": "instrumental-de-alquimista"
+ },
+ {
+  "nombre": "Instrumentos de peso y medida",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 48,
+  "precio_texto": "48",
+  "descripcion": "Pesas, balanzas, varas, celemines. Para cambistas y comerciantes.",
+  "car": 2,
+  "id": "instrumentos-de-peso-y-medida"
+ },
+ {
+  "nombre": "Joyas",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": null,
+  "precio_texto": "10–10.000",
+  "descripcion": "Anillos, ajorcas, aretes, diademas, collares.",
+  "car": 0,
+  "id": "joyas"
+ },
+ {
+  "nombre": "Laúd",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 20,
+  "precio_texto": "20",
+  "descripcion": "",
+  "car": 2,
+  "id": "laud"
+ },
+ {
+  "nombre": "Libro de horas",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 15,
+  "precio_texto": "15",
+  "descripcion": "Devocionario barato.",
+  "car": 0,
+  "id": "libro-de-horas"
+ },
+ {
+  "nombre": "Libro en blanco",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "Cuartillas cosidas para notas o cuentas.",
+  "car": 0,
+  "id": "libro-en-blanco"
+ },
+ {
+  "nombre": "Libro sagrado guarnecido",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3600,
+  "precio_texto": "3.600",
+  "descripcion": "Biblia, Corán o Torá iluminados, con oro y plata.",
+  "car": 1,
+  "id": "libro-sagrado-guarnecido"
+ },
+ {
+  "nombre": "Lienzos (1 vara)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 5,
+  "precio_texto": "5",
+  "descripcion": "Para limpiar heridas.",
+  "car": 0,
+  "id": "lienzos-1-vara"
+ },
+ {
+  "nombre": "Maletas de vaqueta",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "Con cadena y candado.",
+  "car": 2,
+  "id": "maletas-de-vaqueta"
+ },
+ {
+  "nombre": "Manta de lana (para caballo)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": null,
+  "precio_texto": "36 (24)",
+  "descripcion": "",
+  "car": 1,
+  "id": "manta-de-lana-para-caballo"
+ },
+ {
+  "nombre": "Martillo",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "",
+  "car": 1,
+  "id": "martillo"
+ },
+ {
+  "nombre": "Menorá",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 18,
+  "precio_texto": "18",
+  "descripcion": "Candelabro judío (de oro, 1.800).",
+  "car": 1,
+  "id": "menora"
+ },
+ {
+  "nombre": "Navaja de barbero",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3,
+  "precio_texto": "3",
+  "descripcion": "",
+  "car": 0,
+  "id": "navaja-de-barbero"
+ },
+ {
+  "nombre": "Objetos de arte o de lujo",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": null,
+  "precio_texto": "2–20.000",
+  "descripcion": "Libros miniados, retablos, tapices, instrumentos de lujo.",
+  "car": 0,
+  "id": "objetos-de-arte-o-de-lujo"
+ },
+ {
+  "nombre": "Odre (un azumbre)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 10,
+  "precio_texto": "10",
+  "descripcion": "",
+  "car": 1,
+  "id": "odre-un-azumbre"
+ },
+ {
+  "nombre": "Pala",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 8,
+  "precio_texto": "8",
+  "descripcion": "",
+  "car": 1,
+  "id": "pala"
+ },
+ {
+  "nombre": "Pergaminos (una resma, unos 500 folios)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "",
+  "car": 1,
+  "id": "pergaminos-una-resma-unos-500-folios"
+ },
+ {
+  "nombre": "Pico",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "",
+  "car": 1,
+  "id": "pico"
+ },
+ {
+  "nombre": "Portacartas",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "",
+  "car": 0,
+  "id": "portacartas"
+ },
+ {
+  "nombre": "Rejuelas de lumbre",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 12,
+  "precio_texto": "12",
+  "descripcion": "Braserillo portátil para calentar pies y manos.",
+  "car": 1,
+  "id": "rejuelas-de-lumbre"
+ },
+ {
+  "nombre": "Reloj de arena",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "",
+  "car": 0,
+  "id": "reloj-de-arena"
+ },
+ {
+  "nombre": "Retablo portátil",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 150,
+  "precio_texto": "150",
+  "descripcion": "",
+  "car": 1,
+  "id": "retablo-portatil"
+ },
+ {
+  "nombre": "Romana",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Balanza para mercancías.",
+  "car": 1,
+  "id": "romana"
+ },
+ {
+  "nombre": "Saco",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "",
+  "car": 0,
+  "id": "saco"
+ },
+ {
+  "nombre": "Tenazas / tenacillas de barbero",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6 / 2",
+  "descripcion": "",
+  "car": 0,
+  "variantes": [
+   {
+    "nombre": "Tenazas",
+    "precio": 6
+   },
+   {
+    "nombre": "tenacillas de barbero",
+    "precio": 2
+   }
+  ],
+  "id": "tenazas-tenacillas-de-barbero"
+ },
+ {
+  "nombre": "Tijeras",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 9,
+  "precio_texto": "9",
+  "descripcion": "",
+  "car": 0,
+  "id": "tijeras"
+ },
+ {
+  "nombre": "Tinta (un cuartillo)",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 1,
+  "precio_texto": "1",
+  "descripcion": "Negro de humo y goma.",
+  "car": 0,
+  "id": "tinta-un-cuartillo"
+ },
+ {
+  "nombre": "Yesquero",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 6,
+  "precio_texto": "6",
+  "descripcion": "Eslabón y pedernal.",
+  "car": 0,
+  "id": "yesquero"
+ },
+ {
+  "nombre": "Zaque",
+  "aclaracion": "",
+  "categoria": "Equipo variado",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 4,
+  "precio_texto": "4",
+  "descripcion": "Odre pequeño de un cuartillo.",
+  "car": 0,
+  "id": "zaque"
+ },
+ {
+  "nombre": "Cabaña",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 345,
+  "precio_texto": "345",
+  "descripcion": "Madera o adobe con techo de paja.",
+  "id": "cabana"
+ },
+ {
+  "nombre": "Granja",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3600,
+  "precio_texto": "3.600",
+  "descripcion": "Madera o adobe, techo de tejas, zócalo de piedra.",
+  "id": "granja"
+ },
+ {
+  "nombre": "Casa sencilla en ciudad",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3600,
+  "precio_texto": "3.600",
+  "descripcion": "Dos o tres habitaciones.",
+  "id": "casa-sencilla-en-ciudad"
+ },
+ {
+  "nombre": "Casa normal en ciudad",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 27000,
+  "precio_texto": "27.000",
+  "descripcion": "Hasta seis habitaciones en dos plantas.",
+  "id": "casa-normal-en-ciudad"
+ },
+ {
+  "nombre": "Casa lujosa en ciudad",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 72000,
+  "precio_texto": "72.000",
+  "descripcion": "Más de seis habitaciones, dos plantas y patio.",
+  "id": "casa-lujosa-en-ciudad"
+ },
+ {
+  "nombre": "Noria de sangre",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 27000,
+  "precio_texto": "27.000",
+  "descripcion": "Para sacar agua o moler; requiere un animal.",
+  "id": "noria-de-sangre"
+ },
+ {
+  "nombre": "Torre fortificada",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 45000,
+  "precio_texto": "45.000",
+  "descripcion": "Requiere licencia del señor de la tierra.",
+  "id": "torre-fortificada"
+ },
+ {
+  "nombre": "Castillo pequeño",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 225000,
+  "precio_texto": "225.000",
+  "descripcion": "Requiere licencia del señor.",
+  "id": "castillo-pequeno"
+ },
+ {
+  "nombre": "Castillo grande",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 3600000,
+  "precio_texto": "3.600.000",
+  "descripcion": "Con doble muralla. Requiere licencia del señor.",
+  "id": "castillo-grande"
+ },
+ {
+  "nombre": "Puente de madera / de piedra",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 150000,
+  "precio_texto": "150.000 / 1.200.000",
+  "descripcion": "Para arroyos o ríos pequeños (hasta 10 varas).",
+  "variantes": [
+   {
+    "nombre": "Puente de madera",
+    "precio": 150000
+   },
+   {
+    "nombre": "de piedra",
+    "precio": 1200000
+   }
+  ],
+  "id": "puente-de-madera-de-piedra"
+ },
+ {
+  "nombre": "Tierras de pastos (por fanega)",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 17,
+  "precio_texto": "17",
+  "descripcion": "Renta: 3 mrs al año.",
+  "id": "tierras-de-pastos-por-fanega"
+ },
+ {
+  "nombre": "Tierras de cultivo (por fanega)",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 36,
+  "precio_texto": "36",
+  "descripcion": "Renta: 6 mrs al año.",
+  "id": "tierras-de-cultivo-por-fanega"
+ },
+ {
+  "nombre": "Huertos (por fanega)",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 72,
+  "precio_texto": "72",
+  "descripcion": "Renta: 15 mrs al año.",
+  "id": "huertos-por-fanega"
+ },
+ {
+  "nombre": "Viñedos (por fanega)",
+  "aclaracion": "",
+  "categoria": "Propiedades",
+  "grupo": "Equipo, Vestimenta y Servicios de los Reinos Hispánicos",
+  "precio": 144,
+  "precio_texto": "144",
+  "descripcion": "Renta: 36 mrs al año.",
+  "id": "vinedos-por-fanega"
+ }
+]

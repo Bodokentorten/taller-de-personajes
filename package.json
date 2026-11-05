@@ -5,6 +5,7 @@
   "description": "Taller de personajes de Mythras para la España del siglo XIV",
   "type": "module",
   "scripts": {
+    "extraer": "python -I ../extractor/extraer.py && python -I ../extractor/validar.py",
     "dev": "vite --mode jugador",
     "dev:dj": "vite --mode dj",
     "build": "npm run build:jugador",

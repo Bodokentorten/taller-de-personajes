@@ -1,0 +1,435 @@
+{
+ "mod_dano": [
+  {
+   "min": null,
+   "max": 5,
+   "valor": "–1d8"
+  },
+  {
+   "min": 6,
+   "max": 10,
+   "valor": "–1d6"
+  },
+  {
+   "min": 11,
+   "max": 15,
+   "valor": "–1d4"
+  },
+  {
+   "min": 16,
+   "max": 20,
+   "valor": "–1d2"
+  },
+  {
+   "min": 21,
+   "max": 25,
+   "valor": "+0"
+  },
+  {
+   "min": 26,
+   "max": 30,
+   "valor": "+1d2"
+  },
+  {
+   "min": 31,
+   "max": 35,
+   "valor": "+1d4"
+  },
+  {
+   "min": 36,
+   "max": 40,
+   "valor": "+1d6"
+  },
+  {
+   "min": 41,
+   "max": 45,
+   "valor": "+1d8"
+  },
+  {
+   "min": 46,
+   "max": 50,
+   "valor": "+1d10"
+  },
+  {
+   "min": 51,
+   "max": 60,
+   "valor": "+1d12"
+  },
+  {
+   "min": 61,
+   "max": 70,
+   "valor": "+2d6"
+  },
+  {
+   "min": 71,
+   "max": 80,
+   "valor": "+1d8+1d6"
+  },
+  {
+   "min": 81,
+   "max": 90,
+   "valor": "+2d8"
+  },
+  {
+   "min": 91,
+   "max": 100,
+   "valor": "+1d10+1d8"
+  },
+  {
+   "min": 101,
+   "max": 110,
+   "valor": "+2d10"
+  },
+  {
+   "min": 111,
+   "max": 120,
+   "valor": "+2d10+1d2"
+  },
+  {
+   "clave": "Cada 10 puntos",
+   "valor": "Continuar progresión"
+  }
+ ],
+ "mod_experiencia": [
+  {
+   "min": null,
+   "max": 6,
+   "valor": "-1"
+  },
+  {
+   "min": 7,
+   "max": 12,
+   "valor": "+0"
+  },
+  {
+   "min": 13,
+   "max": 18,
+   "valor": "+1"
+  },
+  {
+   "clave": "Cada 6 puntos",
+   "valor": "+1"
+  }
+ ],
+ "curacion": [
+  {
+   "min": null,
+   "max": 6,
+   "valor": "1"
+  },
+  {
+   "min": 7,
+   "max": 12,
+   "valor": "2"
+  },
+  {
+   "min": 13,
+   "max": 18,
+   "valor": "3"
+  },
+  {
+   "clave": "Cada 6 puntos",
+   "valor": "+1"
+  }
+ ],
+ "suerte": [
+  {
+   "min": null,
+   "max": 6,
+   "valor": "1"
+  },
+  {
+   "min": 7,
+   "max": 12,
+   "valor": "2"
+  },
+  {
+   "min": 13,
+   "max": 18,
+   "valor": "3"
+  },
+  {
+   "clave": "Cada 6 puntos",
+   "valor": "+1"
+  }
+ ],
+ "pg": {
+  "rangos": [
+   "1–5",
+   "6–10",
+   "11–15",
+   "16–20",
+   "21–25",
+   "26–30",
+   "31–35",
+   "36–40",
+   "+5"
+  ],
+  "localizaciones": [
+   {
+    "localizacion": "Cabeza",
+    "valores": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "+1"
+    ]
+   },
+   {
+    "localizacion": "Pecho",
+    "valores": [
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "10",
+     "+1"
+    ]
+   },
+   {
+    "localizacion": "Abdomen",
+    "valores": [
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "9",
+     "+1"
+    ]
+   },
+   {
+    "localizacion": "Cada brazo",
+    "valores": [
+     "1",
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "+1"
+    ]
+   },
+   {
+    "localizacion": "Cada pierna",
+    "valores": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6",
+     "7",
+     "8",
+     "+1"
+    ]
+   }
+  ]
+ },
+ "edades": [
+  {
+   "id": "joven",
+   "categoria": "Joven",
+   "edad": "10+1d6",
+   "puntos": 100,
+   "max_incremento": 10
+  },
+  {
+   "id": "adulto",
+   "categoria": "Adulto",
+   "edad": "15+2d6",
+   "puntos": 150,
+   "max_incremento": 15
+  },
+  {
+   "id": "de-mediana-edad",
+   "categoria": "De mediana edad",
+   "edad": "25+3d6",
+   "puntos": 200,
+   "max_incremento": 20
+  },
+  {
+   "id": "senior",
+   "categoria": "Senior",
+   "edad": "40+4d6",
+   "puntos": 250,
+   "max_incremento": 25
+  },
+  {
+   "id": "anciano",
+   "categoria": "Anciano",
+   "edad": "60+5d6",
+   "puntos": 300,
+   "max_incremento": 30
+  }
+ ],
+ "piramide_texto": [
+  "Deben asignarse todos los puntos de la pirámide.",
+  "Ninguna habilidad puede recibir más de una asignación de la pirámide.",
+  "Tanto Costumbres como Lengua materna obtienen un +40, según las reglas básicas, y además de cualquier asignación hecha desde la pirámide.",
+  "Las Pasiones obtienen los valores indicados en la sección Pasiones, además de cualquier asignación hecha desde la pirámide.",
+  "Ninguna habilidad puede exceder el 80% como resultado de una asignación. Por ejemplo, si un personaje tiene FUE 16 y DES 17, para una base del 33%, el jugador no puede asignar el valor de 50 puntos a un Estilo de combate.",
+  "Seis de los valores deben asignarse a Habilidades profesionales.",
+  "Los personajes aún pueden elegir una Cultura y Ocupación, y utilizar las habilidades listadas en la descripción apropiada como guía para sus asignaciones, o las asignaciones pueden ser totalmente libres.",
+  "Se recomienda que al menos uno de los valores se asigne a un Estilo de combate, pero no es obligatorio.",
+  "El Director de Juego siempre tiene la última palabra."
+ ],
+ "pasiones": [
+  {
+   "objeto": "Una persona en un contexto familiar o romántico",
+   "ejemplos": "Amante, hermano, esposa, padre, objeto de deseo distante",
+   "base": "POD + CAR del ser querido (+ bono inicial)",
+   "formula": "SUJETO.POD+SUJETO.CAR"
+  },
+  {
+   "objeto": "Una persona en un contexto platónico (amistad o lealtad)",
+   "ejemplos": "Líder, maestro, gobernante, señor, rescatador, sacerdote",
+   "base": "POD del personaje + CAR del sujeto (+ bono inicial)",
+   "formula": "POD+SUJETO.CAR"
+  },
+  {
+   "objeto": "Una persona en un contexto adverso",
+   "ejemplos": "Líder enemigo, rival, asesino de un amigo, ladrón",
+   "base": "POD del personaje + CAR del sujeto (+ bono inicial)",
+   "formula": "POD+SUJETO.CAR"
+  },
+  {
+   "objeto": "Una organización o grupo de personas",
+   "ejemplos": "Familia, escuela, templo, religión, comunidad local, gremio, corporación",
+   "base": "POD + INT del personaje (+ bono inicial)",
+   "formula": "POD+INT"
+  },
+  {
+   "objeto": "Una raza o especie",
+   "ejemplos": "Extranjeros, no humanos, bestias sobrenaturales, fantasmas",
+   "base": "POD x2 del personaje (+ bono inicial)",
+   "formula": "POD*2"
+  },
+  {
+   "objeto": "Un lugar",
+   "ejemplos": "País, pueblo natal, lugar sagrado, capital, montañas",
+   "base": "POD + INT del personaje (+ bono inicial)",
+   "formula": "POD+INT"
+  },
+  {
+   "objeto": "Un objeto o sustancia",
+   "ejemplos": "El trono de hierro, reliquia diabólica, magia, antigua herencia, gemas",
+   "base": "POD x2 del personaje (+ bono inicial)",
+   "formula": "POD*2"
+  },
+  {
+   "objeto": "Un concepto, ideal o rasgo de personalidad",
+   "ejemplos": "Código ético o moral, libertad, honor personal, traición",
+   "base": "POD + INT (o POD + CAR) del personaje (+ bono inicial)",
+   "formula": "POD+INT"
+  }
+ ],
+ "fichas_piramide": {
+  "valores": [
+   50,
+   40,
+   40,
+   30,
+   30,
+   30,
+   20,
+   20,
+   20,
+   20,
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "tope": 80,
+  "min_profesionales": 6,
+  "recomendado_estilo": true
+ },
+ "compra_caracteristicas": {
+  "puntos": 80,
+  "rangos": {
+   "FUE": [
+    3,
+    18
+   ],
+   "CON": [
+    3,
+    18
+   ],
+   "DES": [
+    3,
+    18
+   ],
+   "POD": [
+    3,
+    18
+   ],
+   "CAR": [
+    3,
+    18
+   ],
+   "TAM": [
+    8,
+    18
+   ],
+   "INT": [
+    8,
+    18
+   ]
+  },
+  "tiradas": {
+   "FUE": "3d6",
+   "CON": "3d6",
+   "DES": "3d6",
+   "POD": "3d6",
+   "CAR": "3d6",
+   "TAM": "2d6+6",
+   "INT": "2d6+6"
+  }
+ },
+ "formulas_iniciales": [
+  {
+   "clave": "30–40%",
+   "valor": "1",
+   "azar": "1D3"
+  },
+  {
+   "clave": "41–50%",
+   "valor": "2",
+   "azar": "1D4"
+  },
+  {
+   "clave": "51–60%",
+   "valor": "3",
+   "azar": "1D6"
+  },
+  {
+   "clave": "61–70%",
+   "valor": "4",
+   "azar": "1D6+1"
+  },
+  {
+   "clave": "71–80%",
+   "valor": "5",
+   "azar": "1D6+2"
+  },
+  {
+   "clave": "81% o más",
+   "valor": "6",
+   "azar": "1D10+1"
+  }
+ ]
+}

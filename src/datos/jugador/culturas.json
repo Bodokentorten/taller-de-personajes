@@ -1,0 +1,372 @@
+[
+ {
+  "id": "barbaro",
+  "nombre": "Bárbaro",
+  "nota": "Bárbaro",
+  "nombre_en": "Barbarian",
+  "resumen": "Nadie en los reinos hispánicos se llamaría a sí mismo «bárbaro», pero en términos de Mythras esta cultura representa a la gente de aldea, montaña y frontera: los labradores de los lugares de behetría y de señorío; los montañeses de Asturias, Cantabria, Vizcaya, Guipúzcoa y los valles pirenaicos, orgullosos de una hidalguía colectiva y metidos en guerras de bandos; los almogávares y gentes de la frontera de Granada…",
+  "automaticas": [
+   {
+    "habilidad": "costumbres",
+    "bono": 40
+   },
+   {
+    "habilidad": "lengua-materna",
+    "bono": 40
+   }
+  ],
+  "estandar": [
+   {
+    "habilidad": "atletismo"
+   },
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   }
+  ],
+  "estandar_eleccion": [
+   {
+    "n": 1,
+    "opciones": [
+     "navegacion-fluvial",
+     "montar"
+    ]
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "marineria"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "n_profesionales": 3,
+  "puntos": 100,
+  "min_por_habilidad": 5,
+  "max_por_habilidad": 15,
+  "estilos": [
+   "peon-de-hueste",
+   "almogavar",
+   "montanes",
+   "jinete-a-la-jineta"
+  ],
+  "pasiones_sugeridas": [
+   "Lealtad a su linaje, a su pariente mayor o al señor de la tierra.",
+   "Honra (de su casa y de su linaje).",
+   "Odio al bando enemigo (oñacinos contra gamboínos), a los moros o cristianos del otro lado de la frontera, a los recaudadores del rey.",
+   "Fe o Devoción a la Virgen o al santo de su ermita… o un respeto supersticioso por las lamias, las mouras y los genios del monte."
+  ],
+  "dinero": {
+   "dados": "4d6",
+   "multiplicador": 50
+  }
+ },
+ {
+  "id": "civilizado",
+  "nombre": "Civilizado",
+  "nota": "Civilizado",
+  "nombre_en": "Civilized",
+  "resumen": "En los reinos hispánicos, el personaje civilizado es un vecino de una ciudad o una villa: Burgos, Toledo, Sevilla, Barcelona, Valencia, Zaragoza, Lisboa, Pamplona, Granada… o cualquiera de los cientos de villas amuralladas con su fuero, su concejo, su mercado semanal, sus iglesias, su judería y su morería.",
+  "automaticas": [
+   {
+    "habilidad": "costumbres",
+    "bono": 40
+   },
+   {
+    "habilidad": "lengua-materna",
+    "bono": 40
+   }
+  ],
+  "estandar": [
+   {
+    "habilidad": "ocultar"
+   },
+   {
+    "habilidad": "engano"
+   },
+   {
+    "habilidad": "conducir"
+   },
+   {
+    "habilidad": "influencia"
+   },
+   {
+    "habilidad": "perspicacia"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "fuerza-de-voluntad"
+   }
+  ],
+  "estandar_eleccion": [],
+  "profesionales": [
+   {
+    "habilidad": "arte",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "comercio"
+   },
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "cortesia"
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true,
+    "sugerencias": [
+     "latín",
+     "árabe",
+     "hebreo",
+     "otra lengua peninsular"
+    ]
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "conocimiento-callejero"
+   }
+  ],
+  "n_profesionales": 3,
+  "puntos": 100,
+  "min_por_habilidad": 5,
+  "max_por_habilidad": 15,
+  "estilos": [
+   "milicia-de-concejo",
+   "pendenciero-de-taberna",
+   "ballestero-de-galera"
+  ],
+  "pasiones_sugeridas": [
+   "Lealtad a su villa, a su concejo, a su cofradía o a su gremio.",
+   "Fe (cristiana, judía o musulmana) o Devoción al santo patrón de la villa.",
+   "Odio a un bando rival, a la villa vecina con la que pleitea por unos pastos, o a otro credo."
+  ],
+  "dinero": {
+   "dados": "4d6",
+   "multiplicador": 75
+  }
+ },
+ {
+  "id": "nomada",
+  "nombre": "Nómada",
+  "nota": "Nómada",
+  "nombre_en": "Nomadic",
+  "resumen": "En la Península no hay hordas de jinetes de la estepa, pero sí mucha gente que vive siempre en camino. Los pastores trashumantes de la Mesta bajan cada otoño con millones de ovejas merinas desde las sierras de León, Soria, Segovia o Cuenca hasta los pastos de invierno de Extremadura y La Mancha, y suben en primavera; duermen al raso o en chozos, conocen cada cañada, cada vado y cada peligro del monte.",
+  "automaticas": [
+   {
+    "habilidad": "costumbres",
+    "bono": 40
+   },
+   {
+    "habilidad": "lengua-materna",
+    "bono": 40
+   }
+  ],
+  "estandar": [
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "primeros-auxilios"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   }
+  ],
+  "estandar_eleccion": [
+   {
+    "n": 2,
+    "opciones": [
+     "atletismo",
+     "navegacion-fluvial",
+     "conducir",
+     "montar",
+     "nadar"
+    ]
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "cultura",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "idioma",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "n_profesionales": 3,
+  "puntos": 100,
+  "min_por_habilidad": 5,
+  "max_por_habilidad": 15,
+  "estilos": [
+   "jinete-a-la-jineta",
+   "pastor-trashumante"
+  ],
+  "pasiones_sugeridas": [
+   "Lealtad a su mayoral, a su cabaña o a su tribu.",
+   "Amor por su perro, su caballo o su familia, que le espera al otro lado de la sierra.",
+   "Odio a los concejos que cobran portazgos indebidos, a los labradores que cierran las cañadas, a los lobos."
+  ],
+  "dinero": {
+   "dados": "4d6",
+   "multiplicador": 25
+  }
+ },
+ {
+  "id": "primitivo",
+  "nombre": "Primitivo",
+  "nota": "Primitivo",
+  "nombre_en": "Primitive",
+  "resumen": "Los canarios viven en clanes, en cuevas y casas de piedra seca, de sus rebaños de cabras, la pesca y algo de cebada. No conocen el metal: sus armas son de piedra, hueso y madera endurecida al fuego. Cada isla tiene sus propios reyes (menceyes en Tenerife, guanartemes en Gran Canaria), sus nobles y sus sacerdotes, y momifican a sus muertos.",
+  "automaticas": [
+   {
+    "habilidad": "costumbres",
+    "bono": 40
+   },
+   {
+    "habilidad": "lengua-materna",
+    "bono": 40
+   }
+  ],
+  "estandar": [
+   {
+    "habilidad": "musculatura"
+   },
+   {
+    "habilidad": "resistencia"
+   },
+   {
+    "habilidad": "esquivar"
+   },
+   {
+    "habilidad": "entorno"
+   },
+   {
+    "habilidad": "percepcion"
+   },
+   {
+    "habilidad": "sigilo"
+   }
+  ],
+  "estandar_eleccion": [
+   {
+    "n": 1,
+    "opciones": [
+     "atletismo",
+     "navegacion-fluvial",
+     "nadar"
+    ]
+   }
+  ],
+  "profesionales": [
+   {
+    "habilidad": "artesania",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "sanacion"
+   },
+   {
+    "habilidad": "conocimiento",
+    "cualquiera": true
+   },
+   {
+    "habilidad": "interpretacion-musical"
+   },
+   {
+    "habilidad": "navegacion"
+   },
+   {
+    "habilidad": "supervivencia"
+   },
+   {
+    "habilidad": "rastrear"
+   }
+  ],
+  "n_profesionales": 3,
+  "puntos": 100,
+  "min_por_habilidad": 5,
+  "max_por_habilidad": 15,
+  "estilos": [
+   "cazador-de-islas"
+  ],
+  "pasiones_sugeridas": [
+   "Lealtad a su clan o a su mencey.",
+   "Amor (amigo, pariente o amor romántico).",
+   "Odio (los esclavistas que le arrancaron de su isla) o Temer (a Guayota, el demonio que vive bajo el Teide)."
+  ],
+  "dinero": {
+   "dados": "4d6",
+   "multiplicador": 10
+  }
+ }
+]
