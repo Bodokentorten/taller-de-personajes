@@ -1,0 +1,9 @@
+node_modules/
+dist/
+dist-dj/
+*.log
+.DS_Store
+
+# Datos y código del DJ: NUNCA se suben al repositorio público.
+src/datos/dj/*
+!src/datos/dj/.gitkeep

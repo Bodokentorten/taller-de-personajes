@@ -1,0 +1,41 @@
+{
+  "name": "taller-de-personajes",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Taller de personajes de Mythras para la España del siglo XIV",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode jugador",
+    "dev:dj": "vite --mode dj",
+    "build": "npm run build:jugador",
+    "build:jugador": "vite build --mode jugador --outDir dist && node scripts/centinela.mjs dist",
+    "build:dj": "vite build --mode dj --outDir dist-dj",
+    "preview": "vite preview --outDir dist",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verificar": "npm run check && npm run lint && npm run test && npm run build:jugador"
+  },
+  "dependencies": {
+    "@fontsource/eb-garamond": "^5.3.0",
+    "@fontsource/unifrakturmaguntia": "^5.3.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tsconfig/svelte": "^5.0.8",
+    "eslint": "^10.14.0",
+    "eslint-plugin-svelte": "^3.24.0",
+    "globals": "^17.14.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-svelte": "^4.1.1",
+    "svelte": "^5.57.3",
+    "svelte-check": "^4.7.8",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
+  }
+}

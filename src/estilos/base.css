@@ -1,0 +1,112 @@
+/* ── Fichas de diseño: manuscrito (pergamino) y vela (oscuro) ── */
+:root {
+  --pergamino: #f3e6c8;
+  --pergamino-hondo: #e8d5a9;
+  --tinta: #2b1d10;
+  --tinta-suave: #5a4630;
+  --rubrica: #8b1a1a; /* rojo de las capitulares y rúbricas */
+  --oro: #a77b1f;
+  --lacre: #7a1414;
+  --borde: #b89a64;
+  --sombra: rgb(60 40 10 / 0.18);
+
+  --letra-texto: 'EB Garamond', Garamond, 'Times New Roman', serif;
+  --letra-titulo: 'UnifrakturMaguntia', 'EB Garamond', serif;
+
+  color-scheme: light;
+}
+
+:root[data-tema='vela'] {
+  --pergamino: #1b1510;
+  --pergamino-hondo: #261d15;
+  --tinta: #eadcc0;
+  --tinta-suave: #b9a586;
+  --rubrica: #d0584a;
+  --oro: #d4a94a;
+  --lacre: #b33a2e;
+  --borde: #5c4a33;
+  --sombra: rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at center, transparent 55%, var(--sombra) 100%), var(--pergamino);
+  background-attachment: fixed;
+  color: var(--tinta);
+  font-family: var(--letra-texto);
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--letra-titulo);
+  font-weight: 400;
+  color: var(--rubrica);
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--rubrica);
+}
+
+button {
+  font: inherit;
+  color: var(--tinta);
+  background: var(--pergamino-hondo);
+  border: 1px solid var(--borde);
+  border-radius: 3px;
+  padding: 0.35em 0.9em;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--rubrica);
+}
+
+:focus-visible {
+  outline: 2px solid var(--oro);
+  outline-offset: 2px;
+}
+
+/* Capitular: primera letra del párrafo marcado */
+.capitular::first-letter {
+  float: left;
+  font-family: var(--letra-titulo);
+  font-size: 3.4em;
+  line-height: 0.85;
+  padding: 0.05em 0.1em 0 0;
+  color: var(--rubrica);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  .no-imprimir {
+    display: none !important;
+  }
+}
