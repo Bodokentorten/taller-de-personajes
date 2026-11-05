@@ -57,8 +57,8 @@ export type EstadoCarga = 'normal' | 'cargado' | 'sobrecargado' | 'inmovil';
 
 /**
  * Estado de carga según «Carga y Movimiento (ENC)»: hasta FUE×2 normal, hasta ×3 cargado, hasta ×4
- * sobrecargado y más, inmóvil. (Ojo: «Equipo, Armas y Armaduras» dice «hasta FUE puntos sin penalización»;
- * se sigue la nota detallada de Carga.)
+ * sobrecargado y más, inmóvil. (Confirmado por el usuario el 2026-11-05;
+ * «Equipo, Armas y Armaduras» ya dice lo mismo.)
  */
 export function estadoCarga(car: number, fue: number): EstadoCarga {
   if (car <= fue * 2) return 'normal';
