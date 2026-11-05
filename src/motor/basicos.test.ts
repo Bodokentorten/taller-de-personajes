@@ -125,3 +125,11 @@ describe('fe, carga', () => {
     expect(estadoCarga(57, 14)).toBe('inmovil');
   });
 });
+
+describe('mercado', () => {
+  it('los ids del equipo son únicos', async () => {
+    const { catalogoEquipo } = await import('./equipo');
+    const ids = catalogoEquipo(catalogo).map((o) => o.id);
+    expect(ids.length).toBe(new Set(ids).size);
+  });
+});

@@ -15,6 +15,8 @@ export default defineConfig(({ mode }) => {
     build: {
       target: 'es2022',
       sourcemap: mode === 'dj',
+      // Los catálogos del vault (~450 KB de JSON) van en el paquete para funcionar sin conexión.
+      chunkSizeWarningLimit: 800,
     },
     test: {
       include: ['src/**/*.test.ts'],

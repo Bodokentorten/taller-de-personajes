@@ -3,6 +3,7 @@ import type { Catalogo } from '../datos/catalogo';
 import { calcularAtributos, type Atributos } from './atributos';
 import { validarCaracteristicas } from './caracteristicas';
 import { validarDinero } from './economia';
+import { resumenEquipo, type ResumenEquipo } from './equipo';
 import { estadoFe, validarFe, type EstadoFe } from './fe';
 import { calcularHabilidades, type ValorHabilidad } from './habilidades';
 import { estadoMagia, validarMagia, type EstadoMagia } from './magia';
@@ -18,6 +19,7 @@ export interface Hoja {
   pasiones: { nombre: string; valor: number | undefined; fe: boolean }[];
   fe: EstadoFe;
   magia: EstadoMagia;
+  equipo: ResumenEquipo;
   clase?: string;
   /** Estrés y Corrupción al empezar: 0 («Horror, Estrés y Pánico»: el Estrés comienza en 0). */
   estres: number;
@@ -74,6 +76,25 @@ export function calcularHoja(
     ...validarMagia(p, cat, magia),
     ...validarDinero(p, cat),
   ];
+  const equipo = resumenEquipo(p, cat);
+  if (equipo.restante !== undefined && equipo.restante < 0) {
+    problemas.push(
+      error(
+        'equipo',
+        'sin-dinero-suficiente',
+        `El equipo cuesta ${equipo.coste} mrs y solo tiene ${equipo.dinero}.`,
+      ),
+    );
+  }
+  if (equipo.estado !== 'normal') {
+    problemas.push(
+      aviso(
+        'equipo',
+        'carga',
+        `Lleva ${equipo.car} de CAR: va ${equipo.estado} (FUE×2 = ${p.caracteristicas.valores.FUE * 2}).`,
+      ),
+    );
+  }
   return {
     atributos: calcularAtributos(p.caracteristicas.valores, cat.reglas),
     habilidades,
@@ -84,6 +105,7 @@ export function calcularHoja(
     })),
     fe,
     magia,
+    equipo,
     clase: claseSocial(p, cat)?.clase,
     estres: 0,
     corrupcion: 0,

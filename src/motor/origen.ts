@@ -41,7 +41,14 @@ export function validarOrigen(p: Personaje, cat: Catalogo, campaña: Campaña): 
   if (!pueblo) res.push(error('origen', 'sin-pueblo', 'Elige el pueblo.'));
   if (!reino) res.push(error('origen', 'sin-reino', 'Elige el reino.'));
   if (!credo) res.push(error('origen', 'sin-credo', 'Elige el credo.'));
-  if (!cultura || !pueblo || !reino || !credo) return res;
+  if (!cultura || !pueblo || !reino || !credo) {
+    // El trasfondo depende del origen: que no parezca completo mientras el origen no lo esté.
+    if (!o.clase)
+      res.push(
+        error('trasfondo', 'sin-clase', 'Completa el origen y luego elige o tira la clase social.'),
+      );
+    return res;
+  }
 
   if (!pueblo.reinos.includes(reino.nombre)) {
     res.push(

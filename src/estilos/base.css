@@ -110,3 +110,128 @@ button:hover {
     display: none !important;
   }
 }
+
+/* ── Página y folio ── */
+.folio {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  border: 1px solid var(--borde);
+  outline: 1px solid var(--borde);
+  outline-offset: 5px;
+  background: var(--pergamino);
+  box-shadow: 0 6px 24px var(--sombra);
+}
+.folio > h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+.subtitulo {
+  text-align: center;
+  font-style: italic;
+  color: var(--tinta-suave);
+  margin-top: 0.2rem;
+}
+.detalle {
+  color: var(--tinta-suave);
+  font-size: 0.92em;
+}
+button.principal {
+  background: var(--lacre);
+  color: #f6e7c8;
+  border-color: var(--lacre);
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ── Formularios ── */
+input[type='text'],
+input[type='search'],
+input[type='number'],
+select,
+textarea {
+  font: inherit;
+  color: var(--tinta);
+  background: color-mix(in srgb, var(--pergamino) 70%, white 30%);
+  border: 1px solid var(--borde);
+  border-radius: 3px;
+  padding: 0.2em 0.45em;
+}
+:root[data-tema='vela'] input[type='text'],
+:root[data-tema='vela'] input[type='search'],
+:root[data-tema='vela'] input[type='number'],
+:root[data-tema='vela'] select,
+:root[data-tema='vela'] textarea {
+  background: var(--pergamino-hondo);
+}
+fieldset {
+  border: 1px solid var(--borde);
+  border-radius: 3px;
+  padding: 0.5rem 1rem 0.8rem;
+}
+legend {
+  color: var(--rubrica);
+  padding: 0 0.3rem;
+}
+.campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 1.5rem;
+  align-items: start;
+}
+.campos label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.campos .ancho {
+  grid-column: 1 / -1;
+}
+.campos fieldset label {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  margin-right: 1rem;
+}
+.corto {
+  max-width: 6rem;
+}
+
+/* ── Tarjetas (pueblos, culturas, carreras) ── */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.7rem;
+}
+.tarjeta {
+  border: 1px solid var(--borde);
+  border-radius: 3px;
+  padding: 0.5rem 0.7rem;
+  background: color-mix(in srgb, var(--pergamino-hondo) 40%, transparent);
+}
+.tarjeta.elegida {
+  border-color: var(--rubrica);
+  box-shadow: inset 0 0 0 1px var(--rubrica);
+  background: var(--pergamino-hondo);
+}
+.tarjeta.atenuada:not(.elegida) {
+  opacity: 0.72;
+}
+.tarjeta label {
+  cursor: pointer;
+}
+.tarjeta .detalle {
+  margin: 0.2rem 0 0;
+}
+
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

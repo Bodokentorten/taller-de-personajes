@@ -1,10 +1,11 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { EDICION, ES_DJ, cargarModuloDJ } from './edicion';
-  import { tirar } from './motor/dados';
+  import { ES_DJ, cargarModuloDJ } from './edicion';
+  import Biblioteca from './ui/Biblioteca.svelte';
+  import Asistente from './ui/asistente/Asistente.svelte';
+  import { ruta } from './ui/ruta.svelte';
 
   type Tema = 'pergamino' | 'vela';
-
   const CLAVE_TEMA = 'taller.tema';
 
   function leerTema(): Tema {
@@ -16,9 +17,7 @@
   }
 
   let tema = $state<Tema>(leerTema());
-  let ruta = $state(location.hash || '#/');
-  let tirada = $state<string>('');
-  let avisoDJ = $state<string>('');
+  let avisoDJ = $state('');
 
   $effect(() => {
     document.documentElement.dataset.tema = tema;
@@ -30,24 +29,13 @@
   });
 
   onMount(() => {
-    const alCambiar = () => (ruta = location.hash || '#/');
-    window.addEventListener('hashchange', alCambiar);
-    if (ES_DJ) {
-      cargarModuloDJ().then((m) => (avisoDJ = m?.descripcion ?? ''));
-    }
-    return () => window.removeEventListener('hashchange', alCambiar);
+    if (ES_DJ) cargarModuloDJ().then((m) => (avisoDJ = m?.descripcion ?? ''));
   });
 
-  function tirarPrueba() {
-    const t = tirar('3d6');
-    tirada = `3d6 → ${t.dados.join(' + ')} = ${t.total}`;
-  }
-
+  const vista = $derived(ruta.partes[0] ?? '');
   const secciones = [
-    { hash: '#/', nombre: 'Portada' },
-    { hash: '#/biblioteca', nombre: 'Mis personajes' },
-    { hash: '#/crear', nombre: 'Crear personaje' },
-    { hash: '#/reglas', nombre: 'Consulta de reglas' },
+    { hash: '#/', nombre: 'Mis personajes', vista: '' },
+    { hash: '#/reglas', nombre: 'Consulta de reglas', vista: 'reglas' },
   ];
 </script>
 
@@ -55,10 +43,15 @@
   <a class="marca" href="#/">Taller de Personajes</a>
   <nav>
     {#each secciones as s (s.hash)}
-      <a href={s.hash} aria-current={ruta === s.hash ? 'page' : undefined}>{s.nombre}</a>
+      <a
+        href={s.hash}
+        aria-current={vista === s.vista || (s.vista === '' && vista === 'personaje')
+          ? 'page'
+          : undefined}>{s.nombre}</a
+      >
     {/each}
     {#if ES_DJ}
-      <a href="#/dj" aria-current={ruta === '#/dj' ? 'page' : undefined}>Mesa del DJ</a>
+      <a href="#/dj" aria-current={vista === 'dj' ? 'page' : undefined}>Mesa del DJ</a>
     {/if}
   </nav>
   <button
@@ -69,30 +62,25 @@
   </button>
 </header>
 
-<main>
-  <article class="folio">
-    <h1>Taller de Personajes</h1>
-    <p class="subtitulo">Mythras · Reinos hispánicos del siglo XIV</p>
-
-    <p class="capitular">
-      Bienvenido, viajero. En este taller se forjan los hombres y mujeres que recorrerán los caminos
-      de Castilla, Aragón, Navarra, Portugal y Granada: hidalgos sin fortuna, almogávares de la
-      frontera, físicos judíos, goliardos y saludadoras. Aquí podrás crear tu personaje paso a paso,
-      llevarlo a la mesa e imprimir su ficha.
-    </p>
-
-    <section class="estado">
-      <h2>Estado de la obra</h2>
-      <p>
-        Fase 0 completada: el andamiaje está listo. Ruta actual: <code>{ruta}</code> · Edición:
-        <strong>{EDICION}</strong>
-      </p>
-      {#if avisoDJ}<p><em>{avisoDJ}</em></p>{/if}
-      <button onclick={tirarPrueba}>Tirar 3d6 de prueba</button>
-      {#if tirada}<p class="tirada">{tirada}</p>{/if}
-    </section>
-  </article>
-</main>
+{#if vista === 'personaje' && ruta.partes[1]}
+  <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
+{:else}
+  <main class="pagina">
+    {#if vista === 'reglas'}
+      <article class="folio">
+        <h1>Consulta de reglas</h1>
+        <p>El buscador de reglas llegará en la fase 6.</p>
+      </article>
+    {:else if vista === 'dj' && ES_DJ}
+      <article class="folio">
+        <h1>Mesa del DJ</h1>
+        <p><em>{avisoDJ}</em></p>
+      </article>
+    {:else}
+      <Biblioteca />
+    {/if}
+  </main>
+{/if}
 
 <style>
   .cabecera {
@@ -123,36 +111,7 @@
     color: var(--rubrica);
     text-decoration: underline;
   }
-  main {
+  .pagina {
     padding: 2.5rem 2rem;
-  }
-  .folio {
-    max-width: 52rem;
-    margin: 0 auto;
-    padding: 2.5rem 3rem;
-    border: 1px solid var(--borde);
-    outline: 1px solid var(--borde);
-    outline-offset: 5px;
-    background: var(--pergamino);
-    box-shadow: 0 6px 24px var(--sombra);
-  }
-  h1 {
-    font-size: 3rem;
-    margin: 0;
-    text-align: center;
-  }
-  .subtitulo {
-    text-align: center;
-    font-style: italic;
-    color: var(--tinta-suave);
-    margin-top: 0.2rem;
-  }
-  .estado {
-    margin-top: 2rem;
-    border-top: 1px solid var(--borde);
-  }
-  .tirada {
-    font-variant-numeric: tabular-nums;
-    color: var(--rubrica);
   }
 </style>

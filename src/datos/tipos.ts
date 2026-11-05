@@ -220,6 +220,9 @@ export interface GrupoNomina extends Entrada {
 export interface Arma {
   id: string;
   nombre: string;
+  /** Solo cuerpo a cuerpo: «Espadas», «Espadones (a dos manos)»… */
+  grupo?: string;
+  aclaracion?: string;
   dano: string;
   car: number;
   pa: number | null;

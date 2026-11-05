@@ -83,8 +83,22 @@ export interface Personaje {
   rituales: string[];
 
   dinero: { tirada?: Tirada; total?: number };
+  /** Objetos comprados. id con prefijo de catálogo: «arma:daga», «armadura:velmez», «equipo:antorchas-3». */
   equipo: { id: string; cantidad: number; puesto?: boolean }[];
+  /** Tiradas de trasfondo (familia, conexiones, eventos). */
+  trasfondo: Partial<Record<TablaTrasfondo, ResultadoTrasfondo>> & {
+    eventos?: ResultadoTrasfondo[];
+  };
+  aspecto: string;
   notas: string;
+}
+
+export type TablaTrasfondo =
+  'padres' | 'hermanos' | 'familia_extendida' | 'reputacion' | 'conexiones';
+
+export interface ResultadoTrasfondo {
+  tirada: number;
+  texto: string;
 }
 
 /** Reglas de la campaña que cambian la validación (las fija el DJ en campaña.json). */
@@ -97,6 +111,8 @@ export interface Campaña {
   metodosCaracteristicas: MetodoCaracteristicas[];
   /** Si los PJ pueden ser de carreras mágicas. */
   permitirMagia: boolean;
+  /** Si se pueden repetir las tiradas de trasfondo. */
+  repetirTrasfondo: boolean;
 }
 
 export const CAMPAÑA_POR_DEFECTO: Campaña = {
@@ -105,6 +121,7 @@ export const CAMPAÑA_POR_DEFECTO: Campaña = {
   metodosHabilidades: ['estandar', 'piramide'],
   metodosCaracteristicas: ['compra', 'tirada', 'manual'],
   permitirMagia: true,
+  repetirTrasfondo: true,
 };
 
 export function personajeVacio(id: string): Personaje {
@@ -130,6 +147,8 @@ export function personajeVacio(id: string): Personaje {
     rituales: [],
     dinero: {},
     equipo: [],
+    trasfondo: {},
+    aspecto: '',
     notas: '',
   };
 }
