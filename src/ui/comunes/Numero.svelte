@@ -55,7 +55,7 @@
     font-variant-numeric: tabular-nums;
     background: transparent;
     color: var(--tinta);
-    border: 1px solid var(--borde);
+    border: 1px solid var(--borde-campo);
     border-radius: 3px;
     -moz-appearance: textfield;
     appearance: textfield;

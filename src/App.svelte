@@ -6,6 +6,7 @@
   import FichaImprimible from './ui/ficha/FichaImprimible.svelte';
   import Reglas from './ui/reglas/Reglas.svelte';
   import Campaña from './ui/Campaña.svelte';
+  import Guia from './ui/Guia.svelte';
   import { ruta } from './ui/ruta.svelte';
 
   type Tema = 'pergamino' | 'vela';
@@ -41,11 +42,22 @@
     { hash: '#/', nombre: 'Mis personajes', vista: '' },
     { hash: '#/reglas', nombre: 'Consulta de reglas', vista: 'reglas' },
     { hash: '#/campana', nombre: 'Campaña', vista: 'campana' },
+    { hash: '#/guia', nombre: 'Guía', vista: 'guia' },
   ];
 </script>
 
+<a
+  class="saltar no-imprimir"
+  href="#contenido"
+  onclick={(e) => {
+    e.preventDefault();
+    document.getElementById('contenido')?.focus();
+  }}>Saltar al contenido</a
+>
 <header class="cabecera no-imprimir">
-  <a class="marca" href="#/">Taller de Personajes</a>
+  <a class="marca" href="#/"
+    ><img src="./favicon.svg" alt="" width="28" height="28" /> Taller de Personajes</a
+  >
   <nav>
     {#each secciones as s (s.hash)}
       <a
@@ -67,23 +79,27 @@
   </button>
 </header>
 
-{#if vista === 'personaje' && ruta.partes[1] && ruta.partes[2] === 'imprimir'}
-  <FichaImprimible id={ruta.partes[1]} />
-{:else if vista === 'reglas'}
-  <Reglas tipo={ruta.partes[1]} id={ruta.partes[2]} />
-{:else if vista === 'personaje' && ruta.partes[1]}
-  <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
-{:else}
-  <main class="pagina">
-    {#if vista === 'campana'}
-      <Campaña codigo={ruta.partes[1]} />
-    {:else if vista === 'dj' && ES_DJ}
-      {#if moduloDJ}<moduloDJ.Mesa />{:else}<p>Cargando la mesa del DJ…</p>{/if}
-    {:else}
-      <Biblioteca />
-    {/if}
-  </main>
-{/if}
+<div id="contenido" tabindex="-1">
+  {#if vista === 'personaje' && ruta.partes[1] && ruta.partes[2] === 'imprimir'}
+    <FichaImprimible id={ruta.partes[1]} />
+  {:else if vista === 'reglas'}
+    <Reglas tipo={ruta.partes[1]} id={ruta.partes[2]} />
+  {:else if vista === 'personaje' && ruta.partes[1]}
+    <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
+  {:else}
+    <main class="pagina">
+      {#if vista === 'guia'}
+        <Guia />
+      {:else if vista === 'campana'}
+        <Campaña codigo={ruta.partes[1]} />
+      {:else if vista === 'dj' && ES_DJ}
+        {#if moduloDJ}<moduloDJ.Mesa />{:else}<p>Cargando la mesa del DJ…</p>{/if}
+      {:else}
+        <Biblioteca />
+      {/if}
+    </main>
+  {/if}
+</div>
 
 <style>
   .cabecera {
@@ -94,7 +110,25 @@
     border-bottom: 2px double var(--borde);
     background: var(--pergamino-hondo);
   }
+  .saltar {
+    position: absolute;
+    left: 0.5rem;
+    top: -3rem;
+    z-index: 10;
+    padding: 0.4rem 0.8rem;
+    background: var(--pergamino);
+    border: 2px solid var(--oro);
+  }
+  .saltar:focus {
+    top: 0.5rem;
+  }
+  #contenido:focus {
+    outline: none;
+  }
   .marca {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
     font-family: var(--letra-titulo);
     font-size: 1.6rem;
     text-decoration: none;
@@ -116,5 +150,25 @@
   }
   .pagina {
     padding: 2.5rem 2rem;
+  }
+  @media (max-width: 600px) {
+    .cabecera {
+      flex-wrap: wrap;
+      gap: 0.4rem 1rem;
+      padding: 0.5rem 0.8rem;
+    }
+    .marca {
+      font-size: 1.3rem;
+      flex: 1;
+    }
+    nav {
+      order: 3;
+      flex-basis: 100%;
+      gap: 0.4rem 1rem;
+      font-size: 0.95rem;
+    }
+    .pagina {
+      padding: 1rem 0.5rem;
+    }
   }
 </style>

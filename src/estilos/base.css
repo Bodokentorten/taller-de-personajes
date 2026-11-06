@@ -5,9 +5,10 @@
   --tinta: #2b1d10;
   --tinta-suave: #5a4630;
   --rubrica: #8b1a1a; /* rojo de las capitulares y rúbricas */
-  --oro: #a77b1f;
+  --oro: #775716; /* 4,6:1 sobre pergamino (WCAG AA para texto) */
   --lacre: #7a1414;
-  --borde: #b89a64;
+  --borde: #b89a64; /* decorativo */
+  --borde-campo: #8c754c; /* campos y botones: 3:1 (WCAG 1.4.11) */
   --sombra: rgb(60 40 10 / 0.18);
 
   --letra-texto: 'EB Garamond', Garamond, 'Times New Roman', serif;
@@ -21,10 +22,11 @@
   --pergamino-hondo: #261d15;
   --tinta: #eadcc0;
   --tinta-suave: #b9a586;
-  --rubrica: #d0584a;
+  --rubrica: #d36457; /* 4,5:1 también sobre el fondo hondo */
   --oro: #d4a94a;
   --lacre: #b33a2e;
   --borde: #5c4a33;
+  --borde-campo: #766754;
   --sombra: rgb(0 0 0 / 0.5);
   color-scheme: dark;
 }
@@ -69,7 +71,7 @@ button {
   font: inherit;
   color: var(--tinta);
   background: var(--pergamino-hondo);
-  border: 1px solid var(--borde);
+  border: 1px solid var(--borde-campo);
   border-radius: 3px;
   padding: 0.35em 0.9em;
   cursor: pointer;
@@ -156,7 +158,7 @@ textarea {
   font: inherit;
   color: var(--tinta);
   background: color-mix(in srgb, var(--pergamino) 70%, white 30%);
-  border: 1px solid var(--borde);
+  border: 1px solid var(--borde-campo);
   border-radius: 3px;
   padding: 0.2em 0.45em;
 }
@@ -240,4 +242,21 @@ legend {
 @page {
   size: A4;
   margin: 12mm 14mm;
+}
+
+/* Pantallas estrechas (móvil): solo para leer y consultar; menos márgenes */
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+  .folio {
+    padding: 1rem;
+    outline-offset: 2px;
+  }
+  .folio > h1 {
+    font-size: 2.2rem;
+  }
+  .campos {
+    grid-template-columns: 1fr;
+  }
 }
