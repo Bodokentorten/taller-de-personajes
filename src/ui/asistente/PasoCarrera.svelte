@@ -1,9 +1,10 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   import { catalogo } from '../../datos/catalogo';
   import type { Carrera, ItemHabilidad } from '../../datos/tipos';
   import { nombreHabilidad } from '../../motor/habilidades';
   import { validarCarrera } from '../../motor/origen';
-  import { CAMPAÑA_POR_DEFECTO, type Personaje } from '../../motor/personaje';
+  import { type Personaje } from '../../motor/personaje';
   import Info from '../comunes/Info.svelte';
 
   let { p = $bindable() }: { p: Personaje } = $props();
@@ -13,7 +14,7 @@
 
   const filas = $derived(
     catalogo.carreras.map((c) => {
-      const problemas = validarCarrera({ ...p, carrera: c.id }, catalogo, CAMPAÑA_POR_DEFECTO);
+      const problemas = validarCarrera({ ...p, carrera: c.id }, catalogo, campaña.actual);
       return {
         c,
         errores: problemas.filter((x) => x.gravedad === 'error'),

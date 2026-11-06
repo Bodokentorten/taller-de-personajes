@@ -5,6 +5,7 @@
   import Asistente from './ui/asistente/Asistente.svelte';
   import FichaImprimible from './ui/ficha/FichaImprimible.svelte';
   import Reglas from './ui/reglas/Reglas.svelte';
+  import Campaña from './ui/Campaña.svelte';
   import { ruta } from './ui/ruta.svelte';
 
   type Tema = 'pergamino' | 'vela';
@@ -19,7 +20,8 @@
   }
 
   let tema = $state<Tema>(leerTema());
-  let avisoDJ = $state('');
+  // Módulo del DJ: se carga solo en esa edición (en la de jugador ni siquiera existe en el paquete).
+  let moduloDJ = $state<Awaited<ReturnType<typeof cargarModuloDJ>>>(null);
 
   $effect(() => {
     document.documentElement.dataset.tema = tema;
@@ -31,13 +33,14 @@
   });
 
   onMount(() => {
-    if (ES_DJ) cargarModuloDJ().then((m) => (avisoDJ = m?.descripcion ?? ''));
+    if (ES_DJ) cargarModuloDJ().then((m) => (moduloDJ = m));
   });
 
   const vista = $derived(ruta.partes[0] ?? '');
   const secciones = [
     { hash: '#/', nombre: 'Mis personajes', vista: '' },
     { hash: '#/reglas', nombre: 'Consulta de reglas', vista: 'reglas' },
+    { hash: '#/campana', nombre: 'Campaña', vista: 'campana' },
   ];
 </script>
 
@@ -72,11 +75,10 @@
   <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
 {:else}
   <main class="pagina">
-    {#if vista === 'dj' && ES_DJ}
-      <article class="folio">
-        <h1>Mesa del DJ</h1>
-        <p><em>{avisoDJ}</em></p>
-      </article>
+    {#if vista === 'campana'}
+      <Campaña codigo={ruta.partes[1]} />
+    {:else if vista === 'dj' && ES_DJ}
+      {#if moduloDJ}<moduloDJ.Mesa />{:else}<p>Cargando la mesa del DJ…</p>{/if}
     {:else}
       <Biblioteca />
     {/if}

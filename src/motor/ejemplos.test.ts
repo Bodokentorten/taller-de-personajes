@@ -241,3 +241,19 @@ describe('6. Avisos', () => {
     expect(codigos(p)).toContain('aviso:carrera-aviso-pueblo');
   });
 });
+
+describe('7. Archivo de campaña', () => {
+  it('limita carreras y pueblos', () => {
+    const c = {
+      ...CAMPAÑA_POR_DEFECTO,
+      carrerasPermitidas: ['medico'],
+      pueblosPermitidos: ['judios'],
+    };
+    expect(codigos(rodrigo(), c)).toEqual(
+      expect.arrayContaining(['error:carrera-campaña', 'error:pueblo-campaña']),
+    );
+    expect(
+      codigos(mose(), { ...CAMPAÑA_POR_DEFECTO, pueblosPermitidos: ['judios'] }),
+    ).not.toContain('error:pueblo-campaña');
+  });
+});

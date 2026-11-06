@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   // Vista de juego: todo lo que cambia en la mesa, en una sola pantalla (1366×768 sin desplazar la página).
   import { untrack } from 'svelte';
   import { autoguardar } from '../../almacen/autoguardado.svelte';
@@ -27,7 +28,7 @@
   const j = $derived(p.juego!);
   autoguardar(() => p);
 
-  const hoja = $derived(calcularHoja(p, catalogo));
+  const hoja = $derived(calcularHoja(p, catalogo, campaña.actual));
   const a = $derived(hoja.atributos);
   const pa = $derived(armaduraPorLocalizacion(hoja.equipo));
   const pfMax = $derived(hoja.fe.puedeObrar ? hoja.fe.pf : 0);

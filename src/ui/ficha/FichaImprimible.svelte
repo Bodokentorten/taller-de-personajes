@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   import { caracteristicasActuales } from '../../motor/personaje';
   // Ficha propia de la ambientación en tres páginas A4, para imprimir o guardar en PDF desde el navegador.
   import { biblioteca } from '../../almacen/biblioteca.svelte';
@@ -35,7 +36,7 @@
   });
 
   const p = $derived(biblioteca.obtener(id));
-  const hoja = $derived(p ? calcularHoja(p, catalogo) : undefined);
+  const hoja = $derived(p ? calcularHoja(p, catalogo, campaña.actual) : undefined);
   const nombre = (lista: { id: string; nombre: string }[], x: string | undefined) =>
     lista.find((y) => y.id === x)?.nombre ?? '';
   const pa = $derived(hoja ? armaduraPorLocalizacion(hoja.equipo) : {});

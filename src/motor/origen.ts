@@ -77,6 +77,15 @@ export function validarOrigen(p: Personaje, cat: Catalogo, campaña: Campaña): 
       ),
     );
   }
+  if (campaña.pueblosPermitidos?.length && !campaña.pueblosPermitidos.includes(pueblo.id)) {
+    res.push(
+      error(
+        'origen',
+        'pueblo-campaña',
+        `La campaña no admite personajes ${pueblo.nombre.toLowerCase()}.`,
+      ),
+    );
+  }
   if (pueblo.raro)
     res.push(
       aviso(
@@ -176,6 +185,11 @@ export function validarCarrera(p: Personaje, cat: Catalogo, campaña: Campaña):
   }
   const avisoPueblo = pueblo?.requisitos.avisos_carrera?.[carrera.nombre];
   if (avisoPueblo) res.push(aviso('carrera', 'carrera-aviso-pueblo', avisoPueblo));
+  if (campaña.carrerasPermitidas?.length && !campaña.carrerasPermitidas.includes(carrera.id)) {
+    res.push(
+      error('carrera', 'carrera-campaña', `La campaña no admite la carrera ${carrera.nombre}.`),
+    );
+  }
   if (carrera.magia && !campaña.permitirMagia) {
     res.push(
       error(

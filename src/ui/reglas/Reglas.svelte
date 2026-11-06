@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   // Consulta de reglas: buscador sin conexión sobre los catálogos de jugador y fichas de lectura.
   import { catalogo } from '../../datos/catalogo';
   import {
@@ -10,12 +11,11 @@
     type EntradaConsulta,
     type TipoEntrada,
   } from '../../consulta/indice';
-  import { CAMPAÑA_POR_DEFECTO } from '../../motor/personaje';
 
   let { tipo, id }: { tipo?: string; id?: string } = $props();
 
   // Fórmulas, rituales y grimorios solo si la campaña permite la magia en los PJ.
-  const tiposVisibles = TIPOS.filter((t) => !t.magia || CAMPAÑA_POR_DEFECTO.permitirMagia);
+  const tiposVisibles = TIPOS.filter((t) => !t.magia || campaña.actual.permitirMagia);
   const indice = construirIndice(catalogo).filter((e) =>
     tiposVisibles.some((t) => t.id === e.tipo),
   );
@@ -117,7 +117,7 @@
         <p class="capitular">
           Aquí están las reglas que necesita un jugador para crear y llevar su personaje:
           habilidades, culturas, pueblos y credos, carreras, estilos de combate, armas, armaduras y
-          equipo{CAMPAÑA_POR_DEFECTO.permitirMagia
+          equipo{campaña.actual.permitirMagia
             ? ', y las fórmulas, los rituales y los grimorios'
             : ''}. Son resúmenes: el texto completo está en las notas del vault.
         </p>

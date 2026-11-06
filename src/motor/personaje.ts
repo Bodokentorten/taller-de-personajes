@@ -134,6 +134,12 @@ export interface Campaña {
   permitirMagia: boolean;
   /** Si se pueden repetir las tiradas de trasfondo. */
   repetirTrasfondo: boolean;
+  /** Nombre de la campaña y año en que transcurre (informativos). */
+  nombre?: string;
+  año?: number;
+  /** Si no están vacías, solo se permiten esas carreras y esos pueblos (ids). */
+  carrerasPermitidas?: string[];
+  pueblosPermitidos?: string[];
 }
 
 export const CAMPAÑA_POR_DEFECTO: Campaña = {

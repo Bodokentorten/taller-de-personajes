@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   import { untrack } from 'svelte';
   import { autoguardar } from '../../almacen/autoguardado.svelte';
   import { catalogo } from '../../datos/catalogo';
@@ -32,7 +33,7 @@
   // Autoguardado: cualquier cambio en el personaje se guarda al poco tiempo.
   autoguardar(() => p);
 
-  const hoja = $derived(calcularHoja(p, catalogo));
+  const hoja = $derived(calcularHoja(p, catalogo, campaña.actual));
   const pasos = $derived(pasosVisibles(p, catalogo));
   const indice = $derived(
     Math.max(

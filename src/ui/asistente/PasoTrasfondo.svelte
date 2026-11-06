@@ -1,12 +1,12 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   import { catalogo } from '../../datos/catalogo';
   import { tirarDinero, formulaDinero } from '../../motor/economia';
   import { tablaClases, tirarClase } from '../../motor/origen';
-  import { CAMPAÑA_POR_DEFECTO, type Personaje, type TablaTrasfondo } from '../../motor/personaje';
+  import { type Personaje, type TablaTrasfondo } from '../../motor/personaje';
   import { TABLAS_TRASFONDO, tirarTrasfondo } from '../../motor/trasfondo';
 
   let { p = $bindable() }: { p: Personaje } = $props();
-  const campaña = CAMPAÑA_POR_DEFECTO;
 
   const tabla = $derived(tablaClases(p, catalogo));
   const clase = $derived(tabla.tabla.find((c) => c.id === p.origen.clase));
@@ -40,7 +40,7 @@
     if (r) p.dinero = { tirada: r.tirada, total: r.total };
   }
 
-  const puedeRepetir = (hay: boolean) => !hay || campaña.repetirTrasfondo;
+  const puedeRepetir = (hay: boolean) => !hay || campaña.actual.repetirTrasfondo;
 </script>
 
 {#if !p.origen.cultura}

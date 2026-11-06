@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   // Mejora del personaje: tiradas de experiencia, entrenamiento, aprendizaje e historial.
   import { untrack } from 'svelte';
   import { autoguardar } from '../../almacen/autoguardado.svelte';
@@ -33,7 +34,7 @@
   experiencia(p);
   autoguardar(() => p);
 
-  const hoja = $derived(calcularHoja(p, catalogo));
+  const hoja = $derived(calcularHoja(p, catalogo, campaña.actual));
   const e = $derived(p.experiencia!);
   let mensaje = $state('');
   let error = $state('');

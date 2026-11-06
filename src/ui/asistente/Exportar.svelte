@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../../almacen/campaña.svelte';
   import { descargar, nombreArchivo } from '../../almacen/biblioteca.svelte';
   import { serializar } from '../../almacen/archivo';
   import { catalogo } from '../../datos/catalogo';
@@ -9,7 +10,7 @@
   let { p, hoja }: { p: Personaje; hoja: Hoja } = $props();
   let mensaje = $state('');
 
-  const md = () => exportarMarkdown($state.snapshot(p) as Personaje, catalogo);
+  const md = () => exportarMarkdown($state.snapshot(p) as Personaje, catalogo, campaña.actual);
 
   async function copiar() {
     try {

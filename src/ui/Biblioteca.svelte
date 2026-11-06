@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { campaña } from '../almacen/campaña.svelte';
   import { biblioteca, descargar, nombreArchivo } from '../almacen/biblioteca.svelte';
   import { catalogo } from '../datos/catalogo';
   import { calcularHoja } from '../motor/hoja';
@@ -10,7 +11,7 @@
   const filas = $derived(
     biblioteca.entradas.map((e) => {
       const p = e.personaje;
-      const hoja = calcularHoja(p, catalogo);
+      const hoja = calcularHoja(p, catalogo, campaña.actual);
       return {
         p,
         modificado: new Date(e.modificado),
