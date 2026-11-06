@@ -82,15 +82,76 @@ export function catalogoEquipo(cat: Catalogo): ObjetoResuelto[] {
   ];
 }
 
+// --------------------------------------------------------------------------- Contenedores
+
+/**
+ * Contenedores (fuente: «Carga y Movimiento (ENC)»): morral o zurrón, CAR 1 y hasta 20 CAR dentro; saco,
+ * CAR 0 y hasta 30. Las alforjas y las albardas van en la montura o la bestia de carga: lo que se guarda
+ * en ellas figura en el inventario pero no pesa sobre el personaje.
+ */
+export const CONTENEDORES: Record<string, { capacidad?: number; car?: number; animal?: boolean }> =
+  {
+    'equipo:morral': { capacidad: 20, car: 1 },
+    'equipo:zurron': { capacidad: 20, car: 1 },
+    'equipo:saco': { capacidad: 30, car: 0 },
+    'equipo:alforjas': { animal: true },
+    'equipo:albardas': { animal: true },
+  };
+
+/** Categorías del mercado que no se llevan encima (animales, carros, barcos, propiedades, servicios…). */
+const NO_SE_LLEVAN = new Set([
+  'Monturas y pertrechos',
+  'Ganado y animales',
+  'Carros y carruajes',
+  'Embarcaciones',
+  'Propiedades',
+  'Servicios',
+  'Alojamiento',
+  'Comidas (una ración)',
+  'Mercancías al por mayor (por 1.000 libras)',
+]);
+
+export type Ubicacion = 'encima' | 'contenedor' | 'soltado' | 'animal' | 'fuera';
+
+export const NOMBRE_UBICACION: Record<Ubicacion, string> = {
+  encima: 'encima',
+  contenedor: 'en un contenedor',
+  soltado: 'soltado',
+  animal: 'en la montura',
+  fuera: 'no se lleva encima',
+};
+
+export interface ObjetoEnInventario extends ObjetoResuelto {
+  /** Posición de la entrada en `personaje.equipo` (puede haber dos entradas del mismo objeto). */
+  pos: number;
+  cantidad: number;
+  puesto: boolean;
+  en?: string;
+  soltado: boolean;
+  /** Dónde está a efectos de carga. */
+  ubicacion: Ubicacion;
+  /** Si es un contenedor: su capacidad (por unidad) y lo que lleva dentro. */
+  contenedor?: { capacidad?: number; animal: boolean; dentro: number };
+}
+
 export interface ResumenEquipo {
-  objetos: (ObjetoResuelto & { cantidad: number; puesto: boolean })[];
+  objetos: ObjetoEnInventario[];
   coste: number;
   sinPrecio: number;
   dinero: number | undefined;
   restante: number | undefined;
+  /** CAR que lleva encima el personaje (sin lo soltado ni lo que va en la montura). */
   car: number;
+  /** CAR de lo que va en la montura o soltado (figura en el inventario, no pesa). */
+  carFuera: number;
   carArmadura: number;
   estado: EstadoCarga;
+  /** Contenedores que llevan más de su capacidad. */
+  desbordados: string[];
+}
+
+export function esContenedor(id: string): boolean {
+  return id in CONTENEDORES;
 }
 
 export function resumenEquipo(
@@ -99,23 +160,66 @@ export function resumenEquipo(
   indice = catalogoEquipo(cat),
 ): ResumenEquipo {
   const porId = new Map(indice.map((o) => [o.id, o]));
-  const objetos = p.equipo
-    .map((e) => {
+  const base = p.equipo
+    .map((e, pos) => {
       const o = porId.get(e.id);
-      return o ? { ...o, cantidad: e.cantidad, puesto: Boolean(e.puesto) } : undefined;
+      if (!o) return undefined;
+      const def = CONTENEDORES[e.id];
+      return {
+        ...o,
+        car: def?.car ?? o.car,
+        pos,
+        cantidad: e.cantidad,
+        puesto: Boolean(e.puesto),
+        en: e.en && p.equipo.some((x) => x.id === e.en && esContenedor(x.id)) ? e.en : undefined,
+        soltado: Boolean(def && !def.animal && e.soltado),
+      };
     })
     .filter((x): x is NonNullable<typeof x> => Boolean(x));
+
+  const ubicacionDe = (o: (typeof base)[number]): Ubicacion => {
+    const def = CONTENEDORES[o.id];
+    if (def?.animal || NO_SE_LLEVAN.has(o.categoria)) return def?.animal ? 'animal' : 'fuera';
+    if (o.soltado) return 'soltado';
+    if (o.en) {
+      const c = base.find((x) => x.id === o.en);
+      if (c && CONTENEDORES[c.id]?.animal) return 'animal';
+      if (c?.soltado) return 'soltado';
+      return 'contenedor';
+    }
+    return 'encima';
+  };
+  const objetos: ObjetoEnInventario[] = base.map((o) => {
+    const def = CONTENEDORES[o.id];
+    const dentro = def
+      ? base.filter((x) => x.en === o.id).reduce((s, x) => s + x.car * x.cantidad, 0)
+      : 0;
+    return {
+      ...o,
+      ubicacion: ubicacionDe(o),
+      ...(def
+        ? { contenedor: { capacidad: def.capacidad, animal: Boolean(def.animal), dentro } }
+        : {}),
+    };
+  });
+
   const coste = objetos.reduce((s, o) => s + (o.precio ?? 0) * o.cantidad, 0);
-  const llevable = (o: (typeof objetos)[number]) => o.tipo === 'armadura' || o.tipo === 'casco';
-  const car = cargaTotal(
-    objetos.map((o) => ({
-      car: o.car,
-      cantidad: o.cantidad,
-      armaduraPuesta: llevable(o) && o.puesto,
-    })),
+  const llevable = (o: ObjetoEnInventario) => o.tipo === 'armadura' || o.tipo === 'casco';
+  const pesa = (o: ObjetoEnInventario) => o.ubicacion === 'encima' || o.ubicacion === 'contenedor';
+  const aCarga = (lista: ObjetoEnInventario[]) =>
+    cargaTotal(
+      lista.map((o) => ({
+        car: o.car,
+        cantidad: o.cantidad,
+        armaduraPuesta: llevable(o) && o.puesto,
+      })),
+    );
+  const car = aCarga(objetos.filter(pesa));
+  const carFuera = aCarga(
+    objetos.filter((o) => o.ubicacion === 'animal' || o.ubicacion === 'soltado'),
   );
   const carArmadura = objetos
-    .filter((o) => llevable(o) && o.puesto)
+    .filter((o) => llevable(o) && o.puesto && pesa(o))
     .reduce((s, o) => s + o.car * o.cantidad, 0);
   const dinero = p.dinero.total;
   return {
@@ -125,9 +229,28 @@ export function resumenEquipo(
     dinero,
     restante: dinero === undefined ? undefined : Math.round((dinero - coste) * 10) / 10,
     car,
+    carFuera,
     carArmadura,
     estado: estadoCarga(car, caracteristicasActuales(p).FUE),
+    desbordados: objetos
+      .filter(
+        (o) =>
+          o.contenedor?.capacidad !== undefined &&
+          o.contenedor.dentro > o.contenedor.capacidad * o.cantidad,
+      )
+      .map((o) => o.nombre),
   };
+}
+
+/** «Soltar el morral»: suelta (o recoge) un contenedor; él y lo que lleva dejan de pesar. */
+export function soltarContenedor(p: Personaje, id: string, soltar: boolean) {
+  const e = p.equipo.find((x) => x.id === id);
+  if (e && esContenedor(id) && !CONTENEDORES[id]!.animal) e.soltado = soltar;
+}
+
+/** Suelta de golpe todos los contenedores que lleva encima (la regla tácita de soltar el morral). */
+export function soltarTodo(p: Personaje) {
+  for (const e of p.equipo) if (esContenedor(e.id) && !CONTENEDORES[e.id]!.animal) e.soltado = true;
 }
 
 /** PA por localización con la armadura puesta: no se suman capas, cuenta la pieza de PA más alto. */

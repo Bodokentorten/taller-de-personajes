@@ -90,6 +90,42 @@ tags:
 | [[Conocimiento callejero]] | `POD+CAR` |  | **26%** |
 | [[Supervivencia]] | `CON+POD` |  | **32%** |
 
+### Porcentajes por grado de dificultad
+
+| Habilidad | Muy fácil | Fácil | Normal | Difícil | Formidable | Hercúleo |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: |
+| Atletismo | 114% | 86% | **57%** | 38% | 29% | 12% |
+| Cantar | 32% | 24% | **16%** | 11% | 8% | 4% |
+| Combate sin armas | 104% | 78% | **52%** | 35% | 26% | 11% |
+| Conducir | 54% | 41% | **27%** | 18% | 14% | 6% |
+| Costumbres | 124% | 93% | **62%** | 42% | 31% | 13% |
+| Danza | 40% | 30% | **20%** | 14% | 10% | 4% |
+| Engaño | 46% | 35% | **23%** | 16% | 12% | 5% |
+| Entorno | 64% | 48% | **32%** | 22% | 16% | 7% |
+| Esquivar | 112% | 84% | **56%** | 38% | 28% | 12% |
+| Estilo de combate (Milicia de Concejo) | 144% | 108% | **72%** | 48% | 36% | 15% |
+| Fuerza de voluntad | 56% | 42% | **28%** | 19% | 14% | 6% |
+| Influencia | 78% | 59% | **39%** | 26% | 20% | 8% |
+| Lengua materna | 116% | 87% | **58%** | 39% | 29% | 12% |
+| Montar | 74% | 56% | **37%** | 25% | 19% | 8% |
+| Musculatura | 74% | 56% | **37%** | 25% | 19% | 8% |
+| Nadar | 54% | 41% | **27%** | 18% | 14% | 6% |
+| Navegación fluvial | 54% | 41% | **27%** | 18% | 14% | 6% |
+| Ocultar | 54% | 41% | **27%** | 18% | 14% | 6% |
+| Percepción | 70% | 53% | **35%** | 24% | 18% | 7% |
+| Perspicacia | 90% | 68% | **45%** | 30% | 23% | 9% |
+| Primeros auxilios | 48% | 36% | **24%** | 16% | 12% | 5% |
+| Resistencia | 112% | 84% | **56%** | 38% | 28% | 12% |
+| Sigilo | 78% | 59% | **39%** | 26% | 20% | 8% |
+| Artesanía (Herrería) | 68% | 51% | **34%** | 23% | 17% | 7% |
+| Comercio | 56% | 42% | **28%** | 19% | 14% | 6% |
+| Conocimiento (Historia militar) | 64% | 48% | **32%** | 22% | 16% | 7% |
+| Conocimiento callejero | 52% | 39% | **26%** | 18% | 13% | 6% |
+| Supervivencia | 64% | 48% | **32%** | 22% | 16% | 7% |
+| Pasión: Fe (cristiana) | 120% | 90% | **60%** | 40% | 30% | 12% |
+| Pasión: Lealtad (el concejo de Burgos) | 100% | 75% | **50%** | 34% | 25% | 10% |
+| Pasión: Odio (los moros de Granada) | 76% | 57% | **38%** | 26% | 19% | 8% |
+
 ---
 
 ## 5. Armas y Ataques ([[Armas, Armaduras y Escudos de los Reinos Hispánicos]])

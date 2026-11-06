@@ -91,6 +91,9 @@ export function calcularHoja(
       ),
     );
   }
+  for (const nombre of equipo.desbordados) {
+    problemas.push(aviso('equipo', 'contenedor-lleno', `${nombre}: lleva más de lo que cabe.`));
+  }
   if (equipo.estado !== 'normal') {
     problemas.push(
       aviso(

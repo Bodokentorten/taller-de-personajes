@@ -16,15 +16,19 @@
     nivelHerida,
     tirarHabilidad,
     tirarPanico,
+    valoresPorDificultad,
+    ABREVIATURA_DIFICULTAD,
     type Dificultad,
     type TiradaHabilidad,
   } from '../../motor/juego';
   import { juegoVacio, type Personaje } from '../../motor/personaje';
   import { enlacePaso } from '../ruta.svelte';
+  import Inventario from '../comunes/Inventario.svelte';
 
   let { original }: { original: Personaje } = $props();
-  let p = $state<Personaje>(structuredClone(untrack(() => $state.snapshot(original)) as Personaje));
-  if (!p.juego) p.juego = juegoVacio();
+  const inicial = structuredClone(untrack(() => $state.snapshot(original)) as Personaje);
+  inicial.juego ??= juegoVacio();
+  let p = $state<Personaje>(inicial);
   const j = $derived(p.juego!);
   autoguardar(() => p);
 
@@ -57,8 +61,14 @@
     tirables.filter((t) => !filtro || t.nombre.toLowerCase().includes(filtro.toLowerCase())),
   );
 
-  function tirarDe(t: { clave: string; nombre: string; valor: number }) {
-    const r = tirarHabilidad(t.nombre, t.valor, difEfectiva);
+  /** Dificultad que se aplica: la elegida o la de la fatiga, la que sea más difícil. */
+  const peor = (d: Dificultad) =>
+    fatigaDif && ORDEN_DIF.indexOf(fatigaDif) > ORDEN_DIF.indexOf(d) ? fatigaDif : d;
+  function tirarDe(
+    t: { clave: string; nombre: string; valor: number },
+    d: Dificultad = dificultad,
+  ) {
+    const r = tirarHabilidad(t.nombre, t.valor, peor(d));
     historial = [r, ...historial].slice(0, 6);
     if (r.grado === 'pifia' && !t.clave.startsWith('pasion:') && !j.pifias.includes(t.clave))
       j.pifias.push(t.clave);
@@ -98,6 +108,8 @@
       {a.puntosAccion}</span
     >
     <nav>
+      {#if hoja.magia.fuentes.length}<a href={`#/hechizos/${encodeURIComponent(p.id)}`}>Hechizos</a
+        >{/if}
       <a href={enlacePaso(p.id, 'mejora')}>Mejora y experiencia</a>
       <a href={enlacePaso(p.id, 'concepto')}>Ficha</a>
     </nav>
@@ -185,25 +197,50 @@
         </p>
       {/each}
     </div>
-    <ul class="lista">
-      {#each visibles as t (t.clave)}
-        <li>
-          <input
-            type="checkbox"
-            checked={j.marcadas.includes(t.clave)}
-            onchange={() => marcar(t.clave)}
-            aria-label={`Marcar ${t.nombre} para experiencia`}
-            title="Marcar para experiencia"
-          />
-          <button class="tirar" onclick={() => tirarDe(t)}>{t.nombre}</button>
-          {#if j.pifias.includes(t.clave)}<span
-              class="pifia-marca"
-              title="Pifiada esta sesión: +1 gratis">✠</span
-            >{/if}
-          <span class="valor">{t.valor}%</span>
-        </li>
-      {/each}
-    </ul>
+    <table class="lista">
+      <thead>
+        <tr>
+          <th><span class="visualmente-oculto">Experiencia</span></th>
+          <th>Habilidad o Pasión</th>
+          {#each DIFICULTADES as d (d.id)}<th class="dif" title={d.nombre}
+              >{ABREVIATURA_DIFICULTAD[d.id]}</th
+            >{/each}
+        </tr>
+      </thead>
+      <tbody>
+        {#each visibles as t (t.clave)}
+          <tr>
+            <td>
+              <input
+                type="checkbox"
+                checked={j.marcadas.includes(t.clave)}
+                onchange={() => marcar(t.clave)}
+                aria-label={`Marcar ${t.nombre} para experiencia`}
+                title="Marcar para experiencia"
+              />
+            </td>
+            <td>
+              <button class="tirar" onclick={() => tirarDe(t)}>{t.nombre}</button>
+              {#if j.pifias.includes(t.clave)}<span
+                  class="pifia-marca"
+                  title="Pifiada esta sesión: +1 gratis">✠</span
+                >{/if}
+            </td>
+            {#each valoresPorDificultad(t.valor) as v (v.id)}
+              <td class="dif">
+                <button
+                  class="valor"
+                  class:normal={v.id === 'normal'}
+                  class:elegida={v.id === dificultad}
+                  title={`Tirar ${t.nombre} en ${v.nombre.toLowerCase()} (${v.valor}%)`}
+                  onclick={() => tirarDe(t, v.id)}>{v.valor}</button
+                >
+              </td>
+            {/each}
+          </tr>
+        {/each}
+      </tbody>
+    </table>
   </section>
 
   <section class="panel estado">
@@ -244,6 +281,9 @@
       <button onclick={() => (j.corrupcion += 1)} aria-label="Sumar Corrupción">+</button>
       <span class="detalle">(−1 POD cada punto)</span>
     </div>
+
+    <h2>Carga</h2>
+    <Inventario bind:p {hoja} compacto />
 
     <h2>Munición</h2>
     {#each j.municion as m, i (i)}
@@ -412,20 +452,28 @@
     color: #7fc27f;
   }
   .lista {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    display: block;
     overflow: auto;
     flex: 1;
-    columns: 2;
-    column-gap: 1.2rem;
   }
-  .lista li {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    break-inside: avoid;
-    border-bottom: 1px dotted var(--borde);
+  .lista thead th {
+    position: sticky;
+    top: 0;
+    background: var(--pergamino);
+    font-size: 0.78em;
+    color: var(--tinta-suave);
+    font-weight: normal;
+  }
+  .lista td {
+    padding: 0 0.15rem;
+  }
+  .lista td:nth-child(2) {
+    width: 100%;
+  }
+  .dif {
+    text-align: center;
   }
   .tirar {
     flex: 1;
@@ -440,7 +488,21 @@
   }
   .valor {
     font-variant-numeric: tabular-nums;
+    color: var(--tinta-suave);
+    background: none;
+    border: 1px solid transparent;
+    padding: 0 0.3em;
+    min-width: 2.6em;
+  }
+  .valor.normal {
     color: var(--rubrica);
+    font-weight: 600;
+  }
+  .valor.elegida {
+    border-color: var(--borde-campo);
+  }
+  .valor:hover {
+    border-color: var(--rubrica);
   }
   .pifia-marca {
     color: var(--rubrica);

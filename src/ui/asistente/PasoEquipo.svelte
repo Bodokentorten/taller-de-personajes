@@ -1,11 +1,10 @@
 <script lang="ts">
-  import { caracteristicasActuales } from '../../motor/personaje';
   import { catalogo } from '../../datos/catalogo';
   import { catalogoEquipo } from '../../motor/equipo';
   import type { Hoja } from '../../motor/hoja';
   import type { Personaje } from '../../motor/personaje';
   import { enlacePaso } from '../ruta.svelte';
-  import Numero from '../comunes/Numero.svelte';
+  import Inventario from '../comunes/Inventario.svelte';
 
   let { p = $bindable(), hoja }: { p: Personaje; hoja: Hoja } = $props();
 
@@ -21,19 +20,14 @@
   );
 
   function añadir(id: string) {
-    const e = p.equipo.find((x) => x.id === id);
+    // Se suma a la entrada que va encima; si todas van guardadas o es otra cosa, entrada nueva
+    const e = p.equipo.find((x) => x.id === id && !x.en);
     if (e) e.cantidad += 1;
     else
       p.equipo = [
         ...p.equipo,
         { id, cantidad: 1, puesto: id.startsWith('armadura:') || id.startsWith('casco:') },
       ];
-  }
-  function cantidad(id: string, n: number) {
-    p.equipo =
-      n > 0
-        ? p.equipo.map((x) => (x.id === id ? { ...x, cantidad: n } : x))
-        : p.equipo.filter((x) => x.id !== id);
   }
   const mrs = (n: number | null | undefined) =>
     n == null ? '—' : `${String(n).replace('.', ',')} mrs`;
@@ -48,52 +42,14 @@
 <p class="cuentas">
   Dinero: <strong>{mrs(r.dinero)}</strong> · Gastado: {mrs(r.coste)} · Queda:
   <strong class:pendiente={(r.restante ?? 0) < 0}>{mrs(r.restante)}</strong>
-  · Carga: {r.car} (FUE×2 = {caracteristicasActuales(p).FUE * 2}, {r.estado})
 </p>
 <p class="detalle">
   Además de lo que compre, tiene la ropa, las armas y el transporte propios de su estamento (paso
   «Trasfondo»).
 </p>
 
-{#if r.objetos.length}
-  <h2>Lo que lleva</h2>
-  <table class="tabla">
-    <thead
-      ><tr><th>Objeto</th><th>Cantidad</th><th>Precio</th><th>CAR</th><th>Puesto</th></tr></thead
-    >
-    <tbody>
-      {#each r.objetos as o (o.id)}
-        <tr>
-          <td>{o.nombre} <span class="detalle">({o.categoria})</span></td>
-          <td
-            ><Numero
-              valor={o.cantidad}
-              min={0}
-              max={99}
-              etiqueta={`Cantidad de ${o.nombre}`}
-              alCambiar={(n) => cantidad(o.id, n)}
-            /></td
-          >
-          <td>{o.precio == null ? o.precioTexto : mrs(o.precio * o.cantidad)}</td>
-          <td>{o.car}</td>
-          <td>
-            {#if o.tipo === 'armadura' || o.tipo === 'casco'}
-              <input
-                type="checkbox"
-                checked={o.puesto}
-                aria-label={`Lleva puesto ${o.nombre}`}
-                onchange={(e) => {
-                  const x = p.equipo.find((y) => y.id === o.id);
-                  if (x) x.puesto = (e.currentTarget as HTMLInputElement).checked;
-                }}
-              />
-            {/if}
-          </td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
-{/if}
+<h2>Lo que lleva</h2>
+<Inventario bind:p {hoja} />
 
 <h2>Mercado</h2>
 <div class="filtros">

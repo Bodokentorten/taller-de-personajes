@@ -44,6 +44,10 @@ export interface FuenteMistica {
   grimorio?: string;
   nombre: string;
   dominios: string[];
+  /** Solo en Fuentes que no son grimorios del catálogo (pactos, maestros…): resistencia por manipulación. */
+  manipulacion?: Partial<
+    Record<'Crear' | 'Sentir' | 'Transformar' | 'Destruir' | 'Controlar', number>
+  >;
 }
 
 export interface Personaje {
@@ -97,7 +101,7 @@ export interface Personaje {
 
   dinero: { tirada?: Tirada; total?: number };
   /** Objetos comprados. id con prefijo de catálogo: «arma:daga», «armadura:velmez», «equipo:antorchas-3». */
-  equipo: { id: string; cantidad: number; puesto?: boolean }[];
+  equipo: ObjetoInventario[];
   /** Tiradas de trasfondo (familia, conexiones, eventos). */
   trasfondo: Partial<Record<TablaTrasfondo, ResultadoTrasfondo>> & {
     eventos?: ResultadoTrasfondo[];
@@ -114,12 +118,25 @@ export interface Personaje {
   año?: number;
 }
 
+export interface ObjetoInventario {
+  id: string;
+  cantidad: number;
+  /** Armadura o casco puestos (cuentan la mitad de su CAR). */
+  puesto?: boolean;
+  /** Id del contenedor en el que va guardado (morral, saco, alforjas…). */
+  en?: string;
+  /** Contenedor soltado («soltar el morral»): ni él ni lo que lleva cuentan para la carga. */
+  soltado?: boolean;
+}
+
 export type TablaTrasfondo =
   'padres' | 'hermanos' | 'familia_extendida' | 'reputacion' | 'conexiones';
 
 export interface ResultadoTrasfondo {
   tirada: number;
   texto: string;
+  /** Resultado de las subtiradas: cuántos hermanos y de qué lado son los tíos, qué conexiones… */
+  detalle?: string;
 }
 
 /** Reglas de la campaña que cambian la validación (las fija el DJ en campaña.json). */

@@ -91,6 +91,43 @@ tags:
 | [[Idioma]] | `INT+CAR` | Hebreo (litúrgico) | **69%** |
 | [[Oratoria]] | `POD+CAR` |  | **57%** |
 
+### Porcentajes por grado de dificultad
+
+| Habilidad | Muy fácil | Fácil | Normal | Difícil | Formidable | Hercúleo |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: |
+| Atletismo | 44% | 33% | **22%** | 15% | 11% | 5% |
+| Cantar | 54% | 41% | **27%** | 18% | 14% | 6% |
+| Combate sin armas | 44% | 33% | **22%** | 15% | 11% | 5% |
+| Conducir | 52% | 39% | **26%** | 18% | 13% | 6% |
+| Costumbres | 144% | 108% | **72%** | 48% | 36% | 15% |
+| Danza | 50% | 38% | **25%** | 17% | 13% | 5% |
+| Engaño | 58% | 44% | **29%** | 20% | 15% | 6% |
+| Entorno | 104% | 78% | **52%** | 35% | 26% | 11% |
+| Esquivar | 48% | 36% | **24%** | 16% | 12% | 5% |
+| Estilo de combate (Guardia de Aljama) | 64% | 48% | **32%** | 22% | 16% | 7% |
+| Fuerza de voluntad | 156% | 117% | **78%** | 52% | 39% | 16% |
+| Influencia | 92% | 69% | **46%** | 31% | 23% | 10% |
+| Lengua materna | 138% | 104% | **69%** | 46% | 35% | 14% |
+| Montar | 52% | 39% | **26%** | 18% | 13% | 6% |
+| Musculatura | 42% | 32% | **21%** | 14% | 11% | 5% |
+| Nadar | 44% | 33% | **22%** | 15% | 11% | 5% |
+| Navegación fluvial | 44% | 33% | **22%** | 15% | 11% | 5% |
+| Ocultar | 52% | 39% | **26%** | 18% | 13% | 6% |
+| Percepción | 100% | 75% | **50%** | 34% | 25% | 10% |
+| Perspicacia | 100% | 75% | **50%** | 34% | 25% | 10% |
+| Primeros auxilios | 76% | 57% | **38%** | 26% | 19% | 8% |
+| Resistencia | 48% | 36% | **24%** | 16% | 12% | 5% |
+| Sigilo | 76% | 57% | **38%** | 26% | 19% | 8% |
+| Alfabetización (Hebrea) | 144% | 108% | **72%** | 48% | 36% | 15% |
+| Conocimiento (Astrología) | 84% | 63% | **42%** | 28% | 21% | 9% |
+| Conocimiento (Teología y Talmud) | 144% | 108% | **72%** | 48% | 36% | 15% |
+| Enseñar | 118% | 89% | **59%** | 40% | 30% | 12% |
+| Idioma (Hebreo (litúrgico)) | 138% | 104% | **69%** | 46% | 35% | 14% |
+| Oratoria | 114% | 86% | **57%** | 38% | 29% | 12% |
+| Pasión: Fe (la Ley de Moisés) | 160% | 120% | **80%** | 54% | 40% | 16% |
+| Pasión: Amor (su esposa Jamila) | 112% | 84% | **56%** | 38% | 28% | 12% |
+| Pasión: Temer (los predicadores) | 100% | 75% | **50%** | 34% | 25% | 10% |
+
 ---
 
 ## 5. Armas y Ataques ([[Armas, Armaduras y Escudos de los Reinos Hispánicos]])

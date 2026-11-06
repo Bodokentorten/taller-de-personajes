@@ -106,7 +106,7 @@ describe('3. Joan, mago de Barcelona (Magia Caótica)', () => {
 
   it('calcula Fuente, Ocultismo y fórmulas iniciales', () => {
     expect(valorDe(h.habilidades, 'idioma:Castellano')).toBe(44); // INT+CAR 24 + 20 gratis
-    expect(h.magia.fuentes).toEqual([
+    expect(h.magia.fuentes).toMatchObject([
       {
         clave: 'fuente-mistica:picatrix',
         nombre: 'Picatrix',

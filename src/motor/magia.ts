@@ -1,13 +1,15 @@
 // Magia Caótica (fuentes: «Fórmulas, vis y rangos», «Grimorios y aprendizaje de fórmulas»,
 // «Naturaleza y origen de los hechizos» y la Guía de Magia Caótica). La magia común del SRD no se usa.
 import type { Catalogo } from '../datos/catalogo';
-import type { Formula } from '../datos/tipos';
+import type { Formula, Manipulacion } from '../datos/tipos';
 import { valorDe, valorEspecialidad, type ValorHabilidad } from './habilidades';
 import type { Personaje } from './personaje';
 import { aviso, error, type Problema } from './resultado';
 import { buscarUmbral } from './tablas';
 
 /** Umbral de estudio de la Fuente para lanzar una fórmula de cada Rango. */
+const ORDEN_RANGOS = ['I', 'II', 'III', 'IV', 'V'];
+
 export const UMBRAL_RANGO = { I: 1, II: 21, III: 41, IV: 61, V: 81 } as const;
 
 /** Conocimiento (Ocultismo) mínimo para empezar con fórmulas. */
@@ -18,7 +20,16 @@ export interface EstadoMagia {
   /** Fórmulas iniciales fijas (o la tirada, si se eligió al azar). */
   formulasPermitidas: number;
   formulasAzar?: string;
-  fuentes: { clave: string; nombre: string; dominios: string[]; valor: number }[];
+  fuentes: {
+    clave: string;
+    nombre: string;
+    dominios: string[];
+    valor: number;
+    grimorio?: string;
+    manipulacion?: Partial<Record<Manipulacion, number>>;
+    /** Rango más alto que permite lanzar la Fuente (los grimorios lo indican; si no, el V). */
+    rangoMaximo: Formula['rango'];
+  }[];
   formulas: Formula[];
   conoceGoecia: boolean;
 }
@@ -44,6 +55,9 @@ export function estadoMagia(
       nombre: g?.nombre ?? f.nombre,
       dominios: g?.dominios ?? f.dominios,
       valor: valorDe(hoja, f.clave),
+      grimorio: f.grimorio,
+      manipulacion: g?.manipulacion ?? f.manipulacion,
+      rangoMaximo: g?.rango_maximo ?? ('V' as const),
     };
   });
   const formulas = [...p.magia.formulas, ...(p.magia.formulasAprendidas ?? [])]
@@ -62,7 +76,10 @@ export function estadoMagia(
 /** Fuentes del personaje que permiten lanzar la fórmula (todos sus dominios y estudio suficiente). */
 export function fuentesPara(f: Formula, estado: EstadoMagia) {
   return estado.fuentes.filter(
-    (s) => f.dominios.every((d) => s.dominios.includes(d)) && s.valor >= UMBRAL_RANGO[f.rango],
+    (s) =>
+      f.dominios.every((d) => s.dominios.includes(d)) &&
+      s.valor >= UMBRAL_RANGO[f.rango] &&
+      ORDEN_RANGOS.indexOf(f.rango) <= ORDEN_RANGOS.indexOf(s.rangoMaximo),
   );
 }
 
@@ -97,6 +114,14 @@ export function validarMagia(p: Personaje, cat: Catalogo, estado: EstadoMagia): 
     const g = f.grimorio ? cat.grimorios.find((x) => x.id === f.grimorio) : undefined;
     if (f.grimorio && !g)
       res.push(error('magia', 'grimorio-desconocido', `Grimorio desconocido «${f.grimorio}».`));
+    if (g && !g.estudiable)
+      res.push(
+        error(
+          'magia',
+          'grimorio-no-estudiable',
+          `${g.nombre} no puede estudiarse como Fuente Mística.`,
+        ),
+      );
     const valor = estado.fuentes.find((s) => s.clave === f.clave)?.valor ?? 0;
     if (g && valor > g.estudio_maximo) {
       res.push(

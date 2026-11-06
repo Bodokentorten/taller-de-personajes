@@ -11,6 +11,15 @@
    "Mente",
    "Espíritu"
   ],
+  "manipulacion": {
+   "Crear": 20,
+   "Sentir": 10,
+   "Transformar": 15,
+   "Destruir": 25,
+   "Controlar": 0
+  },
+  "rango_maximo": "IV",
+  "estudiable": true,
   "resumen": "Recoge las enseñanzas atribuidas a Simón el Mago, el hechicero que, según los Hechos de los Apóstoles, quiso comprar a san Pedro el poder del Espíritu Santo y acabó destruido por él."
  },
  {
@@ -25,6 +34,15 @@
    "Cuerpo",
    "Espíritu"
   ],
+  "manipulacion": {
+   "Crear": 10,
+   "Sentir": 0,
+   "Transformar": 25,
+   "Destruir": 30,
+   "Controlar": 20
+  },
+  "rango_maximo": "V",
+  "estudiable": true,
   "resumen": "Traducción al catalán de un texto latino anónimo del siglo III. Su traductor, judío, lo explicó con un cuidado admirable."
  },
  {
@@ -39,6 +57,15 @@
    "Espíritu",
    "Cuerpo"
   ],
+  "manipulacion": {
+   "Crear": 15,
+   "Sentir": 10,
+   "Transformar": 10,
+   "Destruir": 0,
+   "Controlar": 10
+  },
+  "rango_maximo": "III",
+  "estudiable": true,
   "resumen": "Un libro de teoría más que de práctica: explica qué es la goecia y cómo actúa, sin enseñar ninguna fórmula concreta."
  },
  {
@@ -53,6 +80,15 @@
    "Espíritu",
    "Poder"
   ],
+  "manipulacion": {
+   "Crear": 10,
+   "Sentir": 20,
+   "Transformar": 20,
+   "Destruir": 25,
+   "Controlar": 10
+  },
+  "rango_maximo": "V",
+  "estudiable": true,
   "resumen": "Una pésima traducción latina de un viejo tratado de magia caldea. Lo usan los cónclaves de brujas para sus aquelarres."
  },
  {
@@ -67,6 +103,15 @@
    "Espíritu",
    "Poder"
   ],
+  "manipulacion": {
+   "Crear": 0,
+   "Sentir": 15,
+   "Transformar": 20,
+   "Destruir": 15,
+   "Controlar": 10
+  },
+  "rango_maximo": "III",
+  "estudiable": true,
   "resumen": "Un manual de conjuradores: enseña a trazar círculos, a preparar la vara y el cuchillo y a llamar a ánimas, elementales y demonios."
  },
  {
@@ -81,6 +126,15 @@
    "Espíritu",
    "Poder"
   ],
+  "manipulacion": {
+   "Crear": 25,
+   "Sentir": 20,
+   "Transformar": 30,
+   "Destruir": 0,
+   "Controlar": 0
+  },
+  "rango_maximo": "IV",
+  "estudiable": true,
   "resumen": "Se dice que el Diablo lo entrega a sus favoritos. Lleva el nombre de Cipriano de Antioquía, el mago que, según la leyenda, se convirtió y murió mártir, y la tradición gallega y portuguesa lo asocia a tesoros enterrados y mouras encantadas."
  },
  {
@@ -95,6 +149,15 @@
    "Mente",
    "Espíritu"
   ],
+  "manipulacion": {
+   "Crear": 15,
+   "Sentir": 10,
+   "Transformar": 0,
+   "Destruir": 25,
+   "Controlar": 20
+  },
+  "rango_maximo": "IV",
+  "estudiable": true,
   "resumen": "Se dice que lo escribió el demonio Beherito, señor de las mentiras. Se lee siempre en la mejor lengua que conozca el lector."
  },
  {
@@ -109,6 +172,15 @@
    "Cuerpo",
    "Espíritu"
   ],
+  "manipulacion": {
+   "Crear": 5,
+   "Sentir": 10,
+   "Transformar": 10,
+   "Destruir": 20,
+   "Controlar": 10
+  },
+  "rango_maximo": "IV",
+  "estudiable": true,
   "resumen": "Según los eruditos, el Gulandis Acolyti original lo escribió en el siglo IV un gnóstico de Corduba que firmaba «I.P.F.», y es el único libro que clasifica las fórmulas mágicas en siete vis."
  },
  {
@@ -123,6 +195,15 @@
    "Fuego",
    "Mente"
   ],
+  "manipulacion": {
+   "Crear": 5,
+   "Sentir": 10,
+   "Transformar": 15,
+   "Destruir": 15,
+   "Controlar": 10
+  },
+  "rango_maximo": "III",
+  "estudiable": true,
   "resumen": "Un compendio de magia guerrera y de engaño, copiado en algún taller de al-Ándalus."
  },
  {
@@ -137,6 +218,15 @@
    "Mente",
    "Poder"
   ],
+  "manipulacion": {
+   "Crear": 10,
+   "Sentir": 10,
+   "Transformar": 15,
+   "Destruir": 15,
+   "Controlar": 0
+  },
+  "rango_maximo": "III",
+  "estudiable": true,
   "resumen": "Un tratado sobre el dominio de las voluntades: enamorar, enemistar, someter. Su autor sólo se conoce por este nombre."
  },
  {
@@ -150,6 +240,9 @@
   "dominios": [
    "Todos"
   ],
+  "manipulacion": {},
+  "rango_maximo": null,
+  "estudiable": false,
   "resumen": "La leyenda dice que se le entregó a Adán tras la caída y que pasó de generación en generación hasta el rey Salomón, que con él levantó el Templo y sometió a los demonios. Contiene todos los secretos del universo, incluso los que sólo conoce Dios. Su paradero se perdió a la muerte de Salomón."
  },
  {
@@ -164,6 +257,15 @@
    "Poder",
    "Tierra"
   ],
+  "manipulacion": {
+   "Crear": 10,
+   "Sentir": 15,
+   "Transformar": 10,
+   "Destruir": 15,
+   "Controlar": 5
+  },
+  "rango_maximo": "III",
+  "estudiable": true,
   "resumen": "Un tratado sobre la guerra y el fin de los tiempos, escrito por un sabio de nombre a medias árabe y a medias catalán."
  },
  {
@@ -178,6 +280,15 @@
    "Espíritu",
    "Poder"
   ],
+  "manipulacion": {
+   "Crear": 25,
+   "Sentir": 15,
+   "Transformar": 25,
+   "Destruir": 30,
+   "Controlar": 0
+  },
+  "rango_maximo": "V",
+  "estudiable": true,
   "resumen": "Se atribuye al rey Salomón. Está escrito en clave: para descifrarlo hay que cotejarlo con el Cantar de los Cantares en su versión hebrea original, y casi nadie lo sabe."
  },
  {
@@ -192,6 +303,15 @@
    "Espíritu",
    "Cuerpo"
   ],
+  "manipulacion": {
+   "Crear": 10,
+   "Sentir": 15,
+   "Transformar": 15,
+   "Destruir": 0,
+   "Controlar": 30
+  },
+  "rango_maximo": "IV",
+  "estudiable": true,
   "resumen": "Su autor, un mallorquín, aplicó el método combinatorio de Ramon Llull a la goecia, justo lo contrario de lo que Llull pretendía."
  },
  {
@@ -206,6 +326,15 @@
    "Espíritu",
    "Mente"
   ],
+  "manipulacion": {
+   "Crear": 15,
+   "Sentir": 0,
+   "Transformar": 20,
+   "Destruir": 15,
+   "Controlar": 15
+  },
+  "rango_maximo": "IV",
+  "estudiable": true,
   "resumen": "Es una versión latina, bastante torpe, de un tratado árabe de magia astral conocido como Ghayat al-Hakim («La meta del sabio»), que se atribuía al astrónomo cordobés al-Majriti. En tiempos de Alfonso X se tradujo al castellano y después al latín; las copias que circulan por los reinos están plagadas de errores."
  }
 ]

@@ -107,6 +107,9 @@
         al buscador.
       </p>
     {/if}
+    {#if campaña.actual.permitirMagia}
+      <p class="detalle"><a href="#/hechizos">Calculadora de hechizos de Magia Caótica →</a></p>
+    {/if}
   </aside>
 
   <main class="ficha">

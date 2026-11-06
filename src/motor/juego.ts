@@ -181,3 +181,24 @@ export function tirarPanico(estres: number, azar?: Aleatorio) {
   const r = PANICO.find((x) => total >= x.min && total <= x.max)!;
   return { d20, total, ...r, aterrorizado: total >= 13 };
 }
+
+/** Valor de una habilidad en los seis grados de dificultad (Muy fácil … Hercúleo). */
+export function valoresPorDificultad(
+  valor: number,
+): { id: Dificultad; nombre: string; valor: number }[] {
+  return DIFICULTADES.map((d) => ({
+    id: d.id,
+    nombre: d.nombre,
+    valor: valorConDificultad(valor, d.id),
+  }));
+}
+
+/** Abreviaturas para tablas estrechas. */
+export const ABREVIATURA_DIFICULTAD: Record<Dificultad, string> = {
+  'muy-facil': 'M. fácil',
+  facil: 'Fácil',
+  normal: 'Normal',
+  dificil: 'Difícil',
+  formidable: 'Formid.',
+  herculeo: 'Hercúleo',
+};

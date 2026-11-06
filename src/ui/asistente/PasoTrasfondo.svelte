@@ -134,7 +134,9 @@
             </button>
           </td>
           <td
-            >{#if r}<span class="tirada">{r.tirada}</span> {r.texto}{/if}</td
+            >{#if r}<span class="tirada">{r.tirada}</span>
+              {r.texto}{#if r.detalle}<br /><strong class="detalle-tirada">{r.detalle}</strong
+                >{/if}{/if}</td
           >
         </tr>
       {/each}

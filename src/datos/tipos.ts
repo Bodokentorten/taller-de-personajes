@@ -189,6 +189,12 @@ export interface Formula extends Entrada {
   origen: string;
   rango: 'I' | 'II' | 'III' | 'IV' | 'V';
   dominios: string[];
+  manipulacion: Manipulacion;
+  duracion: string;
+  alcance: string;
+  objetivo: string;
+  /** Dificultad base de la fórmula completa (ya con el −20%). */
+  dificultad_base: number;
   ritual: boolean;
   goecia: boolean;
 }
@@ -203,12 +209,20 @@ export interface Ritual extends Entrada {
   credos: string[];
 }
 
+export type Manipulacion = 'Crear' | 'Sentir' | 'Transformar' | 'Destruir' | 'Controlar';
+export const MANIPULACIONES: readonly Manipulacion[] = ['Crear', 'Sentir', 'Transformar', 'Destruir', 'Controlar'];
+
 export interface Grimorio extends Entrada {
   autor: string;
   idioma: string;
   ensenar: number;
   estudio_maximo: number;
   dominios: string[];
+  /** Resistencia de la Fuente a cada manipulación (se suma a la dificultad). */
+  manipulacion: Partial<Record<Manipulacion, number>>;
+  rango_maximo: 'I' | 'II' | 'III' | 'IV' | 'V' | null;
+  /** Si puede estudiarse como Fuente Mística. */
+  estudiable: boolean;
 }
 
 export interface GrupoNomina extends Entrada {
@@ -245,6 +259,8 @@ export interface Arma {
 export interface Armadura {
   id: string;
   nombre: string;
+  /** Solo armaduras de cuerpo: Blanda, Ligera, Metálica o Completa. */
+  tipo?: string;
   pa: number | null;
   cubre: string[];
   car: number;

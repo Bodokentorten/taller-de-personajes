@@ -120,3 +120,10 @@ describe('experiencia', () => {
     );
   });
 });
+
+describe('porcentajes por dificultad', () => {
+  it('calcula los seis grados redondeando hacia arriba', async () => {
+    const { valoresPorDificultad } = await import('./juego');
+    expect(valoresPorDificultad(57).map((x) => x.valor)).toEqual([114, 86, 57, 38, 29, 12]);
+  });
+});

@@ -39,7 +39,9 @@
       de tu pueblo se suman solos.
     </li>
     <li>
-      <strong>Trasfondo:</strong> clase social, dinero, familia, conexiones y eventos, con tiradas.
+      <strong>Trasfondo:</strong> clase social, dinero, familia, conexiones y eventos, con tiradas. Las
+      subtiradas (cuántos hermanos y si son mayores o menores, de qué lado son los tíos y los primos,
+      qué aliados o rivales) se hacen solas.
     </li>
     <li>
       <strong>Carrera:</strong> solo verás las que tu personaje puede elegir (o todas, con el motivo de
@@ -56,7 +58,11 @@
       <strong>Magia y fe:</strong> solo aparece si tu carrera la tiene: Fuentes Místicas, fórmulas, ordos
       y rituales.
     </li>
-    <li><strong>Equipo:</strong> compra en el mercado con tu dinero inicial.</li>
+    <li>
+      <strong>Equipo:</strong> compra en el mercado con tu dinero inicial y decide dónde va cada cosa:
+      encima, en el morral o el saco, o en las alforjas de la montura (lo que va en la montura no pesa
+      sobre ti).
+    </li>
   </ol>
   <p>
     Cada paso muestra al final lo que falta por resolver. En la columna izquierda verás <span
@@ -88,13 +94,22 @@
   <ul>
     <li>
       <strong>Vista de juego</strong> (⚔ Jugar): PG por localización, Suerte, PM, fatiga, Estrés, pánico,
-      munición y notas, todo en una pantalla. Haz clic en una habilidad para tirarla; marca la casilla
-      cuando la uses con éxito en un momento de tensión.
+      munición y notas, todo en una pantalla. Haz clic en una habilidad para tirarla, o en uno de sus
+      seis valores (de Muy fácil a Hercúleo) para tirar con esa dificultad; marca la casilla cuando la
+      uses con éxito en un momento de tensión.
     </li>
     <li>
       <strong>Mejora:</strong> cuando el DJ conceda tiradas de experiencia, tira las habilidades marcadas
       (1d100 + INT contra el valor). Ahí también se aprenden habilidades nuevas, se entrenan con un maestro
       y se anotan fórmulas y ordos.
+    </li>
+    <li>
+      <strong>Carga:</strong> si vas cargado, «Soltar el morral» deja en el suelo morrales y sacos: ni
+      ellos ni lo que llevan pesan hasta que los recojas.
+    </li>
+    <li>
+      <strong>Hechizos:</strong> la calculadora de Magia Caótica da la dificultad de tus fórmulas según
+      la zona, la voz, los gestos y la armadura, y la de cualquier hechizo que quieras improvisar.
     </li>
     <li>
       <strong>Consulta de reglas:</strong> busca cualquier habilidad, carrera, arma, fórmula o ritual

@@ -7,6 +7,7 @@
   import Reglas from './ui/reglas/Reglas.svelte';
   import Campaña from './ui/Campaña.svelte';
   import Guia from './ui/Guia.svelte';
+  import Calculadora from './ui/hechizos/Calculadora.svelte';
   import { ruta } from './ui/ruta.svelte';
 
   type Tema = 'pergamino' | 'vela';
@@ -88,7 +89,9 @@
     <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
   {:else}
     <main class="pagina">
-      {#if vista === 'guia'}
+      {#if vista === 'hechizos'}
+        <Calculadora id={ruta.partes[1]} />
+      {:else if vista === 'guia'}
         <Guia />
       {:else if vista === 'campana'}
         <Campaña codigo={ruta.partes[1]} />

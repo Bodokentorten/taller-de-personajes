@@ -7,6 +7,7 @@ import { LOCALIZACIONES } from '../motor/atributos';
 import { armaduraPorLocalizacion } from '../motor/equipo';
 import { normal, type ValorHabilidad } from '../motor/habilidades';
 import { calcularHoja, type Hoja } from '../motor/hoja';
+import { DIFICULTADES, valoresPorDificultad } from '../motor/juego';
 import { BONO_PASION } from '../motor/pasiones';
 import {
   CAMPAÑA_POR_DEFECTO,
@@ -281,6 +282,26 @@ export function exportarMarkdown(
       `| ${nombre} | \`${formula(h.habilidad.formula)}\` | ${celda(h.especialidad ?? '')} | **${h.total}%** |`,
     );
   }
+
+  // Porcentajes por grado de dificultad (habilidades, estilos y Pasiones)
+  l(
+    '',
+    '### Porcentajes por grado de dificultad',
+    '',
+    `| Habilidad | ${DIFICULTADES.map((d) => d.nombre).join(' | ')} |`,
+    `| :-- | ${DIFICULTADES.map(() => ':-:').join(' | ')} |`,
+  );
+  const filasDificultad = [
+    ...hoja.habilidades.map((h) => ({ nombre: h.nombre, valor: h.total })),
+    ...hoja.pasiones.map((x) => ({ nombre: `Pasión: ${x.nombre}`, valor: x.valor ?? 0 })),
+  ];
+  for (const f of filasDificultad) {
+    l(
+      `| ${celda(f.nombre)} | ${valoresPorDificultad(f.valor)
+        .map((v) => (v.id === 'normal' ? `**${v.valor}%**` : `${v.valor}%`))
+        .join(' | ')} |`,
+    );
+  }
   l('', '---', '');
 
   // ---------------------------------------------------------------- 5. armas
@@ -360,10 +381,12 @@ export function exportarMarkdown(
   // ---------------------------------------------------------------- 8. trasfondo
   const t = p.trasfondo;
   const unir = (...x: (string | undefined)[]) => x.filter(Boolean).join(' · ');
+  const conDetalle = (r?: { texto: string; detalle?: string }) =>
+    r ? (r.detalle ? `${r.texto} (${r.detalle.replace(/\.$/, '')})` : r.texto) : undefined;
   l(
     '## 8. Trasfondo',
-    `- **Familia:** ${unir(t.padres?.texto, t.hermanos?.texto, t.familia_extendida?.texto)}`,
-    `- **Aliados y contactos:** ${unir(t.reputacion && `Reputación: ${t.reputacion.texto}`, t.conexiones && `Conexiones: ${t.conexiones.texto}`)}`,
+    `- **Familia:** ${unir(...[t.padres, t.hermanos, t.familia_extendida].map(conDetalle))}`,
+    `- **Aliados y contactos:** ${unir(t.reputacion && `Reputación: ${conDetalle(t.reputacion)}`, t.conexiones && `Conexiones: ${conDetalle(t.conexiones)}`)}`,
     '- **Rivales y enemigos:** ',
     `- **Evento de trasfondo:** ${(t.eventos ?? []).map((e) => e.texto).join(' / ')}`,
   );

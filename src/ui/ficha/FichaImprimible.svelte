@@ -9,6 +9,7 @@
   import { armaduraPorLocalizacion } from '../../motor/equipo';
   import { calcularHoja } from '../../motor/hoja';
   import { claseSocial } from '../../motor/origen';
+  import { ABREVIATURA_DIFICULTAD, DIFICULTADES, valoresPorDificultad } from '../../motor/juego';
   import { BONO_PASION } from '../../motor/pasiones';
   import { enlacePaso } from '../ruta.svelte';
 
@@ -246,77 +247,75 @@
 
     <!-- ───────────── Página 2 ───────────── -->
     <section class="a4">
-      <h2>Habilidades estándar</h2>
-      <table class="rejilla habilidades dos">
-        <tbody>
-          {#each Array(Math.ceil(estandar.length / 2)) as _, i (i)}
-            {@const a = estandar[i]}
-            {@const b = estandar[i + Math.ceil(estandar.length / 2)]}
-            <tr>
-              {#if opciones.casillas}<td class="casilla">☐</td>{/if}<th>{a?.nombre}</th><td
-                class="pequeño">{a?.habilidad.formula}</td
-              ><td class="total">{a?.total}%</td>
-              {#if opciones.casillas}<td class="casilla">{b ? '☐' : ''}</td>{/if}<th
-                >{b?.nombre ?? ''}</th
-              ><td class="pequeño">{b?.habilidad.formula ?? ''}</td><td class="total"
-                >{b ? `${b.total}%` : ''}</td
-              >
-            </tr>
+      <h2>Habilidades y Pasiones por grado de dificultad</h2>
+      {#snippet fila(nombre: string, formulaTexto: string, valor: number, nota = '')}
+        <tr>
+          {#if opciones.casillas}<td class="casilla">☐</td>{/if}
+          <th
+            >{nombre}{#if nota}<span class="nota-fila">{nota}</span>{/if}</th
+          >
+          <td class="pequeño">{formulaTexto}</td>
+          {#each valoresPorDificultad(valor) as v (v.id)}
+            <td class="dif" class:normal={v.id === 'normal'}>{v.valor}</td>
           {/each}
-        </tbody>
-      </table>
-
-      <h2>Estilos de combate</h2>
-      <table class="rejilla">
+        </tr>
+      {/snippet}
+      {#snippet cabecera(titulo: string)}
+        <tr class="seccion">
+          <th colspan={opciones.casillas ? 3 : 2}>{titulo}</th>
+          {#each DIFICULTADES as d (d.id)}<th class="dif">{ABREVIATURA_DIFICULTAD[d.id]}</th>{/each}
+        </tr>
+      {/snippet}
+      <table class="rejilla dificultades">
         <tbody>
+          {@render cabecera('Habilidades estándar')}
+          {#each estandar as h (h.clave)}{@render fila(
+              h.nombre,
+              h.habilidad.formula,
+              h.total,
+            )}{/each}
+
+          {@render cabecera('Estilos de combate')}
           {#each estilos as h (h.clave)}
             {@const e = estiloDe(h.clave)}
-            <tr
-              >{#if opciones.casillas}<td class="casilla">☐</td>{/if}<th
-                >{e?.nombre ?? h.especialidad}</th
-              ><td class="pequeño"
-                >{e?.armas.join(', ')} ·
-                <em>{e?.rasgos.join(e.rasgos_alternativos ? ' o ' : ', ')}</em></td
-              ><td class="total">{h.total}%</td></tr
-            >
+            {@render fila(
+              e?.nombre ?? h.especialidad ?? '',
+              h.habilidad.formula,
+              h.total,
+              e
+                ? `${e.armas.join(', ')} · ${e.rasgos.join(e.rasgos_alternativos ? ' o ' : ', ')}`
+                : '',
+            )}
           {/each}
-          {#if !estilos.length}<tr class="vacia"><td colspan="4">&nbsp;</td></tr>{/if}
-        </tbody>
-      </table>
+          {#if !estilos.length}<tr class="vacia"><td colspan="9">&nbsp;</td></tr>{/if}
 
-      <h2>Habilidades profesionales</h2>
-      <table class="rejilla">
-        <tbody>
-          {#each profesionales as h (h.clave)}
-            <tr
-              >{#if opciones.casillas}<td class="casilla">☐</td>{/if}<th>{h.nombre}</th><td
-                class="pequeño">{h.habilidad.formula}</td
-              ><td class="total">{h.total}%</td></tr
-            >
-          {/each}
-          {#each Array(Math.max(0, 4 - profesionales.length)) as _, i (i)}<tr class="vacia"
-              ><td colspan="4">&nbsp;</td></tr
+          {@render cabecera('Habilidades profesionales')}
+          {#each profesionales as h (h.clave)}{@render fila(
+              h.nombre,
+              h.habilidad.formula,
+              h.total,
+            )}{/each}
+          {#each Array(Math.max(0, 3 - profesionales.length)) as _, i (i)}<tr class="vacia"
+              ><td colspan="9">&nbsp;</td></tr
             >{/each}
-        </tbody>
-      </table>
 
-      <h2>Pasiones</h2>
-      <table class="rejilla">
-        <tbody>
+          {@render cabecera('Pasiones')}
           {#each [...p.pasiones].sort((x, y) => x.orden - y.orden) as x, i (i)}
-            <tr
-              >{#if opciones.casillas}<td class="casilla">☐</td>{/if}<th>{x.nombre}</th><td
-                class="pequeño">+{BONO_PASION[x.orden]}</td
-              ><td class="total">{hoja.pasiones[p.pasiones.indexOf(x)]?.valor ?? '?'}%</td></tr
-            >
+            {@render fila(
+              x.nombre,
+              `+${BONO_PASION[x.orden]}`,
+              hoja.pasiones[p.pasiones.indexOf(x)]?.valor ?? 0,
+            )}
           {/each}
-          <tr class="vacia"><td colspan="4">&nbsp;</td></tr>
+          <tr class="vacia"><td colspan="9">&nbsp;</td></tr>
         </tbody>
       </table>
-      {#if opciones.casillas}<p class="pequeño">
+      <p class="pequeño">
+        Muy fácil ×2 · Fácil ×1,5 · Difícil ×2/3 · Formidable ×1/2 · Hercúleo ×1/5 (redondeando
+        hacia arriba). Crítico: la décima parte del valor usado.{#if opciones.casillas}
           ☐ Marca la casilla cuando la habilidad o la Pasión se use con éxito en una situación de
-          tensión: al final de la aventura podrá mejorar.
-        </p>{/if}
+          tensión: al final de la aventura podrá mejorar.{/if}
+      </p>
     </section>
 
     <!-- ───────────── Página 3 ───────────── -->
@@ -373,7 +372,7 @@
           <h2>Equipo</h2>
           <table class="rejilla">
             <tbody>
-              {#each hoja.equipo.objetos as o (o.id)}
+              {#each hoja.equipo.objetos as o (o.pos)}
                 <tr
                   ><td>{o.cantidad > 1 ? `${o.cantidad} × ` : ''}{o.nombre}</td><td class="pequeño"
                     >CAR {o.car}</td
@@ -395,15 +394,35 @@
       <h2>Trasfondo</h2>
       <dl class="trasfondo">
         {#if p.trasfondo.padres}<dt>Padres</dt>
-          <dd>{p.trasfondo.padres.texto}</dd>{/if}
+          <dd>
+            {p.trasfondo.padres.texto}{p.trasfondo.padres.detalle
+              ? ` ${p.trasfondo.padres.detalle}`
+              : ''}
+          </dd>{/if}
         {#if p.trasfondo.hermanos}<dt>Hermanos</dt>
-          <dd>{p.trasfondo.hermanos.texto}</dd>{/if}
+          <dd>
+            {p.trasfondo.hermanos.texto}{p.trasfondo.hermanos.detalle
+              ? ` ${p.trasfondo.hermanos.detalle}`
+              : ''}
+          </dd>{/if}
         {#if p.trasfondo.familia_extendida}<dt>Familia</dt>
-          <dd>{p.trasfondo.familia_extendida.texto}</dd>{/if}
+          <dd>
+            {p.trasfondo.familia_extendida.texto}{p.trasfondo.familia_extendida.detalle
+              ? ` ${p.trasfondo.familia_extendida.detalle}`
+              : ''}
+          </dd>{/if}
         {#if p.trasfondo.reputacion}<dt>Reputación</dt>
-          <dd>{p.trasfondo.reputacion.texto}</dd>{/if}
+          <dd>
+            {p.trasfondo.reputacion.texto}{p.trasfondo.reputacion.detalle
+              ? ` ${p.trasfondo.reputacion.detalle}`
+              : ''}
+          </dd>{/if}
         {#if p.trasfondo.conexiones}<dt>Conexiones</dt>
-          <dd>{p.trasfondo.conexiones.texto}</dd>{/if}
+          <dd>
+            {p.trasfondo.conexiones.texto}{p.trasfondo.conexiones.detalle
+              ? ` ${p.trasfondo.conexiones.detalle}`
+              : ''}
+          </dd>{/if}
         {#each p.trasfondo.eventos ?? [] as ev, i (i)}<dt>Evento</dt>
           <dd>{ev.texto}</dd>{/each}
       </dl>
@@ -515,11 +534,6 @@
   .atributos th {
     width: 32mm;
   }
-  .total {
-    text-align: right !important;
-    font-weight: 600;
-    white-space: nowrap;
-  }
   .casilla {
     width: 5mm;
     color: #5a4630;
@@ -566,6 +580,32 @@
     background: repeating-linear-gradient(transparent 0 6.4mm, #b8a27a 6.4mm 6.6mm);
   }
 
+  .dificultades th,
+  .dificultades td {
+    padding: 0.35mm 1.2mm;
+  }
+  .dificultades .dif {
+    text-align: center;
+    white-space: nowrap;
+    width: 12mm;
+    font-variant-numeric: tabular-nums;
+  }
+  .dificultades td.dif.normal {
+    font-weight: 700;
+    background: rgb(122 20 20 / 0.08);
+  }
+  .dificultades .seccion th {
+    color: #7a1414;
+    border-bottom: 1px solid #7a1414;
+    padding-top: 2mm;
+    font-size: 9pt;
+  }
+  .nota-fila {
+    display: block;
+    font-weight: normal;
+    font-size: 7.5pt;
+    color: #3d2e1c;
+  }
   @media print {
     :global(body) {
       background: white !important;

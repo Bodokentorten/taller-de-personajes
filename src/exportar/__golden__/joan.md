@@ -90,6 +90,39 @@ tags:
 | [[Idioma]] | `INT+CAR` | Castellano | **44%** |
 | [[Idioma]] | `INT+CAR` | Latín | **49%** |
 
+### Porcentajes por grado de dificultad
+
+| Habilidad | Muy fácil | Fácil | Normal | Difícil | Formidable | Hercúleo |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: |
+| Atletismo | 40% | 30% | **20%** | 14% | 10% | 4% |
+| Cantar | 44% | 33% | **22%** | 15% | 11% | 5% |
+| Combate sin armas | 40% | 30% | **20%** | 14% | 10% | 4% |
+| Conducir | 58% | 44% | **29%** | 20% | 15% | 6% |
+| Costumbres | 160% | 120% | **80%** | 54% | 40% | 16% |
+| Danza | 40% | 30% | **20%** | 14% | 10% | 4% |
+| Engaño | 88% | 66% | **44%** | 30% | 22% | 9% |
+| Entorno | 110% | 83% | **55%** | 37% | 28% | 11% |
+| Esquivar | 74% | 56% | **37%** | 25% | 19% | 8% |
+| Fuerza de voluntad | 142% | 107% | **71%** | 48% | 36% | 15% |
+| Influencia | 106% | 80% | **53%** | 36% | 27% | 11% |
+| Lengua materna | 128% | 96% | **64%** | 43% | 32% | 13% |
+| Montar | 48% | 36% | **24%** | 16% | 12% | 5% |
+| Musculatura | 42% | 32% | **21%** | 14% | 11% | 5% |
+| Nadar | 40% | 30% | **20%** | 14% | 10% | 4% |
+| Navegación fluvial | 40% | 30% | **20%** | 14% | 10% | 4% |
+| Ocultar | 58% | 44% | **29%** | 20% | 15% | 6% |
+| Percepción | 116% | 87% | **58%** | 39% | 29% | 12% |
+| Perspicacia | 126% | 95% | **63%** | 42% | 32% | 13% |
+| Primeros auxilios | 52% | 39% | **26%** | 18% | 13% | 6% |
+| Resistencia | 44% | 33% | **22%** | 15% | 11% | 5% |
+| Sigilo | 82% | 62% | **41%** | 28% | 21% | 9% |
+| Arte (Caligrafía) | 64% | 48% | **32%** | 22% | 16% | 7% |
+| Conocimiento (Ocultismo) | 150% | 113% | **75%** | 50% | 38% | 15% |
+| Fuente Mística (picatrix) | 60% | 45% | **30%** | 20% | 15% | 6% |
+| Idioma (Castellano) | 88% | 66% | **44%** | 30% | 22% | 9% |
+| Idioma (Latín) | 98% | 74% | **49%** | 33% | 25% | 10% |
+| Pasión: Fe (cristiana) | 96% | 72% | **48%** | 32% | 24% | 10% |
+
 ---
 
 ## 5. Armas y Ataques ([[Armas, Armaduras y Escudos de los Reinos Hispánicos]])

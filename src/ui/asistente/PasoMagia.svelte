@@ -88,7 +88,7 @@
         }}
       >
         <option value="">Añadir un grimorio…</option>
-        {#each catalogo.grimorios as g (g.id)}<option value={g.id}
+        {#each catalogo.grimorios.filter((g) => g.estudiable) as g (g.id)}<option value={g.id}
             >{g.nombre} ({g.dominios.join(', ')}; hasta {g.estudio_maximo}%)</option
           >{/each}
       </select>
@@ -108,6 +108,11 @@
       >
     </div>
   </details>
+
+  <p>
+    <a href={`#/hechizos/${encodeURIComponent(p.id)}`}>Calculadora de hechizos</a>: la dificultad de
+    sus fórmulas según la zona, y la de cualquier hechizo libre.
+  </p>
 
   <h2>Fórmulas iniciales</h2>
   <p>
