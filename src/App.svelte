@@ -4,6 +4,7 @@
   import Biblioteca from './ui/Biblioteca.svelte';
   import Asistente from './ui/asistente/Asistente.svelte';
   import FichaImprimible from './ui/ficha/FichaImprimible.svelte';
+  import Reglas from './ui/reglas/Reglas.svelte';
   import { ruta } from './ui/ruta.svelte';
 
   type Tema = 'pergamino' | 'vela';
@@ -65,16 +66,13 @@
 
 {#if vista === 'personaje' && ruta.partes[1] && ruta.partes[2] === 'imprimir'}
   <FichaImprimible id={ruta.partes[1]} />
+{:else if vista === 'reglas'}
+  <Reglas tipo={ruta.partes[1]} id={ruta.partes[2]} />
 {:else if vista === 'personaje' && ruta.partes[1]}
   <Asistente id={ruta.partes[1]} paso={ruta.partes[2] ?? 'concepto'} />
 {:else}
   <main class="pagina">
-    {#if vista === 'reglas'}
-      <article class="folio">
-        <h1>Consulta de reglas</h1>
-        <p>El buscador de reglas llegará en la fase 6.</p>
-      </article>
-    {:else if vista === 'dj' && ES_DJ}
+    {#if vista === 'dj' && ES_DJ}
       <article class="folio">
         <h1>Mesa del DJ</h1>
         <p><em>{avisoDJ}</em></p>
