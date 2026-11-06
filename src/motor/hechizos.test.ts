@@ -84,3 +84,19 @@ describe('calculadora de hechizos', () => {
     expect(armaduraDe([])).toBe('ninguna');
   });
 });
+
+describe('lanzamiento', () => {
+  it('Resistencia = dificultad ÷ 5 redondeando hacia arriba', async () => {
+    const { resistenciaHechizo } = await import('./hechizos');
+    expect(resistenciaHechizo(45)).toBe(9); // el ejemplo de la Guía
+    expect(resistenciaHechizo(46)).toBe(10);
+    expect(resistenciaHechizo(20)).toBe(4);
+  });
+  it('MDE y lanzamiento rápido', async () => {
+    const { mde, intercambiosMedios } = await import('./hechizos');
+    expect([5, 6, 9, 10, 13, 14, 17, 18, 22].map(mde)).toEqual([-2, -1, -1, 0, 0, 1, 1, 2, 3]);
+    expect(intercambiosMedios(20, 0)).toBe(1);
+    expect(intercambiosMedios(45, 0)).toBe(3); // 9 de Resistencia, 3,5 por intercambio
+    expect(intercambiosMedios(45, 2)).toBe(2);
+  });
+});

@@ -234,3 +234,28 @@ export function dificultadFormula(
     desglose: [{ concepto: 'Dificultad base de la fórmula', valor: f.dificultad_base }, ...mods],
   };
 }
+
+// --------------------------------------------------------------------------- Lanzamiento (Guía, §7)
+
+/** Resistencia del Hechizo: la dificultad entre 5, redondeando hacia arriba (45% → 9 puntos). */
+export function resistenciaHechizo(dificultad: number): number {
+  return Math.ceil(dificultad / 5);
+}
+
+/** Modificador de Daño por Espíritu: ⌊(POD − 10) / 4⌋ (POD 10–13: +0; 14–17: +1; 6–9: −1…). */
+export function mde(pod: number): number {
+  return Math.floor((pod - 10) / 4);
+}
+
+/** Con dificultad del 20% o menos, el lanzamiento se resuelve con una sola tirada opuesta. */
+export const LIMITE_LANZAMIENTO_RAPIDO = 20;
+
+/**
+ * Intercambios que se necesitan, de media, para doblegar el hechizo si se ganan todos:
+ * cada uno resta 1d6 + MDE (mínimo 1) a la Resistencia.
+ */
+export function intercambiosMedios(dificultad: number, modEspiritu: number): number {
+  if (dificultad <= LIMITE_LANZAMIENTO_RAPIDO) return 1;
+  const porIntercambio = Math.max(1, 3.5 + modEspiritu);
+  return Math.ceil(resistenciaHechizo(dificultad) / porIntercambio);
+}

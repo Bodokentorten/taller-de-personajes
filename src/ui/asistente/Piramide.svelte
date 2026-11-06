@@ -2,7 +2,8 @@
   // Pirámide de habilidades: 15 fichas de lacre que se arrastran (o se colocan con dos clics) sobre una
   // habilidad o una Pasión. Las habilidades que pasarían del tope se marcan al elegir una ficha.
   import { catalogo } from '../../datos/catalogo';
-  import { base, idiomasGratis, nombreHabilidad } from '../../motor/habilidades';
+  import { base, casa, idiomasGratis, nombreHabilidad, normal } from '../../motor/habilidades';
+  import type { ItemHabilidad } from '../../datos/tipos';
   import type { Hoja } from '../../motor/hoja';
   import { clave, type Personaje } from '../../motor/personaje';
   import { fichasLibres } from '../../motor/reparto';
@@ -25,6 +26,53 @@
   );
 
   const pueblo = $derived(catalogo.pueblos.find((x) => x.id === p.origen.pueblo));
+  const cultura = $derived(catalogo.culturas.find((x) => x.id === p.origen.cultura));
+  const carrera = $derived(catalogo.carreras.find((x) => x.id === p.carrera));
+  let soloPropias = $state(false);
+
+  /** Habilidades que ofrecen la cultura (con sus +40, elecciones y estilos) y la carrera elegidas. */
+  const itemsCultura = $derived<ItemHabilidad[]>(
+    cultura
+      ? [
+          ...cultura.automaticas.map((a) => ({ habilidad: a.habilidad })),
+          ...cultura.estandar,
+          ...cultura.estandar_eleccion.flatMap((e) => e.opciones.map((o) => ({ habilidad: o }))),
+          ...cultura.profesionales,
+        ]
+      : [],
+  );
+  const itemsCarrera = $derived<ItemHabilidad[]>(
+    carrera ? [...carrera.estandar, ...carrera.profesionales] : [],
+  );
+  const gratis = $derived(new Set(idiomasGratis(pueblo, p.lenguaMaterna).map((i) => i.clave)));
+
+  /** De dónde viene la habilidad: «cultura», «carrera» y «origen» (idiomas gratuitos). */
+  function origenes(c: string): string[] {
+    const res: string[] = [];
+    const deCultura =
+      itemsCultura.some((it) => casa(it, c, catalogo)) ||
+      (c.startsWith('estilo-de-combate:') &&
+        (cultura?.estilos.includes(c.split(':')[1]!) ?? false));
+    if (deCultura) res.push('cultura');
+    if (itemsCarrera.some((it) => casa(it, c, catalogo))) res.push('carrera');
+    if (gratis.has(c)) res.push('origen');
+    return res;
+  }
+
+  /** Especialidades concretas que proponen la cultura y la carrera («Conocimiento (Ocultismo)»). */
+  const sugeridas = $derived(
+    [...itemsCultura, ...itemsCarrera].flatMap((it) => {
+      const h = catalogo.habilidades.find((x) => x.id === it.habilidad);
+      if (!it.especialidad || it.cualquiera || !h?.especialidades) return [];
+      if (it.habilidad === 'estilo-de-combate') {
+        const e = catalogo.estilos.find((x) => normal(x.nombre) === normal(it.especialidad!));
+        return e ? [clave('estilo-de-combate', e.id)] : [];
+      }
+      return h.ejemplos_especialidad.some((x) => normal(x) === normal(it.especialidad!))
+        ? [clave(it.habilidad, it.especialidad)]
+        : [];
+    }),
+  );
   const filas = $derived.by(() => {
     const estandar = catalogo.habilidades
       .filter((h) => h.tipo === 'estandar' && !h.especialidades)
@@ -35,15 +83,23 @@
     const conEsp = [
       ...p.asignaciones.filter((a) => a.fuente === 'piramide').map((a) => a.clave),
       ...idiomasGratis(pueblo, p.lenguaMaterna).map((i) => i.clave),
+      ...sugeridas,
       ...extras,
     ].filter((c) => c.includes(':'));
+    const filtro = (l: string[]) =>
+      soloPropias ? l.filter((c) => origenes(c).length || fichaDe(c)) : l;
     return {
-      estandar: [...estandar, ...new Set(conEsp.filter((c) => c.startsWith('estilo-de-combate:')))],
-      profesionales: [
-        ...profesionales,
-        ...new Set(conEsp.filter((c) => !c.startsWith('estilo-de-combate:'))),
-      ].sort((a, b) =>
-        nombreHabilidad(catalogo, a).localeCompare(nombreHabilidad(catalogo, b), 'es'),
+      estandar: filtro([
+        ...estandar,
+        ...new Set(conEsp.filter((c) => c.startsWith('estilo-de-combate:'))),
+      ]),
+      profesionales: filtro(
+        [
+          ...profesionales,
+          ...new Set(conEsp.filter((c) => !c.startsWith('estilo-de-combate:'))),
+        ].sort((a, b) =>
+          nombreHabilidad(catalogo, a).localeCompare(nombreHabilidad(catalogo, b), 'es'),
+        ),
       ),
     };
   });
@@ -89,7 +145,39 @@
     nuevaEsp = '';
   }
   const conEspecialidad = catalogo.habilidades.filter((h) => h.especialidades);
+
+  // ── Desplazamiento automático al arrastrar cerca del borde de la ventana ──
+  let arrastrando = false;
+  let velocidad = 0;
+  let animacion = 0;
+  const MARGEN = 90;
+  function alArrastrarSobreVentana(e: DragEvent) {
+    if (!arrastrando) return;
+    const y = e.clientY;
+    velocidad =
+      y < MARGEN
+        ? -Math.ceil((MARGEN - y) / 5)
+        : y > innerHeight - MARGEN
+          ? Math.ceil((y - innerHeight + MARGEN) / 5)
+          : 0;
+    if (velocidad && !animacion) desplazar();
+  }
+  function desplazar() {
+    animacion = requestAnimationFrame(() => {
+      animacion = 0;
+      if (!arrastrando || !velocidad) return;
+      window.scrollBy(0, velocidad);
+      desplazar();
+    });
+  }
+  function finArrastre() {
+    arrastrando = false;
+    velocidad = 0;
+    elegida = null;
+  }
 </script>
+
+<svelte:window ondragover={alArrastrarSobreVentana} ondrop={finArrastre} />
 
 <p>
   Coloca las 15 fichas: <strong>arrástralas</strong> sobre una habilidad o una Pasión, o haz clic en
@@ -114,8 +202,9 @@
           ondragstart={(e) => {
             e.dataTransfer?.setData('text/plain', String(v));
             elegida = v;
+            arrastrando = true;
           }}
-          ondragend={() => (elegida = null)}
+          ondragend={finArrastre}
           onclick={() => (elegida = elegida === v ? null : v)}
           aria-label={`Ficha de ${v}${libre ? '' : ' (usada)'}`}>{v}</button
         >
@@ -142,9 +231,10 @@
       type="button"
       class="habilidad"
       onclick={() => elegida !== null && colocar(c, elegida)}
-      disabled={elegida === null}
+      aria-disabled={elegida === null}
     >
       {nombreHabilidad(catalogo, c)}
+      {#each origenes(c) as o (o)}<span class={`marca ${o}`}>{o}</span>{/each}
     </button>
     {#if h}<Info titulo={h.nombre} resumen={h.resumen} nota={h.nota} />{/if}
     <span class="base">{sinFicha(c)}</span>
@@ -159,6 +249,11 @@
     <span class="total">{sinFicha(c) + ficha}%</span>
   </li>
 {/snippet}
+
+<label class="propias">
+  <input type="checkbox" bind:checked={soloPropias} /> Solo las de su cultura ({cultura?.nombre ??
+    '—'}) y su carrera ({carrera?.nombre ?? '—'})
+</label>
 
 <div class="columnas">
   <section>
@@ -205,7 +300,7 @@
           <button
             type="button"
             class="habilidad"
-            disabled={elegida === null}
+            aria-disabled={elegida === null}
             onclick={() => elegida !== null && colocarEnPasion(i, elegida)}>{x.nombre}</button
           >
           <span class="base"></span>
@@ -225,20 +320,53 @@
 </div>
 
 <style>
+  /* La pirámide se queda arriba mientras se recorre la lista de habilidades */
   .piramide {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.3rem;
-    margin: 1rem 0;
+    gap: 0.2rem;
+    margin: 1rem -0.5rem;
+    padding: 0.4rem 0.5rem;
+    background: var(--pergamino);
+    border-bottom: 1px solid var(--borde);
+    box-shadow: 0 4px 8px -6px var(--sombra);
+  }
+  .piramide .detalle {
+    margin: 0.1rem 0 0;
+  }
+  .marca {
+    margin-left: 0.35rem;
+    padding: 0 0.3em;
+    border-radius: 3px;
+    font-size: 0.7em;
+    font-variant: small-caps;
+    vertical-align: middle;
+    border: 1px solid currentColor;
+  }
+  .marca.cultura {
+    color: var(--oro);
+  }
+  .marca.carrera {
+    color: var(--rubrica);
+  }
+  .marca.origen {
+    color: var(--tinta-suave);
+  }
+  .propias {
+    display: block;
+    margin: 0.5rem 0;
   }
   .fila-piramide {
     display: flex;
     gap: 0.4rem;
   }
   .ficha {
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
     padding: 0;
     font-family: var(--letra-titulo);
@@ -295,9 +423,13 @@
     border: none;
     padding: 0.1rem 0;
   }
-  .habilidad:disabled {
+  /* Sin ficha elegida, el nombre se lee normal pero no hace nada */
+  .habilidad[aria-disabled='true'] {
     cursor: default;
-    color: inherit;
+    opacity: 1;
+  }
+  .habilidad[aria-disabled='false'] {
+    cursor: pointer;
   }
   .base {
     color: var(--tinta-suave);

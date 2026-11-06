@@ -49,7 +49,10 @@
     </li>
     <li>
       <strong>Habilidades:</strong> el método estándar (cultura 100 + carrera 100 + puntos por edad) o
-      la pirámide de 15 fichas, que se arrastran o se colocan con dos clics.
+      la pirámide de 15 fichas, que se arrastran o se colocan con dos clics. La pirámide queda fija arriba
+      y la lista se desplaza sola si arrastras una ficha hacia el borde de la ventana. Cada habilidad
+      lleva la marca «cultura» o «carrera» si es propia de las tuyas (las especialidades concretas aparecen
+      como filas propias), y puedes filtrar para ver solo esas.
     </li>
     <li>
       <strong>Pasiones:</strong> hasta tres, con +40, +30 y +20. No olvides la Fe de tu credo.
@@ -109,7 +112,10 @@
     </li>
     <li>
       <strong>Hechizos:</strong> la calculadora de Magia Caótica da la dificultad de tus fórmulas según
-      la zona, la voz, los gestos y la armadura, y la de cualquier hechizo que quieras improvisar.
+      la zona, la voz, los gestos y la armadura, y la de cualquier hechizo que quieras improvisar. También
+      calcula la Resistencia del Hechizo (la dificultad entre 5, redondeando hacia arriba), tu MDE según
+      el POD y cuántos intercambios necesitarás más o menos; con un 20% o menos basta una tirada (lanzamiento
+      rápido).
     </li>
     <li>
       <strong>Consulta de reglas:</strong> busca cualquier habilidad, carrera, arma, fórmula o ritual

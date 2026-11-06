@@ -16,10 +16,15 @@
     parametrosDeFormula,
     RANGOS,
     ZONAS,
+    resistenciaHechizo,
+    mde,
+    intercambiosMedios,
+    LIMITE_LANZAMIENTO_RAPIDO,
     type ParametrosHechizo,
     type Rango,
   } from '../../motor/hechizos';
   import { calcularHoja } from '../../motor/hoja';
+  import { caracteristicasActuales } from '../../motor/personaje';
   import { fuentesPara } from '../../motor/magia';
   import { enlacePaso } from '../ruta.svelte';
 
@@ -102,6 +107,11 @@
   );
   const ORDEN: Rango[] = ['I', 'II', 'III', 'IV', 'V'];
 
+  // POD del hechicero: el del personaje, o uno a mano si se usa sin personaje
+  let podManual = $state(11);
+  const pod = $derived(p ? caracteristicasActuales(p).POD : podManual);
+  const modEspiritu = $derived(mde(pod));
+
   function cargarFormula(fid: string) {
     const f = catalogo.formulas.find((x) => x.id === fid);
     if (!f) return;
@@ -163,7 +173,10 @@
       {:else}
         <table class="tabla">
           <thead
-            ><tr><th>Fórmula</th><th>Rango</th><th>Fuente</th><th>Base</th><th>Final</th></tr
+            ><tr
+              ><th>Fórmula</th><th>Rango</th><th>Fuente</th><th>Base</th><th>Final</th><th
+                title="Resistencia del Hechizo: dificultad ÷ 5">Resistencia</th
+              ></tr
             ></thead
           >
           <tbody>
@@ -187,12 +200,24 @@
                 >
                   {x.mejor ? `${x.mejor.r.final}%` : '—'}
                 </td>
+                <td>
+                  {#if x.mejor}
+                    <strong>{resistenciaHechizo(x.mejor.r.final)}</strong>
+                    <span class="detalle"
+                      >{x.mejor.r.final <= LIMITE_LANZAMIENTO_RAPIDO
+                        ? 'rápido'
+                        : `~${intercambiosMedios(x.mejor.r.final, modEspiritu)} interc.`}</span
+                    >
+                  {/if}
+                </td>
               </tr>
             {/each}
           </tbody>
         </table>
         <p class="detalle">
-          Pasa el ratón por la dificultad final para ver el desglose. Si tiene varias Fuentes
+          POD {pod} · MDE {modEspiritu >= 0 ? '+' : ''}{modEspiritu}: cada intercambio ganado resta
+          1d6{modEspiritu ? (modEspiritu > 0 ? ` + ${modEspiritu}` : ` − ${-modEspiritu}`) : ''} a la
+          Resistencia. Pasa el ratón por la dificultad final para ver el desglose. Si tiene varias Fuentes
           válidas, se usa la que da menos dificultad.
         </p>
       {/if}
@@ -268,7 +293,7 @@
       </label>
       {#if fuente === 'manual'}
         <label
-          >Resistencia de la Fuente
+          >Manipulación de la Fuente (%)
           <input type="number" min="0" max="60" bind:value={manual} class="corto" />
         </label>
       {/if}
@@ -278,6 +303,28 @@
       <p class="cifra">
         Dificultad: <strong>{resultado.final}%</strong>
         <span class="detalle">(base {resultado.base}%)</span>
+      </p>
+      <p class="cifra">
+        Resistencia del Hechizo: <strong>{resistenciaHechizo(resultado.final)}</strong>
+        <span class="detalle">(dificultad ÷ 5, redondeando hacia arriba)</span>
+      </p>
+      <p>
+        {#if resultado.final <= LIMITE_LANZAMIENTO_RAPIDO}
+          <strong>Lanzamiento rápido:</strong> con dificultad del {LIMITE_LANZAMIENTO_RAPIDO}% o
+          menos se resuelve con una sola tirada opuesta (1 PAc).
+        {:else}
+          Tirada opuesta: % de la Fuente contra {resultado.final}%. Cada intercambio ganado resta
+          1d6 + MDE ({modEspiritu >= 0 ? '+' : ''}{modEspiritu} con POD
+          {#if p}{pod}{:else}<input
+              type="number"
+              min="1"
+              max="40"
+              bind:value={podManual}
+              class="pod"
+              aria-label="POD del hechicero"
+            />{/if}): unos <strong>{intercambiosMedios(resultado.final, modEspiritu)}</strong> intercambios
+          si los gana todos; cada uno perdido le cuesta 1d6 − MDE PM (mínimo 1).
+        {/if}
       </p>
       <p>
         Hace falta una Fuente con <strong>{resultado.umbral}%</strong> de estudio o más{fuenteElegida
@@ -370,5 +417,8 @@
   }
   .aviso {
     color: var(--rubrica);
+  }
+  .pod {
+    width: 3.5em;
   }
 </style>
