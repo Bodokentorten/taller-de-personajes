@@ -229,8 +229,8 @@ export const GRADOS_HORROR = [
 ] as const;
 export type GradoHorror = (typeof GRADOS_HORROR)[number]['id'];
 
-/** Estrés de una vez a partir del cual hay golpe fuerte. */
-export const GOLPE_FUERTE = 5;
+/** Estrés de una vez a partir del cual hay espanto. */
+export const ESPANTO = 5;
 
 export interface TiradaHorror {
   grado: GradoHorror;
@@ -242,9 +242,9 @@ export interface TiradaHorror {
   despues: number;
   /** Peldaño cuyo efecto «al entrar» sufre por el Estrés (o por un nuevo fallo estando Aterrorizado o Quebrado). */
   entra?: Peldaño;
-  /** Segunda Fuerza de voluntad del golpe fuerte (si lo hubo). */
-  golpeFuerte?: TiradaHabilidad;
-  /** Efecto que sufre por fallar el golpe fuerte, si es peor que el de `entra`. */
+  /** Segunda Fuerza de voluntad del espanto (si lo hubo). */
+  espanto?: TiradaHabilidad;
+  /** Efecto que sufre por fallar el espanto, si es peor que el de `entra`. */
   porGolpe?: Peldaño;
 }
 
@@ -278,9 +278,9 @@ export function tirarHorror(
   // Un nuevo fallo estando Aterrorizado repite la reacción; estando Quebrado, Colapso.
   if (falla(fv) && iE === iA && iA >= 3) iE = iA === 3 ? 3 : 5;
   if (iE >= 2 && (iE > iA || (falla(fv) && iA >= 3))) r.entra = PELDAÑOS[iE];
-  if (falla(fv) && (ganado >= GOLPE_FUERTE || (fv.grado === 'pifia' && gradoHorror !== 'I'))) {
-    r.golpeFuerte = tirarHabilidad('Fuerza de voluntad (golpe fuerte)', valor, dificultad, azar);
-    if (falla(r.golpeFuerte)) {
+  if (falla(fv) && (ganado >= ESPANTO || (fv.grado === 'pifia' && gradoHorror !== 'I'))) {
+    r.espanto = tirarHabilidad('Fuerza de voluntad (espanto)', valor, dificultad, azar);
+    if (falla(r.espanto)) {
       const i = Math.min(5, Math.max(3, iA + 1));
       if (!r.entra || iE < i) r.porGolpe = PELDAÑOS[i];
     }

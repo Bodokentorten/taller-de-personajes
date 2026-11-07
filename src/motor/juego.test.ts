@@ -95,17 +95,17 @@ describe('escalera de miedo', () => {
       if (r.fv.grado === 'critico') expect(r.ganado).toBe(-1);
       if (r.fv.grado === 'pifia') expect(r.ganado).toBe(6);
       if (r.fv.grado === 'fallo') expect(r.ganado).toBeGreaterThanOrEqual(1);
-      // Golpe fuerte sólo con 5 o más de una vez (o pifia desde el Grado II).
-      expect(Boolean(r.golpeFuerte)).toBe(r.ganado >= 5);
+      // Espanto sólo con 5 o más de una vez (o pifia desde el Grado II).
+      expect(Boolean(r.espanto)).toBe(r.ganado >= 5);
       // Entrar en Asustado (6) sólo si llega a 6; el golpe fallado da Aterrorizado.
       if (r.entra) expect(indicePeldaño(r.despues, 6)).toBeGreaterThan(indicePeldaño(4, 6));
       if (r.porGolpe) expect(r.porGolpe.id).toBe('aterrorizado');
     }
   });
-  it('Grado I nunca da golpe fuerte; con éxito en Grado IV suma 1', () => {
+  it('Grado I nunca da espanto; con éxito en Grado IV suma 1', () => {
     for (let s = 1; s <= 200; s++) {
       const r1 = tirarHorror(30, 'I', 0, 6, 0, 'normal', azarConSemilla(s));
-      expect(r1.golpeFuerte).toBeUndefined();
+      expect(r1.espanto).toBeUndefined();
       const r4 = tirarHorror(90, 'IV', 0, 6, 0, 'normal', azarConSemilla(s));
       if (r4.fv.grado === 'exito') expect(r4.ganado).toBe(1);
     }

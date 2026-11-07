@@ -351,9 +351,9 @@
             >
             {horror.entra.alEntrar}
           </p>{/if}
-        {#if horror.golpeFuerte}<p>
-            <strong>Golpe fuerte</strong>: 2.ª Fuerza de voluntad {horror.golpeFuerte.d100} contra
-            {horror.golpeFuerte.efectivo}%, {NOMBRE_GRADO[horror.golpeFuerte.grado].toLowerCase()}.
+        {#if horror.espanto}<p>
+            <strong>Espanto</strong>: 2.ª Fuerza de voluntad {horror.espanto.d100} contra
+            {horror.espanto.efectivo}%, {NOMBRE_GRADO[horror.espanto.grado].toLowerCase()}.
             {#if horror.porGolpe}Sufre en el acto el efecto de <strong
                 >{horror.porGolpe.nombre}</strong
               >: {horror.porGolpe.alEntrar}{:else}Sólo cuenta el Estrés.{/if}
