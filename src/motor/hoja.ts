@@ -6,6 +6,7 @@ import { validarDinero } from './economia';
 import { resumenEquipo, type ResumenEquipo } from './equipo';
 import { estadoFe, validarFe, type EstadoFe } from './fe';
 import { calcularHabilidades, type ValorHabilidad } from './habilidades';
+import { peldaño, umbralMiedo } from './juego';
 import { estadoMagia, validarMagia, type EstadoMagia } from './magia';
 import { claseSocial, validarCarrera, validarOrigen } from './origen';
 import { validarPasiones, valorPasion } from './pasiones';
@@ -26,9 +27,11 @@ export interface Hoja {
   magia: EstadoMagia;
   equipo: ResumenEquipo;
   clase?: string;
-  /** Estrés y Corrupción al empezar: 0 («Horror, Estrés y Pánico»: el Estrés comienza en 0). */
+  /** Estrés (empieza en 0, «Horror, Estrés y Pánico») y Corrupción (la inicial, por una fuente goética). */
   estres: number;
   corrupcion: number;
+  /** «Escalera de miedo»: Umbral = POD ÷ 2 (el POD ya descontada la Corrupción) y peldaño actual. */
+  miedo: { pod: number; umbral: number; peldaño: string };
   problemas: Problema[];
   valido: boolean;
 }
@@ -103,6 +106,10 @@ export function calcularHoja(
       ),
     );
   }
+  const estres = p.juego?.estres ?? 0;
+  const corrupcion = p.juego?.corrupcion ?? p.magia.corrupcionInicial ?? 0;
+  const pod = Math.max(0, caracteristicasActuales(p).POD - corrupcion);
+  const umbral = umbralMiedo(pod);
   return {
     atributos: calcularAtributos(caracteristicasActuales(p), cat.reglas),
     habilidades,
@@ -115,8 +122,9 @@ export function calcularHoja(
     magia,
     equipo,
     clase: claseSocial(p, cat)?.clase,
-    estres: p.juego?.estres ?? 0,
-    corrupcion: p.juego?.corrupcion ?? 0,
+    estres,
+    corrupcion,
+    miedo: { pod, umbral, peldaño: peldaño(estres, umbral).nombre },
     problemas,
     valido: !problemas.some((x) => x.gravedad === 'error'),
   };

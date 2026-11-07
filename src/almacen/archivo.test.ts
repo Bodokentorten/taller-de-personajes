@@ -20,6 +20,24 @@ describe('archivos JSON', () => {
     expect(p!.trasfondo).toEqual({});
   });
 
+  it('lleva los grimorios renombrados a su id nuevo', () => {
+    const p = migrar({
+      id: 'x',
+      magia: {
+        fuentes: [
+          {
+            clave: 'fuente-mistica:De Feits',
+            grimorio: 'de-feits-lo-diable',
+            nombre: 'De Feits',
+            dominios: [],
+          },
+        ],
+        formulas: [],
+      },
+    });
+    expect(p.magia.fuentes[0]!.grimorio).toBe('de-feits-de-l-angel');
+  });
+
   it('rechaza lo que no es un personaje', () => {
     expect(() => leerArchivo('no es json')).toThrow('JSON');
     expect(() => migrar({ nombre: 'sin id' })).toThrow('id');

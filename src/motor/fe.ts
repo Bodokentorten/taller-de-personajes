@@ -106,7 +106,7 @@ export function validarFe(
       error(
         'magia',
         'goecia-y-fe',
-        'Quien conoce una fórmula de goecia no puede obrar rituales de fe.',
+        'Quien conoce una fórmula de goecia o estudia una fuente goética no puede obrar rituales de fe.',
       ),
     );
   }

@@ -156,7 +156,7 @@ tags:
 ---
 
 ## 7. Mente y Horror ([[Informe de Integración - Horror, Estrés y Pánico|Horror, Estrés y Pánico]])
-- **Puntos de Estrés:** 0 / *(umbral según el informe)*
+- **Puntos de Estrés:** 0 · **Umbral:** 7 *(POD 14 ÷ 2)* · **Peldaño:** Sereno *([[Escalera de miedo]])*
 - **Cicatrices mentales:** 
 - **Corrupción:** 0
 

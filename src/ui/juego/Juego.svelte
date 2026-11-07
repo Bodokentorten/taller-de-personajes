@@ -14,20 +14,28 @@
     FATIGA,
     NOMBRE_GRADO,
     nivelHerida,
+    GRADOS_HORROR,
+    indicePeldaño,
+    faltaParaSiguiente,
+    PELDAÑOS,
+    REACCIONES_TERROR,
     tirarHabilidad,
-    tirarPanico,
+    tirarHorror,
     valoresPorDificultad,
+    type GradoHorror,
+    type Peldaño,
     ABREVIATURA_DIFICULTAD,
     type Dificultad,
     type TiradaHabilidad,
   } from '../../motor/juego';
+  import { tirar } from '../../motor/dados';
   import { juegoVacio, type Personaje } from '../../motor/personaje';
   import { enlacePaso } from '../ruta.svelte';
   import Inventario from '../comunes/Inventario.svelte';
 
   let { original }: { original: Personaje } = $props();
   const inicial = structuredClone(untrack(() => $state.snapshot(original)) as Personaje);
-  inicial.juego ??= juegoVacio();
+  inicial.juego ??= { ...juegoVacio(), corrupcion: inicial.magia.corrupcionInicial ?? 0 };
   let p = $state<Personaje>(inicial);
   const j = $derived(p.juego!);
   autoguardar(() => p);
@@ -82,12 +90,55 @@
   function cambiarPG(id: string, d: number) {
     j.pg[id] = pg(id) + d;
   }
-  let panico = $state<ReturnType<typeof tirarPanico> | null>(null);
-  function tirarElPanico() {
-    panico = tirarPanico(j.estres);
-    if (panico.total <= 6) j.estres += 1;
-    if (panico.aterrorizado) j.aterrorizado = true;
+  // ── Miedo («Escalera de miedo») ──
+  const umbral = $derived(hoja.miedo.umbral);
+  const iPeldaño = $derived(indicePeldaño(j.estres, umbral));
+  const peldañoActual = $derived(PELDAÑOS[iPeldaño]!);
+  const falta = $derived(faltaParaSiguiente(j.estres, umbral));
+  const MODIFICADORES_MIEDO = [
+    { valor: -20, nombre: '−20% (solo o a oscuras)' },
+    { valor: 0, nombre: 'Sin modificador' },
+    { valor: 20, nombre: '+20% (líder, clérigo, reliquia o Pasión)' },
+    { valor: 40, nombre: '+40% (máximo)' },
+  ];
+  let gradoHorror = $state<GradoHorror>('II');
+  let modMiedo = $state(0);
+  let horror = $state<ReturnType<typeof tirarHorror> | null>(null);
+  /** Efecto «al entrar» al cambiar el Estrés a mano (con los botones o la recuperación). */
+  let avisoMiedo = $state<Peldaño | null>(null);
+  function tirarElHorror() {
+    // Quebrado: todas sus habilidades son Difíciles (y la fatiga impone la suya si es peor).
+    horror = tirarHorror(
+      hoja.magia.fuerzaVoluntad,
+      gradoHorror,
+      j.estres,
+      umbral,
+      modMiedo,
+      peor(iPeldaño >= 4 ? 'dificil' : 'normal'),
+    );
+    avisoMiedo = null;
+    j.estres = horror.despues;
+    const peorEfecto = Math.max(
+      horror.entra ? PELDAÑOS.indexOf(horror.entra) : 0,
+      horror.porGolpe ? PELDAÑOS.indexOf(horror.porGolpe) : 0,
+    );
+    if (peorEfecto >= 3) j.aterrorizado = true;
   }
+  function cambiarEstres(d: number) {
+    const antes = indicePeldaño(j.estres, umbral);
+    j.estres = Math.max(0, j.estres + d);
+    const ahora = indicePeldaño(j.estres, umbral);
+    horror = null;
+    avisoMiedo = ahora > antes && ahora >= 2 ? PELDAÑOS[ahora]! : null;
+    if (ahora > antes && ahora >= 3) j.aterrorizado = true;
+  }
+  let recuperado = $state<string>('');
+  function recuperar(nombre: string) {
+    const n = tirar('1d3').total;
+    cambiarEstres(-n);
+    recuperado = `${nombre}: −${n} de Estrés.`;
+  }
+  const esTerror = (x?: Peldaño) => x?.id === 'aterrorizado';
   function descansar() {
     j.pg = {};
     j.notasHeridas = {};
@@ -261,13 +312,82 @@
         >−</button
       >
       <strong>{j.estres}</strong>
-      <button onclick={() => (j.estres += 1)} aria-label="Sumar Estrés">+</button>
-      <button onclick={tirarElPanico}>Pánico (1d20+{j.estres})</button>
+      <button onclick={() => cambiarEstres(1)} aria-label="Sumar Estrés">+</button>
+      <span class="detalle">Umbral {umbral}</span>
     </div>
-    {#if panico}<p class="panico">
-        <strong>{panico.total}</strong> ({panico.d20}+{panico.total - panico.d20}):
-        <strong>{panico.nombre}</strong>. {panico.efecto}
+    <p class="detalle">
+      <strong class:alarma={iPeldaño >= 3}>{peldañoActual.nombre}</strong>: {peldañoActual.mientras}
+      {#if falta !== undefined}Faltan {falta} para el siguiente.{/if}
+      <span title="Umbral = POD ÷ 2 (POD {hoja.miedo.pod}, ya descontada la Corrupción)"
+        >Asustado {umbral} · Aterrorizado {2 * umbral} · Quebrado {3 * umbral} · Colapso {4 *
+          umbral}.</span
+      >
+    </p>
+    <div class="linea">
+      <select bind:value={gradoHorror} aria-label="Grado de Horror">
+        {#each GRADOS_HORROR as g (g.id)}<option value={g.id}>Grado {g.id} ({g.dado})</option
+          >{/each}
+      </select>
+      <select bind:value={modMiedo} aria-label="Modificador a la Fuerza de voluntad">
+        {#each MODIFICADORES_MIEDO as m (m.valor)}<option value={m.valor}>{m.nombre}</option>{/each}
+      </select>
+    </div>
+    <div class="linea">
+      <button onclick={tirarElHorror}
+        >Horror: Fuerza de voluntad {hoja.magia.fuerzaVoluntad + modMiedo}%</button
+      >
+    </div>
+    {#if horror}<div class="panico">
+        <p>
+          {horror.fv.d100} contra {horror.fv.efectivo}%:
+          <strong>{NOMBRE_GRADO[horror.fv.grado]}</strong>. {horror.ganado > 0
+            ? `+${horror.ganado} de Estrés`
+            : horror.ganado < 0
+              ? '−1 de Estrés'
+              : 'No gana Estrés'} ({horror.antes} → {horror.despues}).
+        </p>
+        {#if horror.entra}<p>
+            <strong>{horror.entra.id === 'colapso' ? '' : 'Entra en '}{horror.entra.nombre}:</strong
+            >
+            {horror.entra.alEntrar}
+          </p>{/if}
+        {#if horror.golpeFuerte}<p>
+            <strong>Golpe fuerte</strong>: 2.ª Fuerza de voluntad {horror.golpeFuerte.d100} contra
+            {horror.golpeFuerte.efectivo}%, {NOMBRE_GRADO[horror.golpeFuerte.grado].toLowerCase()}.
+            {#if horror.porGolpe}Sufre en el acto el efecto de <strong
+                >{horror.porGolpe.nombre}</strong
+              >: {horror.porGolpe.alEntrar}{:else}Sólo cuenta el Estrés.{/if}
+          </p>{/if}
+        {#if esTerror(horror.entra) || esTerror(horror.porGolpe)}<ul class="reacciones">
+            {#each REACCIONES_TERROR as x (x.nombre)}<li>
+                <strong>{x.nombre}</strong>: {x.efecto}
+              </li>{/each}
+          </ul>{/if}
+        {#if horror.entra || horror.porGolpe}<p class="detalle">
+            Para ignorar el efecto: aferrarse a una Pasión o a la Fe (1/escena) o pagar 1 Punto de
+            Suerte, 1 nivel de Fatiga o −5% a una Pasión. El Estrés se queda.{#if horror.porGolpe || (horror.entra && PELDAÑOS.indexOf(horror.entra) >= 3)}
+              Contagio: +1 de Estrés a los aliados que lo vean u oigan (1/escena).{/if}
+          </p>{/if}
+      </div>{/if}
+    {#if avisoMiedo}<p class="panico">
+        <strong>Entra en {avisoMiedo.nombre}:</strong>
+        {avisoMiedo.alEntrar}
       </p>{/if}
+    <div class="linea">
+      <button
+        onclick={() => recuperar('Noche segura')}
+        title="Techo, fuego, comida caliente y guardia">Noche segura (−1d3)</button
+      >
+      <button
+        onclick={() => {
+          j.estres = 0;
+          horror = null;
+          avisoMiedo = null;
+          recuperado = 'Una semana segura: Estrés a 0.';
+        }}>Semana segura (a 0)</button
+      >
+    </div>
+    {#if recuperado}<p class="detalle">{recuperado}</p>{/if}
     <label class="linea"
       ><input type="checkbox" bind:checked={j.aterrorizado} /> #Aterrorizado</label
     >
@@ -515,6 +635,16 @@
     font-size: 0.88em;
     border-left: 3px solid var(--rubrica);
     padding-left: 0.4rem;
+  }
+  .panico p {
+    margin: 0.2rem 0;
+  }
+  .reacciones {
+    margin: 0.2rem 0;
+    padding-left: 1.1rem;
+  }
+  .alarma {
+    color: var(--rubrica);
   }
   .linea {
     display: flex;

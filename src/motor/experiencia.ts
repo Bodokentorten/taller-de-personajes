@@ -4,6 +4,7 @@ import type { Catalogo } from '../datos/catalogo';
 import type { Caracteristica } from '../datos/tipos';
 import { tirar, type Aleatorio } from './dados';
 import { calcularHabilidades, nombreHabilidad, valorDe } from './habilidades';
+import { avisoEstudioGoetico } from './magia';
 import { valorPasion } from './pasiones';
 import {
   caracteristicasActuales,
@@ -118,7 +119,7 @@ export function mejorarHabilidad(
     cambio: anotar(
       p,
       'habilidad',
-      `${nombre}: 1d100 (${t.d100}) + INT ${int} = ${t.total} contra ${valor}% → +${t.delta}`,
+      `${nombre}: 1d100 (${t.d100}) + INT ${int} = ${t.total} contra ${valor}% → +${t.delta}${avisoEstudioGoetico(p, cat, clave, valor, valor + t.delta)}`,
       t.delta,
       1,
       clave,
@@ -313,7 +314,7 @@ export function entrenar(
     cambio: anotar(
       p,
       'entrenamiento',
-      `${nombre}: una semana con un maestro al ${mentor}% → ${dados} = +${delta}`,
+      `${nombre}: una semana con un maestro al ${mentor}% → ${dados} = +${delta}${avisoEstudioGoetico(p, cat, clave, valor, valor + delta)}`,
       delta,
       0,
       clave,
@@ -322,6 +323,9 @@ export function entrenar(
 }
 
 // --------------------------------------------------------------------------- Magia y fe
+
+/** Semanas de estudio de una fórmula según su vis («Grimorios y aprendizaje de fórmulas»). */
+const SEMANAS_POR_VIS: Record<number, number> = { 1: 1, 2: 1, 3: 2, 4: 3, 5: 5, 6: 5, 7: 10 };
 
 export function aprenderFormula(p: Personaje, cat: Catalogo, id: string, como: string): Resultado {
   const f = cat.formulas.find((x) => x.id === id);
@@ -334,7 +338,7 @@ export function aprenderFormula(p: Personaje, cat: Catalogo, id: string, como: s
     cambio: anotar(
       p,
       'formula',
-      `Aprende la fórmula ${f.nombre} (${como}; ${f.vis} semanas)`,
+      `Aprende la fórmula ${f.nombre} (${como}; ${SEMANAS_POR_VIS[f.vis] ?? f.vis} semanas)${f.goecia ? ' · goecia: tirada de Fuerza de voluntad o +1 Corrupción' : ''}`,
       0,
       0,
       id,

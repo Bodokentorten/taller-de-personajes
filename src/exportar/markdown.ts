@@ -15,6 +15,7 @@ import {
   type Campaña,
   type Personaje,
 } from '../motor/personaje';
+import { TIPOS_FUENTE } from '../motor/magia';
 import { claseSocial } from '../motor/origen';
 
 /** Enlace de Obsidian, con alias si difiere del título. */
@@ -348,7 +349,10 @@ export function exportarMarkdown(
   const m = hoja.magia;
   const textoMagia = [
     m.fuentes
-      .map((f) => `Fuente Mística ${f.nombre} ${f.valor}% (${f.dominios.join(', ')})`)
+      .map(
+        (f) =>
+          `Fuente Mística ${f.nombre} ${f.valor}% (${f.dominios.join(', ')}; ${TIPOS_FUENTE.find((x) => x.id === f.tipo)?.nombre.toLowerCase() ?? f.tipo}${f.goetica ? ', goética' : ''})`,
+      )
       .join('; '),
     m.formulas.length ? `fórmulas: ${m.formulas.map((f) => enlace(f.nota)).join(', ')}` : '',
   ]
@@ -370,7 +374,7 @@ export function exportarMarkdown(
   // ---------------------------------------------------------------- 7. mente
   l(
     `## 7. Mente y Horror (${enlace('Informe de Integración - Horror, Estrés y Pánico', 'Horror, Estrés y Pánico')})`,
-    `- **Puntos de Estrés:** ${hoja.estres} / *(umbral según el informe)*`,
+    `- **Puntos de Estrés:** ${hoja.estres} · **Umbral:** ${hoja.miedo.umbral} *(POD ${hoja.miedo.pod} ÷ 2)* · **Peldaño:** ${hoja.miedo.peldaño} *(${enlace('Escalera de miedo')})*`,
     '- **Cicatrices mentales:** ',
     `- **Corrupción:** ${hoja.corrupcion}`,
     '',

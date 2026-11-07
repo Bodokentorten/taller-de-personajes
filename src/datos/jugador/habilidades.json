@@ -1242,8 +1242,7 @@
  {
   "id": "fuente-mistica",
   "nombre": "Fuente Mística",
-  "nota": "Informe - Guía de Magia Caótica",
-  "ancla": "2. El Proceso de Estudio y Aprendizaje",
+  "nota": "Fuentes Místicas de los reinos",
   "tipo": "profesional",
   "nombre_en": null,
   "formula": "0",
@@ -1251,10 +1250,10 @@
   "especialidades": true,
   "ejemplos_especialidad": [
    "un grimorio",
-   "un pacto",
    "un maestro",
-   "un santo",
-   "un espíritu"
+   "un pacto",
+   "un lugar",
+   "un linaje"
   ],
   "culturas": [],
   "carreras": [
@@ -1263,7 +1262,7 @@
    "mago",
    "mistico"
   ],
-  "resumen": "Cada Fuente Mística (un grimorio, un pacto, un artefacto) es una habilidad propia que empieza en 0% y mide el estudio de esa fuente: es el % con que se lanzan sus fórmulas, que deben pertenecer a sus dominios y no pasar de su Rango. Se aprende con Conocimiento (Ocultismo).",
+  "resumen": "Cada Fuente Mística (un grimorio, un maestro, un pacto, un objeto o lugar, un linaje) es una habilidad propia que empieza en 0% y mide el estudio de esa fuente: es el % con que se lanza todo. Con una fuente filosófica o mixta se improvisa (magia espontánea, con techo de Rango en Conocimiento (Ocultismo)); las fórmulas son la opción segura. Si es goética, todo lo que se lanza con ella es goecia y estudiarla corrompe.",
   "magia_caotica": true
  },
  {

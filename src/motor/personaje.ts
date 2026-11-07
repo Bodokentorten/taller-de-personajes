@@ -1,6 +1,6 @@
 // Modelo del personaje (JSON versionado). Se guardan las ASIGNACIONES por fuente, no solo los totales,
 // para poder rehacer, validar y mostrar de dónde sale cada punto.
-import type { Caracteristica, Sexo } from '../datos/tipos';
+import type { Caracteristica, OrigenFuente, Sexo, TipoFuente } from '../datos/tipos';
 import type { Tirada } from './dados';
 
 export const VERSION_PERSONAJE = 1;
@@ -48,6 +48,13 @@ export interface FuenteMistica {
   manipulacion?: Partial<
     Record<'Crear' | 'Sentir' | 'Transformar' | 'Destruir' | 'Controlar', number>
   >;
+  /** «Fuentes Místicas de los reinos». En los grimorios del catálogo, el origen es «grimorio». */
+  origen?: OrigenFuente;
+  /** Solo en Fuentes propias (en los grimorios lo da el catálogo). */
+  tipo?: TipoFuente;
+  goetica?: boolean;
+  /** Grimorios con una versión goética (la Llave de Salomón completa): si es esa versión. */
+  versionGoetica?: boolean;
 }
 
 export interface Personaje {
@@ -95,6 +102,8 @@ export interface Personaje {
     formulasAlAzar?: boolean;
     /** Fórmulas aprendidas durante el juego, con maestro o grimorio. */
     formulasAprendidas?: string[];
+    /** Corrupción ganada al crear el personaje (fallos en las tiradas por fuente goética y goecia). */
+    corrupcionInicial?: number;
   };
   /** Rituales conocidos: se calculan por ordo, pero se guardan para la ficha. */
   rituales: string[];

@@ -70,6 +70,7 @@ describe('exportación a Markdown', () => {
       'Fe',
       'Rituales de fe',
       'Informe de Integración - Horror, Estrés y Pánico',
+      'Escalera de miedo',
       'La sombra del Temple',
     ]);
     for (const p of [rodrigoEquipado(), mose(), joan()]) {
@@ -82,8 +83,6 @@ describe('exportación a Markdown', () => {
   it('escapa el alias dentro de las tablas', () => {
     expect(enlace('Credo cristiano', 'cristiano')).toBe('[[Credo cristiano|cristiano]]');
     const md = exportarMarkdown(joan(), catalogo);
-    expect(md).toContain(
-      '[[Informe - Guía de Magia Caótica#2. El Proceso de Estudio y Aprendizaje\\|Fuente Mística]]',
-    );
+    expect(md).toContain('[[Fuentes Místicas de los reinos\\|Fuente Mística]]');
   });
 });

@@ -41,6 +41,28 @@ describe('calculadora de hechizos', () => {
     expect(r.umbral).toBe(41);
   });
 
+  it('magia espontánea: los componentes restan 10% o 20% y no se suman a la fórmula', () => {
+    const base = {
+      rango: 'I' as const,
+      duracion: 'instantanea',
+      alcance: 'toque',
+      objetivo: 'otro',
+      requisitos: 0,
+    };
+    // Ejemplo de «Magia espontánea» (Maese Abraham): 0 + 5 + 5 + 10 − 10 = 10 de base; + ciudad 30 = 40%
+    const r = calcularHechizo(
+      { ...base, formulaCompleta: false, componentes: 'adecuado' },
+      { zona: 'ciudad', manipulacion: 0, vozBaja: false, sinGestos: false, armadura: 'ninguna' },
+    );
+    expect(r.final).toBe(40);
+    expect(dificultadBase({ ...base, formulaCompleta: false, componentes: 'poderoso' }).valor).toBe(
+      5,
+    );
+    expect(dificultadBase({ ...base, formulaCompleta: true, componentes: 'poderoso' }).valor).toBe(
+      5,
+    );
+  });
+
   it('nunca baja del 5% y usa la manipulación del grimorio', () => {
     expect(
       dificultadBase({
@@ -61,14 +83,7 @@ describe('calculadora de hechizos', () => {
     const r = dificultadFormula(
       cat,
       f,
-      {
-        clave: 'fuente-mistica:Picatrix',
-        nombre: 'Picatrix',
-        dominios: ['Espíritu', 'Mente'],
-        valor: 30,
-        grimorio: 'picatrix',
-        rangoMaximo: 'IV',
-      },
+      { grimorio: 'picatrix' },
       { zona: 'ciudad', vozBaja: false, sinGestos: false, armadura: 'ninguna' },
     );
     expect(r.final).toBe(

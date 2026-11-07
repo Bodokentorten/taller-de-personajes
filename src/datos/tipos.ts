@@ -223,7 +223,16 @@ export interface Grimorio extends Entrada {
   rango_maximo: 'I' | 'II' | 'III' | 'IV' | 'V' | null;
   /** Si puede estudiarse como Fuente Mística. */
   estudiable: boolean;
+  /** «Fuentes Místicas de los reinos»: filosófica y mixta permiten improvisar; el recetario, no. */
+  tipo_fuente: TipoFuente | null;
+  /** Fuente goética: todo lo que se lanza con ella es goecia y estudiarla corrompe. */
+  fuente_goetica: boolean;
+  /** Si solo una versión es goética (la Llave de Salomón completa): su nombre. */
+  variante_goetica?: string | null;
 }
+
+export type TipoFuente = 'filosofica' | 'recetario' | 'mixta';
+export type OrigenFuente = 'grimorio' | 'maestro' | 'pacto' | 'lugar' | 'linaje';
 
 export interface GrupoNomina extends Entrada {
   varones: string[];

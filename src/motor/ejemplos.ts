@@ -201,12 +201,7 @@ export function joan(): Personaje {
           dominios: [],
         },
       ],
-      formulas: [
-        'bebedizo-de-suenos',
-        'leche-de-sapiencia',
-        'filtro-de-memoria',
-        'infusion-de-serenidad',
-      ],
+      formulas: ['bebedizo-de-suenos', 'leche-de-sapiencia', 'filtro-de-memoria'],
     },
     dinero: { tirada: tirada('4d6', [5, 5, 5, 5]), total: 4500 }, // 20 × 75 × 3
   } satisfies Partial<Personaje>);

@@ -1,5 +1,5 @@
 <script lang="ts">
-  // Calculadora de hechizos de Magia Caótica: dificultad de un hechizo libre y de las fórmulas del PJ.
+  // Calculadora de hechizos de Magia Caótica: dificultad de un hechizo espontáneo y de las fórmulas del PJ.
   import { biblioteca } from '../../almacen/biblioteca.svelte';
   import { campaña } from '../../almacen/campaña.svelte';
   import { catalogo } from '../../datos/catalogo';
@@ -9,6 +9,7 @@
     ARMADURAS,
     armaduraDe,
     calcularHechizo,
+    COMPONENTES,
     dificultadFormula,
     DURACIONES,
     manipulacionFuente,
@@ -71,6 +72,7 @@
     objetivo: 'otro',
     requisitos: 0,
     formulaCompleta: false,
+    componentes: 'ninguno',
   });
   let manipulacion = $state<Manipulacion>('Crear');
   /** «g:<id>» un grimorio, «f:<clave>» una Fuente del PJ o «manual». */
@@ -88,6 +90,10 @@
             nombre: g.nombre,
             rangoMaximo: g.rango_maximo ?? 'V',
             valor: undefined as number | undefined,
+            improvisa: g.tipo_fuente !== 'recetario',
+            goetica: g.fuente_goetica,
+            techo: undefined as number | undefined,
+            techoPor: 'Ocultismo' as const,
           }
         : undefined;
     }
@@ -115,9 +121,10 @@
   function cargarFormula(fid: string) {
     const f = catalogo.formulas.find((x) => x.id === fid);
     if (!f) return;
-    h = parametrosDeFormula(f);
+    h = { ...parametrosDeFormula(f), componentes: 'ninguno' };
     manipulacion = f.manipulacion;
   }
+  const espontaneo = $derived(!h.formulaCompleta);
 </script>
 
 <article class="folio calculadora">
@@ -225,7 +232,11 @@
   {/if}
 
   <section>
-    <h2>Hechizo libre</h2>
+    <h2>Hechizo espontáneo o fórmula</h2>
+    <p class="detalle">
+      Lo habitual es la magia espontánea: el mago interpreta su Fuente. Una fórmula sin variar es la
+      opción segura. Si se cambia cualquier parámetro de una fórmula, es magia espontánea.
+    </p>
     <div class="fila">
       <label
         >Partir de una fórmula
@@ -270,9 +281,23 @@
         >Requisitos extra
         <input type="number" min="0" max="5" bind:value={h.requisitos} class="corto" />
       </label>
-      <label class="check"
-        ><input type="checkbox" bind:checked={h.formulaCompleta} /> Fórmula completa (−20%)</label
-      >
+      <label
+        >Tipo
+        <select bind:value={h.formulaCompleta}>
+          <option value={false}>Magia espontánea</option>
+          <option value={true}>Fórmula sin variar, con todos sus componentes (−20%)</option>
+        </select>
+      </label>
+      {#if espontaneo}
+        <label
+          >Componentes
+          <select bind:value={h.componentes}
+            >{#each COMPONENTES as c (c.id)}<option value={c.id}
+                >{c.nombre}{c.valor ? ` (${c.valor}%)` : ''}</option
+              >{/each}</select
+          >
+        </label>
+      {/if}
       <label
         >Manipulación
         <select bind:value={manipulacion}
@@ -341,14 +366,43 @@
           {fuenteElegida.nombre} solo permite hasta el Rango {fuenteElegida.rangoMaximo}.
         </p>
       {/if}
+      {#if espontaneo && fuenteElegida && !fuenteElegida.improvisa}
+        <p class="aviso">
+          {fuenteElegida.nombre} es un recetario: no permite improvisar, sólo lanzar fórmulas.
+        </p>
+      {/if}
+      {#if espontaneo && fuenteElegida?.techo !== undefined && fuenteElegida.techo < resultado.umbral}
+        <p class="aviso">
+          Techo para improvisar con {fuenteElegida.nombre}: {fuenteElegida.techo}% (el menor entre
+          su estudio y su {fuenteElegida.techoPor}). No llega al Rango {h.rango}.
+        </p>
+      {:else if espontaneo && !fuenteElegida && hoja}
+        <p class="detalle">
+          Para improvisar, el Rango tampoco puede pasar de su Conocimiento (Ocultismo) {hoja.magia
+            .ocultismo}% (en un linaje, de su Fuerza de voluntad).
+        </p>
+      {/if}
+      {#if fuenteElegida?.goetica}
+        <p class="aviso">
+          {fuenteElegida.nombre} es una fuente goética: este hechizo es goecia y condena el alma.
+        </p>
+      {/if}
+      <p>
+        <strong>Riesgo:</strong>
+        {#if espontaneo}Reatracción Mística si pierde la concentración al recibir daño, si queda a 0
+          PM y falla al Empujar el Vacío, o con una pifia (la deformación del dominio).
+        {:else}sólo Reatracción con una pifia (además del efecto contrario); si pierde la
+          concentración o falla al Empujar el Vacío, el hechizo se disipa sin más.
+        {/if}
+      </p>
       <ul class="desglose">
         {#each resultado.desglose as d, i (i)}<li>
             <span>{d.concepto}</span><span>{d.valor >= 0 ? '+' : ''}{d.valor}%</span>
           </li>{/each}
       </ul>
       <p class="detalle">
-        La dificultad base nunca baja del 5%. Reglas: «Fórmulas, vis y rangos» y la Guía de Magia
-        Caótica (§6).
+        La dificultad base nunca baja del 5%. Reglas: «Magia espontánea», «Fórmulas, vis y rangos» y
+        la Guía de Magia Caótica (§6).
       </p>
     </div>
   </section>

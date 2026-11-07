@@ -96,10 +96,10 @@
   <h2>En la mesa</h2>
   <ul>
     <li>
-      <strong>Vista de juego</strong> (⚔ Jugar): PG por localización, Suerte, PM, fatiga, Estrés, pánico,
-      munición y notas, todo en una pantalla. Haz clic en una habilidad para tirarla, o en uno de sus
-      seis valores (de Muy fácil a Hercúleo) para tirar con esa dificultad; marca la casilla cuando la
-      uses con éxito en un momento de tensión.
+      <strong>Vista de juego</strong> (⚔ Jugar): PG por localización, Suerte, PM, fatiga, Estrés y escalera
+      de miedo (con la tirada contra el horror), munición y notas, todo en una pantalla. Haz clic en una
+      habilidad para tirarla, o en uno de sus seis valores (de Muy fácil a Hercúleo) para tirar con esa
+      dificultad; marca la casilla cuando la uses con éxito en un momento de tensión.
     </li>
     <li>
       <strong>Mejora:</strong> cuando el DJ conceda tiradas de experiencia, tira las habilidades marcadas

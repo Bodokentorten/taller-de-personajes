@@ -38,6 +38,12 @@
       ><th>Estrés · Corrupción</th><td>{hoja.estres} · {hoja.corrupcion}</td><td>Empiezan en 0.</td
       ></tr
     >
+    <tr
+      ><th>Umbral de miedo</th><td>{hoja.miedo.umbral}</td><td
+        >POD ÷ 2, hacia arriba («Escalera de miedo»): con ese Estrés pasa a Asustado; con el doble,
+        a Aterrorizado.</td
+      ></tr
+    >
   </tbody>
 </table>
 

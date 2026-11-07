@@ -403,39 +403,21 @@
  "formulas_iniciales": [
   {
    "min": 30,
-   "max": 40,
-   "valor": "1",
-   "azar": "1D3"
-  },
-  {
-   "min": 41,
    "max": 50,
-   "valor": "2",
-   "azar": "1D4"
+   "valor": "1",
+   "azar": "1D2"
   },
   {
    "min": 51,
-   "max": 60,
-   "valor": "3",
-   "azar": "1D6"
-  },
-  {
-   "min": 61,
    "max": 70,
-   "valor": "4",
-   "azar": "1D6+1"
+   "valor": "2",
+   "azar": "1D3"
   },
   {
    "min": 71,
-   "max": 80,
-   "valor": "5",
-   "azar": "1D6+2"
-  },
-  {
-   "min": 81,
    "max": null,
-   "valor": "6",
-   "azar": "1D10+1"
+   "valor": "3",
+   "azar": "1D4"
   }
  ]
 }

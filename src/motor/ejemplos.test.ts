@@ -115,8 +115,83 @@ describe('3. Joan, mago de Barcelona (Magia Caótica)', () => {
       },
     ]);
     expect(h.magia.ocultismo).toBe(75); // INT×2 30 + 15 + 15 + 15
-    expect(h.magia.formulasPermitidas).toBe(5); // 71–80% → 5 fijas
+    expect(h.magia.formulasPermitidas).toBe(3); // 71% o más → 3 fijas (la tabla se redujo a la mitad)
     expect(h.magia.conoceGoecia).toBe(false);
+    expect(h.magia.fuentes[0]).toMatchObject({
+      origen: 'grimorio',
+      tipo: 'mixta',
+      goetica: false,
+      improvisa: true,
+      techo: 30, // el menor entre el estudio (30%) y el Ocultismo (75%)
+      techoPor: 'Ocultismo',
+    });
+    expect(h.magia.tiradasCorrupcion).toEqual([]);
+  });
+
+  it('una fuente goética: tiradas de Corrupción por Rango y goecia', () => {
+    const p = joan();
+    p.magia.fuentes = [
+      {
+        clave: 'fuente-mistica:picatrix',
+        nombre: 'Saber del aquelarre',
+        dominios: ['Espíritu', 'Mente'],
+        origen: 'maestro',
+        tipo: 'mixta',
+        goetica: true,
+      },
+    ];
+    p.magia.formulas = ['bebedizo-de-suenos', 'discordia'];
+    const hh = calcularHoja(p, cat);
+    expect(hh.magia.fuentes[0]!.goetica).toBe(true);
+    // 30% → Rangos I y II (2 tiradas) + Discordia, fórmula de goecia (1)
+    expect(hh.magia.tiradasCorrupcion.reduce((s, x) => s + x.tiradas, 0)).toBe(3);
+    expect(hh.magia.conoceGoecia).toBe(true);
+    expect(codigos(p)).toContain('aviso:fuente-goetica');
+    p.magia.corrupcionInicial = 4;
+    expect(codigos(p)).toContain('error:corrupcion-inicial');
+    p.magia.corrupcionInicial = 2;
+    expect(calcularHoja(p, cat).corrupcion).toBe(2);
+  });
+
+  it('un linaje: techo por Fuerza de voluntad, tope POD × 3, sólo filosófica', () => {
+    const p = joan();
+    p.magia.fuentes = [
+      {
+        clave: 'fuente-mistica:picatrix',
+        nombre: 'Saludador',
+        dominios: ['Cuerpo'],
+        origen: 'linaje',
+        tipo: 'recetario',
+      },
+    ];
+    p.magia.formulas = [];
+    const hh = calcularHoja(p, cat);
+    const f = hh.magia.fuentes[0]!;
+    expect(f.tipo).toBe('filosofica');
+    expect(f.techoPor).toBe('Fuerza de voluntad');
+    expect(f.techo).toBe(Math.min(30, hh.magia.fuerzaVoluntad));
+  });
+
+  it('un recetario no improvisa; la Llave completa es goética', () => {
+    const p = joan();
+    p.magia.fuentes.push({
+      clave: 'fuente-mistica:taurus',
+      grimorio: 'libro-de-taurus',
+      nombre: 'Libro de Taurus',
+      dominios: [],
+    });
+    p.magia.fuentes.push({
+      clave: 'fuente-mistica:llave',
+      grimorio: 'llave-de-salomon',
+      nombre: 'Llave de Salomón',
+      dominios: [],
+    });
+    let hh = calcularHoja(p, cat);
+    expect(hh.magia.fuentes[1]!.improvisa).toBe(false);
+    expect(hh.magia.fuentes[2]!.goetica).toBe(false);
+    p.magia.fuentes[2]!.versionGoetica = true;
+    hh = calcularHoja(p, cat);
+    expect(hh.magia.fuentes[2]!.goetica).toBe(true);
   });
 
   it('una fórmula sin dominio o de Rango alto no se puede lanzar', () => {

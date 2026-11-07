@@ -403,7 +403,7 @@
   "profesionales": [
    {
     "habilidad": "fuente-mistica",
-    "aclaracion": "lo que se susurra en los aquelarres, o un pacto"
+    "aclaracion": "lo que se susurra en los aquelarres, lo que enseñó una maestra, un pacto o un linaje de brujas"
    },
    {
     "habilidad": "conocimiento",
@@ -434,7 +434,7 @@
   "max_por_habilidad": 15,
   "magia": true,
   "fe": false,
-  "aviso": "Muchas fórmulas de bruja son goecia: usarlas condena el alma (Malditos por Dios). Riesgo de Inquisición."
+  "aviso": "Lo que se aprende en los aquelarres es una fuente goética: todo lo que se lance con ella condena el alma (Malditos por Dios) y estudiarla corrompe. Riesgo de Inquisición."
  },
  {
   "id": "caballero-de-orden-militar",
@@ -627,7 +627,7 @@
   "profesionales": [
    {
     "habilidad": "fuente-mistica",
-    "aclaracion": "un santo, un espíritu del monte o un pacto"
+    "aclaracion": "un don de nacimiento, un espíritu del monte, una tradición oral o un pacto"
    },
    {
     "habilidad": "sanacion"
@@ -1756,7 +1756,7 @@
   "culturas_habituales": [
    "civilizado"
   ],
-  "resumen": "La magia es real, pero también lo son la Iglesia y la Inquisición. Véase Fórmulas, vis y rangos, fórmulas iniciales y Perfiles de brujos y hechiceros.",
+  "resumen": "La magia es real, pero también lo son la Iglesia y la Inquisición. Véase Magia espontánea, Fórmulas, vis y rangos, fórmulas iniciales y Perfiles de brujos y hechiceros.",
   "estandar": [
    {
     "habilidad": "costumbres"

@@ -327,6 +327,16 @@
             <tbody>
               <tr><th>Estrés</th><td>{hoja.estres} <span class="caja ancha">&nbsp;</span></td></tr>
               <tr
+                ><th>Umbral</th><td
+                  >{hoja.miedo.umbral}
+                  <span class="pequeño"
+                    >(POD ÷ 2) · Inquieto 1 · Asustado {hoja.miedo.umbral} · Aterrorizado {2 *
+                      hoja.miedo.umbral} · Quebrado {3 * hoja.miedo.umbral} · Colapso {4 *
+                      hoja.miedo.umbral}</span
+                  ></td
+                ></tr
+              >
+              <tr
                 ><th>Corrupción</th><td>{hoja.corrupcion} <span class="caja ancha">&nbsp;</span></td
                 ></tr
               >

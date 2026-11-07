@@ -1,6 +1,7 @@
 // Calculadora de hechizos de Magia Caótica.
-// Fuentes: «Informe - Guía de Magia Caótica» (§6, Cálculo de la Dificultad) y «Fórmulas, vis y rangos»
-// (dificultad base y final de una fórmula, racionalidad de la zona, gestos, voz y armadura).
+// Fuentes: «Informe - Guía de Magia Caótica» (§6, Cálculo de la Dificultad), «Fórmulas, vis y rangos»
+// (dificultad base y final de una fórmula, racionalidad de la zona, gestos, voz y armadura) y
+// «Magia espontánea» (componentes opcionales, techo de Rango y tabla de riesgos).
 import type { Catalogo } from '../datos/catalogo';
 import type { Formula, Manipulacion } from '../datos/tipos';
 import type { EstadoMagia } from './magia';
@@ -79,6 +80,14 @@ export const VOZ_BAJA = 10;
 export const SIN_GESTOS = 10;
 export const REQUISITO_EXTRA = 10;
 export const FORMULA_COMPLETA = -20;
+
+/** Componentes de la magia espontánea («Magia espontánea», Componentes): no se acumulan. */
+export type Componentes = 'ninguno' | 'adecuado' | 'poderoso';
+export const COMPONENTES: { id: Componentes; nombre: string; valor: number }[] = [
+  { id: 'ninguno', nombre: 'Sin componentes', valor: 0 },
+  { id: 'adecuado', nombre: 'Adecuado (corriente y coherente)', valor: -10 },
+  { id: 'poderoso', nombre: 'Poderoso (raro o simbólicamente perfecto)', valor: -20 },
+];
 export const DIFICULTAD_MINIMA = 5;
 
 const valor = (lista: Opcion[], id: string) => lista.find((x) => x.id === id)?.valor ?? 0;
@@ -93,6 +102,8 @@ export interface ParametrosHechizo {
   requisitos: number;
   /** Fórmula completa del grimorio de los reinos (conocida y con todos sus componentes): −20%. */
   formulaCompleta: boolean;
+  /** Si no es una fórmula: magia espontánea, con componentes opcionales (−10% o −20%). */
+  componentes?: Componentes;
 }
 
 export interface Lanzamiento {
@@ -111,7 +122,10 @@ export interface ResultadoHechizo {
   desglose: { concepto: string; valor: number }[];
 }
 
-/** Dificultad base (Rango + duración + alcance + objetivo + requisitos − 20% si es fórmula, mínimo 5%). */
+/**
+ * Dificultad base (Rango + duración + alcance + objetivo + requisitos − 20% si es fórmula o − 10/20% por
+ * componentes si es espontánea; mínimo 5%).
+ */
 export function dificultadBase(h: ParametrosHechizo): {
   valor: number;
   desglose: ResultadoHechizo['desglose'];
@@ -139,6 +153,14 @@ export function dificultadBase(h: ParametrosHechizo): {
         ]
       : []),
     ...(h.formulaCompleta ? [{ concepto: 'Fórmula completa', valor: FORMULA_COMPLETA }] : []),
+    ...(!h.formulaCompleta && h.componentes && h.componentes !== 'ninguno'
+      ? [
+          {
+            concepto: `Componente ${h.componentes}`,
+            valor: COMPONENTES.find((c) => c.id === h.componentes)!.valor,
+          },
+        ]
+      : []),
   ];
   return {
     valor: Math.max(
@@ -217,10 +239,7 @@ export function armaduraDe(tipos: string[]): string {
 export function dificultadFormula(
   cat: Catalogo,
   f: Formula,
-  fuente: EstadoMagia['fuentes'][number] & {
-    grimorio?: string;
-    manipulacion?: Partial<Record<Manipulacion, number>>;
-  },
+  fuente: Pick<EstadoMagia['fuentes'][number], 'grimorio' | 'manipulacion'>,
   l: Omit<Lanzamiento, 'manipulacion'>,
 ): ResultadoHechizo {
   const mods = modificadoresLanzamiento({

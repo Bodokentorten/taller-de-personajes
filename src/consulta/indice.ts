@@ -3,6 +3,7 @@
 import type { Catalogo } from '../datos/catalogo';
 import type { ItemHabilidad } from '../datos/tipos';
 import { nombreHabilidad } from '../motor/habilidades';
+import { TIPOS_FUENTE } from '../motor/magia';
 
 export type TipoEntrada =
   | 'habilidad'
@@ -354,7 +355,8 @@ export function construirIndice(cat: Catalogo): EntradaConsulta[] {
           ? [
               {
                 etiqueta: 'Aviso',
-                texto: 'Goecia: usarla condena el alma y da 1 punto de Corrupción la primera vez.',
+                texto:
+                  'Goecia: usarla condena el alma (Malditos por Dios). Aprenderla pide una tirada de Fuerza de voluntad contra la Corrupción.',
               },
             ]
           : []),
@@ -389,6 +391,25 @@ export function construirIndice(cat: Catalogo): EntradaConsulta[] {
       campos: [
         { etiqueta: 'Dominios', texto: g.dominios.join(', ') },
         { etiqueta: 'Estudio máximo · Enseñar', texto: `${g.estudio_maximo}% · ${g.ensenar}%` },
+        ...(g.tipo_fuente
+          ? [
+              {
+                etiqueta: 'Tipo de fuente',
+                texto:
+                  TIPOS_FUENTE.find((x) => x.id === g.tipo_fuente)!.nombre +
+                  ': ' +
+                  TIPOS_FUENTE.find((x) => x.id === g.tipo_fuente)!.detalle,
+              },
+            ]
+          : []),
+        {
+          etiqueta: '¿Goética?',
+          texto: g.fuente_goetica
+            ? 'Sí: todo lo que se lance con ella es goecia y estudiarla corrompe.'
+            : g.variante_goetica
+              ? `Sólo la ${g.variante_goetica}.`
+              : 'No.',
+        },
         {
           etiqueta: 'Fórmulas de sus dominios',
           refs: cat.formulas

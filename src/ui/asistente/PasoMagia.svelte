@@ -1,6 +1,13 @@
 <script lang="ts">
   import { catalogo } from '../../datos/catalogo';
-  import { fuentesPara, UMBRAL_RANGO } from '../../motor/magia';
+  import {
+    fuentesPara,
+    ORIGENES_FUENTE,
+    TIPOS_FUENTE,
+    totalTiradasCorrupcion,
+    UMBRAL_RANGO,
+  } from '../../motor/magia';
+  import type { OrigenFuente, TipoFuente } from '../../datos/tipos';
   import { ORDINES } from '../../motor/fe';
   import type { Hoja } from '../../motor/hoja';
   import { enlacePaso } from '../ruta.svelte';
@@ -14,6 +21,13 @@
   let soloLanzables = $state(true);
   let nombreFuente = $state('');
   let dominiosFuente = $state<string[]>([]);
+  let origenFuente = $state<OrigenFuente>('maestro');
+  let tipoFuente = $state<TipoFuente>('mixta');
+  let goeticaFuente = $state(false);
+  const nombreTipo = (t: TipoFuente) => TIPOS_FUENTE.find((x) => x.id === t)?.nombre ?? t;
+  const nombreOrigen = (o: OrigenFuente) => ORIGENES_FUENTE.find((x) => x.id === o)?.nombre ?? o;
+  const origenesPropios = ORIGENES_FUENTE.filter((o) => o.id !== 'grimorio');
+  const tiradasCorrupcion = $derived(totalTiradasCorrupcion(hoja.magia));
   const DOMINIOS = [...new Set(catalogo.formulas.flatMap((f) => f.dominios))].sort();
 
   const formulas = $derived(
@@ -40,10 +54,18 @@
     if (!n || !dominiosFuente.length) return;
     p.magia.fuentes = [
       ...p.magia.fuentes,
-      { clave: `fuente-mistica:${n}`, nombre: n, dominios: [...dominiosFuente] },
+      {
+        clave: `fuente-mistica:${n}`,
+        nombre: n,
+        dominios: [...dominiosFuente],
+        origen: origenFuente,
+        tipo: origenFuente === 'linaje' ? 'filosofica' : tipoFuente,
+        goetica: goeticaFuente,
+      },
     ];
     nombreFuente = '';
     dominiosFuente = [];
+    goeticaFuente = false;
   }
 
   function alternar(id: string) {
@@ -56,7 +78,9 @@
 {#if carrera?.magia}
   <aside class="callout">
     <strong>Ojo con la Inquisición.</strong> La magia es real, pero también lo son la Iglesia y sus
-    tribunales. Muchas fórmulas son <em>goecia</em>: usarlas condena el alma y da Corrupción.
+    tribunales. Es <em>goecia</em> todo lo que se lanza con una fuente goética, las fórmulas de goecia
+    y los hechizos con actos atroces: usarla condena el alma. Estudiar una fuente goética o aprender goecia
+    corrompe (tiradas de Fuerza de voluntad).
   </aside>
 
   <h2>Fuentes Místicas</h2>
@@ -64,12 +88,36 @@
     Cada Fuente es una habilidad que empieza en 0% y sube con los puntos de carrera y adicionales
     (paso
     <a href={enlacePaso(p.id, 'habilidades')}>Habilidades</a>, «Fuente Mística»). Su % de estudio
-    decide qué Rango de fórmulas puede lanzar.
+    decide qué Rango de fórmulas puede lanzar. Con una fuente filosófica o mixta también puede
+    <strong>improvisar</strong> (magia espontánea), hasta el menor entre su estudio y su
+    Conocimiento (Ocultismo) {hoja.magia.ocultismo}% (en un linaje, su Fuerza de voluntad {hoja
+      .magia.fuerzaVoluntad}%).
   </p>
   <ul>
     {#each hoja.magia.fuentes as f, i (f.clave)}
       <li>
         <strong>{f.nombre}</strong> — {f.dominios.join(', ')} · estudio {f.valor}%
+        <span class="detalle"
+          >· {nombreOrigen(f.origen)} · {nombreTipo(f.tipo)}{f.improvisa
+            ? ` · improvisa hasta ${f.techo}% (${f.techoPor})`
+            : ' · no improvisa'}</span
+        >{#if f.goetica}
+          <span class="goecia" title="Fuente goética: todo lo que se lance con ella es goecia"
+            >✠ goética</span
+          >{/if}
+        {#if f.grimorio && catalogo.grimorios.find((g) => g.id === f.grimorio)?.variante_goetica}
+          <label
+            ><input
+              type="checkbox"
+              checked={Boolean(p.magia.fuentes[i]?.versionGoetica)}
+              onchange={(e) =>
+                (p.magia.fuentes[i]!.versionGoetica = (
+                  e.currentTarget as HTMLInputElement
+                ).checked)}
+            />
+            {catalogo.grimorios.find((g) => g.id === f.grimorio)?.variante_goetica} (goética)</label
+          >
+        {/if}
         <button
           type="button"
           onclick={() => (p.magia.fuentes = p.magia.fuentes.filter((_, j) => j !== i))}
@@ -89,15 +137,36 @@
       >
         <option value="">Añadir un grimorio…</option>
         {#each catalogo.grimorios.filter((g) => g.estudiable) as g (g.id)}<option value={g.id}
-            >{g.nombre} ({g.dominios.join(', ')}; hasta {g.estudio_maximo}%)</option
+            >{g.nombre} ({g.dominios.join(', ')}; hasta {g.estudio_maximo}%; {nombreTipo(
+              g.tipo_fuente ?? 'mixta',
+            ).toLowerCase()}{g.fuente_goetica ? '; goético' : ''})</option
           >{/each}
       </select>
     </label>
   </div>
   <details>
-    <summary>Otra Fuente (un pacto, un maestro, un artefacto)</summary>
+    <summary>Otra Fuente (un maestro, un pacto, un objeto o lugar, un linaje)</summary>
     <div class="añadir">
-      <input type="text" bind:value={nombreFuente} placeholder="Pacto con un trasgo" />
+      <input type="text" bind:value={nombreFuente} placeholder="Saber de la tía Remedios" />
+      <label
+        >Origen
+        <select bind:value={origenFuente}
+          >{#each origenesPropios as o (o.id)}<option value={o.id}>{o.nombre}</option
+            >{/each}</select
+        >
+      </label>
+      {#if origenFuente !== 'linaje'}
+        <label
+          >Tipo
+          <select bind:value={tipoFuente}
+            >{#each TIPOS_FUENTE as x (x.id)}<option value={x.id}>{x.nombre} ({x.detalle})</option
+              >{/each}</select
+          >
+        </label>
+      {/if}
+      <label
+        ><input type="checkbox" bind:checked={goeticaFuente} /> Goética (nace del Infierno o del mal)</label
+      >
       {#each DOMINIOS as d (d)}<label
           ><input type="checkbox" bind:group={dominiosFuente} value={d} /> {d}</label
         >{/each}
@@ -107,11 +176,49 @@
         disabled={!nombreFuente.trim() || !dominiosFuente.length}>Añadir</button
       >
     </div>
+    <p class="detalle">
+      {#if origenFuente === 'linaje'}Linaje: sólo al crear el personaje; un dominio (dos con permiso
+        del DJ), Estudio Máximo POD × 3, se estudia con Fuerza de voluntad y siempre es filosófica.
+      {:else if origenFuente === 'maestro'}Maestro: el Estudio Máximo es el % del maestro en su
+        propia fuente; sus dominios y parámetros son los suyos.
+      {:else if origenFuente === 'pacto'}Pacto: Estudio Máximo POD de la entidad × 3; cada Rango
+        nuevo tiene un precio y la entidad puede retirar su favor.
+      {:else}Objeto o lugar: el DJ fija el Estudio Máximo (40–90%); fuera del lugar se lanza con la
+        mitad.
+      {/if}
+      Véase «Fuentes Místicas de los reinos».
+    </p>
   </details>
+
+  {#if tiradasCorrupcion > 0}
+    <h3>Corrupción inicial</h3>
+    <p>
+      Tira <strong>Fuerza de voluntad ({hoja.magia.fuerzaVoluntad}%)</strong>
+      {tiradasCorrupcion}
+      {tiradasCorrupcion === 1 ? 'vez' : 'veces'}; cada fallo es 1 punto de Corrupción (−1 POD
+      permanente; anótalo en la ficha).
+    </p>
+    <ul>
+      {#each hoja.magia.tiradasCorrupcion as x (x.motivo)}<li>
+          {x.motivo}: {x.tiradas}
+          {x.tiradas === 1 ? 'tirada' : 'tiradas'}
+        </li>{/each}
+    </ul>
+    <label
+      >Fallos (Corrupción inicial)
+      <input
+        type="number"
+        min="0"
+        max={tiradasCorrupcion}
+        bind:value={p.magia.corrupcionInicial}
+        class="corto"
+      />
+    </label>
+  {/if}
 
   <p>
     <a href={`#/hechizos/${encodeURIComponent(p.id)}`}>Calculadora de hechizos</a>: la dificultad de
-    sus fórmulas según la zona, y la de cualquier hechizo libre.
+    sus fórmulas según la zona, y la de cualquier hechizo espontáneo.
   </p>
 
   <h2>Fórmulas iniciales</h2>
@@ -119,7 +226,8 @@
     Con Conocimiento (Ocultismo) {hoja.magia.ocultismo}% empieza con
     <strong>{hoja.magia.formulasPermitidas}</strong> fórmulas{hoja.magia.formulasAzar
       ? ` (o ${hoja.magia.formulasAzar} al azar, si se decide antes de tirar)`
-      : ''}. Elegidas: {p.magia.formulas.length}.
+      : ''}. Elegidas: {p.magia.formulas.length}. El mago se define por su fuente: las fórmulas son
+    un complemento seguro (sin Reatracción salvo con pifia).
     <label><input type="checkbox" bind:checked={p.magia.formulasAlAzar} /> Las tiré al azar</label>
   </p>
   <div class="filtros">
@@ -175,7 +283,8 @@
         >{ORDINES[hoja.fe.ordoMaximo - 1]?.nombre ?? '— (ninguno)'}</strong
       >.
     {:else}
-      Aún no puede obrar rituales (hace falta Fe 50% y no conocer goecia).
+      Aún no puede obrar rituales (hace falta Fe 50% y no conocer goecia ni estudiar una fuente
+      goética).
     {/if}
   </p>
   <table class="tabla">

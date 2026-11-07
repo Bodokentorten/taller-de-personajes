@@ -1,5 +1,6 @@
 // Formato de los archivos JSON (copia de un personaje o de toda la biblioteca) y migraciones.
 import { personajeVacio, VERSION_PERSONAJE, type Personaje } from '../motor/personaje';
+import { GRIMORIOS_RENOMBRADOS } from '../motor/magia';
 
 export const FORMATO = 'taller-de-personajes';
 
@@ -29,6 +30,11 @@ export function migrar(dato: unknown): Personaje {
     throw new Error(`El personaje es de una versión más nueva del taller (${p.version}).`);
   }
   const base = personajeVacio(p.id);
+  // Grimorios renombrados en el vault (De Feits lo Diable → De Feits de l'Àngel, 2026-11-06).
+  for (const f of p.magia?.fuentes ?? []) {
+    if (f.grimorio && GRIMORIOS_RENOMBRADOS[f.grimorio])
+      f.grimorio = GRIMORIOS_RENOMBRADOS[f.grimorio];
+  }
   return {
     ...base,
     ...p,

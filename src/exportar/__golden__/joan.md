@@ -86,7 +86,7 @@ tags:
 | [[Estilo de combate]]: | `FUE+DES` | *Armas:* <br>*Rasgo:* | **%** |
 | [[Arte]] | `POD+CAR` | Caligrafía | **32%** |
 | [[Conocimiento]] | `INTx2` | Ocultismo | **75%** |
-| [[Informe - Guía de Magia Caótica#2. El Proceso de Estudio y Aprendizaje\|Fuente Mística]] | `0` | picatrix | **30%** |
+| [[Fuentes Místicas de los reinos\|Fuente Mística]] | `0` | picatrix | **30%** |
 | [[Idioma]] | `INT+CAR` | Castellano | **44%** |
 | [[Idioma]] | `INT+CAR` | Latín | **49%** |
 
@@ -140,7 +140,7 @@ tags:
 
 ### Fe, Magia y Milagros ([[05 - Magia y Fe (Índice)]])
 - **Fe:** [[Fe]] 48%
-- **Magia:** Fuente Mística Picatrix 30% (Espíritu, Mente) · fórmulas: [[Bebedizo de Sueños]], [[Leche de Sapiencia]], [[Filtro de Memoria]], [[Infusión de Serenidad]]
+- **Magia:** Fuente Mística Picatrix 30% (Espíritu, Mente; mixta) · fórmulas: [[Bebedizo de Sueños]], [[Leche de Sapiencia]], [[Filtro de Memoria]]
 
 ### Equipo y Posesiones
 - *Propio de su estamento:* 1d6+1 mudas de ropa elegante. 1d3+1 armas de villano o de soldado; el caballero villano, además, una espada. Mula, asno o caballo de monta; el caballero villano, caballo.
@@ -149,7 +149,7 @@ tags:
 ---
 
 ## 7. Mente y Horror ([[Informe de Integración - Horror, Estrés y Pánico|Horror, Estrés y Pánico]])
-- **Puntos de Estrés:** 0 / *(umbral según el informe)*
+- **Puntos de Estrés:** 0 · **Umbral:** 7 *(POD 13 ÷ 2)* · **Peldaño:** Sereno *([[Escalera de miedo]])*
 - **Cicatrices mentales:** 
 - **Corrupción:** 0
 

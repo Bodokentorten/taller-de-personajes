@@ -20,12 +20,15 @@
   },
   "rango_maximo": "IV",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Recoge las enseñanzas atribuidas a Simón el Mago, el hechicero que, según los Hechos de los Apóstoles, quiso comprar a san Pedro el poder del Espíritu Santo y acabó destruido por él."
  },
  {
-  "id": "de-feits-lo-diable",
-  "nombre": "De Feits lo Diable",
-  "nota": "De Feits lo Diable",
+  "id": "de-feits-de-l-angel",
+  "nombre": "De Feits de l'Àngel",
+  "nota": "De Feits de l'Àngel",
   "autor": "Absalón Leví",
   "idioma": "Catalán",
   "ensenar": 45,
@@ -43,7 +46,10 @@
   },
   "rango_maximo": "V",
   "estudiable": true,
-  "resumen": "Traducción al catalán de un texto latino anónimo del siglo III. Su traductor, judío, lo explicó con un cuidado admirable."
+  "tipo_fuente": "mixta",
+  "fuente_goetica": false,
+  "variante_goetica": null,
+  "resumen": "Traducción al catalán de un texto latino anónimo del siglo III, De Factis Angeli, que cuenta lo que un ángel enseñó a un ermitaño del desierto: la naturaleza de las ánimas, el modo de llamarlas y de darles descanso, y el secreto del Elixir de la Vida. Su traductor, judío, lo explicó con un cuidado admirable."
  },
  {
   "id": "de-magia-nigra-et-profunda",
@@ -66,6 +72,9 @@
   },
   "rango_maximo": "III",
   "estudiable": true,
+  "tipo_fuente": "filosofica",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Un libro de teoría más que de práctica: explica qué es la goecia y cómo actúa, sin enseñar ninguna fórmula concreta."
  },
  {
@@ -89,6 +98,9 @@
   },
   "rango_maximo": "V",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Una pésima traducción latina de un viejo tratado de magia caldea. Lo usan los cónclaves de brujas para sus aquelarres."
  },
  {
@@ -112,6 +124,9 @@
   },
   "rango_maximo": "III",
   "estudiable": true,
+  "tipo_fuente": "recetario",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Un manual de conjuradores: enseña a trazar círculos, a preparar la vara y el cuchillo y a llamar a ánimas, elementales y demonios."
  },
  {
@@ -135,6 +150,9 @@
   },
   "rango_maximo": "IV",
   "estudiable": true,
+  "tipo_fuente": "recetario",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Se dice que el Diablo lo entrega a sus favoritos. Lleva el nombre de Cipriano de Antioquía, el mago que, según la leyenda, se convirtió y murió mártir, y la tradición gallega y portuguesa lo asocia a tesoros enterrados y mouras encantadas."
  },
  {
@@ -158,6 +176,9 @@
   },
   "rango_maximo": "IV",
   "estudiable": true,
+  "tipo_fuente": "recetario",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Se dice que lo escribió el demonio Beherito, señor de las mentiras. Se lee siempre en la mejor lengua que conozca el lector."
  },
  {
@@ -179,8 +200,11 @@
    "Destruir": 20,
    "Controlar": 10
   },
-  "rango_maximo": "IV",
+  "rango_maximo": "III",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Según los eruditos, el Gulandis Acolyti original lo escribió en el siglo IV un gnóstico de Corduba que firmaba «I.P.F.», y es el único libro que clasifica las fórmulas mágicas en siete vis."
  },
  {
@@ -204,6 +228,9 @@
   },
   "rango_maximo": "III",
   "estudiable": true,
+  "tipo_fuente": "recetario",
+  "fuente_goetica": false,
+  "variante_goetica": null,
   "resumen": "Un compendio de magia guerrera y de engaño, copiado en algún taller de al-Ándalus."
  },
  {
@@ -227,7 +254,10 @@
   },
   "rango_maximo": "III",
   "estudiable": true,
-  "resumen": "Un tratado sobre el dominio de las voluntades: enamorar, enemistar, someter. Su autor sólo se conoce por este nombre."
+  "tipo_fuente": "mixta",
+  "fuente_goetica": true,
+  "variante_goetica": null,
+  "resumen": "Un tratado sobre el dominio de las voluntades: enamorar, enemistar, someter. Su autor sólo se conoce por este nombre. Enseña que la voluntad ajena no se doblega sola: hay que pedir prestada la fuerza de quien tienta a los hombres desde el principio."
  },
  {
   "id": "libro-de-la-sabiduria",
@@ -243,6 +273,9 @@
   "manipulacion": {},
   "rango_maximo": null,
   "estudiable": false,
+  "tipo_fuente": "filosofica",
+  "fuente_goetica": false,
+  "variante_goetica": null,
   "resumen": "La leyenda dice que se le entregó a Adán tras la caída y que pasó de generación en generación hasta el rey Salomón, que con él levantó el Templo y sometió a los demonios. Contiene todos los secretos del universo, incluso los que sólo conoce Dios. Su paradero se perdió a la muerte de Salomón."
  },
  {
@@ -266,6 +299,9 @@
   },
   "rango_maximo": "III",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": false,
+  "variante_goetica": null,
   "resumen": "Un tratado sobre la guerra y el fin de los tiempos, escrito por un sabio de nombre a medias árabe y a medias catalán."
  },
  {
@@ -289,6 +325,9 @@
   },
   "rango_maximo": "V",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": false,
+  "variante_goetica": "versión completa",
   "resumen": "Se atribuye al rey Salomón. Está escrito en clave: para descifrarlo hay que cotejarlo con el Cantar de los Cantares en su versión hebrea original, y casi nadie lo sabe."
  },
  {
@@ -312,6 +351,9 @@
   },
   "rango_maximo": "IV",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": true,
+  "variante_goetica": null,
   "resumen": "Su autor, un mallorquín, aplicó el método combinatorio de Ramon Llull a la goecia, justo lo contrario de lo que Llull pretendía."
  },
  {
@@ -335,6 +377,35 @@
   },
   "rango_maximo": "IV",
   "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": false,
+  "variante_goetica": null,
   "resumen": "Es una versión latina, bastante torpe, de un tratado árabe de magia astral conocido como Ghayat al-Hakim («La meta del sabio»), que se atribuía al astrónomo cordobés al-Majriti. En tiempos de Alfonso X se tradujo al castellano y después al latín; las copias que circulan por los reinos están plagadas de errores."
+ },
+ {
+  "id": "tratado-del-sol-y-de-la-luna",
+  "nombre": "Tratado del Sol y de la Luna",
+  "nota": "Tratado del Sol y de la Luna",
+  "autor": "Atribuido a Arnau de Vilanova",
+  "idioma": "Latín",
+  "ensenar": 35,
+  "estudio_maximo": 45,
+  "dominios": [
+   "Fuego",
+   "Poder"
+  ],
+  "manipulacion": {
+   "Crear": 10,
+   "Sentir": 5,
+   "Transformar": 15,
+   "Destruir": 5,
+   "Controlar": 10
+  },
+  "rango_maximo": "III",
+  "estudiable": true,
+  "tipo_fuente": "mixta",
+  "fuente_goetica": false,
+  "variante_goetica": null,
+  "resumen": "Uno de tantos opúsculos alquímicos que corren con el nombre de Arnau de Vilanova, el gran físico valenciano muerto en 1311. Explica las bodas del Sol y de la Luna (el oro y la plata, el calor y el frío) y cómo sus signos, grabados en la hora justa, guardan virtudes."
  }
 ]

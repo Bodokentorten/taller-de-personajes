@@ -19,7 +19,16 @@ import {
 } from './experiencia';
 import { valorDe } from './habilidades';
 import { calcularHoja } from './hoja';
-import { grado, nivelHerida, tirarPanico, valorConDificultad } from './juego';
+import {
+  faltaParaSiguiente,
+  grado,
+  indicePeldaño,
+  nivelHerida,
+  peldaño,
+  tirarHorror,
+  umbralMiedo,
+  valorConDificultad,
+} from './juego';
 
 /** Azar que devuelve los d100 indicados, en orden (para tiradas exactas). */
 const dados = (...valores: number[]): Aleatorio => {
@@ -45,14 +54,72 @@ describe('tiradas de habilidad', () => {
     expect(valorConDificultad(33, 'formidable')).toBe(17);
     expect(valorConDificultad(33, 'herculeo')).toBe(7);
   });
-  it('heridas y pánico', () => {
+  it('heridas', () => {
     expect(nivelHerida(5, 5)).toBe('ilesa');
     expect(nivelHerida(2, 5)).toBe('leve');
     expect(nivelHerida(0, 5)).toBe('grave');
     expect(nivelHerida(-5, 5)).toBe('mayor');
-    const p = tirarPanico(10, azarConSemilla(1));
-    expect(p.total).toBe(p.d20 + 10);
-    expect(p.aterrorizado).toBe(p.total >= 13);
+  });
+});
+
+describe('escalera de miedo', () => {
+  it('Umbral = POD ÷ 2 hacia arriba', () => {
+    expect(umbralMiedo(12)).toBe(6);
+    expect(umbralMiedo(9)).toBe(5);
+    expect(umbralMiedo(1)).toBe(1);
+  });
+  it('peldaños con POD 12 (Umbral 6), como en la nota', () => {
+    const nombres = [0, 1, 5, 6, 11, 12, 17, 18, 23, 24].map((e) => peldaño(e, 6).nombre);
+    expect(nombres).toEqual([
+      'Sereno',
+      'Inquieto',
+      'Inquieto',
+      'Asustado',
+      'Asustado',
+      'Aterrorizado',
+      'Aterrorizado',
+      'Quebrado',
+      'Quebrado',
+      'Colapso psicológico',
+    ]);
+    expect(faltaParaSiguiente(4, 6)).toBe(2);
+    expect(faltaParaSiguiente(9, 6)).toBe(3);
+    expect(faltaParaSiguiente(0, 6)).toBe(1);
+    expect(faltaParaSiguiente(24, 6)).toBeUndefined();
+  });
+  it('tirada contra el horror: coherente con sus reglas', () => {
+    for (let s = 1; s <= 300; s++) {
+      const r = tirarHorror(50, 'II', 4, 6, 0, 'normal', azarConSemilla(s));
+      expect(r.despues).toBe(Math.max(0, 4 + r.ganado));
+      if (r.fv.grado === 'exito') expect(r.ganado).toBe(0);
+      if (r.fv.grado === 'critico') expect(r.ganado).toBe(-1);
+      if (r.fv.grado === 'pifia') expect(r.ganado).toBe(6);
+      if (r.fv.grado === 'fallo') expect(r.ganado).toBeGreaterThanOrEqual(1);
+      // Golpe fuerte sólo con 5 o más de una vez (o pifia desde el Grado II).
+      expect(Boolean(r.golpeFuerte)).toBe(r.ganado >= 5);
+      // Entrar en Asustado (6) sólo si llega a 6; el golpe fallado da Aterrorizado.
+      if (r.entra) expect(indicePeldaño(r.despues, 6)).toBeGreaterThan(indicePeldaño(4, 6));
+      if (r.porGolpe) expect(r.porGolpe.id).toBe('aterrorizado');
+    }
+  });
+  it('Grado I nunca da golpe fuerte; con éxito en Grado IV suma 1', () => {
+    for (let s = 1; s <= 200; s++) {
+      const r1 = tirarHorror(30, 'I', 0, 6, 0, 'normal', azarConSemilla(s));
+      expect(r1.golpeFuerte).toBeUndefined();
+      const r4 = tirarHorror(90, 'IV', 0, 6, 0, 'normal', azarConSemilla(s));
+      if (r4.fv.grado === 'exito') expect(r4.ganado).toBe(1);
+    }
+  });
+  it('estando Quebrado, un nuevo fallo es un Colapso', () => {
+    let visto = false;
+    for (let s = 1; s <= 200 && !visto; s++) {
+      const r = tirarHorror(10, 'I', 18, 6, 0, 'normal', azarConSemilla(s));
+      if (r.fv.grado === 'fallo' && r.despues < 24) {
+        expect(r.entra?.id).toBe('colapso');
+        visto = true;
+      }
+    }
+    expect(visto).toBe(true);
   });
 });
 
